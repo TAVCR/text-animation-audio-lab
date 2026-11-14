@@ -1,0 +1,216 @@
+[
+  {
+    "text": "Una idea",
+    "input": {
+      "template": "typewriter",
+      "words": 2,
+      "frames": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        10
+      ],
+      "port": 3218,
+      "model": "",
+      "text": "Una idea"
+    },
+    "plan": {
+      "events": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "variant": 1,
+      "gain": 0.5,
+      "tail": 100,
+      "offset": -1,
+      "reason": "Esta animación es breve y simple, por lo que no necesitamos acentuar demasiado. La variante 1 es suave y fluida, mientras que el gain de 0.5 y la cola de 100 ms mantienen el ritmo natural. La anticipación de -1 frame permite que los hitos sean perceptibles sin sobrecargar la animación.",
+      "model": "audio-director"
+    }
+  },
+  {
+    "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+    "input": {
+      "template": "typewriter",
+      "words": 16,
+      "frames": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        40,
+        42,
+        43,
+        44,
+        46,
+        47,
+        49,
+        51,
+        53,
+        54,
+        55,
+        58,
+        60,
+        61,
+        63,
+        64,
+        68,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        84,
+        86,
+        91,
+        94,
+        100,
+        104,
+        108,
+        113,
+        118,
+        124,
+        133,
+        147
+      ],
+      "port": 3218,
+      "model": "",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla"
+    },
+    "plan": {
+      "events": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "variant": 2,
+      "gain": 0.7,
+      "tail": 100,
+      "offset": 0,
+      "reason": "Esta animación describe el proceso de creación de una idea a través de movimientos en pantalla. Los eventos seleccionados (IDs 0-11) capturan los hitos semánticos clave: la idea nace, se forma, y se refina. La variante 2 y el gain 0.7 dan un tono suave y natural. La cola de 100 ms y la anticipación de 0 marcan los momentos exactos de cada cambio en la idea, creando una sensación de progreso y desarrollo.",
+      "model": "audio-director"
+    }
+  },
+  {
+    "text": "Una idea",
+    "input": {
+      "template": "slide-in",
+      "words": 2,
+      "frames": [
+        1,
+        5
+      ],
+      "port": 3218,
+      "model": "",
+      "text": "Una idea"
+    },
+    "plan": {
+      "events": [
+        0,
+        1
+      ],
+      "variant": 1,
+      "gain": 0.75,
+      "tail": 200,
+      "offset": 0,
+      "reason": "La frase 'Una idea' es corta y precisa, por lo que no necesitamos demasiados acentos. El uso de un solo evento en el primer y último fotograma proporciona énfasis en los hitos semánticos sin sobrecargar la animación.",
+      "model": "audio-director"
+    }
+  },
+  {
+    "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+    "input": {
+      "template": "slide-in",
+      "words": 16,
+      "frames": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61
+      ],
+      "port": 3218,
+      "model": "",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla"
+    },
+    "plan": {
+      "events": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "variant": 0,
+      "gain": 0.5,
+      "tail": 200,
+      "offset": 0,
+      "reason": "Esta animación presenta una frase larga donde cada palabra se introduce gradualmente. Los acentos se aplican a los hitos semánticos clave, resaltando la evolución de la idea a lo largo de la frase. El uso de 'Slide In' permite una introducción suave y natural, mientras que los acentos enfatizan la transición entre palabras.",
+      "model": "audio-director"
+    }
+  }
+]
