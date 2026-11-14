@@ -24,6 +24,7 @@ export default function PreviewContainer() {
   const viewportRef = React.useRef<HTMLDivElement>(null);
   const [viewportSize, setViewportSize] = React.useState({ width: dims.width, height: dims.height });
   const playerRef = React.useRef<PlayerRef>(null);
+  const previewFromStart=React.useCallback(()=>{const player=playerRef.current;if(player){player.seekTo(0);player.play()}},[]);
   const [currentFrame, setCurrentFrame] = React.useState(0);
   const playerKey = `${dims.width}x${dims.height}:${props.animationStyle}`;
 
@@ -82,7 +83,7 @@ export default function PreviewContainer() {
   
   return (
     <div className="w-full h-full flex flex-col p-0 overflow-hidden bg-neutral-950">
-      <SoundDesign props={props} frames={totalDurationInFrames} onSound={setSoundUrl}/>
+      <SoundDesign props={props} frames={totalDurationInFrames} onSound={setSoundUrl} onPreview={previewFromStart}/>
       <div ref={viewportRef} className="w-full flex-1 min-h-0 flex items-center justify-center relative p-3">
         {/* Layer Visibility Toggles */}
         <div className="absolute top-3 right-3 z-20 pointer-events-auto">
@@ -214,4 +215,5 @@ export default function PreviewContainer() {
     </div>
   );
 }
+
 

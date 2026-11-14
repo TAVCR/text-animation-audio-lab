@@ -25,11 +25,13 @@ const cache=new Map<string,Promise<AudioBuffer>>();
 async function decode(bytes:ArrayBuffer) {
   return new OfflineAudioContext(2,1,48000).decodeAudioData(bytes);
 }
-export function SoundDesign({props,frames,onSound}:{props:AnimationProps;frames:number;onSound:(s:string)=>void}) {
+export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationProps;frames:number;onSound:(s:string)=>void;onPreview:()=>void}) {
   const [enabled,setEnabled]=React.useState(false),[mode,setMode]=React.useState('Procedural');
   const [library,setLibrary]=React.useState<AudioBuffer>(),[seed,setSeed]=React.useState(0);
   const [density,setDensity]=React.useState(1),[gain,setGain]=React.useState(.6),[offset,setOffset]=React.useState(0);
   const [trim,setTrim]=React.useState(0),[tail,setTail]=React.useState(100);
+  const pendingPlay=React.useRef(false);
+  const [heard,setHeard]=React.useState('');
   const [url,setUrl]=React.useState(''),[status,setStatus]=React.useState('');
   React.useEffect(()=>{
     let active=true,object='';
@@ -67,6 +69,7 @@ export function SoundDesign({props,frames,onSound}:{props:AnimationProps;frames:
     }
     return ()=>{active=false;if(object)URL.revokeObjectURL(object);onSound('')};
   },[props,frames,enabled,mode,library,seed,gain,offset,density,trim,tail,onSound]);
+  React.useEffect(()=>{if(url && pendingPlay.current){pendingPlay.current=false;onPreview();setHeard(url)}},[url,onPreview]);
   if(props.animationStyle!=='typewriter')return null;
   const button="rounded border border-neutral-500 px-3 py-1 font-medium";
   return <details className="shrink-0 max-h-[45%] overflow-auto border-b border-neutral-600 bg-neutral-900 p-2 text-sm text-white">
@@ -74,9 +77,11 @@ export function SoundDesign({props,frames,onSound}:{props:AnimationProps;frames:
     <div className="my-2 flex flex-wrap items-center gap-2">
       <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>
       {['Procedural','Library'].map(m=><button key={m} aria-pressed={mode===m} onClick={()=>setMode(m)} className={button+(mode===m?' bg-white text-black':' bg-neutral-800 text-white')}>{m}</button>)}
-      {enabled && url ? <a className={button+" bg-emerald-300 text-black"} href={url} download="typewriter.wav">Guardar WAV</a> : <button disabled className={button+" bg-neutral-700 text-neutral-200"}>Guardar WAV</button>}
-      <span role="status">{enabled?status:'Activa Audio para preparar el WAV'}</span>
-    </div>
+      <button className={button+" bg-emerald-300 text-black"} disabled={mode==='Library' && !library || props.showTextLayer===false} onClick={()=>{
+        if(url && enabled){onPreview();setHeard(url)}else{pendingPlay.current=true;setEnabled(true)}
+      }}>Probar animación con sonido</button>
+      <span role="status">{enabled?status:'Vista previa temporal'}</span>
+      {enabled && url && heard===url && <a className="underline" href={url} download="typewriter.wav">Guardar WAV de esta vista previa</a>}    </div>
     {mode==='Procedural' ? <div className="flex flex-wrap items-center gap-2">Earshot
       {[0,1,2,3].map(i=><button key={i} onClick={()=>setSeed(i)} aria-pressed={seed===i} className={button+(seed===i?' bg-white text-black':' bg-neutral-800 text-white')}>Variante {i+1}</button>)}</div>
       : <input aria-label="Elegir SFX" type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()))}catch{setStatus('Archivo incompatible')}}}/>}
@@ -84,5 +89,6 @@ export function SoundDesign({props,frames,onSound}:{props:AnimationProps;frames:
     </div>
   </details>;
 }
+
 
 
