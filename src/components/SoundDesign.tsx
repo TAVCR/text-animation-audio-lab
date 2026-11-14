@@ -79,23 +79,25 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         const lead=plan?.strategy.voice==="sweep" ? Math.min(hit-start,4800) : 240;
         const left=Math.max(start,hit-lead),right=Math.min(src.length,hit+tail*48);
         const mix=new Float32Array(Math.round(frames*48000/fps));
-        let last=-100,events=0;
+        let last=-100,events=0,shortened=0;
         for(let index=0;index<analysis.events.length;index++){
           const f=analysis.events[index];
           if(plan && !plan.events.includes(index))continue;
           if(f-last<density || events>=256)continue;
           last=f;events++;
-          const target=Math.round((f+offset)*48000/fps);
-          for(let i=left;i<right;i++){
+          const target=Math.max(0,Math.round((f+offset)*48000/fps));
+          const boundedLeft=Math.max(left,hit-target);
+          if(boundedLeft>left)shortened++;
+          for(let i=boundedLeft;i<right;i++){
             const j=target+i-hit;
-            if(j>=0 && j<mix.length)mix[j]+=src[i]/peak*gain*Math.min(1,(i-left)/48,(right-i)/240);
+            if(j>=0 && j<mix.length)mix[j]+=src[i]/peak*gain*Math.min(1,(i-boundedLeft)/48,(right-i)/240);
           }
         }
         if(plan?.strategy.landing==='last' && analysis.stops.length){
           const at=Math.round(analysis.stops[analysis.stops.length-1]*48000/fps);
           for(let i=0;i<3600 && at+i<mix.length;i++)mix[at+i]+=.35*gain*Math.sin(i*.025)*Math.exp(-i/650);
         }
-        object=URL.createObjectURL(wave(mix));setUrl(object);setStatus(events+' eventos');
+        object=URL.createObjectURL(wave(mix));setUrl(object);setStatus(events+' eventos'+(shortened ? ` · ${shortened} ataques acortados al inicio del clip` : ''));
       })().catch(e=>{if(active)setStatus(String(e.message))});
     }
     return ()=>{active=false;if(object)URL.revokeObjectURL(object)};
