@@ -33,7 +33,7 @@ export function SoundDesign({props,frames,onSound}:{props:AnimationProps;frames:
   const [url,setUrl]=React.useState(''),[status,setStatus]=React.useState('');
   React.useEffect(()=>{
     let active=true,object='';
-    onSound('');setUrl('');
+    onSound('');setUrl('');setStatus('Preparando mezcla…');
     if(enabled && props.animationStyle==='typewriter' && props.showTextLayer!==false){
       (async()=>{
         let buf=library;
@@ -68,13 +68,21 @@ export function SoundDesign({props,frames,onSound}:{props:AnimationProps;frames:
     return ()=>{active=false;if(object)URL.revokeObjectURL(object);onSound('')};
   },[props,frames,enabled,mode,library,seed,gain,offset,density,trim,tail,onSound]);
   if(props.animationStyle!=='typewriter')return null;
-  return <details className="p-2 text-xs"><summary>Sound Design · Typewriter</summary>
-    <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>
-    <select value={mode} onChange={e=>setMode(e.target.value)}><option>Procedural</option><option>Library</option></select>
-    <input type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()));setMode('Library')}catch{setStatus('Archivo incompatible')}}}/>
-    <button onClick={()=>setSeed(s=>s+1)}>Variar Earshot</button>
-    {([[ 'Intervalo (frames)',density,setDensity,1,15,1],['Ganancia',gain,setGain,0,1,.05],['Desfase (frames)',offset,setOffset,-10,10,1],['Buscar desde (%)',trim,setTrim,0,99,1],['Cola (ms)',tail,setTail,10,500,1]] as const).map(([name,value,set,min,max,step])=><label key={name}>{name} {value}<input type="range" value={value} min={min} max={max} step={step} onChange={e=>set(Number(e.target.value))}/></label>)}
-    {enabled && <span>{status}</span>} {url && <a href={url} download="typewriter.wav">Guardar WAV</a>}
+  const button="rounded border border-neutral-500 px-3 py-1 font-medium";
+  return <details className="shrink-0 max-h-[45%] overflow-auto border-b border-neutral-600 bg-neutral-900 p-2 text-sm text-white">
+    <summary className="cursor-pointer font-semibold">Sound Design · Typewriter</summary>
+    <div className="my-2 flex flex-wrap items-center gap-2">
+      <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>
+      {['Procedural','Library'].map(m=><button key={m} aria-pressed={mode===m} onClick={()=>setMode(m)} className={button+(mode===m?' bg-white text-black':' bg-neutral-800 text-white')}>{m}</button>)}
+      {enabled && url ? <a className={button+" bg-emerald-300 text-black"} href={url} download="typewriter.wav">Guardar WAV</a> : <button disabled className={button+" bg-neutral-700 text-neutral-200"}>Guardar WAV</button>}
+      <span role="status">{enabled?status:'Activa Audio para preparar el WAV'}</span>
+    </div>
+    {mode==='Procedural' ? <div className="flex flex-wrap items-center gap-2">Earshot
+      {[0,1,2,3].map(i=><button key={i} onClick={()=>setSeed(i)} aria-pressed={seed===i} className={button+(seed===i?' bg-white text-black':' bg-neutral-800 text-white')}>Variante {i+1}</button>)}</div>
+      : <input aria-label="Elegir SFX" type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()))}catch{setStatus('Archivo incompatible')}}}/>}
+    <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1">    {([[ 'Intervalo (frames)',density,setDensity,1,15,1],['Ganancia',gain,setGain,0,1,.05],['Desfase (frames)',offset,setOffset,-10,10,1],['Buscar desde (%)',trim,setTrim,0,99,1],['Cola (ms)',tail,setTail,10,500,1]] as const).map(([name,value,set,min,max,step])=><label key={name}>{name} {value}<input type="range" value={value} min={min} max={max} step={step} onChange={e=>set(Number(e.target.value))}/></label>)}
+    </div>
   </details>;
 }
+
 
