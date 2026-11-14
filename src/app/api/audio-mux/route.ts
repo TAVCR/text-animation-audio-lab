@@ -6,7 +6,7 @@ import {promisify} from "node:util";
 const run=promisify(execFile);
 export async function POST(req:Request){
   const u=new URL(req.url),name=u.searchParams.get("video")??"";
-  if(req.headers.get("origin")!==u.origin || !/^[\w.-]+\.(mov|mp4|webm)$/i.test(name))return new Response(null,{status:400});
+  if(req.headers.get("origin")!=="http://"+req.headers.get("host") || !/^[\w.-]+\.(mov|mp4|webm)$/i.test(name))return new Response(null,{status:400});
   const root=path.resolve("public/renders"),ext=path.extname(name).toLowerCase(),id=randomUUID();
   const wav=path.join(root,id+".wav"),out=id+ext;
   try {
@@ -19,3 +19,4 @@ export async function POST(req:Request){
   }catch{await fs.rm(path.join(root,out),{force:true});return new Response(null,{status:422})}
   finally{await fs.rm(wav,{force:true})}
 }
+
