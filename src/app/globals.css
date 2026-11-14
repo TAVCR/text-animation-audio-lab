@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Custom Scrollbar for Controls Panel */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #262626 #171717;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--range-width, 100%);
+  height: 24px;
+  border-radius: 9999px;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  touch-action: pan-x;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: #27272a;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+  border: 2px solid #ecfeff;
+  border-radius: 9999px;
+  background: #10b981;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+  cursor: grab;
+  pointer-events: auto;
+}
+
+input[type='range']:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+
+input[type='range']::-moz-range-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: #27272a;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ecfeff;
+  border-radius: 9999px;
+  background: #10b981;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+  cursor: grab;
+}
+
+input[type='range']:active::-moz-range-thumb {
+  cursor: grabbing;
+}
+
+input[type='range']:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Compact controls for top embedded text-motion panel */
+.controls-panel-embedded {
+  --range-width: 100%;
+  font-size: 0.75rem;
+}
+
+.controls-panel-embedded select,
+.controls-panel-embedded input[type='number'],
+.controls-panel-embedded textarea {
+  max-width: 18rem;
+  padding: 0.28rem 0.4rem;
+  font-size: 0.75rem;
+}
+
+.controls-panel-embedded input[type='range'] {
+  --range-width: 100%;
+  height: 24px;
+}
+
+.controls-panel-embedded label,
+.controls-panel-embedded span,
+.controls-panel-embedded p,
+.controls-panel-embedded button {
+  font-size: 10px;
+}
+
+.controls-panel-embedded .grid.grid-cols-1.gap-4 {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.controls-panel-embedded .grid.grid-cols-2.gap-4 {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+
+/* Sidebar Drag Handle */
+.sidebar-drag-handle {
+  width: 4px;
+  cursor: col-resize;
+  background: transparent;
+  transition: background 0.2s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+}
+.sidebar-drag-handle:hover,
+.sidebar-drag-handle:active {
+  background: rgba(59, 130, 246, 0.5); /* Blue-500 with opacity */
+}
+
+/* Collapsible Section Transitions */
+.collapsible-body {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.collapsible-body.expanded {
+  max-height: 9999px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.collapsible-body.collapsed {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}

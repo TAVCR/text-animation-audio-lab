@@ -1,0 +1,2066 @@
+[
+  {
+    "path": ".eslintrc.json",
+    "exists": true,
+    "sizeBytes": 61,
+    "lastWriteTimeUtc": "2026-03-18T22:07:20.0000000Z",
+    "sha256": "8d4a8d81dab1c22bcb28635249606f2e59fa816e8e58c56eecf6d2430949847a",
+    "attributes": "Archive"
+  },
+  {
+    "path": ".gitignore",
+    "exists": true,
+    "sizeBytes": 436,
+    "lastWriteTimeUtc": "2026-03-21T13:24:02.0000000Z",
+    "sha256": "ee7708a2009c1d411d7e05a2ab2495a00ab20cf2dee01f86d43e52b4c43491e0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "electron/main.cjs",
+    "exists": true,
+    "sizeBytes": 3720,
+    "lastWriteTimeUtc": "2026-09-07T04:50:07.6050525Z",
+    "sha256": "fca0cff9cd46bb83d016980812b4da10a1fea264219db5638dfb9e90fd46358d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "electron/preload.cjs",
+    "exists": true,
+    "sizeBytes": 303,
+    "lastWriteTimeUtc": "2026-09-07T04:50:07.6050525Z",
+    "sha256": "a936f1d9e6dad4f492afaa50be3543ffdeb1e8bec1e2dc43c7614c1c3cba55c1",
+    "attributes": "Archive"
+  },
+  {
+    "path": "next-env.d.ts",
+    "exists": true,
+    "sizeBytes": 228,
+    "lastWriteTimeUtc": "2026-03-18T22:07:20.0000000Z",
+    "sha256": "9dd9d642cdb87d4d5b3173217e0c45429b3e47a6f5cf5fb0ead6c644ec5fed01",
+    "attributes": "Archive"
+  },
+  {
+    "path": "next.config.mjs",
+    "exists": true,
+    "sizeBytes": 1052,
+    "lastWriteTimeUtc": "2026-09-07T06:35:51.8377187Z",
+    "sha256": "20eb1bc6713a9ad274d146b7cdfaa5c7fdd5db90faa083efd262cd4649ea1a20",
+    "attributes": "Archive"
+  },
+  {
+    "path": "package-lock.json",
+    "exists": true,
+    "sizeBytes": 599508,
+    "lastWriteTimeUtc": "2026-09-06T11:42:34.6291929Z",
+    "sha256": "5bbbd1a01e5673313d6bb5781ee115f11503c6e1ca24ac7806f09665a0df5003",
+    "attributes": "Archive"
+  },
+  {
+    "path": "package.json",
+    "exists": true,
+    "sizeBytes": 2870,
+    "lastWriteTimeUtc": "2026-09-07T06:44:47.5023504Z",
+    "sha256": "b65f32557c910bdf17fd90cbfe0c40368eef81aa5d92a9f7e4f1123af52acf61",
+    "attributes": "Archive"
+  },
+  {
+    "path": "postcss.config.mjs",
+    "exists": true,
+    "sizeBytes": 135,
+    "lastWriteTimeUtc": "2026-03-18T22:07:20.0000000Z",
+    "sha256": "ac31e2a95ef64fe27ceb4124e101675273107aae2e33bc490b01d919e7f03646",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/assets/circuito_limpio.png",
+    "exists": true,
+    "sizeBytes": 988236,
+    "lastWriteTimeUtc": "2026-03-21T02:45:56.0000000Z",
+    "sha256": "dd3ebce57cae430bc6569a63bfc69e76166c0735eb42f2a99801ea863f6e4b6c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 4K HORIZ.mp4",
+    "exists": true,
+    "sizeBytes": 28516764,
+    "lastWriteTimeUtc": "2026-09-06T16:38:52.2091146Z",
+    "sha256": "e9a393a82fb9ff88d812aa1bd88239697cfd7f1b8af93c55472bab6cc9e97824",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 4K VERT.mp4",
+    "exists": true,
+    "sizeBytes": 27985737,
+    "lastWriteTimeUtc": "2026-09-06T16:38:51.8722549Z",
+    "sha256": "d18e8291ceac06f7e407280903726b2e1f45aa15876424b7aeaae1626f3b7107",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 GENERATIVE HORIZ.mp4",
+    "exists": true,
+    "sizeBytes": 29335222,
+    "lastWriteTimeUtc": "2026-09-06T16:45:37.4517731Z",
+    "sha256": "9dd7949b5e268fcc4c8b8bee7557763c421ab483a37f10154ea974e9dcc1012d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 GENERATIVE VERT.mp4",
+    "exists": true,
+    "sizeBytes": 26315670,
+    "lastWriteTimeUtc": "2026-09-06T16:45:19.9463733Z",
+    "sha256": "37f566325b4776ae5a19940a3057d31c5723d4fd4028ed93eb9637d9f8b9d499",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 VERT.mp4",
+    "exists": true,
+    "sizeBytes": 7806823,
+    "lastWriteTimeUtc": "2026-09-06T16:31:40.6849192Z",
+    "sha256": "77c96448f8f0f0e5cfd92aed0db2c886567948c875b9604d468726309246fc01",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 1 VERT.mp4",
+    "exists": true,
+    "sizeBytes": 13172372,
+    "lastWriteTimeUtc": "2026-09-06T16:52:57.2221159Z",
+    "sha256": "5387a8263963297c4e363a5e7aa0f8892786861217d8e9cbee266f8624e81b4e",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 1.mp4",
+    "exists": true,
+    "sizeBytes": 14578872,
+    "lastWriteTimeUtc": "2026-09-06T16:53:46.8348513Z",
+    "sha256": "a1ba73022bbc3be44d1aa10e920469fb60c213ecf2cee81b0287fbad87b78588",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 2 VERT.mp4",
+    "exists": true,
+    "sizeBytes": 25576581,
+    "lastWriteTimeUtc": "2026-09-06T16:54:29.3328965Z",
+    "sha256": "bb24f8a3a221fa88904c5cebda641eff12b5513e595ebd3797613b16806bca88",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 2.mp4",
+    "exists": true,
+    "sizeBytes": 16758977,
+    "lastWriteTimeUtc": "2026-09-06T16:54:52.3468760Z",
+    "sha256": "b4c9d60dbd649a8a8aa4497b9db0f97598562e98004bba8c75512dd2da24e9d1",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 3 VERT.mp4",
+    "exists": true,
+    "sizeBytes": 30335771,
+    "lastWriteTimeUtc": "2026-09-06T16:55:35.6838102Z",
+    "sha256": "48d69980a44b5b8672d1623ea6b2c139c33df4f7c7ba1a8be273c6fdb1a01e7c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 3.mp4",
+    "exists": true,
+    "sizeBytes": 33185381,
+    "lastWriteTimeUtc": "2026-09-06T16:56:19.8390165Z",
+    "sha256": "0d1d848c10bccdc632561b73d67610731a7ae3dc2e3692ec5d2c30ffef4f6def",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 4 VERT.mp4",
+    "exists": true,
+    "sizeBytes": 75912187,
+    "lastWriteTimeUtc": "2026-09-06T16:57:46.1327946Z",
+    "sha256": "a18031fdf76c0b473f782e28f86f4529e86c70f3b56bf759021d2d9727adf798",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 4.mp4",
+    "exists": true,
+    "sizeBytes": 70073412,
+    "lastWriteTimeUtc": "2026-09-06T16:52:06.8601118Z",
+    "sha256": "a1340aca5af787c7f181c419074f6007e58b62c958b5ed3830a4cdcd509ed84b",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/droid_sans_mono_regular.typeface.json",
+    "exists": true,
+    "sizeBytes": 190569,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "c60f23330c5911f5f3640901f0dedf0c02cfc9982e0b5a99e2f1ef30eebc4e6f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/droid_serif_bold.typeface.json",
+    "exists": true,
+    "sizeBytes": 485403,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "e9a71de592e239acc3da3601cfbad53836931f498f409ab68535140f2045f29d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/droid_serif_regular.typeface.json",
+    "exists": true,
+    "sizeBytes": 477058,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "99ff855b8c18bcec3428745f576a75bfb0da5f63fe52c23f2484c2e655c2c64a",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/gentilis_bold.typeface.json",
+    "exists": true,
+    "sizeBytes": 649318,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "c028fd9c4017e34f1bf46694e4c23479cd22b812d0308f5dfc7446412c41d88c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/gentilis_regular.typeface.json",
+    "exists": true,
+    "sizeBytes": 627529,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "7ed95f2faa30f59dbe7cfb145b97c42a6ba1188cd2eec01ca61485e8c83ee9de",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/helvetiker_bold.typeface.json",
+    "exists": true,
+    "sizeBytes": 61632,
+    "lastWriteTimeUtc": "2026-03-19T01:50:00.0000000Z",
+    "sha256": "bd68159ee0b8d10fe24b9daa2e32f19686f9d8269a79dc8d44203a66298bfa2f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/helvetiker_regular.typeface.json",
+    "exists": true,
+    "sizeBytes": 63182,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "d5c5467690f74061179a292af83bd85c4c551e0f106b2af99714f11184c96981",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/optimer_bold.typeface.json",
+    "exists": true,
+    "sizeBytes": 112249,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "d690a5f45706db0c15c39313cc36f8ce62ef154c6a21923809814a89f6df7c98",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/optimer_regular.typeface.json",
+    "exists": true,
+    "sizeBytes": 110666,
+    "lastWriteTimeUtc": "2026-03-19T02:15:33.0000000Z",
+    "sha256": "17e5e14d94d66e0e60eed3bfde403fcfa3e677f3c914e4cbed264c0c0ba95175",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Anton-Regular.ttf",
+    "exists": true,
+    "sizeBytes": 170812,
+    "lastWriteTimeUtc": "2026-03-19T03:00:15.0000000Z",
+    "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Bangers-Regular.ttf",
+    "exists": true,
+    "sizeBytes": 93148,
+    "lastWriteTimeUtc": "2026-03-19T03:00:15.0000000Z",
+    "sha256": "4160a7311de9342674cce9160cde9fcbb30f48190397d86ff1b70b455af65824",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/BebasNeue-Regular.ttf",
+    "exists": true,
+    "sizeBytes": 61400,
+    "lastWriteTimeUtc": "2026-03-19T03:00:15.0000000Z",
+    "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/ComicNeue-Bold.ttf",
+    "exists": true,
+    "sizeBytes": 55716,
+    "lastWriteTimeUtc": "2026-03-19T03:23:52.0000000Z",
+    "sha256": "3e7e5fccfd7e0788f317b43312151c1bd5cf058c9697a8d83eac3939050bd61e",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/ComicNeue-Regular.ttf",
+    "exists": true,
+    "sizeBytes": 57248,
+    "lastWriteTimeUtc": "2026-03-19T03:23:52.0000000Z",
+    "sha256": "a0ee5a37c8b27c4db0700137d928598b1e23b0089e1546a8961909176b779360",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Inter-Var.ttf",
+    "exists": true,
+    "sizeBytes": 876576,
+    "lastWriteTimeUtc": "2026-03-19T03:00:13.0000000Z",
+    "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Montserrat-Var.ttf",
+    "exists": true,
+    "sizeBytes": 744936,
+    "lastWriteTimeUtc": "2026-03-19T03:00:11.0000000Z",
+    "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Nunito-Var.ttf",
+    "exists": true,
+    "sizeBytes": 276932,
+    "lastWriteTimeUtc": "2026-03-19T03:00:12.0000000Z",
+    "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/OpenSans-Var.ttf",
+    "exists": true,
+    "sizeBytes": 532636,
+    "lastWriteTimeUtc": "2026-03-19T03:00:09.0000000Z",
+    "sha256": "36643644f318a812aab2d2ed3bb98f8cf0872527f835fe9398d95fe6b9adb878",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Oswald-Var.ttf",
+    "exists": true,
+    "sizeBytes": 172088,
+    "lastWriteTimeUtc": "2026-03-19T03:00:11.0000000Z",
+    "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/PlayfairDisplay-Var.ttf",
+    "exists": true,
+    "sizeBytes": 300724,
+    "lastWriteTimeUtc": "2026-03-19T03:00:13.0000000Z",
+    "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Poppins-Bold.ttf",
+    "exists": true,
+    "sizeBytes": 155996,
+    "lastWriteTimeUtc": "2026-03-19T03:00:14.0000000Z",
+    "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Poppins-Regular.ttf",
+    "exists": true,
+    "sizeBytes": 160316,
+    "lastWriteTimeUtc": "2026-03-19T03:00:14.0000000Z",
+    "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Roboto-Var.ttf",
+    "exists": true,
+    "sizeBytes": 488584,
+    "lastWriteTimeUtc": "2026-03-19T03:00:10.0000000Z",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/RobotoMono-Var.ttf",
+    "exists": true,
+    "sizeBytes": 183700,
+    "lastWriteTimeUtc": "2026-03-19T03:23:52.0000000Z",
+    "sha256": "66a80e79d17e4c7cabd162e2916578a4cc08fd19eef6e2a643305eae9c567b2b",
+    "attributes": "Archive"
+  },
+  {
+    "path": "public/fonts/ttf/Rubik-Var.ttf",
+    "exists": true,
+    "sizeBytes": 359804,
+    "lastWriteTimeUtc": "2026-03-19T03:00:12.0000000Z",
+    "sha256": "1b3a7437ba2af80e465e773ed60c5036d1ba6ace492d89046dbcf18fb31e4e88",
+    "attributes": "Archive"
+  },
+  {
+    "path": "README.md",
+    "exists": true,
+    "sizeBytes": 4119,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8188713Z",
+    "sha256": "313cc0caac20b05a74c795a2279e3704427af0c456bcb8bd5fc39a9c7feee38c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "remotion.config.ts",
+    "exists": true,
+    "sizeBytes": 1088,
+    "lastWriteTimeUtc": "2026-03-21T05:56:40.0000000Z",
+    "sha256": "f6a47876d1830c46e505385cd948159ae9e9c7f5a1775ef1caa3dbea4bcd4a57",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/api/render/route.ts",
+    "exists": true,
+    "sizeBytes": 16144,
+    "lastWriteTimeUtc": "2026-09-07T04:56:11.1418830Z",
+    "sha256": "40b40f2242294a886e78852ae682e90920a296013f3bc553e172dc5d80282cdc",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/api/subtitles/render/route.ts",
+    "exists": true,
+    "sizeBytes": 2811,
+    "lastWriteTimeUtc": "2026-09-07T05:35:07.4548061Z",
+    "sha256": "11e334e443547e9b7e5e7920db57d20fd22d405bd2f1dd9e935ea45fe08d0bf0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/api/subtitles/transcribe/route.ts",
+    "exists": true,
+    "sizeBytes": 1072,
+    "lastWriteTimeUtc": "2026-09-07T05:06:58.1749731Z",
+    "sha256": "9ecc6b2c8b7687ec9a6c752de6f88f2cdae59b2736723c6fe5ab7f63a98f05dc",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/api/subtitles/upload/route.ts",
+    "exists": true,
+    "sizeBytes": 1201,
+    "lastWriteTimeUtc": "2026-09-07T05:06:24.4552739Z",
+    "sha256": "970aae638e4710db49bc0ec12916d16c650b49ab53452a695f566dd77d172037",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/experimental/procedural-circuit/page.tsx",
+    "exists": true,
+    "sizeBytes": 265,
+    "lastWriteTimeUtc": "2026-03-21T05:12:47.0000000Z",
+    "sha256": "d92d1761df226cc99bfff9c2c439fd1792f145c8297443371650147be12792a0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/globals.css",
+    "exists": true,
+    "sizeBytes": 3969,
+    "lastWriteTimeUtc": "2026-09-06T15:39:13.6010807Z",
+    "sha256": "9a92ed19b05ad4b0515e2db91ee967d420038218ef91b0728ce36bfbe9ab7521",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "exists": true,
+    "sizeBytes": 835,
+    "lastWriteTimeUtc": "2026-09-06T15:39:05.8142613Z",
+    "sha256": "52a14c5f7c3af2cbc2b43f70daf3967b8c0c3a6a96c1250e89ac5d75c490ff8b",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "exists": true,
+    "sizeBytes": 2268,
+    "lastWriteTimeUtc": "2026-09-07T05:42:35.7654264Z",
+    "sha256": "89bef1a006102e452bd278ab18af4f2165b9b95ad5647fa0065168b298cf4d47",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/controls/FontSection.tsx",
+    "exists": true,
+    "sizeBytes": 72,
+    "lastWriteTimeUtc": "2026-03-29T11:39:22.2472554Z",
+    "sha256": "9f4132ebfc962900306dd8f579cf10e7218aeb9b0b3b1d802e454c450aa85ff5",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/controls/LayoutControls.tsx",
+    "exists": true,
+    "sizeBytes": 410,
+    "lastWriteTimeUtc": "2026-03-29T11:38:43.1930051Z",
+    "sha256": "6ab07ab383c3ef2e75b81f3c3a436bf15daa20553b693d1b4e5864b6595c0ddb",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/controls/RenderSection.tsx",
+    "exists": true,
+    "sizeBytes": 74,
+    "lastWriteTimeUtc": "2026-03-29T11:39:28.7083099Z",
+    "sha256": "4710862571a9acac7b0b5a44ad5958fc16f414d92b9177da6f940c1a61308ae9",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/controls/TextInputSection.tsx",
+    "exists": true,
+    "sizeBytes": 77,
+    "lastWriteTimeUtc": "2026-03-29T11:39:15.8744751Z",
+    "sha256": "03556719a662249fdccfee4150b0cfce49039c70e3a8d9b6b7c9823648c72752",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/3DNebula.tsx",
+    "exists": true,
+    "sizeBytes": 12330,
+    "lastWriteTimeUtc": "2026-03-21T10:56:09.0000000Z",
+    "sha256": "cfd38838cefabbf3f68a901b0afb6c1b9f062dcd13f35b3c90d203d42d505327",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/AIPulseMaster.tsx",
+    "exists": true,
+    "sizeBytes": 24766,
+    "lastWriteTimeUtc": "2026-03-21T06:19:10.0000000Z",
+    "sha256": "b95fb783f92b6b67c77dd47e77a1781f0891385c3a301334c845589b18651610",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/Check3D.tsx",
+    "exists": true,
+    "sizeBytes": 824,
+    "lastWriteTimeUtc": "2026-03-21T09:04:43.0000000Z",
+    "sha256": "32cbfb6ab91abbc6193e853ef0c6f174b5122583b89dc2aeec8c335d2028ee15",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/Hex.shaders.ts",
+    "exists": true,
+    "sizeBytes": 3580,
+    "lastWriteTimeUtc": "2026-03-29T05:38:23.6100589Z",
+    "sha256": "bb6e502daa4bc5135192cc09e217e57de1026e64b72ae3eff5be2cd6cf985925",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/HexShaderBackground.tsx",
+    "exists": true,
+    "sizeBytes": 5643,
+    "lastWriteTimeUtc": "2026-03-29T05:40:00.7960210Z",
+    "sha256": "58857187023506bd39d275e98310332e80a9012d475b0641e8494ae741b4d07d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/HexWave3D.tsx",
+    "exists": true,
+    "sizeBytes": 7515,
+    "lastWriteTimeUtc": "2026-03-21T09:20:58.0000000Z",
+    "sha256": "14a3ee7973c0b80fb30db628db2125135f51f805a9233c4d925af5e4ef48297d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/ModernMatrix3D.tsx",
+    "exists": true,
+    "sizeBytes": 14068,
+    "lastWriteTimeUtc": "2026-03-21T11:19:29.0000000Z",
+    "sha256": "f550c3e30c6d5359d7523717ef5d135a003a12a399317a7dacd49ea82e38aeb5",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/Nebula2D.tsx",
+    "exists": true,
+    "sizeBytes": 11598,
+    "lastWriteTimeUtc": "2026-03-21T11:01:49.0000000Z",
+    "sha256": "3b5983c030b97c4f72efff9c154fcb1e5ae2a3d93cc27b12249afe333a8df9ce",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/ProceduralCircuit.tsx",
+    "exists": true,
+    "sizeBytes": 16196,
+    "lastWriteTimeUtc": "2026-03-21T05:04:17.0000000Z",
+    "sha256": "7422c9d77a52b2127c84fa5d4cfb2700888e0e14df23f9bd285ce258f2c427ab",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/ProceduralCircuitPreview.tsx",
+    "exists": true,
+    "sizeBytes": 5976,
+    "lastWriteTimeUtc": "2026-03-21T05:12:44.0000000Z",
+    "sha256": "451cbede191603e176ab64ab1c0c1beebe4c5e7be6e889631e65c8aef21e84b0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experimental/SphereField3D.tsx",
+    "exists": true,
+    "sizeBytes": 8224,
+    "lastWriteTimeUtc": "2026-03-21T09:29:21.0000000Z",
+    "sha256": "994d371f3ec2276dcb6b48d7505e2debf835494ae1650de901ea10f6005c1daa",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/experiments/ModernMatrixTunnel.tsx",
+    "exists": true,
+    "sizeBytes": 15119,
+    "lastWriteTimeUtc": "2026-03-21T11:42:52.0000000Z",
+    "sha256": "547c869759c9891191f6fb4524e634fc4f566af5d682535207e8fd360d513221",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/HexProceduralGround.tsx",
+    "exists": true,
+    "sizeBytes": 9117,
+    "lastWriteTimeUtc": "2026-03-21T08:33:13.0000000Z",
+    "sha256": "47ce4a47e0fff45c60beef02b13f2164fc24d77958c5a0fb1e0d5e69b59ed500",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/fields/ColorField.tsx",
+    "exists": true,
+    "sizeBytes": 3121,
+    "lastWriteTimeUtc": "2026-09-06T15:38:58.3443687Z",
+    "sha256": "978c4f88f3821c3a416c3ddcb7c35b8713d8d331377dc4b98dcf0fa464967ddf",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/fields/NumberField.tsx",
+    "exists": true,
+    "sizeBytes": 2797,
+    "lastWriteTimeUtc": "2026-09-06T14:28:19.0898197Z",
+    "sha256": "c8cb92c63545c7a8ba9fc47797daa1e1ce34190b941a242f74542a2a29dd842a",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/InspectorPanel.tsx",
+    "exists": true,
+    "sizeBytes": 4624,
+    "lastWriteTimeUtc": "2026-09-06T15:37:34.2136305Z",
+    "sha256": "13356d8bb20d84a1114292bd316892e9625fe0c52de1f1a3f98266ef4e49e04c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/InspectorPanelLegacy.tsx",
+    "exists": true,
+    "sizeBytes": 149709,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8178732Z",
+    "sha256": "194e023ddad9c162feb5f1a9e93676078c7f1bbf5db60d16144080b4f6602ebf",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/ParticlesTab.tsx",
+    "exists": true,
+    "sizeBytes": 11226,
+    "lastWriteTimeUtc": "2026-09-05T13:17:53.2526111Z",
+    "sha256": "cbd03c36c598ea309cedb93ae2cc0de083704810c05b800e80c57be9d2299e23",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/primitives.tsx",
+    "exists": true,
+    "sizeBytes": 3485,
+    "lastWriteTimeUtc": "2026-09-05T09:26:48.1057884Z",
+    "sha256": "ef40d74e47a9e64690b4c1b84bdcdd2f0214669fba4a3767e616a0e5a9721d0b",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/BackgroundBasicTab.tsx",
+    "exists": true,
+    "sizeBytes": 23671,
+    "lastWriteTimeUtc": "2026-09-06T13:30:19.4020781Z",
+    "sha256": "89e7a432642a73a869855ecbd68270e91ea67cbf3058b49e2af3d5f9dccf10e7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/CompositionBasicTab.tsx",
+    "exists": true,
+    "sizeBytes": 3640,
+    "lastWriteTimeUtc": "2026-09-06T15:38:44.0931988Z",
+    "sha256": "8992c28972c307cd12c164a038ca115d49bbd9bf422d6f77fd79487beaa3837b",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/ExportTab.tsx",
+    "exists": true,
+    "sizeBytes": 208,
+    "lastWriteTimeUtc": "2026-03-29T11:37:38.1065766Z",
+    "sha256": "5363cc0920dd7f0e8d464a00e7ba312f5c83969a692766d4a99599bda1476740",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/GlobalTab.tsx",
+    "exists": true,
+    "sizeBytes": 174,
+    "lastWriteTimeUtc": "2026-09-05T09:38:35.2030142Z",
+    "sha256": "8e1bfb5f953187c53c67e889fc43b14ca94f59085f5c78bcd13ab661199814fb",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/ParticlesTab.tsx",
+    "exists": true,
+    "sizeBytes": 174,
+    "lastWriteTimeUtc": "2026-09-05T09:38:03.1631305Z",
+    "sha256": "ae7b27551ddc77e0f83566679f0014b56c08dae496cf2c2bbe4fb5cecf5e1b60",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/PresetsBasicTab.tsx",
+    "exists": true,
+    "sizeBytes": 2382,
+    "lastWriteTimeUtc": "2026-09-05T15:07:25.4777847Z",
+    "sha256": "7bc5ab05eef0a6c1cb4950b7364cee2caa5921e82478f24df88ad918d22732fb",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/PresetsTab.tsx",
+    "exists": true,
+    "sizeBytes": 163,
+    "lastWriteTimeUtc": "2026-09-05T09:40:53.9301719Z",
+    "sha256": "c231acf75cee510541cd50b03e7fc765d1db9b5924763c6619ec7f5321e2ed08",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/TextBasicTab.tsx",
+    "exists": true,
+    "sizeBytes": 34960,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8163598Z",
+    "sha256": "43145dc2e9984279eced6232e0b9427a09870e7f532b726e5fafc68e6045c7fe",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/tabs/TextTab.tsx",
+    "exists": true,
+    "sizeBytes": 151,
+    "lastWriteTimeUtc": "2026-09-05T09:25:37.8050799Z",
+    "sha256": "6bddbcf408eae80d5fd6bcbd469019dc01e003cd1db7fcbdba8bd117343eeb39",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/TemplatePicker.tsx",
+    "exists": true,
+    "sizeBytes": 1577,
+    "lastWriteTimeUtc": "2026-09-05T09:29:07.6250575Z",
+    "sha256": "ed950dcd6ac9f72857437e1995355f8ebfb55773fae990b173f14595b80604b4",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/Text3DTab.tsx",
+    "exists": true,
+    "sizeBytes": 15978,
+    "lastWriteTimeUtc": "2026-09-05T12:18:54.2015502Z",
+    "sha256": "62f7a32302337fdad42379173286915bee38c2764af7ebeb6f3a240a856f5f92",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/inspector/WordContentSynchronizer.tsx",
+    "exists": true,
+    "sizeBytes": 793,
+    "lastWriteTimeUtc": "2026-09-05T08:24:00.8472870Z",
+    "sha256": "7eef9a259083e4d479d72c26d80ac4e558ee43beae7d0ed630ad255e9edf59a4",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/MovableResizablePanel.tsx",
+    "exists": true,
+    "sizeBytes": 7046,
+    "lastWriteTimeUtc": "2026-03-22T06:26:43.0000000Z",
+    "sha256": "4dfb91d3fa2a68a6e4bef16db8c1c3e653ae99640b641f21e4b07e0d4cf6e3e9",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/PreviewContainer.tsx",
+    "exists": true,
+    "sizeBytes": 10452,
+    "lastWriteTimeUtc": "2026-09-07T04:09:59.0665753Z",
+    "sha256": "72c8bd291ee88d956307675996e9b50e95c973dbc9a121a73516a8bb3923f1d7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/subtitles/AutoSubtitlesTool.tsx",
+    "exists": true,
+    "sizeBytes": 1194,
+    "lastWriteTimeUtc": "2026-09-07T05:38:11.6789039Z",
+    "sha256": "39a6f2116425cfe0562bc9d0cd6df08304b5d1935a947e7e6a8af39026a9c9e9",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/subtitles/SubtitleCueEditor.tsx",
+    "exists": true,
+    "sizeBytes": 986,
+    "lastWriteTimeUtc": "2026-09-07T05:09:03.0724741Z",
+    "sha256": "6f1970cf12888462a1d9e1e6383ad5987bf7a35339a827d7803a8cb5dc512b52",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/subtitles/SubtitlePresetPicker.tsx",
+    "exists": true,
+    "sizeBytes": 558,
+    "lastWriteTimeUtc": "2026-09-07T05:09:03.0739789Z",
+    "sha256": "79453659da283191d1ef4480de1feb8deaf7841c4be1537b6b46393705434472",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/subtitles/SubtitlePreview.tsx",
+    "exists": true,
+    "sizeBytes": 576,
+    "lastWriteTimeUtc": "2026-09-07T05:09:03.0734745Z",
+    "sha256": "c62be325e3ed7821767937f893a7a10b50d9099d3b410e88a22bbcfe1a8d7660",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/subtitles/SubtitleWorkspace.tsx",
+    "exists": true,
+    "sizeBytes": 2699,
+    "lastWriteTimeUtc": "2026-09-07T05:42:35.7654264Z",
+    "sha256": "b741bbc5662d61bf6404fccf61ade170800e3f2fb33744ab7e350b461da9fc64",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/TopPrimaryControls.tsx",
+    "exists": true,
+    "sizeBytes": 488,
+    "lastWriteTimeUtc": "2026-03-29T11:38:51.5064411Z",
+    "sha256": "85814457ddbb6887fc8d82d04ff8071322521e2ea8e2d08d42193fa384b46bb0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/components/TopPrimaryControlsLegacy.tsx",
+    "exists": true,
+    "sizeBytes": 119716,
+    "lastWriteTimeUtc": "2026-09-05T12:26:44.7020376Z",
+    "sha256": "c283cacafdf7c9cce3747f4da851342090a0f30716fac569d5c109e04eac37ff",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/AnimationContext.tsx",
+    "exists": true,
+    "sizeBytes": 25462,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8188713Z",
+    "sha256": "ccb0abb9c13dcaebce645b1a251da067af0150798f5b454bb1b816c1592518d0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/batchOrchestration.ts",
+    "exists": true,
+    "sizeBytes": 3179,
+    "lastWriteTimeUtc": "2026-09-05T15:58:16.2328222Z",
+    "sha256": "91467b65a26cb8c5ec1c2e7b0d49353727b12d13120ca2600326ae4fc33663e8",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/catalog.ts",
+    "exists": true,
+    "sizeBytes": 6358,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8153576Z",
+    "sha256": "f2c62dcda0e1823c3781019e54ea42c5cd0f222de709eba0fec000a16af748a6",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/controlSchema.ts",
+    "exists": true,
+    "sizeBytes": 1616,
+    "lastWriteTimeUtc": "2026-09-06T14:49:32.6900753Z",
+    "sha256": "5e8852140073926a3cdeefc4eb618c082703b3809de272be27e30af08688b1a6",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/dualTextLayers.ts",
+    "exists": true,
+    "sizeBytes": 1710,
+    "lastWriteTimeUtc": "2026-09-06T08:31:22.4322606Z",
+    "sha256": "bd88a95d01cf0c710b52d983b2b452b4e2af5002cab207df18a77c6d69efeac1",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/EditorSessionContext.tsx",
+    "exists": true,
+    "sizeBytes": 1490,
+    "lastWriteTimeUtc": "2026-09-05T06:50:55.7386499Z",
+    "sha256": "18307f320525166cad2cb6af0d0730c9e5326875a55db68850116646c73b1570",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/ExportContext.tsx",
+    "exists": true,
+    "sizeBytes": 6644,
+    "lastWriteTimeUtc": "2026-09-06T04:51:32.0468333Z",
+    "sha256": "7a540bd1d8129bc7aad223b74de284cf4b48132542508093d708a4be9e5cf3ed",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/exportFilesystem.ts",
+    "exists": true,
+    "sizeBytes": 1685,
+    "lastWriteTimeUtc": "2026-09-05T14:51:26.7758506Z",
+    "sha256": "27047586ccf81f1c843d63a3bfb8be746a52a3d0f516d5b5347caa517d28b9f5",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/exportOrchestration.ts",
+    "exists": true,
+    "sizeBytes": 1557,
+    "lastWriteTimeUtc": "2026-09-05T15:58:22.7511892Z",
+    "sha256": "0be5a99b80a2928799f949aac1d8faad184417e52a02d2bf4e6032336b434e0e",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/exportState.ts",
+    "exists": true,
+    "sizeBytes": 1503,
+    "lastWriteTimeUtc": "2026-09-05T15:58:16.2328222Z",
+    "sha256": "ee56971e3d374e87b3df8623c1e4e67db2925335ad6df1bb9b200e09f140b943",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/grouping.ts",
+    "exists": true,
+    "sizeBytes": 614,
+    "lastWriteTimeUtc": "2026-09-05T07:46:56.5729049Z",
+    "sha256": "b32b78c84b7521f6b7370b0d3020225ed1c0a54a09163f0e940d40aeffc7bd9d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/history.ts",
+    "exists": true,
+    "sizeBytes": 1428,
+    "lastWriteTimeUtc": "2026-09-05T07:52:13.4532762Z",
+    "sha256": "4d28188d5a5c111a41e06c19f5adfd054eee7ffc79d97b2c39b16613f2a12fc7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/persistence.ts",
+    "exists": true,
+    "sizeBytes": 2783,
+    "lastWriteTimeUtc": "2026-09-05T07:36:27.3118534Z",
+    "sha256": "af5705678f9af2f3f874e6447976b7ed7b13b7bab6b158c650f0154d7d55cdcc",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/selection.ts",
+    "exists": true,
+    "sizeBytes": 3971,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8168684Z",
+    "sha256": "aa3448e4e6507aa0e8dc299150a4a0402da18d0c269a91dd74d2970657a11316",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/stillExport.ts",
+    "exists": true,
+    "sizeBytes": 348,
+    "lastWriteTimeUtc": "2026-09-07T04:00:57.0597565Z",
+    "sha256": "5f6f428eee0d71700ce69b42b23031eed360d8c9bc61e3379f6a00e5f083ccab",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/templateControlContracts.ts",
+    "exists": true,
+    "sizeBytes": 5306,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8168684Z",
+    "sha256": "81438c17a2dc218afbd4080036781704eac1b7374541b4f06b8a45437a5e12a9",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/editor/useDraftValue.ts",
+    "exists": true,
+    "sizeBytes": 1076,
+    "lastWriteTimeUtc": "2026-09-05T08:34:17.3009156Z",
+    "sha256": "4488e70f9de4e46a275f0e992be6093db4dcea6aa140e7daa0b939cf6f259e52",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/fonts/availableFonts.ts",
+    "exists": true,
+    "sizeBytes": 2779,
+    "lastWriteTimeUtc": "2026-09-06T15:10:15.8842196Z",
+    "sha256": "09222818ec75f174396713a4e50340c474a2b34e204b951ac17ca43b99137164",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/hooks/useRenderExport.ts",
+    "exists": true,
+    "sizeBytes": 13629,
+    "lastWriteTimeUtc": "2026-09-07T04:59:11.9115536Z",
+    "sha256": "4a6245799309b15f5dc85936edf029cd0902143946dc6fd9650458e61db6308c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/render/gpuDiagnostics.ts",
+    "exists": true,
+    "sizeBytes": 568,
+    "lastWriteTimeUtc": "2026-09-07T04:31:06.4301143Z",
+    "sha256": "6458a1ecac97c8c52c190adf22cb84edff81c8917470f7b621e4b312e6559b40",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/render/renderAttempts.ts",
+    "exists": true,
+    "sizeBytes": 2233,
+    "lastWriteTimeUtc": "2026-09-07T04:49:35.3596607Z",
+    "sha256": "ed720cc1dcc6b7aa6fc99597ebc0640a0329d5cbccc0630a0b6dba04a900bc88",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/render/renderCaptionedVideo.ts",
+    "exists": true,
+    "sizeBytes": 2476,
+    "lastWriteTimeUtc": "2026-09-07T05:45:25.5305442Z",
+    "sha256": "9c403ec995c89e096e4a471c7e0f38e0adf1c4f3636febe4477b66d3ced5b1f2",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/subtitles/mediaPaths.ts",
+    "exists": true,
+    "sizeBytes": 1064,
+    "lastWriteTimeUtc": "2026-09-07T05:06:19.1946021Z",
+    "sha256": "60d657aeb4e1bb2055a3abe0ec55b3447c770c01e6fea20b8ddbe3a3c67ce0e0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/subtitles/presets.ts",
+    "exists": true,
+    "sizeBytes": 281,
+    "lastWriteTimeUtc": "2026-09-07T05:00:27.7203605Z",
+    "sha256": "57f7b770fdf637b9893b8948f0c0b2e73232f7658800a88ef188f42fa3630ec7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/subtitles/segmentation.ts",
+    "exists": true,
+    "sizeBytes": 975,
+    "lastWriteTimeUtc": "2026-09-07T05:00:27.7203605Z",
+    "sha256": "a118e5ff2450b44cdde6e6affafb0dcbb4c082afa9b199e7a632f69b4a4d06e5",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/subtitles/types.ts",
+    "exists": true,
+    "sizeBytes": 522,
+    "lastWriteTimeUtc": "2026-09-07T05:06:58.1749731Z",
+    "sha256": "936a69e349e192abe961d9c13379cc3783deda36d334da5311c2290a012befc4",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/subtitles/validation.ts",
+    "exists": true,
+    "sizeBytes": 654,
+    "lastWriteTimeUtc": "2026-09-07T05:00:27.7203605Z",
+    "sha256": "e972566746f96bfa5340c040dd67b747599a84a00be9b6fb1b8dfd7bd97232b3",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/types/animation.ts",
+    "exists": true,
+    "sizeBytes": 11680,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8153576Z",
+    "sha256": "d1f8d0ac5febde0c971ad7b953e8a2da23ffc48ce0890b01bbfa86e2644a8d40",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/lib/videoConfig.ts",
+    "exists": true,
+    "sizeBytes": 8076,
+    "lastWriteTimeUtc": "2026-09-06T14:24:03.0961409Z",
+    "sha256": "0aa8dd6b966bb1522816a9ce46367aba02ed6fbc404f600e9353b1c5fc8d46ce",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/crystalAppearance.ts",
+    "exists": true,
+    "sizeBytes": 607,
+    "lastWriteTimeUtc": "2026-09-05T13:11:25.9279613Z",
+    "sha256": "8e15bb6f0aa10609979843b5650a63ab043cd96d8cec2589318378fecfc5307f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/halftoneWaveField.ts",
+    "exists": true,
+    "sizeBytes": 1121,
+    "lastWriteTimeUtc": "2026-09-06T07:11:08.6843474Z",
+    "sha256": "e5297570b3e780bacc5b5211bfbcd447e309b318571963a8c6d7d866f6f1a749",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+    "exists": true,
+    "sizeBytes": 1705,
+    "lastWriteTimeUtc": "2026-09-06T16:48:31.1963909Z",
+    "sha256": "66026f5babcb9bdff20fae122c478390b833957e35edbc65878b818934d4854e",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/neonBulbAlternation.ts",
+    "exists": true,
+    "sizeBytes": 4381,
+    "lastWriteTimeUtc": "2026-09-06T08:51:55.7589631Z",
+    "sha256": "53e8f1a7eca9f68b8ba349cdb2401d48b1a557edb6520dd7047fde0c01fb367c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/paperConfettiSettle.ts",
+    "exists": true,
+    "sizeBytes": 1283,
+    "lastWriteTimeUtc": "2026-09-06T07:16:50.4552963Z",
+    "sha256": "4994c39028f94ce951a1389148643d661b62fc5874fa91b194a7a42fa7320e2f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/ParticleBackground.tsx",
+    "exists": true,
+    "sizeBytes": 63844,
+    "lastWriteTimeUtc": "2026-09-06T10:46:14.4178300Z",
+    "sha256": "fb3221396d784ee2e4a8a3d58d025d9d318ab37d3df174ca27e30eb374d743fc",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/RetroGrid.shaders.ts",
+    "exists": true,
+    "sizeBytes": 2975,
+    "lastWriteTimeUtc": "2026-03-29T05:38:23.4971945Z",
+    "sha256": "6c516a74174877ea498483e714196b5c6ebbc8914db6b1cbe3c110be05616a92",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+    "exists": true,
+    "sizeBytes": 4483,
+    "lastWriteTimeUtc": "2026-03-29T05:38:48.3190930Z",
+    "sha256": "de645cdb876ed7917ad951554bc7864f72ac8268fe4d1dfc4c6db3f7a20e0200",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+    "exists": true,
+    "sizeBytes": 17729,
+    "lastWriteTimeUtc": "2026-03-21T22:20:41.0000000Z",
+    "sha256": "076d150e81cc19221aab0d0ce3bc979e571021cf73fb8170caa9dfffd1adbc07",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/stellarDepthField.ts",
+    "exists": true,
+    "sizeBytes": 7355,
+    "lastWriteTimeUtc": "2026-09-06T09:17:28.2216458Z",
+    "sha256": "0f72c8bff8573999a3cdb4fc4a239f6314f112deed85877b5ee83bd9c794d21c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+    "exists": true,
+    "sizeBytes": 9427,
+    "lastWriteTimeUtc": "2026-09-06T09:35:58.4564770Z",
+    "sha256": "d06666a9a0b6778c4c9af2f347ebd68134ddefd223196347bb2317f7a6e05934",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/CaptionedVideoComposition.tsx",
+    "exists": true,
+    "sizeBytes": 971,
+    "lastWriteTimeUtc": "2026-09-07T05:07:46.5265386Z",
+    "sha256": "232a54c76536209ed8e8cb958fdd090a8dbf42bd87e8dd68394f4d4b9be959a3",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/HexReliefWaveBackground.tsx",
+    "exists": true,
+    "sizeBytes": 8130,
+    "lastWriteTimeUtc": "2026-03-21T07:53:25.0000000Z",
+    "sha256": "8f9025184baa200ce23ead2181df81e3de6d821840c3defe693cd00a46a325d1",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/HyperTunnelBackground.tsx",
+    "exists": true,
+    "sizeBytes": 5303,
+    "lastWriteTimeUtc": "2026-03-21T07:20:19.0000000Z",
+    "sha256": "fad96bb318c23deb2ee1b348eed7c5f3baf315dd6e05e6b84cbcebf28410b4fd",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/NeuralLatticeBackground.tsx",
+    "exists": true,
+    "sizeBytes": 5336,
+    "lastWriteTimeUtc": "2026-03-21T07:21:03.0000000Z",
+    "sha256": "122bd4325dca8966e754b94dc59429be585c2e96baf6eebe43a5f18c5719ec97",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/QuantumFlux.shaders.ts",
+    "exists": true,
+    "sizeBytes": 4108,
+    "lastWriteTimeUtc": "2026-03-29T05:38:23.6221585Z",
+    "sha256": "2de7c7b00b81738d07ade106f7d12b3d5206a9f3eae043c0d3b0ec726b043286",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/QuantumFluxShaderBackground.tsx",
+    "exists": true,
+    "sizeBytes": 2972,
+    "lastWriteTimeUtc": "2026-03-29T05:39:27.6417056Z",
+    "sha256": "1f39f56d1d423744f7e7f8c2fa3541f16ec133f706ad064f71448cbeaeaae264",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/RetroGridTiltBackground.tsx",
+    "exists": true,
+    "sizeBytes": 6595,
+    "lastWriteTimeUtc": "2026-03-22T09:15:27.0000000Z",
+    "sha256": "703c4d5b774726f8c716a3244982ed30e9b12f85ff25e4fb6513886b1f9f51be",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/index.ts",
+    "exists": true,
+    "sizeBytes": 145,
+    "lastWriteTimeUtc": "2026-03-21T07:21:20.0000000Z",
+    "sha256": "12d0fd9c4ebcb671a4eb08b3dc6a844390ed2fb1a89046f2bc893e50c7060f05",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/experimental/RootExperimental.tsx",
+    "exists": true,
+    "sizeBytes": 6546,
+    "lastWriteTimeUtc": "2026-03-22T08:06:07.0000000Z",
+    "sha256": "1ef5e0d554fc44cf28348adaef796d9223ebea4ae3e20bc534051c57422309b3",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/index.ts",
+    "exists": true,
+    "sizeBytes": 109,
+    "lastWriteTimeUtc": "2026-03-18T22:12:50.0000000Z",
+    "sha256": "8ad7cfb50e32546485a1a2ef5e468e5b6bdee2bc5c9b92d08882f96e3750b4a3",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/MainComposition.tsx",
+    "exists": true,
+    "sizeBytes": 7350,
+    "lastWriteTimeUtc": "2026-09-06T14:39:20.7224081Z",
+    "sha256": "3714bd6aa3fd1a8cf23131692f0e3eac33b2f1bb4d3e387dd57d15142bb0b1de",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/MasterMotionLayer.tsx",
+    "exists": true,
+    "sizeBytes": 1301,
+    "lastWriteTimeUtc": "2026-03-29T10:45:54.7473324Z",
+    "sha256": "5a13ab390d01327129da2f400f6416bee6ff9345c981e2701f743c636a56cebf",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/Root.tsx",
+    "exists": true,
+    "sizeBytes": 6385,
+    "lastWriteTimeUtc": "2026-09-07T05:07:46.5275407Z",
+    "sha256": "07bcf490db0b4a44c368f1d213ca787fac6619cc8151a6d939e12f743ec6bc99",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/AppleStyleText.tsx",
+    "exists": true,
+    "sizeBytes": 2951,
+    "lastWriteTimeUtc": "2026-03-30T02:49:13.4224757Z",
+    "sha256": "1d27ef0e92207fbf61ccc3a96397f092e5bf95b3e4cbc57bc354deda564558b9",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/BarRevealEffect.tsx",
+    "exists": true,
+    "sizeBytes": 7711,
+    "lastWriteTimeUtc": "2026-09-05T10:31:03.0158586Z",
+    "sha256": "ad2c42825461412200bd954288169fb894948ac6e80ca68f87631195147b7ff1",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/BlurRevealEffect.tsx",
+    "exists": true,
+    "sizeBytes": 1883,
+    "lastWriteTimeUtc": "2026-03-23T08:17:51.0177213Z",
+    "sha256": "d524c9c812aa93b4f93f02fe699c9f366260c0cbc002157e373a07a4731ce383",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/BlurringTextCascade.tsx",
+    "exists": true,
+    "sizeBytes": 3145,
+    "lastWriteTimeUtc": "2026-03-30T02:49:24.5600912Z",
+    "sha256": "d8bb0041847f8b8ce471aa7000b006923716becf571b151eb9103e3e012c6ba0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/BubblePopEffect.tsx",
+    "exists": true,
+    "sizeBytes": 3393,
+    "lastWriteTimeUtc": "2026-03-29T08:55:49.9336802Z",
+    "sha256": "0cc651b74a9427dbb4ede8804e9aa7eb8796cd1c2180988c55a86e9bd6ce40ac",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/CinematicText.tsx",
+    "exists": true,
+    "sizeBytes": 2758,
+    "lastWriteTimeUtc": "2026-03-23T08:18:12.9534434Z",
+    "sha256": "f07bcaae3e19ef5c0a6aa69885b799bbd34d4f98213033f61a09cbcfff5bb81b",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/CleanModernText.tsx",
+    "exists": true,
+    "sizeBytes": 3150,
+    "lastWriteTimeUtc": "2026-03-30T02:49:32.5706585Z",
+    "sha256": "444c3fe67627fc1f90ada650ef95234b90e109681eb3809e67e39da4bfdf5f87",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/DualTextLayers.tsx",
+    "exists": true,
+    "sizeBytes": 1620,
+    "lastWriteTimeUtc": "2026-09-06T14:27:07.5525173Z",
+    "sha256": "f3f34e89a7c150a2ec54b1f1a22763949c1db52febf6b24ba66fe10b0fbc3de3",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/Extruded3DEffect.tsx",
+    "exists": true,
+    "sizeBytes": 27348,
+    "lastWriteTimeUtc": "2026-09-05T12:09:11.4869182Z",
+    "sha256": "ff86f275715e16d0aadcda0f48238c52e9127b440af731d6771e095b67ab2354",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/extrudedAppearance.ts",
+    "exists": true,
+    "sizeBytes": 749,
+    "lastWriteTimeUtc": "2026-09-05T12:08:31.7776615Z",
+    "sha256": "c75a41ca544b6b8432f1d1c70b776887a87c4c31d53ec51bff754b2d3d09c936",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/FlickerEffect.tsx",
+    "exists": true,
+    "sizeBytes": 2963,
+    "lastWriteTimeUtc": "2026-03-29T08:55:16.2080213Z",
+    "sha256": "5deb43cc83ac1c52ae78abeaa13138ff1e48499853aac5ef5aed1f065a94008d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+    "exists": true,
+    "sizeBytes": 3977,
+    "lastWriteTimeUtc": "2026-03-30T02:49:42.3445695Z",
+    "sha256": "ed627d6b69ef4443a377065e1dddb9b6d10ff53bb4584bce9dd394ad42c8ab52",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/FlyThroughEffect.tsx",
+    "exists": true,
+    "sizeBytes": 2885,
+    "lastWriteTimeUtc": "2026-03-23T08:18:58.1272633Z",
+    "sha256": "23a614b882c80c0867e318ebe91d53d58fdf12e6b68758afb8f38bdec0e60777",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/FollowerEffect.tsx",
+    "exists": true,
+    "sizeBytes": 2708,
+    "lastWriteTimeUtc": "2026-03-29T08:55:23.0206913Z",
+    "sha256": "09113b6d970b35a188f103f881a268f6961f75e6d62b24b916bdf2190b7ff444",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/FollowerGrowRotate.tsx",
+    "exists": true,
+    "sizeBytes": 3066,
+    "lastWriteTimeUtc": "2026-03-30T02:49:51.5029693Z",
+    "sha256": "bcf2f8e20d584953d6e0b57f60779cab174683255fb5013599da77fa29474816",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/GlitchEffect.tsx",
+    "exists": true,
+    "sizeBytes": 3044,
+    "lastWriteTimeUtc": "2026-03-23T08:18:23.4188397Z",
+    "sha256": "be54f27bd98401cccbaf65cd09c7006662dc7f280d3d8be0562e9b22c1788d52",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/GlyphTileAssemble.tsx",
+    "exists": true,
+    "sizeBytes": 1043,
+    "lastWriteTimeUtc": "2026-09-06T13:34:50.6266748Z",
+    "sha256": "4d5c455896d702f28bf6c680ab00948e711f36a264d97461e54c540530de537e",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/InkStampPrint.tsx",
+    "exists": true,
+    "sizeBytes": 3588,
+    "lastWriteTimeUtc": "2026-09-06T14:31:48.0282941Z",
+    "sha256": "a46d1279d9edeb490829867b01505f1dbc203aacbac6150db4cefaf04a8f714d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/inkStampUtils.ts",
+    "exists": true,
+    "sizeBytes": 1550,
+    "lastWriteTimeUtc": "2026-09-06T06:36:10.2430913Z",
+    "sha256": "f89017ada412d10fd0b799994b70de0b6b44c95ad155092a4f97ba1dade8c04f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+    "exists": true,
+    "sizeBytes": 18514,
+    "lastWriteTimeUtc": "2026-03-30T02:39:16.3771332Z",
+    "sha256": "6690d9f889d814c200c30dd0ef2a7520228935f1990f512a23c2d9a56475c79d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/KineticSlideIn.tsx",
+    "exists": true,
+    "sizeBytes": 4956,
+    "lastWriteTimeUtc": "2026-03-30T02:50:18.1219709Z",
+    "sha256": "e769917043aa0899425b9c12d208112541cffd14e7e2aaf336365e6329c873e5",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/NeonPulseEffect.tsx",
+    "exists": true,
+    "sizeBytes": 2069,
+    "lastWriteTimeUtc": "2026-03-29T10:20:42.8203613Z",
+    "sha256": "d23c648faad2db4c0bd58ad160e84a02742e6eec09bf4e43e51748b6b91804d6",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/PaperCutoutAssemble.tsx",
+    "exists": true,
+    "sizeBytes": 1419,
+    "lastWriteTimeUtc": "2026-09-06T14:29:53.3976088Z",
+    "sha256": "ffe97e470049cceefe943e86594e28d37b3625c529766a58501cc762d9b9afd8",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/paperCutoutUtils.ts",
+    "exists": true,
+    "sizeBytes": 899,
+    "lastWriteTimeUtc": "2026-09-06T14:29:54.2642321Z",
+    "sha256": "e04856f8e1b3f1a99c078ac5b073630c3fa131d1d4bc40ca1a85fa25f1be4cfe",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/registry.ts",
+    "exists": true,
+    "sizeBytes": 3309,
+    "lastWriteTimeUtc": "2026-09-07T09:06:59.8153576Z",
+    "sha256": "5691d087f477a8912c1042aadc7e38c69a518c8a8e069654a2c7c49ccf0cfb6e",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/RotationRevealEffect.tsx",
+    "exists": true,
+    "sizeBytes": 2708,
+    "lastWriteTimeUtc": "2026-03-29T08:55:30.9888039Z",
+    "sha256": "bacbbb8a096d1382ede66f1ef52492d4df603d8d48634cbbf5431a9de5673dc7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/ScrambleEffect.tsx",
+    "exists": true,
+    "sizeBytes": 3527,
+    "lastWriteTimeUtc": "2026-03-29T08:55:41.0065035Z",
+    "sha256": "e0cbb7ac00d4dc85c57e2e234f373e64872d94e2814e51fb4f887d88eaea30cf",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/ShakeFlickerEffect.tsx",
+    "exists": true,
+    "sizeBytes": 2355,
+    "lastWriteTimeUtc": "2026-03-23T08:18:06.6326681Z",
+    "sha256": "3657bcb88011b30c3b99a83a07ffd2db96ba39b0111270b530cd912fac854e2a",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/ShapeRevealEffect.tsx",
+    "exists": true,
+    "sizeBytes": 5105,
+    "lastWriteTimeUtc": "2026-03-28T02:36:00.5010999Z",
+    "sha256": "bba5ac6de10748ba5d9e0082b8191290cbc3b04b5527852ddaa67c344c0f558c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/SlideRevealEffect.tsx",
+    "exists": true,
+    "sizeBytes": 2944,
+    "lastWriteTimeUtc": "2026-03-23T08:18:50.4954950Z",
+    "sha256": "d608dd19dc2138e99d7f4626f97b6e9df344c640ad5e431041beb33e2ad223dd",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/SmoothSlidingText.tsx",
+    "exists": true,
+    "sizeBytes": 4606,
+    "lastWriteTimeUtc": "2026-03-30T02:50:36.5583864Z",
+    "sha256": "1fe4a0233697cffc0de2b0e5730b9bf61fe455ade01dad90632085b855f2750d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/TypewriterEffect.tsx",
+    "exists": true,
+    "sizeBytes": 3109,
+    "lastWriteTimeUtc": "2026-09-05T11:23:09.9236341Z",
+    "sha256": "eca64e30f545aa8b0ee9bfa3763f7667033f616bf85e11a5619f6604affa11b0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/typewriterUtils.ts",
+    "exists": true,
+    "sizeBytes": 1142,
+    "lastWriteTimeUtc": "2026-09-05T11:23:09.9236341Z",
+    "sha256": "817f08ad174d165c8514d2ff6843196dd6731537178d27c3a187b73ebc823545",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/VariableWeightWave.tsx",
+    "exists": true,
+    "sizeBytes": 1289,
+    "lastWriteTimeUtc": "2026-09-06T14:30:56.0391444Z",
+    "sha256": "93c6cc0f1eb2dd6f478dfb939cbc7267340781163ba643596acd46f2daa81ba8",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/ViralTextEffect.tsx",
+    "exists": true,
+    "sizeBytes": 7041,
+    "lastWriteTimeUtc": "2026-03-29T07:41:16.1181099Z",
+    "sha256": "82357084f0d89965ba36058cefdbb7b87924a9263616b036a6e93a619e7438ee",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/WipeRevealEffect.tsx",
+    "exists": true,
+    "sizeBytes": 1848,
+    "lastWriteTimeUtc": "2026-03-23T08:17:40.1366181Z",
+    "sha256": "b5c75691f869fab48f9f6703c8f9e63bda366e86e2cab27469214e0521f45d48",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/WordHighlightTracker.tsx",
+    "exists": true,
+    "sizeBytes": 1257,
+    "lastWriteTimeUtc": "2026-09-06T13:34:50.6276770Z",
+    "sha256": "32f974de2f6fa5b31c582abe4cd15ac92e4184a68109aeb8960ac9eb3a7dc96c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/templates/wordHighlightUtils.ts",
+    "exists": true,
+    "sizeBytes": 304,
+    "lastWriteTimeUtc": "2026-09-06T04:22:58.3573617Z",
+    "sha256": "d0eedb0bc1149e649b8db953b164e4c5d72b7bc08d70131011c8f192c44392f4",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/text/StyledRangeText.tsx",
+    "exists": true,
+    "sizeBytes": 7272,
+    "lastWriteTimeUtc": "2026-03-23T09:22:09.6664740Z",
+    "sha256": "275b3b1a918b652405a6c2246d60eb92a653154f37876ba6fb5aaa4954918516",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/remotion/useMotionFrame.ts",
+    "exists": true,
+    "sizeBytes": 1408,
+    "lastWriteTimeUtc": "2026-03-19T10:18:09.0000000Z",
+    "sha256": "00754b2fef5f0af600e029d26487bb0749aeefa1538befd7adbc5f4e233a02ba",
+    "attributes": "Archive"
+  },
+  {
+    "path": "src/types/desktop-fonts.d.ts",
+    "exists": true,
+    "sizeBytes": 149,
+    "lastWriteTimeUtc": "2026-09-06T11:15:49.4964924Z",
+    "sha256": "8e44593848feff0473f075af9f361c45ce3d4eb5c352f7ad123f5639df3fd9ac",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tailwind.config.ts",
+    "exists": true,
+    "sizeBytes": 407,
+    "lastWriteTimeUtc": "2026-03-18T22:07:20.0000000Z",
+    "sha256": "8880e4796c3e98b43dc5ff31b58960cf23324c0c46fba345f985c98f34dc126d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/available-fonts.test.ts",
+    "exists": true,
+    "sizeBytes": 570,
+    "lastWriteTimeUtc": "2026-09-06T11:15:16.2975444Z",
+    "sha256": "6ed8aae4b60822d933cd18e1fa2a00367b37a9e84e67ac4a95ff8a3d11d37c2f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/background-basic.test.tsx",
+    "exists": true,
+    "sizeBytes": 2451,
+    "lastWriteTimeUtc": "2026-09-05T13:43:38.4507166Z",
+    "sha256": "dec12fb655042f0a4d5f65b58a3be00c2934e72958886cc736309b5e73aad487",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/background-contract.test.ts",
+    "exists": true,
+    "sizeBytes": 1585,
+    "lastWriteTimeUtc": "2026-09-06T16:49:22.3952029Z",
+    "sha256": "aab8e42002fc024be5ab99a62f340ca9cafdcbd777b2a6b0d96648b6b4e350e2",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/background-representatives.test.tsx",
+    "exists": true,
+    "sizeBytes": 3013,
+    "lastWriteTimeUtc": "2026-09-06T09:23:56.1500267Z",
+    "sha256": "146138467a801b15a8709f3c51b9721e9c277dc8dbde88da5ae2a69b2ec80494",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/batch-orchestration.test.ts",
+    "exists": true,
+    "sizeBytes": 4230,
+    "lastWriteTimeUtc": "2026-09-05T15:25:22.3765244Z",
+    "sha256": "5e01e3824db68b34cefdbca5f3bd4a328fe31bb380c497e58e177f685eb6d3bd",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/catalog.test.ts",
+    "exists": true,
+    "sizeBytes": 1270,
+    "lastWriteTimeUtc": "2026-09-07T09:06:18.9565241Z",
+    "sha256": "2c6593780d170f62bfce56e640848a8c5a1ce177de60004116d1a4cbc192e206",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/composition-layout.test.tsx",
+    "exists": true,
+    "sizeBytes": 1172,
+    "lastWriteTimeUtc": "2026-09-06T14:39:05.8880032Z",
+    "sha256": "5a5296e931fd4b9cdc8562e7f498c6454f447c7c7ac7f68299317cf098905055",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/control-schema.test.ts",
+    "exists": true,
+    "sizeBytes": 740,
+    "lastWriteTimeUtc": "2026-09-05T09:20:53.3628058Z",
+    "sha256": "d682227b7ece57104390cf548655e69c6d4456f522c2b9ad820de434d438638e",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/crystal-appearance.test.ts",
+    "exists": true,
+    "sizeBytes": 580,
+    "lastWriteTimeUtc": "2026-09-05T13:11:25.9294649Z",
+    "sha256": "146cbccde9737a1e5e6153114bfec8eba98120046cbed5b903e02b03f03588cf",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/desktop-package-config.test.ts",
+    "exists": true,
+    "sizeBytes": 2149,
+    "lastWriteTimeUtc": "2026-09-07T06:44:47.5023504Z",
+    "sha256": "97f88d9dd85a9f6f1eb54b42cb978ba5ef29213a9b1e9ed692cab3e0d62fd5aa",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/dual-speed-integration.test.tsx",
+    "exists": true,
+    "sizeBytes": 2127,
+    "lastWriteTimeUtc": "2026-09-06T14:27:26.2151613Z",
+    "sha256": "0f3902d6aee04dd884f44b1e66a40ec2d641abf20d5f4cbffbe5c4c47006bea4",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/dual-text-layers.test.ts",
+    "exists": true,
+    "sizeBytes": 1846,
+    "lastWriteTimeUtc": "2026-09-06T08:30:34.8169948Z",
+    "sha256": "6ea1d9d418095795028f2b63d33f8e52b1620fc2a379615d8ffa08d6ab6fa028",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/duration-fit.test.tsx",
+    "exists": true,
+    "sizeBytes": 1784,
+    "lastWriteTimeUtc": "2026-09-06T14:33:05.2805055Z",
+    "sha256": "ee442905a72090172e9cbd4e801b30ff17c0c40f584d36c0dfa7cf2395795351",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/duration-migration.test.tsx",
+    "exists": true,
+    "sizeBytes": 2621,
+    "lastWriteTimeUtc": "2026-09-06T14:23:37.1423019Z",
+    "sha256": "8a95af9fce169c6f7029f98eefacfcd6878c268a150e4b3acdcede4b2b94fad7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/duration.test.ts",
+    "exists": true,
+    "sizeBytes": 2859,
+    "lastWriteTimeUtc": "2026-09-06T14:23:37.1423019Z",
+    "sha256": "e46b7a9a773245a5886c0e5e75a1b734d8daab733101366de74a0e72d9649c39",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/editor-integration.test.tsx",
+    "exists": true,
+    "sizeBytes": 6407,
+    "lastWriteTimeUtc": "2026-09-05T08:36:23.1192230Z",
+    "sha256": "5abd51b5a5de2a8a80c815d850e2ec5e5cda3231f51909a0800f4d3c449ff5a0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/export-filesystem.test.ts",
+    "exists": true,
+    "sizeBytes": 11710,
+    "lastWriteTimeUtc": "2026-09-05T16:19:18.2531342Z",
+    "sha256": "1613e3ddbf80fb9b505d40bb7e1c1d89c1012097b0d2e0bb4bfc1ffc0e0c32f7",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/export-orchestration.test.ts",
+    "exists": true,
+    "sizeBytes": 3818,
+    "lastWriteTimeUtc": "2026-09-05T15:25:55.8449209Z",
+    "sha256": "38d577d02873fe6d8608fc7e27039c2603f8da4efe6a7ca483c1da526f1abeb0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/export-state.test.ts",
+    "exists": true,
+    "sizeBytes": 1782,
+    "lastWriteTimeUtc": "2026-09-05T13:49:54.4709577Z",
+    "sha256": "157330874997383cefd32f7cfa9a80788e9e6c8cb6015145bd2b433f50762641",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/extruded-appearance.test.ts",
+    "exists": true,
+    "sizeBytes": 949,
+    "lastWriteTimeUtc": "2026-09-05T12:08:58.0636703Z",
+    "sha256": "f7106a2d252ff2527726cc3b2c2a8ad8d9a6dd9f6be9087d00769377f9cb7893",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/family-representatives.test.tsx",
+    "exists": true,
+    "sizeBytes": 4218,
+    "lastWriteTimeUtc": "2026-09-06T04:44:10.9046236Z",
+    "sha256": "27e02e890535f13f03df23e278cd7d9a295bb16424e14407dc6d3b70a05cdba9",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/fields.test.tsx",
+    "exists": true,
+    "sizeBytes": 3444,
+    "lastWriteTimeUtc": "2026-09-06T14:27:58.1927676Z",
+    "sha256": "2b3c41220e21a46cf07cfeeea0bc190cd44180278f68c0928e394e07dfeffbad",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/gpu-policy.test.ts",
+    "exists": true,
+    "sizeBytes": 1795,
+    "lastWriteTimeUtc": "2026-09-07T04:46:32.8394205Z",
+    "sha256": "0bfea07e839fc49b59354bb0cc4fd9b1579063fefc81b1d6ad7f614c40c556ad",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/gpu-render-integration.test.ts",
+    "exists": true,
+    "sizeBytes": 3980,
+    "lastWriteTimeUtc": "2026-09-07T04:49:58.9546086Z",
+    "sha256": "a865e011ec49506c04b31e89f7c0486046b0726c6e1307cb7c8cef903fd309b3",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/grouping.test.ts",
+    "exists": true,
+    "sizeBytes": 762,
+    "lastWriteTimeUtc": "2026-09-05T07:46:56.5729049Z",
+    "sha256": "f80787a724ff08a5295f1778dbb7d2ae68a8a68ac5f241230c6970321e42c708",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/halftone-wave-field.test.ts",
+    "exists": true,
+    "sizeBytes": 900,
+    "lastWriteTimeUtc": "2026-09-06T07:10:50.3044998Z",
+    "sha256": "763121bf2e090cfa93fe11718dd080b6816357e390722d18662f9b418e498c6d",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/history.test.ts",
+    "exists": true,
+    "sizeBytes": 1455,
+    "lastWriteTimeUtc": "2026-09-05T07:52:25.2125894Z",
+    "sha256": "34affd40c1bfb0e079acd19995e75f83ad1bb6a91ac83dd997eb88c3251a8f19",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/ink-speed.test.tsx",
+    "exists": true,
+    "sizeBytes": 1813,
+    "lastWriteTimeUtc": "2026-09-06T14:31:28.4270909Z",
+    "sha256": "0a6aaeb37b9cf7e1e8b6474390d3b3d5727fd88e80ee4e557088b03ce866e856",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/ink-stamp.test.ts",
+    "exists": true,
+    "sizeBytes": 3159,
+    "lastWriteTimeUtc": "2026-09-06T06:35:48.6198907Z",
+    "sha256": "a4d630ed485688c9b36ec74fad98466e4e7738a4ee3e6cf23208e634d0be74ec",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/inspector-tabs.test.tsx",
+    "exists": true,
+    "sizeBytes": 10080,
+    "lastWriteTimeUtc": "2026-09-06T11:05:41.3437457Z",
+    "sha256": "c66126da2da3080a5e70ce2b825a9cc87e5f68fb43d1ba29fbd8976cde124591",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/neon-bulb-alternation.test.ts",
+    "exists": true,
+    "sizeBytes": 4025,
+    "lastWriteTimeUtc": "2026-09-06T08:51:25.7297423Z",
+    "sha256": "92c28190c594f57b6925fd11230cb947d0a15c56beec5f852241e39a14e3da82",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/paper-clock.test.tsx",
+    "exists": true,
+    "sizeBytes": 1467,
+    "lastWriteTimeUtc": "2026-09-06T14:29:27.0786265Z",
+    "sha256": "583f5ce1adf7fc4cbbd1167b979633aaf87829c570a18a312368b2aeba74a07a",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/paper-confetti-settle.test.ts",
+    "exists": true,
+    "sizeBytes": 627,
+    "lastWriteTimeUtc": "2026-09-06T07:16:50.4552963Z",
+    "sha256": "3347682aa80c710d20950d3e039a47eae5a358dccb5be0db528ba473f80ef6c6",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/paper-cutout.test.ts",
+    "exists": true,
+    "sizeBytes": 1483,
+    "lastWriteTimeUtc": "2026-09-06T05:20:54.6630196Z",
+    "sha256": "3f3b1cb4028501863c31b1840021167f7c9e23f6f5a653c0205d8b19be48986f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/particles-tab.test.tsx",
+    "exists": true,
+    "sizeBytes": 1554,
+    "lastWriteTimeUtc": "2026-09-05T13:23:32.6115718Z",
+    "sha256": "1909237b416cca64f34e0ba24a829d86fda19c1e07421f7dbe0ccd77f5fe7adc",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/persistence.test.ts",
+    "exists": true,
+    "sizeBytes": 833,
+    "lastWriteTimeUtc": "2026-09-05T07:30:15.6884326Z",
+    "sha256": "8613f851cd7685f7338d959ba81134a9304dc46a4065fe26842bbcc3f551dde6",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/preset-migration.test.ts",
+    "exists": true,
+    "sizeBytes": 2203,
+    "lastWriteTimeUtc": "2026-09-07T09:06:18.9565241Z",
+    "sha256": "b39c4c2518932383295340e3c3df6cb3fa9a9f02ee2f99825565e22d9284d810",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/presets-and-tabs.test.tsx",
+    "exists": true,
+    "sizeBytes": 56946,
+    "lastWriteTimeUtc": "2026-09-06T09:23:56.1515439Z",
+    "sha256": "7f8e959e36ae00c7e5f27d5cab05cbc8cfd23dbe5fa443c83ad8659b6e6aac59",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/render-route-duration.test.ts",
+    "exists": true,
+    "sizeBytes": 2655,
+    "lastWriteTimeUtc": "2026-09-06T14:25:29.3297254Z",
+    "sha256": "e33cd4ec0da66218e57affdd5354cba3b3e8d1d79e35ffb576e37f1ee46e6c50",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/render-single-pass-contract.test.ts",
+    "exists": true,
+    "sizeBytes": 3931,
+    "lastWriteTimeUtc": "2026-09-07T04:56:30.8217021Z",
+    "sha256": "06ff4ec11620494bf0447620f365ef3750a54db8e32ba6e7cb17619c8a7363d8",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/selection.test.ts",
+    "exists": true,
+    "sizeBytes": 3941,
+    "lastWriteTimeUtc": "2026-09-06T09:20:00.6794319Z",
+    "sha256": "9634c2812e162666f6ae21d7b95b62c40d2b5aefa6c4178fa73514712d601241",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/session-persistence.test.tsx",
+    "exists": true,
+    "sizeBytes": 8711,
+    "lastWriteTimeUtc": "2026-09-05T16:28:15.2728927Z",
+    "sha256": "ad1f93590e49a96f8f9080e859e2a64b775a5bb27048100b0f0b7414b01f7265",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/stellar-depth-field.test.ts",
+    "exists": true,
+    "sizeBytes": 5894,
+    "lastWriteTimeUtc": "2026-09-06T09:16:22.5955766Z",
+    "sha256": "9e9b4abd7572bf56329cfe79e5058b0212876afe59ef5d7a275a1b541d0645a0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/still-export-integration.test.tsx",
+    "exists": true,
+    "sizeBytes": 8090,
+    "lastWriteTimeUtc": "2026-09-07T08:40:16.1103561Z",
+    "sha256": "a37c14a3642554aea457bde1901714fd9a4af61cfb1b5caaa78b6929b66be739",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/still-export.test.ts",
+    "exists": true,
+    "sizeBytes": 534,
+    "lastWriteTimeUtc": "2026-09-07T04:01:44.3120724Z",
+    "sha256": "ba5935529c99e213e77c86e2ddc5972d8d5b3b4145080273975abbd2f87d6bf1",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/subtitle-composition.test.tsx",
+    "exists": true,
+    "sizeBytes": 540,
+    "lastWriteTimeUtc": "2026-09-07T05:07:56.1702873Z",
+    "sha256": "86e43eb27b73fddaf371368b571c8b9b265f2720ba156aafe009bfb87e2650c2",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/subtitle-render.test.ts",
+    "exists": true,
+    "sizeBytes": 7325,
+    "lastWriteTimeUtc": "2026-09-07T05:51:10.6610227Z",
+    "sha256": "3463273332704d9eebdfa9a370ed45a5a7eb9fd9ce33dfd63583f341e72c8a0a",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/subtitle-segmentation.test.ts",
+    "exists": true,
+    "sizeBytes": 400,
+    "lastWriteTimeUtc": "2026-09-07T05:00:27.7203605Z",
+    "sha256": "9ac24f016cd465b4299fd6d32a26e134728fbf87c25e539be0d661f841f2999a",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/subtitle-transcription.test.ts",
+    "exists": true,
+    "sizeBytes": 588,
+    "lastWriteTimeUtc": "2026-09-07T05:06:58.1749731Z",
+    "sha256": "4faf751f6138996b74906907944c7a3c2c92c1a74311f131f24cddcc68d6065c",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/subtitle-ui.test.tsx",
+    "exists": true,
+    "sizeBytes": 605,
+    "lastWriteTimeUtc": "2026-09-07T05:09:03.0739789Z",
+    "sha256": "c7c32e72ad44dbde87c9eb63f7e1316f453bc6faf179d8a7067f673fcff44655",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/subtitle-upload.test.ts",
+    "exists": true,
+    "sizeBytes": 644,
+    "lastWriteTimeUtc": "2026-09-07T05:06:11.6025909Z",
+    "sha256": "2119831d7a8bdc52220bd2c710ceb546b7121a031af9fe06cdf495dd04e56a53",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/subtitle-validation.test.ts",
+    "exists": true,
+    "sizeBytes": 392,
+    "lastWriteTimeUtc": "2026-09-07T05:00:46.5536021Z",
+    "sha256": "5144092dd730409b37cfd35ab5dee0ae2418002a8c46fd62b037c1a20df88bfc",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/template-contract.test.ts",
+    "exists": true,
+    "sizeBytes": 1559,
+    "lastWriteTimeUtc": "2026-09-06T08:58:42.5487311Z",
+    "sha256": "90eebf2a389240ab3764616affd3386ccfb751dedfb0c576d552c0ad85ff9b62",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/template-control-contracts.test.ts",
+    "exists": true,
+    "sizeBytes": 2028,
+    "lastWriteTimeUtc": "2026-09-06T16:48:31.1963909Z",
+    "sha256": "e79183d3e90a077f6a25a39fa9029fc24924a0dbfc28a279ee22dba30ed792d0",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/text-basic.test.tsx",
+    "exists": true,
+    "sizeBytes": 3856,
+    "lastWriteTimeUtc": "2026-09-06T14:49:10.8033423Z",
+    "sha256": "34ef376d44ed64b1ed8a5806878c043d28618fb69efed264f1df8ceb1da00af4",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/typewriter.test.ts",
+    "exists": true,
+    "sizeBytes": 1002,
+    "lastWriteTimeUtc": "2026-09-05T11:27:15.2997893Z",
+    "sha256": "69a030157f800adb281f3fdf5ee517504d5416373db9f3e5f8d262ed6eb39997",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/wave-clock.test.tsx",
+    "exists": true,
+    "sizeBytes": 1366,
+    "lastWriteTimeUtc": "2026-09-06T14:30:35.7748008Z",
+    "sha256": "31de8891af89cf188387d3fbff41df6e07dd44fae595babed0e099d28fc094fc",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/word-content-synchronizer.test.tsx",
+    "exists": true,
+    "sizeBytes": 1183,
+    "lastWriteTimeUtc": "2026-09-05T08:25:39.8222535Z",
+    "sha256": "c1d466adea6eab128d2041b2a95ba9264ee66de0cf8f73d236ae04d2c5cbc153",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tests/editor/word-highlight.test.ts",
+    "exists": true,
+    "sizeBytes": 598,
+    "lastWriteTimeUtc": "2026-09-06T04:22:14.3764340Z",
+    "sha256": "82e5f62b7796838600859f4edc66cad49cf11eaf712067889efc79ded1079d86",
+    "attributes": "Archive"
+  },
+  {
+    "path": "tsconfig.json",
+    "exists": true,
+    "sizeBytes": 712,
+    "lastWriteTimeUtc": "2026-09-07T07:13:12.1357503Z",
+    "sha256": "c2a66b022aadb1612f0b217fefb4f6122c36b59d2af16cadffc09ec1cd95cd7f",
+    "attributes": "Archive"
+  },
+  {
+    "path": "vitest.config.ts",
+    "exists": true,
+    "sizeBytes": 283,
+    "lastWriteTimeUtc": "2026-09-05T06:49:54.2027972Z",
+    "sha256": "cbc8c736cb59e669ebb2b5df13d4d6413e78ad463e8e22a7ad1f1d9aeb0f7043",
+    "attributes": "Archive"
+  }
+]

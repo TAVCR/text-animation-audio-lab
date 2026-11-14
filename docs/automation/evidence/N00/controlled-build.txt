@@ -1,0 +1,35 @@
+
+> text-animation-app@0.1.4 build
+> next build
+
+  ▲ Next.js 14.2.15
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    1.81 kB        89.3 kB
+├ ○ /_not-found                          873 B          88.4 kB
+├ ƒ /api/render                          0 B                0 B
+├ ƒ /api/subtitles/render                0 B                0 B
+├ ƒ /api/subtitles/transcribe            0 B                0 B
+├ ƒ /api/subtitles/upload                0 B                0 B
+└ ○ /experimental/procedural-circuit     42.3 kB         196 kB
++ First Load JS shared by all            87.5 kB
+  ├ chunks/117-a620b7607cfc94d1.js       31.6 kB
+  ├ chunks/fd9d1056-cea23896a4e51c9f.js  53.6 kB
+  └ other shared chunks (total)          2.29 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -1,0 +1,10 @@
+{
+  "command": "npm ci --cache .cache/npm",
+  "startedAtUtc": "2026-09-07T10:16:00.2895528Z",
+  "endedAtUtc": "2026-09-07T10:16:26.1455319Z",
+  "exitCode": 0,
+  "node": "v22.17.0",
+  "npm": "11.18.0",
+  "os": "Microsoft Windows 11 Pro",
+  "computer": "DESKTOP-6FE6S0O"
+}

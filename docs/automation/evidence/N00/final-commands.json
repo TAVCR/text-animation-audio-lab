@@ -1,0 +1,23 @@
+[
+  {
+    "command": "npm.cmd run test:editor",
+    "exitCode": 0,
+    "startedAtUtc": "2026-09-07T10:51:02.9081667Z",
+    "endedAtUtc": "2026-09-07T10:51:09.9593757Z",
+    "log": "final-tests.txt"
+  },
+  {
+    "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+    "exitCode": 0,
+    "startedAtUtc": "2026-09-07T10:51:09.9631476Z",
+    "endedAtUtc": "2026-09-07T10:51:14.4794300Z",
+    "log": "final-typescript.txt"
+  },
+  {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "startedAtUtc": "2026-09-07T10:51:14.4808242Z",
+    "endedAtUtc": "2026-09-07T10:51:16.1223796Z",
+    "log": "final-lint.txt"
+  }
+]

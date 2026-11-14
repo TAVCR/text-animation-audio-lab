@@ -1,0 +1,4 @@
+{
+  "command": "npm ls --depth=0 --json",
+  "exitCode": 0
+}

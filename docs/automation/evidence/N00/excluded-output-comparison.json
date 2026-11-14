@@ -1,0 +1,94 @@
+[
+  {
+    "path": ".backup",
+    "status": "unchanged"
+  },
+  {
+    "path": ".next",
+    "status": "unchanged"
+  },
+  {
+    "path": "backups",
+    "status": "unchanged"
+  },
+  {
+    "path": "CHANGES_DELIVERY_2026-03-22",
+    "status": "unchanged"
+  },
+  {
+    "path": "NEW APPROACH",
+    "status": "unchanged"
+  },
+  {
+    "path": "node_modules",
+    "status": "unchanged"
+  },
+  {
+    "path": "release",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p15-final",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p15-verify-2",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p15-verify-3",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p15-verify-4",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p15-verify-5",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p15-verify-6",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p16-final",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p16-product-final",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p16-product-staging",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p16-qa001-final",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p16-qa001-staging",
+    "status": "unchanged"
+  },
+  {
+    "path": "release-p16-staging",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/renders",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/audio",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/windows-installed",
+    "status": "unchanged"
+  },
+  {
+    "path": "tsconfig.tsbuildinfo",
+    "status": "unchanged"
+  }
+]

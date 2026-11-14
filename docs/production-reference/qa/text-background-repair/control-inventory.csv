@@ -1,0 +1,36 @@
+templateId,prop,label,type,scope,visibleWhen,defaultSource,rendererLocation,status
+typewriter,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,TypewriterEffect.tsx,PENDIENTE
+slide-reveal,boxColor,Color de franja,color,main,selected,defaultAnimationProps,SlideRevealEffect.tsx,PENDIENTE
+slide-reveal,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,SlideRevealEffect.tsx,PENDIENTE
+follower,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,FollowerEffect.tsx,PENDIENTE
+rotation,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,RotationRevealEffect.tsx,PENDIENTE
+flicker,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,FlickerEffect.tsx,PENDIENTE
+flicker-outline-fill,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,FlickerOutlineFillEffect.tsx,PENDIENTE
+kinetic-box-sequence,boxSequenceWidth,Ancho de caja,number,main,selected,defaultAnimationProps,KineticBoxSequenceEffect.tsx,PENDIENTE
+smooth-sliding,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,SmoothSlidingText.tsx,PENDIENTE
+shape-reveal,gradientStart,Color inicial,color,main,selected,defaultAnimationProps,ShapeRevealEffect.tsx,PENDIENTE
+shape-reveal,gradientEnd,Color final,color,main,selected,defaultAnimationProps,ShapeRevealEffect.tsx,PENDIENTE
+shape-reveal,gradientSoftness,Suavidad del degradado,number,main,selected,gradient contract,ShapeRevealEffect.tsx,PENDIENTE
+fly-through,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,FlyThroughEffect.tsx,PENDIENTE
+clean-modern,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,CleanModernText.tsx,PENDIENTE
+bar-reveal,barWidthPx,Grosor de barra,number,main,selected,bar contract,BarRevealEffect.tsx,PENDIENTE
+viral-text,text,texto 1,text,main,selected,defaultAnimationProps,ViralTextEffect.tsx,PENDIENTE
+viral-text,wordTwo,texto 2,text,secondary,selected,defaultAnimationProps,ViralTextEffect.tsx,PENDIENTE
+viral-text,wordThree,texto 3,text,secondary,selected,defaultAnimationProps,ViralTextEffect.tsx,PENDIENTE
+shake-flicker,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,ShakeFlickerEffect.tsx,PENDIENTE
+blur-cascade,gradientStart,Color inicial,color,main,selected,defaultAnimationProps,BlurringTextCascade.tsx,PENDIENTE
+blur-cascade,gradientEnd,Color final,color,main,selected,defaultAnimationProps,BlurringTextCascade.tsx,PENDIENTE
+cinematic,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,CinematicText.tsx,PENDIENTE
+apple-style,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,AppleStyleText.tsx,PENDIENTE
+extruded-3d,speed,Velocidad del efecto,number,main,selected,defaultAnimationProps,Extruded3DEffect.tsx,PENDIENTE
+word-highlight-tracker,wordHighlightSeconds,Duración por palabra,number,main,selected,defaultAnimationProps,WordHighlightTracker.tsx,PENDIENTE
+variable-weight-wave,variableWeightCycleSeconds,Duración del ciclo,number,main,selected,defaultAnimationProps,VariableWeightWave.tsx,PENDIENTE
+dual-text-layers,dualPrimaryDelayFrames,Retraso capa 1,number,main,selected,defaultAnimationProps,DualTextLayers.tsx,PENDIENTE
+dual-text-layers,secondaryTextLayer.delayFrames,Retraso capa 2,number,secondary,selected,defaultAnimationProps,DualTextLayers.tsx,PENDIENTE
+backgrounds,particleSpeed,Velocidad del fondo,number,background,procedural,defaultAnimationProps,ParticleBackground.tsx,PENDIENTE
+backgrounds,neonBulbPatternSpeed,Velocidad del patrón,number,background,neon-bulb-alternation,defaultAnimationProps,ParticleBackground.tsx,PENDIENTE
+backgrounds,stellarSpeed,Velocidad estelar,number,background,stellar-depth-field,defaultAnimationProps,StellarDepthFieldCanvas.tsx,PENDIENTE
+imported-video-1,none,Sin controles de características,immutable,background,selected,resource,ImportedVideoBackground.tsx,PENDIENTE
+imported-video-2,none,Sin controles de características,immutable,background,selected,resource,ImportedVideoBackground.tsx,PENDIENTE
+imported-video-3,none,Sin controles de características,immutable,background,selected,resource,ImportedVideoBackground.tsx,PENDIENTE
+imported-video-4,none,Sin controles de características,immutable,background,selected,resource,ImportedVideoBackground.tsx,PENDIENTE

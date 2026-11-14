@@ -1,0 +1,7 @@
+{
+  "command": "npm run test:editor",
+  "startedAtUtc": "2026-09-07T10:16:38.9053081Z",
+  "endedAtUtc": "2026-09-07T10:17:00.4548513Z",
+  "exitCode": 1,
+  "expected": "59 files / 366 tests"
+}

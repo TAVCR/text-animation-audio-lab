@@ -1,0 +1,186 @@
+[
+  {
+    "path": ".backup",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-03-29T06:03:51.6705507Z",
+    "fileCount": 1,
+    "totalBytes": 3165.0
+  },
+  {
+    "path": ".next",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T09:08:34.1364512Z",
+    "fileCount": 5908,
+    "totalBytes": 1025110821.0
+  },
+  {
+    "path": "backups",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-06T14:27:42.3694632Z",
+    "fileCount": 1,
+    "totalBytes": 763156.0
+  },
+  {
+    "path": "CHANGES_DELIVERY_2026-03-22",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-03-22T12:09:59.0000000Z",
+    "fileCount": 9,
+    "totalBytes": 179833.0
+  },
+  {
+    "path": "NEW APPROACH",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-03-23T07:32:48.0000000Z",
+    "fileCount": 15,
+    "totalBytes": 167132.0
+  },
+  {
+    "path": "node_modules",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-06T11:17:09.3387286Z",
+    "fileCount": 48730,
+    "totalBytes": 1777337637.0
+  },
+  {
+    "path": "release",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T06:16:15.0288735Z",
+    "fileCount": 4962,
+    "totalBytes": 7894934441.0
+  },
+  {
+    "path": "release-p15-final",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T06:53:26.5937158Z",
+    "fileCount": 3,
+    "totalBytes": 1908877246.0
+  },
+  {
+    "path": "release-p15-verify-2",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T06:26:02.3879974Z",
+    "fileCount": 4949,
+    "totalBytes": 4235458033.0
+  },
+  {
+    "path": "release-p15-verify-3",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T06:33:19.6345769Z",
+    "fileCount": 4944,
+    "totalBytes": 4235457866.0
+  },
+  {
+    "path": "release-p15-verify-4",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T06:37:25.1822870Z",
+    "fileCount": 4939,
+    "totalBytes": 4235457776.0
+  },
+  {
+    "path": "release-p15-verify-5",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T06:41:27.2444522Z",
+    "fileCount": 10568,
+    "totalBytes": 4639857596.0
+  },
+  {
+    "path": "release-p15-verify-6",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T06:46:05.2210429Z",
+    "fileCount": 10715,
+    "totalBytes": 4640975609.0
+  },
+  {
+    "path": "release-p16-final",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T07:10:08.9868494Z",
+    "fileCount": 3,
+    "totalBytes": 1908877259.0
+  },
+  {
+    "path": "release-p16-product-final",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T09:15:21.8512277Z",
+    "fileCount": 4,
+    "totalBytes": 1908873676.0
+  },
+  {
+    "path": "release-p16-product-staging",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T09:09:10.1504479Z",
+    "fileCount": 10714,
+    "totalBytes": 4640957443.0
+  },
+  {
+    "path": "release-p16-qa001-final",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T08:48:51.8122899Z",
+    "fileCount": 3,
+    "totalBytes": 1908877343.0
+  },
+  {
+    "path": "release-p16-qa001-staging",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T08:42:34.7991257Z",
+    "fileCount": 10715,
+    "totalBytes": 4640975998.0
+  },
+  {
+    "path": "release-p16-staging",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T07:02:25.7799675Z",
+    "fileCount": 10715,
+    "totalBytes": 4640975472.0
+  },
+  {
+    "path": "public/renders",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-07T09:07:55.3542580Z",
+    "fileCount": 5,
+    "totalBytes": 211041.0
+  },
+  {
+    "path": "public/audio",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-03-19T09:08:13.0000000Z",
+    "fileCount": 142,
+    "totalBytes": 51444335.0
+  },
+  {
+    "path": "public/fonts/windows-installed",
+    "exists": true,
+    "kind": "directory",
+    "lastWriteTimeUtc": "2026-09-06T14:56:22.9620171Z",
+    "fileCount": 4563,
+    "totalBytes": 2925196200.0
+  },
+  {
+    "path": "tsconfig.tsbuildinfo",
+    "exists": true,
+    "kind": "file",
+    "lastWriteTimeUtc": "2026-09-07T06:44:59.6697942Z",
+    "fileCount": 1,
+    "totalBytes": 454660.0
+  }
+]

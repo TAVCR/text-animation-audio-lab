@@ -1,0 +1,8 @@
+{
+  "command": "npm run test:editor",
+  "startedAtUtc": "2026-09-07T10:17:45.3244466Z",
+  "endedAtUtc": "2026-09-07T10:17:52.4409533Z",
+  "exitCode": 0,
+  "expected": "59 files / 366 tests",
+  "rerun": "after transitive NEW APPROACH imports were copied"
+}

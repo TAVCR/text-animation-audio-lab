@@ -1,0 +1,3509 @@
+{
+  "generatedAtUtc": "2026-09-07T10:52:16.626Z",
+  "scope": "Static literal imports/re-exports/require/dynamic-import; local project closure only. Package internals audited separately. No render, font resolution or network access.",
+  "graphs": [
+    {
+      "entry": "src/remotion/MainComposition.tsx",
+      "files": [
+        "NEW APPROACH/bg3d-crystal-shards.tsx",
+        "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+        "src/lib/AnimationContext.tsx",
+        "src/lib/editor/catalog.ts",
+        "src/lib/editor/dualTextLayers.ts",
+        "src/lib/editor/history.ts",
+        "src/lib/editor/persistence.ts",
+        "src/lib/editor/selection.ts",
+        "src/lib/videoConfig.ts",
+        "src/remotion/MainComposition.tsx",
+        "src/remotion/MasterMotionLayer.tsx",
+        "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+        "src/remotion/backgrounds/ParticleBackground.tsx",
+        "src/remotion/backgrounds/RetroGrid.shaders.ts",
+        "src/remotion/backgrounds/RetroGridForward3D.tsx",
+        "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+        "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+        "src/remotion/backgrounds/crystalAppearance.ts",
+        "src/remotion/backgrounds/halftoneWaveField.ts",
+        "src/remotion/backgrounds/neonBulbAlternation.ts",
+        "src/remotion/backgrounds/stellarDepthField.ts",
+        "src/remotion/templates/AppleStyleText.tsx",
+        "src/remotion/templates/BarRevealEffect.tsx",
+        "src/remotion/templates/BlurRevealEffect.tsx",
+        "src/remotion/templates/BlurringTextCascade.tsx",
+        "src/remotion/templates/BubblePopEffect.tsx",
+        "src/remotion/templates/CinematicText.tsx",
+        "src/remotion/templates/CleanModernText.tsx",
+        "src/remotion/templates/DualTextLayers.tsx",
+        "src/remotion/templates/Extruded3DEffect.tsx",
+        "src/remotion/templates/FlickerEffect.tsx",
+        "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+        "src/remotion/templates/FlyThroughEffect.tsx",
+        "src/remotion/templates/FollowerEffect.tsx",
+        "src/remotion/templates/FollowerGrowRotate.tsx",
+        "src/remotion/templates/GlitchEffect.tsx",
+        "src/remotion/templates/GlyphTileAssemble.tsx",
+        "src/remotion/templates/InkStampPrint.tsx",
+        "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+        "src/remotion/templates/KineticSlideIn.tsx",
+        "src/remotion/templates/NeonPulseEffect.tsx",
+        "src/remotion/templates/PaperCutoutAssemble.tsx",
+        "src/remotion/templates/RotationRevealEffect.tsx",
+        "src/remotion/templates/ScrambleEffect.tsx",
+        "src/remotion/templates/ShakeFlickerEffect.tsx",
+        "src/remotion/templates/ShapeRevealEffect.tsx",
+        "src/remotion/templates/SlideRevealEffect.tsx",
+        "src/remotion/templates/SmoothSlidingText.tsx",
+        "src/remotion/templates/TypewriterEffect.tsx",
+        "src/remotion/templates/VariableWeightWave.tsx",
+        "src/remotion/templates/ViralTextEffect.tsx",
+        "src/remotion/templates/WipeRevealEffect.tsx",
+        "src/remotion/templates/WordHighlightTracker.tsx",
+        "src/remotion/templates/extrudedAppearance.ts",
+        "src/remotion/templates/inkStampUtils.ts",
+        "src/remotion/templates/paperCutoutUtils.ts",
+        "src/remotion/templates/registry.ts",
+        "src/remotion/templates/typewriterUtils.ts",
+        "src/remotion/templates/wordHighlightUtils.ts",
+        "src/remotion/text/StyledRangeText.tsx",
+        "src/remotion/useMotionFrame.ts"
+      ],
+      "edges": [
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./videoConfig",
+          "to": "src/lib/videoConfig.ts"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./editor/persistence",
+          "to": "src/lib/editor/persistence.ts"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./editor/history",
+          "to": "src/lib/editor/history.ts"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./editor/selection",
+          "to": "src/lib/editor/selection.ts"
+        },
+        {
+          "from": "src/lib/editor/selection.ts",
+          "specifier": "./catalog",
+          "to": "src/lib/editor/catalog.ts"
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "./templates/registry",
+          "to": "src/remotion/templates/registry.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./AppleStyleText",
+          "to": "src/remotion/templates/AppleStyleText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/useMotionFrame.ts",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/useMotionFrame.ts",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/text/StyledRangeText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BarRevealEffect",
+          "to": "src/remotion/templates/BarRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BlurringTextCascade",
+          "to": "src/remotion/templates/BlurringTextCascade.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BlurRevealEffect",
+          "to": "src/remotion/templates/BlurRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BubblePopEffect",
+          "to": "src/remotion/templates/BubblePopEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./CinematicText",
+          "to": "src/remotion/templates/CinematicText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./CleanModernText",
+          "to": "src/remotion/templates/CleanModernText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./Extruded3DEffect",
+          "to": "src/remotion/templates/Extruded3DEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@react-three/drei",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "three/examples/jsm/loaders/TTFLoader.js",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "./extrudedAppearance",
+          "to": "src/remotion/templates/extrudedAppearance.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FlickerEffect",
+          "to": "src/remotion/templates/FlickerEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FlickerOutlineFillEffect",
+          "to": "src/remotion/templates/FlickerOutlineFillEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FlyThroughEffect",
+          "to": "src/remotion/templates/FlyThroughEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FollowerEffect",
+          "to": "src/remotion/templates/FollowerEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FollowerGrowRotate",
+          "to": "src/remotion/templates/FollowerGrowRotate.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./GlitchEffect",
+          "to": "src/remotion/templates/GlitchEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./KineticBoxSequenceEffect",
+          "to": "src/remotion/templates/KineticBoxSequenceEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./KineticSlideIn",
+          "to": "src/remotion/templates/KineticSlideIn.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./NeonPulseEffect",
+          "to": "src/remotion/templates/NeonPulseEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./RotationRevealEffect",
+          "to": "src/remotion/templates/RotationRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ScrambleEffect",
+          "to": "src/remotion/templates/ScrambleEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ShakeFlickerEffect",
+          "to": "src/remotion/templates/ShakeFlickerEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ShapeRevealEffect",
+          "to": "src/remotion/templates/ShapeRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./SlideRevealEffect",
+          "to": "src/remotion/templates/SlideRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./SmoothSlidingText",
+          "to": "src/remotion/templates/SmoothSlidingText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./TypewriterEffect",
+          "to": "src/remotion/templates/TypewriterEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "./typewriterUtils",
+          "to": "src/remotion/templates/typewriterUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ViralTextEffect",
+          "to": "src/remotion/templates/ViralTextEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./WipeRevealEffect",
+          "to": "src/remotion/templates/WipeRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./WordHighlightTracker",
+          "to": "src/remotion/templates/WordHighlightTracker.tsx"
+        },
+        {
+          "from": "src/remotion/templates/WordHighlightTracker.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WordHighlightTracker.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WordHighlightTracker.tsx",
+          "specifier": "./wordHighlightUtils",
+          "to": "src/remotion/templates/wordHighlightUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./PaperCutoutAssemble",
+          "to": "src/remotion/templates/PaperCutoutAssemble.tsx"
+        },
+        {
+          "from": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "specifier": "./paperCutoutUtils",
+          "to": "src/remotion/templates/paperCutoutUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./InkStampPrint",
+          "to": "src/remotion/templates/InkStampPrint.tsx"
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "@/lib/videoConfig",
+          "to": "src/lib/videoConfig.ts"
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "./inkStampUtils",
+          "to": "src/remotion/templates/inkStampUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./VariableWeightWave",
+          "to": "src/remotion/templates/VariableWeightWave.tsx"
+        },
+        {
+          "from": "src/remotion/templates/VariableWeightWave.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/VariableWeightWave.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/VariableWeightWave.tsx",
+          "specifier": "@/lib/videoConfig",
+          "to": "src/lib/videoConfig.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./GlyphTileAssemble",
+          "to": "src/remotion/templates/GlyphTileAssemble.tsx"
+        },
+        {
+          "from": "src/remotion/templates/GlyphTileAssemble.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/GlyphTileAssemble.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./DualTextLayers",
+          "to": "src/remotion/templates/DualTextLayers.tsx"
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "./InkStampPrint",
+          "to": "src/remotion/templates/InkStampPrint.tsx"
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "@/lib/editor/dualTextLayers",
+          "to": "src/lib/editor/dualTextLayers.ts"
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "./MasterMotionLayer",
+          "to": "src/remotion/MasterMotionLayer.tsx"
+        },
+        {
+          "from": "src/remotion/MasterMotionLayer.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MasterMotionLayer.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MasterMotionLayer.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "./backgrounds/ParticleBackground",
+          "to": "src/remotion/backgrounds/ParticleBackground.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./SphereParticleBackground3D",
+          "to": "src/remotion/backgrounds/SphereParticleBackground3D.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./RetroGridForward3D",
+          "to": "src/remotion/backgrounds/RetroGridForward3D.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "./RetroGrid.shaders",
+          "to": "src/remotion/backgrounds/RetroGrid.shaders.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "../../../NEW APPROACH/bg3d-lowpoly-terrain",
+          "to": "NEW APPROACH/bg3d-lowpoly-terrain.tsx"
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "../../../NEW APPROACH/bg3d-crystal-shards",
+          "to": "NEW APPROACH/bg3d-crystal-shards.tsx"
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "../src/remotion/backgrounds/crystalAppearance",
+          "to": "src/remotion/backgrounds/crystalAppearance.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./halftoneWaveField",
+          "to": "src/remotion/backgrounds/halftoneWaveField.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./neonBulbAlternation",
+          "to": "src/remotion/backgrounds/neonBulbAlternation.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./StellarDepthFieldCanvas",
+          "to": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+          "specifier": "./stellarDepthField",
+          "to": "src/remotion/backgrounds/stellarDepthField.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./ImportedVideoBackground",
+          "to": "src/remotion/backgrounds/ImportedVideoBackground.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "specifier": "remotion",
+          "to": null
+        }
+      ],
+      "findings": [
+        {
+          "file": "src/lib/AnimationContext.tsx",
+          "line": 145,
+          "text": "fontFamily: 'Poppins',"
+        },
+        {
+          "file": "src/lib/AnimationContext.tsx",
+          "line": 146,
+          "text": "fontFamilyTwo: 'Montserrat',"
+        },
+        {
+          "file": "src/lib/AnimationContext.tsx",
+          "line": 147,
+          "text": "fontFamilyThree: 'Oswald',"
+        },
+        {
+          "file": "src/lib/editor/selection.ts",
+          "line": 45,
+          "text": "applyDomain({ ...current, animationStyle: normalizeTextTemplateId(id), ...(normalizeTextTemplateId(id) === 'dual-text-layers' && !current.secondaryTextLayer ? { dualPrimaryDelayFrames: 0, secondaryTextLayer: { enabled: true, text: 'DEPTH', animationStyle: 'ink-stamp-print', fontFamily: 'Montserrat', fontWeight: '400', fontSize: 120, positionX: 0, positionY: 0, color: '#8b5cf6', opacity: 0.45, enableFill: true, enableBorder: false, borderColor: '#ffffff', borderWidth: 4, enableShadow: false, shadowColor: '#000000', shadowBlur: 12, motionDurationFrames: current.motionDurationFrames, speed: current.speed, delayFrames: 0, templateOptions: {} } } : {}) }, saved[id], TEXT_KEYS);"
+        },
+        {
+          "file": "src/remotion/templates/AppleStyleText.tsx",
+          "line": 25,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/AppleStyleText.tsx",
+          "line": 56,
+          "text": "fontFamily: 'inherit',"
+        },
+        {
+          "file": "src/remotion/text/StyledRangeText.tsx",
+          "line": 69,
+          "text": "fontFamily: rangeStyle.fontFamily ? `\"${rangeStyle.fontFamily}\", sans-serif` : undefined,"
+        },
+        {
+          "file": "src/remotion/text/StyledRangeText.tsx",
+          "line": 136,
+          "text": "fontFamily: rangeStyle.fontFamily ? `\"${rangeStyle.fontFamily}\", sans-serif` : undefined,"
+        },
+        {
+          "file": "src/remotion/templates/BarRevealEffect.tsx",
+          "line": 85,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/BarRevealEffect.tsx",
+          "line": 97,
+          "text": "fontFamily: `\"${props.fontFamilyTwo || props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/BlurringTextCascade.tsx",
+          "line": 21,
+          "text": "<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontWeight: props.fontWeight || 'bold' }}>"
+        },
+        {
+          "file": "src/remotion/templates/BlurRevealEffect.tsx",
+          "line": 31,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/BubblePopEffect.tsx",
+          "line": 36,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/CinematicText.tsx",
+          "line": 58,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/CleanModernText.tsx",
+          "line": 62,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 2,
+          "text": "import { useVideoConfig, interpolate, AbsoluteFill, staticFile } from 'remotion';"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 6,
+          "text": "import { useLoader, useThree } from '@react-three/fiber';"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 7,
+          "text": "import { Center, Environment, Text3D } from '@react-three/drei';"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 13,
+          "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"2048\" height=\"1152\" viewBox=\"0 0 2048 1152\">"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 62,
+          "text": "const normalizeFontFamily = (fontFamily: string): string => {"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 63,
+          "text": "return (fontFamily || '')"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 155,
+          "text": "fontFamily: string,"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 160,
+          "text": "const family = normalizeFontFamily(fontFamily);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 395,
+          "text": "const texture = useLoader(THREE.TextureLoader, LANDSCAPE_TEXTURE_URI);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 508,
+          "text": "() => resolveFontAsset(props.fontFamily, props.fontWeight, props.useFont3dOverride, props.font3dPreset),"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 509,
+          "text": "[props.fontFamily, props.fontWeight, props.useFont3dOverride, props.font3dPreset]"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 513,
+          "text": "? staticFile(`fonts/ttf/${resolvedFont.file}`)"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 514,
+          "text": ": staticFile(`fonts/${resolvedFont.file}`);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 515,
+          "text": "const rawFontData = useLoader("
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 542,
+          "text": "return staticFile(`fonts/${resolvedFont.file}`);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 683,
+          "text": "<Environment preset=\"studio\" />"
+        },
+        {
+          "file": "src/remotion/templates/FlickerEffect.tsx",
+          "line": 56,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "line": 100,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FlyThroughEffect.tsx",
+          "line": 52,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FollowerEffect.tsx",
+          "line": 21,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "line": 50,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/GlitchEffect.tsx",
+          "line": 28,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 152,
+          "text": "props.fontFamily || 'Poppins',"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 153,
+          "text": "props.fontFamilyTwo || props.fontFamily || 'Poppins',"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 154,
+          "text": "props.fontFamilyThree || props.fontFamily || 'Poppins',"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 422,
+          "text": "const activeFontFamily = fontFamilies[styleIndex] ?? props.fontFamily ?? 'Poppins';"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 481,
+          "text": "fontFamily: `\"${activeFontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/KineticSlideIn.tsx",
+          "line": 45,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/NeonPulseEffect.tsx",
+          "line": 31,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/RotationRevealEffect.tsx",
+          "line": 24,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ScrambleEffect.tsx",
+          "line": 67,
+          "text": "fontFamily: `\"${props.fontFamily}\", monospace`,"
+        },
+        {
+          "file": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "line": 48,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "line": 87,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "line": 108,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/SlideRevealEffect.tsx",
+          "line": 48,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/SmoothSlidingText.tsx",
+          "line": 37,
+          "text": "<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontWeight: props.fontWeight || 'bold', textAlign: 'center', lineHeight: props.lineHeight || 1.2 }}>"
+        },
+        {
+          "file": "src/remotion/templates/TypewriterEffect.tsx",
+          "line": 40,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 21,
+          "text": "font: props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 43,
+          "text": "font: props.fontFamilyTwo || props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 65,
+          "text": "font: props.fontFamilyThree || props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 110,
+          "text": "fontFamily: `\"${item.font}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/WipeRevealEffect.tsx",
+          "line": 31,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/WordHighlightTracker.tsx",
+          "line": 11,
+          "text": "return <div style={{ width: '100%', textAlign: 'center', color: props.color, fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, lineHeight: props.lineHeight }}>{words.map((word, index) => <span key={`${word}-${index}`} style={{ display: 'inline-block', margin: '0 0.12em', padding: `${props.wordHighlightPaddingPx ?? 8}px`, borderRadius: props.wordHighlightCornerRadiusPx ?? 12, backgroundColor: index === activeIndex ? (props.wordHighlightColor ?? '#d7ff3f') : 'transparent', color: index === activeIndex ? (props.wordHighlightActiveTextColor ?? '#111111') : (props.wordHighlightInactiveTextColor ?? props.color) }}>{word}</span>)}</div>;"
+        },
+        {
+          "file": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "line": 10,
+          "text": "return <div style={{ width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 12, fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, color: props.color }}>"
+        },
+        {
+          "file": "src/remotion/templates/InkStampPrint.tsx",
+          "line": 39,
+          "text": "return <div style={{ width: '100%', perspective: '2800px', transformStyle: 'preserve-3d' }}><div style={{ width: '100%', textAlign: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, color: fillColor, opacity: getInkStampCoverage(visualProgress * (1.1 + intensity * 0.65), coverage), filter: `blur(${depthBlur}px)`, transform: `translateY(${floatY}px) translateZ(${depthZ}px) scale(${scale}) rotate(${(1 - progress) * initialAngle}deg)`, textShadow: shadow, WebkitTextStroke: stroke, backgroundImage: props.enableFill === false ? 'none' : grain(text, props.inkStampSeed ?? 'ink-stamp-print-1', roughness), WebkitBackgroundClip: props.enableFill === false ? 'initial' : 'text', backgroundClip: props.enableFill === false ? 'initial' : 'text' }}>{text}</div></div>;"
+        },
+        {
+          "file": "src/remotion/templates/VariableWeightWave.tsx",
+          "line": 14,
+          "text": "return <div style={{ width: '100%', textAlign: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, color: props.color, lineHeight: props.lineHeight }}>{Array.from(props.text).map((char, index) => { const influence = Math.exp(-0.5 * ((index - center) / width) ** 2); const weight = Math.round((props.variableWeightBaseWeight ?? 400) + ((props.variableWeightPeakWeight ?? 850) - (props.variableWeightBaseWeight ?? 400)) * influence); return <span key={`${char}-${index}`} style={{ display: 'inline-block', fontVariationSettings: `'wght' ${weight}` }}>{char}</span>; })}</div>;"
+        },
+        {
+          "file": "src/remotion/templates/GlyphTileAssemble.tsx",
+          "line": 10,
+          "text": "return <div style={{ width: '100%', textAlign: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, color: props.color, letterSpacing: props.letterSpacing }}>{Array.from(props.text || '').map((char, index) => <span key={`${char}-${index}`} style={{ display: 'inline-block', minWidth: (props.glyphTileSizePx ?? 20) * 0.45, transform: `translate(${(1 - progress) * ((index % 3) - 1) * scatter}px, ${(1 - progress) * (((index + 1) % 3) - 1) * scatter}px)`, opacity: progress }}>{char}</span>)}</div>;"
+        },
+        {
+          "file": "src/remotion/templates/DualTextLayers.tsx",
+          "line": 10,
+          "text": "const secondaryNode = secondary?.enabled ? <Sequence from={Math.max(0, secondary.delayFrames)}><div style={{ position: 'absolute', ...getCenteredLayerTransform(secondary.positionX, secondary.positionY), opacity: Math.max(0, Math.min(1, secondary.opacity)) }}><InkStampPrint {...props} speed={secondary.speed} text={secondary.text} fontFamily={secondary.fontFamily} fontWeight={secondary.fontWeight} fontSize={secondary.fontSize} color={secondary.color} inkStampColor={secondary.color} enableFill={secondary.enableFill} enableBorder={secondary.enableBorder} borderColor={secondary.borderColor} borderWidth={secondary.borderWidth} enableShadow={secondary.enableShadow} shadowColor={secondary.shadowColor} shadowBlur={secondary.shadowBlur} /></div></Sequence> : null;"
+        },
+        {
+          "file": "src/lib/editor/dualTextLayers.ts",
+          "line": 13,
+          "text": "fontFamily: props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "line": 2,
+          "text": "import { AbsoluteFill, Video, staticFile } from 'remotion';"
+        },
+        {
+          "file": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "line": 30,
+          "text": "src={staticFile(`backgrounds/video-imports/${fileName}`)}"
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "entry": "src/remotion/index.ts",
+      "files": [
+        "NEW APPROACH/bg3d-crystal-shards.tsx",
+        "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+        "src/components/HexProceduralGround.tsx",
+        "src/components/experimental/AIPulseMaster.tsx",
+        "src/components/experimental/Check3D.tsx",
+        "src/components/experimental/Hex.shaders.ts",
+        "src/components/experimental/HexShaderBackground.tsx",
+        "src/components/experimental/HexWave3D.tsx",
+        "src/components/experimental/ProceduralCircuit.tsx",
+        "src/components/experimental/SphereField3D.tsx",
+        "src/lib/AnimationContext.tsx",
+        "src/lib/editor/catalog.ts",
+        "src/lib/editor/dualTextLayers.ts",
+        "src/lib/editor/history.ts",
+        "src/lib/editor/persistence.ts",
+        "src/lib/editor/selection.ts",
+        "src/lib/videoConfig.ts",
+        "src/remotion/CaptionedVideoComposition.tsx",
+        "src/remotion/MainComposition.tsx",
+        "src/remotion/MasterMotionLayer.tsx",
+        "src/remotion/Root.tsx",
+        "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+        "src/remotion/backgrounds/ParticleBackground.tsx",
+        "src/remotion/backgrounds/RetroGrid.shaders.ts",
+        "src/remotion/backgrounds/RetroGridForward3D.tsx",
+        "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+        "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+        "src/remotion/backgrounds/crystalAppearance.ts",
+        "src/remotion/backgrounds/halftoneWaveField.ts",
+        "src/remotion/backgrounds/neonBulbAlternation.ts",
+        "src/remotion/backgrounds/stellarDepthField.ts",
+        "src/remotion/index.ts",
+        "src/remotion/templates/AppleStyleText.tsx",
+        "src/remotion/templates/BarRevealEffect.tsx",
+        "src/remotion/templates/BlurRevealEffect.tsx",
+        "src/remotion/templates/BlurringTextCascade.tsx",
+        "src/remotion/templates/BubblePopEffect.tsx",
+        "src/remotion/templates/CinematicText.tsx",
+        "src/remotion/templates/CleanModernText.tsx",
+        "src/remotion/templates/DualTextLayers.tsx",
+        "src/remotion/templates/Extruded3DEffect.tsx",
+        "src/remotion/templates/FlickerEffect.tsx",
+        "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+        "src/remotion/templates/FlyThroughEffect.tsx",
+        "src/remotion/templates/FollowerEffect.tsx",
+        "src/remotion/templates/FollowerGrowRotate.tsx",
+        "src/remotion/templates/GlitchEffect.tsx",
+        "src/remotion/templates/GlyphTileAssemble.tsx",
+        "src/remotion/templates/InkStampPrint.tsx",
+        "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+        "src/remotion/templates/KineticSlideIn.tsx",
+        "src/remotion/templates/NeonPulseEffect.tsx",
+        "src/remotion/templates/PaperCutoutAssemble.tsx",
+        "src/remotion/templates/RotationRevealEffect.tsx",
+        "src/remotion/templates/ScrambleEffect.tsx",
+        "src/remotion/templates/ShakeFlickerEffect.tsx",
+        "src/remotion/templates/ShapeRevealEffect.tsx",
+        "src/remotion/templates/SlideRevealEffect.tsx",
+        "src/remotion/templates/SmoothSlidingText.tsx",
+        "src/remotion/templates/TypewriterEffect.tsx",
+        "src/remotion/templates/VariableWeightWave.tsx",
+        "src/remotion/templates/ViralTextEffect.tsx",
+        "src/remotion/templates/WipeRevealEffect.tsx",
+        "src/remotion/templates/WordHighlightTracker.tsx",
+        "src/remotion/templates/extrudedAppearance.ts",
+        "src/remotion/templates/inkStampUtils.ts",
+        "src/remotion/templates/paperCutoutUtils.ts",
+        "src/remotion/templates/registry.ts",
+        "src/remotion/templates/typewriterUtils.ts",
+        "src/remotion/templates/wordHighlightUtils.ts",
+        "src/remotion/text/StyledRangeText.tsx",
+        "src/remotion/useMotionFrame.ts"
+      ],
+      "edges": [
+        {
+          "from": "src/remotion/index.ts",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/index.ts",
+          "specifier": "./Root",
+          "to": "src/remotion/Root.tsx"
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "./MainComposition",
+          "to": "src/remotion/MainComposition.tsx"
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./videoConfig",
+          "to": "src/lib/videoConfig.ts"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./editor/persistence",
+          "to": "src/lib/editor/persistence.ts"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./editor/history",
+          "to": "src/lib/editor/history.ts"
+        },
+        {
+          "from": "src/lib/AnimationContext.tsx",
+          "specifier": "./editor/selection",
+          "to": "src/lib/editor/selection.ts"
+        },
+        {
+          "from": "src/lib/editor/selection.ts",
+          "specifier": "./catalog",
+          "to": "src/lib/editor/catalog.ts"
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "./templates/registry",
+          "to": "src/remotion/templates/registry.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./AppleStyleText",
+          "to": "src/remotion/templates/AppleStyleText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/useMotionFrame.ts",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/useMotionFrame.ts",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/AppleStyleText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/text/StyledRangeText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BarRevealEffect",
+          "to": "src/remotion/templates/BarRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BarRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BlurringTextCascade",
+          "to": "src/remotion/templates/BlurringTextCascade.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BlurringTextCascade.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BlurRevealEffect",
+          "to": "src/remotion/templates/BlurRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BlurRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./BubblePopEffect",
+          "to": "src/remotion/templates/BubblePopEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/BubblePopEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./CinematicText",
+          "to": "src/remotion/templates/CinematicText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/CinematicText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./CleanModernText",
+          "to": "src/remotion/templates/CleanModernText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/CleanModernText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./Extruded3DEffect",
+          "to": "src/remotion/templates/Extruded3DEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "@react-three/drei",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "three/examples/jsm/loaders/TTFLoader.js",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/Extruded3DEffect.tsx",
+          "specifier": "./extrudedAppearance",
+          "to": "src/remotion/templates/extrudedAppearance.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FlickerEffect",
+          "to": "src/remotion/templates/FlickerEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FlickerEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FlickerOutlineFillEffect",
+          "to": "src/remotion/templates/FlickerOutlineFillEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FlyThroughEffect",
+          "to": "src/remotion/templates/FlyThroughEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FlyThroughEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FollowerEffect",
+          "to": "src/remotion/templates/FollowerEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FollowerEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./FollowerGrowRotate",
+          "to": "src/remotion/templates/FollowerGrowRotate.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./GlitchEffect",
+          "to": "src/remotion/templates/GlitchEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/GlitchEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./KineticBoxSequenceEffect",
+          "to": "src/remotion/templates/KineticBoxSequenceEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./KineticSlideIn",
+          "to": "src/remotion/templates/KineticSlideIn.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/KineticSlideIn.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./NeonPulseEffect",
+          "to": "src/remotion/templates/NeonPulseEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/NeonPulseEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./RotationRevealEffect",
+          "to": "src/remotion/templates/RotationRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/RotationRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ScrambleEffect",
+          "to": "src/remotion/templates/ScrambleEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ScrambleEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ShakeFlickerEffect",
+          "to": "src/remotion/templates/ShakeFlickerEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ShapeRevealEffect",
+          "to": "src/remotion/templates/ShapeRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./SlideRevealEffect",
+          "to": "src/remotion/templates/SlideRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/SlideRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./SmoothSlidingText",
+          "to": "src/remotion/templates/SmoothSlidingText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/SmoothSlidingText.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./TypewriterEffect",
+          "to": "src/remotion/templates/TypewriterEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/TypewriterEffect.tsx",
+          "specifier": "./typewriterUtils",
+          "to": "src/remotion/templates/typewriterUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./ViralTextEffect",
+          "to": "src/remotion/templates/ViralTextEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/ViralTextEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./WipeRevealEffect",
+          "to": "src/remotion/templates/WipeRevealEffect.tsx"
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "@/remotion/useMotionFrame",
+          "to": "src/remotion/useMotionFrame.ts"
+        },
+        {
+          "from": "src/remotion/templates/WipeRevealEffect.tsx",
+          "specifier": "@/remotion/text/StyledRangeText",
+          "to": "src/remotion/text/StyledRangeText.tsx"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./WordHighlightTracker",
+          "to": "src/remotion/templates/WordHighlightTracker.tsx"
+        },
+        {
+          "from": "src/remotion/templates/WordHighlightTracker.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WordHighlightTracker.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/WordHighlightTracker.tsx",
+          "specifier": "./wordHighlightUtils",
+          "to": "src/remotion/templates/wordHighlightUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./PaperCutoutAssemble",
+          "to": "src/remotion/templates/PaperCutoutAssemble.tsx"
+        },
+        {
+          "from": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "specifier": "./paperCutoutUtils",
+          "to": "src/remotion/templates/paperCutoutUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./InkStampPrint",
+          "to": "src/remotion/templates/InkStampPrint.tsx"
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "@/lib/videoConfig",
+          "to": "src/lib/videoConfig.ts"
+        },
+        {
+          "from": "src/remotion/templates/InkStampPrint.tsx",
+          "specifier": "./inkStampUtils",
+          "to": "src/remotion/templates/inkStampUtils.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./VariableWeightWave",
+          "to": "src/remotion/templates/VariableWeightWave.tsx"
+        },
+        {
+          "from": "src/remotion/templates/VariableWeightWave.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/VariableWeightWave.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/VariableWeightWave.tsx",
+          "specifier": "@/lib/videoConfig",
+          "to": "src/lib/videoConfig.ts"
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./GlyphTileAssemble",
+          "to": "src/remotion/templates/GlyphTileAssemble.tsx"
+        },
+        {
+          "from": "src/remotion/templates/GlyphTileAssemble.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/GlyphTileAssemble.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/registry.ts",
+          "specifier": "./DualTextLayers",
+          "to": "src/remotion/templates/DualTextLayers.tsx"
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "./InkStampPrint",
+          "to": "src/remotion/templates/InkStampPrint.tsx"
+        },
+        {
+          "from": "src/remotion/templates/DualTextLayers.tsx",
+          "specifier": "@/lib/editor/dualTextLayers",
+          "to": "src/lib/editor/dualTextLayers.ts"
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "./MasterMotionLayer",
+          "to": "src/remotion/MasterMotionLayer.tsx"
+        },
+        {
+          "from": "src/remotion/MasterMotionLayer.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MasterMotionLayer.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/MasterMotionLayer.tsx",
+          "specifier": "@/lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/MainComposition.tsx",
+          "specifier": "./backgrounds/ParticleBackground",
+          "to": "src/remotion/backgrounds/ParticleBackground.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./SphereParticleBackground3D",
+          "to": "src/remotion/backgrounds/SphereParticleBackground3D.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./RetroGridForward3D",
+          "to": "src/remotion/backgrounds/RetroGridForward3D.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+          "specifier": "./RetroGrid.shaders",
+          "to": "src/remotion/backgrounds/RetroGrid.shaders.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "../../../NEW APPROACH/bg3d-lowpoly-terrain",
+          "to": "NEW APPROACH/bg3d-lowpoly-terrain.tsx"
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "../../../NEW APPROACH/bg3d-crystal-shards",
+          "to": "NEW APPROACH/bg3d-crystal-shards.tsx"
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "@remotion/three",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "NEW APPROACH/bg3d-crystal-shards.tsx",
+          "specifier": "../src/remotion/backgrounds/crystalAppearance",
+          "to": "src/remotion/backgrounds/crystalAppearance.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./halftoneWaveField",
+          "to": "src/remotion/backgrounds/halftoneWaveField.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./neonBulbAlternation",
+          "to": "src/remotion/backgrounds/neonBulbAlternation.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./StellarDepthFieldCanvas",
+          "to": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+          "specifier": "./stellarDepthField",
+          "to": "src/remotion/backgrounds/stellarDepthField.ts"
+        },
+        {
+          "from": "src/remotion/backgrounds/ParticleBackground.tsx",
+          "specifier": "./ImportedVideoBackground",
+          "to": "src/remotion/backgrounds/ImportedVideoBackground.tsx"
+        },
+        {
+          "from": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "@/components/experimental/ProceduralCircuit",
+          "to": "src/components/experimental/ProceduralCircuit.tsx"
+        },
+        {
+          "from": "src/components/experimental/ProceduralCircuit.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/ProceduralCircuit.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "@/components/experimental/AIPulseMaster",
+          "to": "src/components/experimental/AIPulseMaster.tsx"
+        },
+        {
+          "from": "src/components/experimental/AIPulseMaster.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/AIPulseMaster.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "@/components/HexProceduralGround",
+          "to": "src/components/HexProceduralGround.tsx"
+        },
+        {
+          "from": "src/components/HexProceduralGround.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/components/HexProceduralGround.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/components/HexProceduralGround.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/components/HexProceduralGround.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "src/components/HexProceduralGround.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "@/components/experimental/HexShaderBackground",
+          "to": "src/components/experimental/HexShaderBackground.tsx"
+        },
+        {
+          "from": "src/components/experimental/HexShaderBackground.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/HexShaderBackground.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/HexShaderBackground.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/HexShaderBackground.tsx",
+          "specifier": "./Hex.shaders",
+          "to": "src/components/experimental/Hex.shaders.ts"
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "@/components/experimental/Check3D",
+          "to": "src/components/experimental/Check3D.tsx"
+        },
+        {
+          "from": "src/components/experimental/Check3D.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/Check3D.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/Check3D.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/Check3D.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "@/components/experimental/HexWave3D",
+          "to": "src/components/experimental/HexWave3D.tsx"
+        },
+        {
+          "from": "src/components/experimental/HexWave3D.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/HexWave3D.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/HexWave3D.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/HexWave3D.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/HexWave3D.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "@/components/experimental/SphereField3D",
+          "to": "src/components/experimental/SphereField3D.tsx"
+        },
+        {
+          "from": "src/components/experimental/SphereField3D.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/SphereField3D.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/SphereField3D.tsx",
+          "specifier": "@react-three/fiber",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/SphereField3D.tsx",
+          "specifier": "@react-three/postprocessing",
+          "to": null
+        },
+        {
+          "from": "src/components/experimental/SphereField3D.tsx",
+          "specifier": "three",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "./CaptionedVideoComposition",
+          "to": "src/remotion/CaptionedVideoComposition.tsx"
+        },
+        {
+          "from": "src/remotion/CaptionedVideoComposition.tsx",
+          "specifier": "react",
+          "to": null
+        },
+        {
+          "from": "src/remotion/CaptionedVideoComposition.tsx",
+          "specifier": "remotion",
+          "to": null
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "../lib/AnimationContext",
+          "to": "src/lib/AnimationContext.tsx"
+        },
+        {
+          "from": "src/remotion/Root.tsx",
+          "specifier": "../lib/videoConfig",
+          "to": "src/lib/videoConfig.ts"
+        }
+      ],
+      "findings": [
+        {
+          "file": "src/lib/AnimationContext.tsx",
+          "line": 145,
+          "text": "fontFamily: 'Poppins',"
+        },
+        {
+          "file": "src/lib/AnimationContext.tsx",
+          "line": 146,
+          "text": "fontFamilyTwo: 'Montserrat',"
+        },
+        {
+          "file": "src/lib/AnimationContext.tsx",
+          "line": 147,
+          "text": "fontFamilyThree: 'Oswald',"
+        },
+        {
+          "file": "src/lib/editor/selection.ts",
+          "line": 45,
+          "text": "applyDomain({ ...current, animationStyle: normalizeTextTemplateId(id), ...(normalizeTextTemplateId(id) === 'dual-text-layers' && !current.secondaryTextLayer ? { dualPrimaryDelayFrames: 0, secondaryTextLayer: { enabled: true, text: 'DEPTH', animationStyle: 'ink-stamp-print', fontFamily: 'Montserrat', fontWeight: '400', fontSize: 120, positionX: 0, positionY: 0, color: '#8b5cf6', opacity: 0.45, enableFill: true, enableBorder: false, borderColor: '#ffffff', borderWidth: 4, enableShadow: false, shadowColor: '#000000', shadowBlur: 12, motionDurationFrames: current.motionDurationFrames, speed: current.speed, delayFrames: 0, templateOptions: {} } } : {}) }, saved[id], TEXT_KEYS);"
+        },
+        {
+          "file": "src/remotion/templates/AppleStyleText.tsx",
+          "line": 25,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/AppleStyleText.tsx",
+          "line": 56,
+          "text": "fontFamily: 'inherit',"
+        },
+        {
+          "file": "src/remotion/text/StyledRangeText.tsx",
+          "line": 69,
+          "text": "fontFamily: rangeStyle.fontFamily ? `\"${rangeStyle.fontFamily}\", sans-serif` : undefined,"
+        },
+        {
+          "file": "src/remotion/text/StyledRangeText.tsx",
+          "line": 136,
+          "text": "fontFamily: rangeStyle.fontFamily ? `\"${rangeStyle.fontFamily}\", sans-serif` : undefined,"
+        },
+        {
+          "file": "src/remotion/templates/BarRevealEffect.tsx",
+          "line": 85,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/BarRevealEffect.tsx",
+          "line": 97,
+          "text": "fontFamily: `\"${props.fontFamilyTwo || props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/BlurringTextCascade.tsx",
+          "line": 21,
+          "text": "<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontWeight: props.fontWeight || 'bold' }}>"
+        },
+        {
+          "file": "src/remotion/templates/BlurRevealEffect.tsx",
+          "line": 31,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/BubblePopEffect.tsx",
+          "line": 36,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/CinematicText.tsx",
+          "line": 58,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/CleanModernText.tsx",
+          "line": 62,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 2,
+          "text": "import { useVideoConfig, interpolate, AbsoluteFill, staticFile } from 'remotion';"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 6,
+          "text": "import { useLoader, useThree } from '@react-three/fiber';"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 7,
+          "text": "import { Center, Environment, Text3D } from '@react-three/drei';"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 13,
+          "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"2048\" height=\"1152\" viewBox=\"0 0 2048 1152\">"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 62,
+          "text": "const normalizeFontFamily = (fontFamily: string): string => {"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 63,
+          "text": "return (fontFamily || '')"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 155,
+          "text": "fontFamily: string,"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 160,
+          "text": "const family = normalizeFontFamily(fontFamily);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 395,
+          "text": "const texture = useLoader(THREE.TextureLoader, LANDSCAPE_TEXTURE_URI);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 508,
+          "text": "() => resolveFontAsset(props.fontFamily, props.fontWeight, props.useFont3dOverride, props.font3dPreset),"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 509,
+          "text": "[props.fontFamily, props.fontWeight, props.useFont3dOverride, props.font3dPreset]"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 513,
+          "text": "? staticFile(`fonts/ttf/${resolvedFont.file}`)"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 514,
+          "text": ": staticFile(`fonts/${resolvedFont.file}`);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 515,
+          "text": "const rawFontData = useLoader("
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 542,
+          "text": "return staticFile(`fonts/${resolvedFont.file}`);"
+        },
+        {
+          "file": "src/remotion/templates/Extruded3DEffect.tsx",
+          "line": 683,
+          "text": "<Environment preset=\"studio\" />"
+        },
+        {
+          "file": "src/remotion/templates/FlickerEffect.tsx",
+          "line": 56,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+          "line": 100,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FlyThroughEffect.tsx",
+          "line": 52,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FollowerEffect.tsx",
+          "line": 21,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/FollowerGrowRotate.tsx",
+          "line": 50,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/GlitchEffect.tsx",
+          "line": 28,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 152,
+          "text": "props.fontFamily || 'Poppins',"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 153,
+          "text": "props.fontFamilyTwo || props.fontFamily || 'Poppins',"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 154,
+          "text": "props.fontFamilyThree || props.fontFamily || 'Poppins',"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 422,
+          "text": "const activeFontFamily = fontFamilies[styleIndex] ?? props.fontFamily ?? 'Poppins';"
+        },
+        {
+          "file": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+          "line": 481,
+          "text": "fontFamily: `\"${activeFontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/KineticSlideIn.tsx",
+          "line": 45,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/NeonPulseEffect.tsx",
+          "line": 31,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/RotationRevealEffect.tsx",
+          "line": 24,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ScrambleEffect.tsx",
+          "line": 67,
+          "text": "fontFamily: `\"${props.fontFamily}\", monospace`,"
+        },
+        {
+          "file": "src/remotion/templates/ShakeFlickerEffect.tsx",
+          "line": 48,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "line": 87,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ShapeRevealEffect.tsx",
+          "line": 108,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/SlideRevealEffect.tsx",
+          "line": 48,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/SmoothSlidingText.tsx",
+          "line": 37,
+          "text": "<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontWeight: props.fontWeight || 'bold', textAlign: 'center', lineHeight: props.lineHeight || 1.2 }}>"
+        },
+        {
+          "file": "src/remotion/templates/TypewriterEffect.tsx",
+          "line": 40,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 21,
+          "text": "font: props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 43,
+          "text": "font: props.fontFamilyTwo || props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 65,
+          "text": "font: props.fontFamilyThree || props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/templates/ViralTextEffect.tsx",
+          "line": 110,
+          "text": "fontFamily: `\"${item.font}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/WipeRevealEffect.tsx",
+          "line": 31,
+          "text": "fontFamily: `\"${props.fontFamily}\", sans-serif`,"
+        },
+        {
+          "file": "src/remotion/templates/WordHighlightTracker.tsx",
+          "line": 11,
+          "text": "return <div style={{ width: '100%', textAlign: 'center', color: props.color, fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, lineHeight: props.lineHeight }}>{words.map((word, index) => <span key={`${word}-${index}`} style={{ display: 'inline-block', margin: '0 0.12em', padding: `${props.wordHighlightPaddingPx ?? 8}px`, borderRadius: props.wordHighlightCornerRadiusPx ?? 12, backgroundColor: index === activeIndex ? (props.wordHighlightColor ?? '#d7ff3f') : 'transparent', color: index === activeIndex ? (props.wordHighlightActiveTextColor ?? '#111111') : (props.wordHighlightInactiveTextColor ?? props.color) }}>{word}</span>)}</div>;"
+        },
+        {
+          "file": "src/remotion/templates/PaperCutoutAssemble.tsx",
+          "line": 10,
+          "text": "return <div style={{ width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 12, fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, color: props.color }}>"
+        },
+        {
+          "file": "src/remotion/templates/InkStampPrint.tsx",
+          "line": 39,
+          "text": "return <div style={{ width: '100%', perspective: '2800px', transformStyle: 'preserve-3d' }}><div style={{ width: '100%', textAlign: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, color: fillColor, opacity: getInkStampCoverage(visualProgress * (1.1 + intensity * 0.65), coverage), filter: `blur(${depthBlur}px)`, transform: `translateY(${floatY}px) translateZ(${depthZ}px) scale(${scale}) rotate(${(1 - progress) * initialAngle}deg)`, textShadow: shadow, WebkitTextStroke: stroke, backgroundImage: props.enableFill === false ? 'none' : grain(text, props.inkStampSeed ?? 'ink-stamp-print-1', roughness), WebkitBackgroundClip: props.enableFill === false ? 'initial' : 'text', backgroundClip: props.enableFill === false ? 'initial' : 'text' }}>{text}</div></div>;"
+        },
+        {
+          "file": "src/remotion/templates/VariableWeightWave.tsx",
+          "line": 14,
+          "text": "return <div style={{ width: '100%', textAlign: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, color: props.color, lineHeight: props.lineHeight }}>{Array.from(props.text).map((char, index) => { const influence = Math.exp(-0.5 * ((index - center) / width) ** 2); const weight = Math.round((props.variableWeightBaseWeight ?? 400) + ((props.variableWeightPeakWeight ?? 850) - (props.variableWeightBaseWeight ?? 400)) * influence); return <span key={`${char}-${index}`} style={{ display: 'inline-block', fontVariationSettings: `'wght' ${weight}` }}>{char}</span>; })}</div>;"
+        },
+        {
+          "file": "src/remotion/templates/GlyphTileAssemble.tsx",
+          "line": 10,
+          "text": "return <div style={{ width: '100%', textAlign: 'center', fontFamily: `\"${props.fontFamily}\", sans-serif`, fontSize: props.fontSize, fontWeight: props.fontWeight, color: props.color, letterSpacing: props.letterSpacing }}>{Array.from(props.text || '').map((char, index) => <span key={`${char}-${index}`} style={{ display: 'inline-block', minWidth: (props.glyphTileSizePx ?? 20) * 0.45, transform: `translate(${(1 - progress) * ((index % 3) - 1) * scatter}px, ${(1 - progress) * (((index + 1) % 3) - 1) * scatter}px)`, opacity: progress }}>{char}</span>)}</div>;"
+        },
+        {
+          "file": "src/remotion/templates/DualTextLayers.tsx",
+          "line": 10,
+          "text": "const secondaryNode = secondary?.enabled ? <Sequence from={Math.max(0, secondary.delayFrames)}><div style={{ position: 'absolute', ...getCenteredLayerTransform(secondary.positionX, secondary.positionY), opacity: Math.max(0, Math.min(1, secondary.opacity)) }}><InkStampPrint {...props} speed={secondary.speed} text={secondary.text} fontFamily={secondary.fontFamily} fontWeight={secondary.fontWeight} fontSize={secondary.fontSize} color={secondary.color} inkStampColor={secondary.color} enableFill={secondary.enableFill} enableBorder={secondary.enableBorder} borderColor={secondary.borderColor} borderWidth={secondary.borderWidth} enableShadow={secondary.enableShadow} shadowColor={secondary.shadowColor} shadowBlur={secondary.shadowBlur} /></div></Sequence> : null;"
+        },
+        {
+          "file": "src/lib/editor/dualTextLayers.ts",
+          "line": 13,
+          "text": "fontFamily: props.fontFamily,"
+        },
+        {
+          "file": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "line": 2,
+          "text": "import { AbsoluteFill, Video, staticFile } from 'remotion';"
+        },
+        {
+          "file": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+          "line": 30,
+          "text": "src={staticFile(`backgrounds/video-imports/${fileName}`)}"
+        },
+        {
+          "file": "src/components/experimental/ProceduralCircuit.tsx",
+          "line": 2,
+          "text": "import { AbsoluteFill, getRemotionEnvironment, useCurrentFrame, useVideoConfig } from 'remotion';"
+        },
+        {
+          "file": "src/components/experimental/ProceduralCircuit.tsx",
+          "line": 459,
+          "text": "const { isRendering } = getRemotionEnvironment();"
+        },
+        {
+          "file": "src/components/experimental/AIPulseMaster.tsx",
+          "line": 2,
+          "text": "import { AbsoluteFill, getRemotionEnvironment, useCurrentFrame, useVideoConfig } from 'remotion';"
+        },
+        {
+          "file": "src/components/experimental/AIPulseMaster.tsx",
+          "line": 246,
+          "text": "const { isRendering } = getRemotionEnvironment();"
+        },
+        {
+          "file": "src/components/experimental/AIPulseMaster.tsx",
+          "line": 341,
+          "text": "fontFamily: 'Orbitron, monospace',"
+        },
+        {
+          "file": "src/components/experimental/AIPulseMaster.tsx",
+          "line": 809,
+          "text": "fontFamily: 'Orbitron, system-ui, sans-serif',"
+        },
+        {
+          "file": "src/components/experimental/AIPulseMaster.tsx",
+          "line": 823,
+          "text": "fontFamily: 'Share Tech Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',"
+        },
+        {
+          "file": "src/remotion/CaptionedVideoComposition.tsx",
+          "line": 12,
+          "text": "return <AbsoluteFill><OffthreadVideo src={src} /><div style={{ position: 'absolute', left: '5%', right: '5%', top: `${style?.positionY ?? 88}%`, transform: 'translateY(-50%)', textAlign: 'center', fontFamily: style?.fontFamily ?? 'Arial', fontSize: style?.fontSize ?? 48, color: style?.color ?? '#fff', textShadow: '0 2px 4px #000', whiteSpace: 'pre-wrap' }}>{cue?.text ?? ''}</div></AbsoluteFill>;"
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

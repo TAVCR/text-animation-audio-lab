@@ -1,0 +1,97 @@
+{
+  "kind": "controlled",
+  "startedAtUtc": "2026-09-07T10:42:27.2549084Z",
+  "inputCommit": "98df2d4630b80d5728730ca31e52aa196621754d",
+  "cwd": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION",
+  "paths": [
+    {
+      "name": "TEMP",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\temp",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "TMP",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\tmp",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "NPM_CONFIG_CACHE",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\npm-cache",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "XDG_CACHE_HOME",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\tool-cache",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\local-appdata",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "APPDATA",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\roaming-appdata",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "electron_config_cache",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\tool-cache\\electron",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "ELECTRON_BUILDER_CACHE",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\tool-cache\\electron-builder",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    },
+    {
+      "name": "NEXT_SWC_PATH",
+      "path": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\tool-cache\\next-swc",
+      "insideAutomation": true,
+      "existsBeforeSetup": false,
+      "existsBeforeCommands": true,
+      "existsAfter": true
+    }
+  ],
+  "npmCacheEffective": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\npm-cache",
+  "node": {
+    "version": "v22.17.0",
+    "tmpdir": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION\\.automation-runtime\\temp",
+    "homedir": "C:\\Users\\Gustavo",
+    "cwd": "K:\\ANTIGRAVITY\\HABILIDADES\\TEXT ANIMATION AUTOMATION"
+  },
+  "npm": "10.9.2",
+  "os": "Microsoft Windows 11 Pro",
+  "HOME": "C:\\Users\\Gustavo",
+  "USERPROFILE": "C:\\Users\\Gustavo",
+  "homeInsideAutomation": false,
+  "homeExistsBefore": true,
+  "NEXT_TELEMETRY_DISABLED": "1",
+  "historicalTempEvidence": "UNKNOWN / NOT CAPTURED",
+  "homeExistsAfter": true,
+  "endedAtUtc": "2026-09-07T10:45:35.8139116Z"
+}

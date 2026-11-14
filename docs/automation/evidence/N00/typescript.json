@@ -1,0 +1,6 @@
+{
+  "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+  "startedAtUtc": "2026-09-07T10:18:00.3296132Z",
+  "endedAtUtc": "2026-09-07T10:18:05.4714816Z",
+  "exitCode": 0
+}

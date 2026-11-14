@@ -1,0 +1,22 @@
+[
+  {
+    "path": "C:\\Users\\Gustavo\\AppData\\Local\\Temp",
+    "unchanged": false
+  },
+  {
+    "path": "C:\\Users\\Gustavo\\AppData\\Local\\npm-cache",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\Gustavo\\AppData\\Local\\next-swc",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\Gustavo\\AppData\\Local\\electron\\Cache",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\Gustavo\\AppData\\Local\\electron-builder\\Cache",
+    "unchanged": true
+  }
+]

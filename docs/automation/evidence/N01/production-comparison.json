@@ -1,0 +1,1034 @@
+[
+  {
+    "path": ".eslintrc.json",
+    "status": "unchanged"
+  },
+  {
+    "path": ".gitignore",
+    "status": "unchanged"
+  },
+  {
+    "path": "electron/main.cjs",
+    "status": "unchanged"
+  },
+  {
+    "path": "electron/preload.cjs",
+    "status": "unchanged"
+  },
+  {
+    "path": "next-env.d.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "next.config.mjs",
+    "status": "unchanged"
+  },
+  {
+    "path": "package-lock.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "package.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "postcss.config.mjs",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/assets/circuito_limpio.png",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 4K HORIZ.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 4K VERT.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 GENERATIVE HORIZ.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 GENERATIVE VERT.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/AI CHIP SEEDANCE 2.5 VERT.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 1 VERT.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 1.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 2 VERT.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 2.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 3 VERT.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 3.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 4 VERT.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/backgrounds/video-imports/FONDO VIDEO 4.mp4",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/droid_sans_mono_regular.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/droid_serif_bold.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/droid_serif_regular.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/gentilis_bold.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/gentilis_regular.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/helvetiker_bold.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/helvetiker_regular.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/optimer_bold.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/optimer_regular.typeface.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Anton-Regular.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Bangers-Regular.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/BebasNeue-Regular.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/ComicNeue-Bold.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/ComicNeue-Regular.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Inter-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Montserrat-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Nunito-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/OpenSans-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Oswald-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/PlayfairDisplay-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Poppins-Bold.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Poppins-Regular.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Roboto-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/RobotoMono-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "public/fonts/ttf/Rubik-Var.ttf",
+    "status": "unchanged"
+  },
+  {
+    "path": "README.md",
+    "status": "unchanged"
+  },
+  {
+    "path": "remotion.config.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/api/render/route.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/api/subtitles/render/route.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/api/subtitles/transcribe/route.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/api/subtitles/upload/route.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/experimental/procedural-circuit/page.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/globals.css",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/controls/FontSection.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/controls/LayoutControls.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/controls/RenderSection.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/controls/TextInputSection.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/3DNebula.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/AIPulseMaster.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/Check3D.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/Hex.shaders.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/HexShaderBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/HexWave3D.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/ModernMatrix3D.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/Nebula2D.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/ProceduralCircuit.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/ProceduralCircuitPreview.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experimental/SphereField3D.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/experiments/ModernMatrixTunnel.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/HexProceduralGround.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/fields/ColorField.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/fields/NumberField.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/InspectorPanel.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/InspectorPanelLegacy.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/ParticlesTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/primitives.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/BackgroundBasicTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/CompositionBasicTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/ExportTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/GlobalTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/ParticlesTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/PresetsBasicTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/PresetsTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/TextBasicTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/tabs/TextTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/TemplatePicker.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/Text3DTab.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/inspector/WordContentSynchronizer.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/MovableResizablePanel.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/PreviewContainer.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/subtitles/AutoSubtitlesTool.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/subtitles/SubtitleCueEditor.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/subtitles/SubtitlePresetPicker.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/subtitles/SubtitlePreview.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/subtitles/SubtitleWorkspace.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/TopPrimaryControls.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/components/TopPrimaryControlsLegacy.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/AnimationContext.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/batchOrchestration.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/catalog.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/controlSchema.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/dualTextLayers.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/EditorSessionContext.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/ExportContext.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/exportFilesystem.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/exportOrchestration.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/exportState.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/grouping.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/history.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/persistence.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/selection.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/stillExport.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/templateControlContracts.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/editor/useDraftValue.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/fonts/availableFonts.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/hooks/useRenderExport.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/render/gpuDiagnostics.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/render/renderAttempts.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/render/renderCaptionedVideo.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/subtitles/mediaPaths.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/subtitles/presets.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/subtitles/segmentation.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/subtitles/types.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/subtitles/validation.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/types/animation.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/lib/videoConfig.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/crystalAppearance.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/halftoneWaveField.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/ImportedVideoBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/neonBulbAlternation.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/paperConfettiSettle.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/ParticleBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/RetroGrid.shaders.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/RetroGridForward3D.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/SphereParticleBackground3D.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/stellarDepthField.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/backgrounds/StellarDepthFieldCanvas.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/CaptionedVideoComposition.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/HexReliefWaveBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/HyperTunnelBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/NeuralLatticeBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/QuantumFlux.shaders.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/QuantumFluxShaderBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/backgrounds/RetroGridTiltBackground.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/index.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/experimental/RootExperimental.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/index.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/MainComposition.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/MasterMotionLayer.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/Root.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/AppleStyleText.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/BarRevealEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/BlurRevealEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/BlurringTextCascade.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/BubblePopEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/CinematicText.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/CleanModernText.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/DualTextLayers.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/Extruded3DEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/extrudedAppearance.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/FlickerEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/FlickerOutlineFillEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/FlyThroughEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/FollowerEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/FollowerGrowRotate.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/GlitchEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/GlyphTileAssemble.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/InkStampPrint.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/inkStampUtils.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/KineticBoxSequenceEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/KineticSlideIn.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/NeonPulseEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/PaperCutoutAssemble.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/paperCutoutUtils.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/registry.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/RotationRevealEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/ScrambleEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/ShakeFlickerEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/ShapeRevealEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/SlideRevealEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/SmoothSlidingText.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/TypewriterEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/typewriterUtils.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/VariableWeightWave.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/ViralTextEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/WipeRevealEffect.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/WordHighlightTracker.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/templates/wordHighlightUtils.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/text/StyledRangeText.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/remotion/useMotionFrame.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "src/types/desktop-fonts.d.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tailwind.config.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/available-fonts.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/background-basic.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/background-contract.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/background-representatives.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/batch-orchestration.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/catalog.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/composition-layout.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/control-schema.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/crystal-appearance.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/desktop-package-config.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/dual-speed-integration.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/dual-text-layers.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/duration-fit.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/duration-migration.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/duration.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/editor-integration.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/export-filesystem.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/export-orchestration.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/export-state.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/extruded-appearance.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/family-representatives.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/fields.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/gpu-policy.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/gpu-render-integration.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/grouping.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/halftone-wave-field.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/history.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/ink-speed.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/ink-stamp.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/inspector-tabs.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/neon-bulb-alternation.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/paper-clock.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/paper-confetti-settle.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/paper-cutout.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/particles-tab.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/persistence.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/preset-migration.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/presets-and-tabs.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/render-route-duration.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/render-single-pass-contract.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/selection.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/session-persistence.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/stellar-depth-field.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/still-export-integration.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/still-export.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/subtitle-composition.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/subtitle-render.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/subtitle-segmentation.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/subtitle-transcription.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/subtitle-ui.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/subtitle-upload.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/subtitle-validation.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/template-contract.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/template-control-contracts.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/text-basic.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/typewriter.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/wave-clock.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/word-content-synchronizer.test.tsx",
+    "status": "unchanged"
+  },
+  {
+    "path": "tests/editor/word-highlight.test.ts",
+    "status": "unchanged"
+  },
+  {
+    "path": "tsconfig.json",
+    "status": "unchanged"
+  },
+  {
+    "path": "vitest.config.ts",
+    "status": "unchanged"
+  }
+]

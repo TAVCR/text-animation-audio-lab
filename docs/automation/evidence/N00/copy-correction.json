@@ -1,0 +1,16 @@
+[
+  {
+    "path": "NEW APPROACH/bg3d-lowpoly-terrain.tsx",
+    "sourceSha256": "770db1b91807220e29ac06c60a523227a3c43ce50293fa648a57e9daae5b4d27",
+    "destinationSha256": "770db1b91807220e29ac06c60a523227a3c43ce50293fa648a57e9daae5b4d27",
+    "sizeBytes": 13901,
+    "status": "match"
+  },
+  {
+    "path": "NEW APPROACH/bg3d-crystal-shards.tsx",
+    "sourceSha256": "2e8f382b0797538ab2864656b7f3f1febc04b6e0c48db11e0aaabb019b35997c",
+    "destinationSha256": "2e8f382b0797538ab2864656b7f3f1febc04b6e0c48db11e0aaabb019b35997c",
+    "sizeBytes": 6659,
+    "status": "match"
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "name": "@react-three/drei",
+    "historical": "9.122.0",
+    "current": "9.122.0",
+    "match": true
+  },
+  {
+    "name": "@react-three/fiber",
+    "historical": "8.18.0",
+    "current": "8.18.0",
+    "match": true
+  },
+  {
+    "name": "@react-three/postprocessing",
+    "historical": "2.19.1",
+    "current": "2.19.1",
+    "match": true
+  },
+  {
+    "name": "@remotion/bundler",
+    "historical": "4.0.520",
+    "current": "4.0.520",
+    "match": true
+  },
+  {
+    "name": "@remotion/cli",
+    "historical": "4.0.520",
+    "current": "4.0.520",
+    "match": true
+  },
+  {
+    "name": "@remotion/player",
+    "historical": "4.0.520",
+    "current": "4.0.520",
+    "match": true
+  },
+  {
+    "name": "@remotion/renderer",
+    "historical": "4.0.520",
+    "current": "4.0.520",
+    "match": true
+  },
+  {
+    "name": "@remotion/tailwind",
+    "historical": "4.0.520",
+    "current": "4.0.520",
+    "match": true
+  },
+  {
+    "name": "@remotion/three",
+    "historical": "4.0.520",
+    "current": "4.0.520",
+    "match": true
+  },
+  {
+    "name": "@testing-library/dom",
+    "historical": "10.4.0",
+    "current": "10.4.0",
+    "match": true
+  },
+  {
+    "name": "@testing-library/react",
+    "historical": "16.1.0",
+    "current": "16.1.0",
+    "match": true
+  },
+  {
+    "name": "@types/node",
+    "historical": "20.19.37",
+    "current": "20.19.37",
+    "match": true
+  },
+  {
+    "name": "@types/react-dom",
+    "historical": "18.3.7",
+    "current": "18.3.7",
+    "match": true
+  },
+  {
+    "name": "@types/react",
+    "historical": "18.3.28",
+    "current": "18.3.28",
+    "match": true
+  },
+  {
+    "name": "electron-builder",
+    "historical": "26.15.3",
+    "current": "26.15.3",
+    "match": true
+  },
+  {
+    "name": "electron",
+    "historical": "35.7.5",
+    "current": "35.7.5",
+    "match": true
+  },
+  {
+    "name": "eslint-config-next",
+    "historical": "14.2.15",
+    "current": "14.2.15",
+    "match": true
+  },
+  {
+    "name": "eslint",
+    "historical": "8.57.1",
+    "current": "8.57.1",
+    "match": true
+  },
+  {
+    "name": "jsdom",
+    "historical": "24.1.3",
+    "current": "24.1.3",
+    "match": true
+  },
+  {
+    "name": "next",
+    "historical": "14.2.15",
+    "current": "14.2.15",
+    "match": true
+  },
+  {
+    "name": "postcss",
+    "historical": "8.5.23",
+    "current": "8.5.23",
+    "match": true
+  },
+  {
+    "name": "postprocessing",
+    "historical": "6.39.0",
+    "current": "6.39.0",
+    "match": true
+  },
+  {
+    "name": "re-resizable",
+    "historical": "6.11.2",
+    "current": "6.11.2",
+    "match": true
+  },
+  {
+    "name": "react-dom",
+    "historical": "18.3.1",
+    "current": "18.3.1",
+    "match": true
+  },
+  {
+    "name": "react-draggable",
+    "historical": "4.5.0",
+    "current": "4.5.0",
+    "match": true
+  },
+  {
+    "name": "react",
+    "historical": "18.3.1",
+    "current": "18.3.1",
+    "match": true
+  },
+  {
+    "name": "remotion",
+    "historical": "4.0.520",
+    "current": "4.0.520",
+    "match": true
+  },
+  {
+    "name": "tailwindcss",
+    "historical": "3.4.19",
+    "current": "3.4.19",
+    "match": true
+  },
+  {
+    "name": "three",
+    "historical": "0.168.0",
+    "current": "0.168.0",
+    "match": true
+  },
+  {
+    "name": "typescript",
+    "historical": "5.9.3",
+    "current": "5.9.3",
+    "match": true
+  },
+  {
+    "name": "vitest",
+    "historical": "2.1.9",
+    "current": "2.1.9",
+    "match": true
+  }
+]
