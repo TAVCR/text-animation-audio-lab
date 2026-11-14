@@ -1,0 +1,14 @@
+{
+  "events": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "variant": 1,
+  "gain": 0.75,
+  "tail": 100,
+  "offset": 0,
+  "reason": "La variante 1 proporciona un equilibrio entre el efecto y la claridad. El gain 0.75 ofrece una intensidad adecuada sin ser demasiado fuerte. El tail de 100 ms a\u00f1ade un poco de reverb, pero no es demasiado largo para mantener la claridad. El offset de 0 no introduce anticipaci\u00f3n innecesaria.",
+  "model": "audio-director"
+}
