@@ -1,0 +1,4 @@
+# Audio Lab — Typewriter
+Desde la carpeta del proyecto ejecutar npm run dev -- --hostname 127.0.0.1 --port 3217. Seleccionar Typewriter, abrir Sound Design y activar Audio. Procedural selecciona una toma DSP Earshot. Library permite abrir un archivo local. Reproducir con el transporte del editor. Guardar WAV descarga la mezcla mono PCM24 a 48 kHz.
+Las cuatro tomas se generaron con earshot.forge.bank.render("typing_key/crisp", seed=0..3) a 48000 Hz. El selector rota las tomas precalculadas. La mezcla busca el pico de la región seleccionada y lo coloca en el frame de revelado. El archivo fuente permanece intacto.
+Validación ejecutada: TypeScript sin emisión y tres pruebas existentes de Typewriter. No se realizó validación interactiva ni medición de sincronía acústica. Pendientes: persistencia, forma de onda, índice piloto, stretch, edición detallada, exportador MOV integrado y pruebas A–L.

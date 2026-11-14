@@ -17,7 +17,7 @@ function wave(samples:Float32Array) {
   v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);
   v.setUint32(24,48000,true);v.setUint32(28,144000,true);v.setUint16(32,3,true);v.setUint16(34,24,true);
   tag(36,'data');v.setUint32(40,samples.length*3,true);
-  let peak=1;for(const x of samples) peak=Math.max(peak,Math.abs(x));
+  let peak=1;samples.forEach(x=>{peak=Math.max(peak,Math.abs(x))});
   samples.forEach((x,i)=>{const n=Math.round(x/peak*8388606);for(let k=0;k<3;k++)v.setUint8(44+i*3+k,n>>(8*k));});
   return new Blob([data],{type:'audio/wav'});
 }
@@ -77,3 +77,4 @@ export function SoundDesign({props,frames,onSound}:{props:AnimationProps;frames:
     {enabled && <span>{status}</span>} {url && <a href={url} download="typewriter.wav">Guardar WAV</a>}
   </details>;
 }
+
