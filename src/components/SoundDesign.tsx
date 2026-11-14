@@ -76,7 +76,8 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         const left=Math.max(start,hit-240),right=Math.min(src.length,hit+tail*48);
         const mix=new Float32Array(Math.round(frames*48000/fps));
         let last=-100,events=0;
-        for(const [index,f] of analysis.events.entries()){
+        for(let index=0;index<analysis.events.length;index++){
+          const f=analysis.events[index];
           if(chosen===signature && ai?.signature===signature && !ai.events.includes(index))continue;
           if(f-last<density || events>=256)continue;
           last=f;events++;
@@ -116,6 +117,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     </div>
   </details>;
 }
+
 
 
 
