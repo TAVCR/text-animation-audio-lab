@@ -1,0 +1,173 @@
+{
+  "request": {
+    "model": "audio-director",
+    "temperature": 0.35,
+    "max_tokens": 350,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Dise\u00c3\u00b1a acentos para esta animaci\u00c3\u00b3n a 30 fps. events contiene \u00c3\u00adndices base cero de los eventos seleccionados; el resto queda en silencio. Los doce eventos permitidos son un m\u00c3\u00a1ximo. Selecciona hitos sem\u00c3\u00a1nticos a lo largo del movimiento, incluido el cierre si merece \u00c3\u00a9nfasis. Nunca gastes todos los acentos al principio de una frase larga. Para Typewriter usa puntuaci\u00c3\u00b3n y comienzos de palabras; para Slide In elige entradas de palabras clave. variant es la toma 0\u00e2\u20ac\u201c3 de la familia del efecto, gain la intensidad, tail los ms de cola y offset la anticipaci\u00c3\u00b3n en fotogramas. Explica brevemente en espa\u00c3\u00b1ol por qu\u00c3\u00a9. {\"template\":\"typewriter\",\"text\":\"Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla\",\"words\":16,\"events\":[{\"id\":0,\"frame\":1},{\"id\":1,\"frame\":2},{\"id\":2,\"frame\":4},{\"id\":3,\"frame\":5},{\"id\":4,\"frame\":6},{\"id\":5,\"frame\":7},{\"id\":6,\"frame\":8},{\"id\":7,\"frame\":9},{\"id\":8,\"frame\":10},{\"id\":9,\"frame\":11},{\"id\":10,\"frame\":13},{\"id\":11,\"frame\":14},{\"id\":12,\"frame\":15},{\"id\":13,\"frame\":16},{\"id\":14,\"frame\":17},{\"id\":15,\"frame\":18},{\"id\":16,\"frame\":19},{\"id\":17,\"frame\":20},{\"id\":18,\"frame\":21},{\"id\":19,\"frame\":22},{\"id\":20,\"frame\":23},{\"id\":21,\"frame\":24},{\"id\":22,\"frame\":25},{\"id\":23,\"frame\":26},{\"id\":24,\"frame\":28},{\"id\":25,\"frame\":29},{\"id\":26,\"frame\":31},{\"id\":27,\"frame\":32},{\"id\":28,\"frame\":33},{\"id\":29,\"frame\":34},{\"id\":30,\"frame\":35},{\"id\":31,\"frame\":36},{\"id\":32,\"frame\":37},{\"id\":33,\"frame\":39},{\"id\":34,\"frame\":40},{\"id\":35,\"frame\":42},{\"id\":36,\"frame\":43},{\"id\":37,\"frame\":44},{\"id\":38,\"frame\":46},{\"id\":39,\"frame\":47},{\"id\":40,\"frame\":49},{\"id\":41,\"frame\":51},{\"id\":42,\"frame\":53},{\"id\":43,\"frame\":54},{\"id\":44,\"frame\":55},{\"id\":45,\"frame\":58},{\"id\":46,\"frame\":60},{\"id\":47,\"frame\":61},{\"id\":48,\"frame\":63},{\"id\":49,\"frame\":64},{\"id\":50,\"frame\":68},{\"id\":51,\"frame\":69},{\"id\":52,\"frame\":71},{\"id\":53,\"frame\":73},{\"id\":54,\"frame\":75},{\"id\":55,\"frame\":77},{\"id\":56,\"frame\":79},{\"id\":57,\"frame\":81},{\"id\":58,\"frame\":84},{\"id\":59,\"frame\":86},{\"id\":60,\"frame\":91},{\"id\":61,\"frame\":94},{\"id\":62,\"frame\":100},{\"id\":63,\"frame\":104},{\"id\":64,\"frame\":108},{\"id\":65,\"frame\":113},{\"id\":66,\"frame\":118},{\"id\":67,\"frame\":124},{\"id\":68,\"frame\":133},{\"id\":69,\"frame\":147}],\"limits\":\"Use IDs only; gain 0.15..0.9, tail 15..350 milliseconds, offset -2..2 frames, variant 0..3\"}"
+      }
+    ],
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "sound_plan",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "events",
+            "variant",
+            "gain",
+            "tail",
+            "offset",
+            "reason"
+          ],
+          "properties": {
+            "events": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 12,
+              "items": {
+                "type": "integer",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49,
+                  50,
+                  51,
+                  52,
+                  53,
+                  54,
+                  55,
+                  56,
+                  57,
+                  58,
+                  59,
+                  60,
+                  61,
+                  62,
+                  63,
+                  64,
+                  65,
+                  66,
+                  67,
+                  68,
+                  69
+                ]
+              }
+            },
+            "variant": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "gain": {
+              "type": "number",
+              "minimum": 0.15,
+              "maximum": 0.9
+            },
+            "tail": {
+              "type": "integer",
+              "minimum": 15,
+              "maximum": 350
+            },
+            "offset": {
+              "type": "integer",
+              "minimum": -2,
+              "maximum": 2
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"events\": [\n    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\n  ],\n  \"variant\": 0,\n  \"gain\": 0.7,\n  \"tail\": 100,\n  \"offset\": 0,\n  \"reason\": \"Los primeros 12 eventos son los m\u00e1s importantes para establecer la introducci\u00f3n y el desarrollo de la idea. El acento se centra en estos hitos clave para dar \u00e9nfasis y crear una conexi\u00f3n emocional con el espectador.\"\n}"
+        }
+      }
+    ],
+    "created": 1794669879,
+    "model": "audio-director",
+    "system_fingerprint": "b11643-1ddc26255",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 142,
+      "prompt_tokens": 981,
+      "total_tokens": 1123,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-geWvDoNzzwmTuidORz5i4TFzqiOTgzlv",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 981,
+      "prompt_ms": 366.307,
+      "prompt_per_token_ms": 0.373401630988787,
+      "prompt_per_second": 2678.081499944036,
+      "predicted_n": 142,
+      "predicted_ms": 1249.454,
+      "predicted_per_token_ms": 8.861375886524822,
+      "predicted_per_second": 112.849292570995
+    }
+  }
+}

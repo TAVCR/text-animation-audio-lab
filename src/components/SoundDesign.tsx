@@ -46,11 +46,11 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     const controller=new AbortController();request.current=controller;
     setDirectorStatus('Consultando el modelo local…');
     try{
-      const res=await fetch('/api/sound-director',{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,port,model})});
+      const res=await fetch('/api/sound-director',{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,heads:analysis.heads,port,model})});
       const data=await res.json();
       if(!controller.signal.aborted){
         if(data.events)setAi({...data,signature});
-        setDirectorStatus(data.events?'Propuesta disponible':(data.error || 'Proveedor no disponible'));
+        setDirectorStatus(data.events?data.reason:(data.error || 'Proveedor no disponible'));
       }
     }catch{if(!controller.signal.aborted)setDirectorStatus('Director local no disponible')}
   }
@@ -118,6 +118,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     </div>
   </details>;
 }
+
 
 
 

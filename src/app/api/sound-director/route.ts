@@ -1,8 +1,9 @@
 import {NextResponse} from 'next/server';
+import {strategySchema,valid,distribute,type Strategy} from '@/lib/sound/strategy';
 export async function POST(req:Request){
   if(req.headers.get('origin')!=='http://'+req.headers.get('host'))return new Response(null,{status:403});
   try{
-    const {template,text:inputText,words,frames,port=3218,model,probe}=await req.json();
+    const {template,text:inputText,words,frames,port=3218,model,probe,heads=[]}=await req.json();
     if(![3218,11434,1234,8080].includes(port))throw Error('Puerto local no autorizado');
     const base='http://127.0.0.1:'+port+'/v1';
     const models=await fetch(base+'/models',{redirect:'error',cache:'no-store',signal:AbortSignal.timeout(3000)}).then(r=>r.json());
@@ -10,14 +11,23 @@ export async function POST(req:Request){
     if(probe)return NextResponse.json({models:ids});
     const selected=model||ids[0];
     if(!ids.includes(selected)||!Array.isArray(frames)||!frames.length||frames.length>3600||!frames.every(Number.isInteger))throw Error('Modelo o calendario inválido');
-    const cap=Math.min(12,frames.length);
-    const schema={type:'object',additionalProperties:false,required:['events','variant','gain','tail','offset','reason'],properties:{events:{type:'array',minItems:1,maxItems:cap,items:{type:'integer',enum:frames.map((_:number,i:number)=>i)}},variant:{type:'integer',minimum:0,maximum:3},gain:{type:'number',minimum:0.15,maximum:.9},tail:{type:'integer',minimum:15,maximum:350},offset:{type:'integer',minimum:-2,maximum:2},reason:{type:'string'}}};
-    const prompt='Diseña acentos para esta animación a 30 fps. events contiene índices base cero de los eventos seleccionados; el resto queda en silencio. Los doce eventos permitidos son un máximo. Selecciona hitos semánticos a lo largo del movimiento, incluido el cierre si merece énfasis. Nunca gastes todos los acentos al principio de una frase larga. Para Typewriter usa puntuación y comienzos de palabras; para Slide In elige entradas de palabras clave. variant es la toma 0–3 de la familia del efecto, gain la intensidad, tail los ms de cola y offset la anticipación en fotogramas. Explica brevemente en español por qué. '+JSON.stringify({template,text:typeof inputText==="string"?inputText.slice(0,4000):"",words,events:frames.map((frame:number,id:number)=>({id,frame})),limits:'Use IDs only; gain 0.15..0.9, tail 15..350 milliseconds, offset -2..2 frames, variant 0..3'});
-    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,max_tokens:350,messages:[{role:'user',content:prompt}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
-    const p=JSON.parse(answer.choices[0].message.content);
-    if(!Array.isArray(p.events)||!p.events.length||p.events.length>cap||!p.events.every((i:number)=>Number.isInteger(i)&&i>=0&&i<frames.length)||!Number.isInteger(p.variant)||p.variant<0||p.variant>3||!Number.isFinite(p.gain)||p.gain<.15||p.gain>.9||!Number.isInteger(p.tail)||p.tail<15||p.tail>350||!Number.isInteger(p.offset)||Math.abs(p.offset)>2||typeof p.reason!=='string')throw Error('Respuesta fuera de límites');
-    return NextResponse.json({...p,events:Array.from(new Set(p.events)),model:selected});
-  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
+    if(!Array.isArray(heads)||heads.some(i=>!Number.isInteger(i)||i<0||i>=frames.length))throw Error('Anclas inválidas');
+    const family=template==='typewriter'?'escritura por grafema':template==='slide-in'?'desplazamiento por palabra':template==='glitch'?'interferencia intermitente':template;
+    const groups=Array.from({length:Math.min(6,frames.length)},(_,i)=>{
+      const first=Math.floor(i*frames.length/Math.min(6,frames.length)),last=Math.ceil((i+1)*frames.length/Math.min(6,frames.length))-1;
+      return {start:frames[first],end:frames[last],count:last-first+1,wordStarts:heads.filter(h=>h>=first&&h<=last).length};
+    });
+    const prompt='Direct sound for a 30fps animation. Choose a qualitative strategy. Use phrase grouping for semantic starts, pulse for irregular interruptions, gesture for displacement. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({family,text:String(inputText??'').slice(0,1000),words,groups});
+    const schema=strategySchema;    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,max_tokens:350,messages:[{role:'user',content:prompt}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
+    const raw=answer.choices?.[0]?.message?.content;
+    let value:unknown;try{value=JSON.parse(raw)}catch{}
+    const accepted=valid(value);
+    const strategy:Strategy=valid(value)?value:{density:'moderate',grouping:template==='glitch'?'pulse':template==='slide-in'?'gesture':'phrase',closing:'accent',character:'soft',space:'short'};
+    const events=distribute(frames,template,strategy,heads);
+    const variant={soft:0,bright:1,rough:3}[strategy.character];
+    const reason=frames.length+' eventos · '+events.length+' acentos · fotogramas '+events.map(i=>frames[i]).join(', ')+' · '+(events.includes(frames.length-1)?'cierre acentuado':'cierre libre');
+    return NextResponse.json({events,variant,gain:strategy.character==='soft'?.4:.65,tail:strategy.space==='short'?65:180,offset:template==='slide-in'?-1:0,model:accepted?selected:'Reglas de respaldo',strategy,raw,correction:accepted?null:'Respuesta incompatible',reason});  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
 }
+
 
 
