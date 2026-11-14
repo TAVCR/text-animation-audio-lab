@@ -7,7 +7,8 @@ import {mapMotionFrame} from '@/remotion/useMotionFrame';
 import {segmentGraphemes} from '@/remotion/templates/typewriterUtils';
 import {REMOTION_FPS as fps} from '@/lib/videoConfig';
 
-const labels:Record<string,string>={typewriter:"Typewriter",glitch:"Cyberpunk Glitch","slide-in":"Slide In"};
+import {analyze,styles} from '@/lib/sound/analyze';
+const labels:Record<string,string>={typewriter:"Typewriter",glitch:"Cyberpunk Glitch",rotation:"Rotation",follower:"Follower","apple-style":"Apple Style","smooth-sliding":"Smooth Sliding","glyph-tile-assemble":"Glyph Tile Assemble","word-highlight-tracker":"Word Highlight Tracker","slide-in":"Slide In"};
 export function SoundPreview({soundUrl,...props}:AnimationProps & {soundUrl?:string}) {
   return <><MainComposition {...props}/>{soundUrl && <Audio src={soundUrl}/>}</>;
 }
@@ -32,6 +33,26 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const [density,setDensity]=React.useState(1),[gain,setGain]=React.useState(.6),[offset,setOffset]=React.useState(0);
   const [trim,setTrim]=React.useState(0),[tail,setTail]=React.useState(100);
 
+  const analysis=React.useMemo(()=>analyze(props,frames,fps),[props,frames]);
+  const signature=JSON.stringify([props.animationStyle,props.text,frames,analysis.events]);
+  const [ai,setAi]=React.useState<{signature:string;events:number[];model:string}|null>(null);
+  const [chosen,setChosen]=React.useState('');
+  const [directorStatus,setDirectorStatus]=React.useState('');
+  const request=React.useRef<AbortController|null>(null);
+  React.useEffect(()=>{setDirectorStatus('');return ()=>request.current?.abort()},[signature]);
+  async function suggest(){
+    request.current?.abort();
+    const controller=new AbortController();request.current=controller;
+    setDirectorStatus('Consultando el modelo local…');
+    try{
+      const res=await fetch('/api/sound-director',{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({template:props.animationStyle,words:analysis.words,count:analysis.events.length})});
+      const data=await res.json();
+      if(!controller.signal.aborted){
+        if(data.events)setAi({...data,signature});
+        setDirectorStatus(data.events?'Propuesta disponible':'Modelo no disponible. Puedes usar las propuestas locales.');
+      }
+    }catch{if(!controller.signal.aborted)setDirectorStatus('Director local no disponible')}
+  }
   const [heard,setHeard]=React.useState('');
   const [url,setUrl]=React.useState(''),[status,setStatus]=React.useState('');
   React.useEffect(()=>{
@@ -53,14 +74,11 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         for(let i=start;i<src.length;i++)if(Math.abs(src[i])>peak){peak=Math.abs(src[i]);hit=i;}
         if(peak<.0001)throw Error('Segmento silencioso');
         const left=Math.max(start,hit-240),right=Math.min(src.length,hit+tail*48);
-        const mix=new Float32Array(Math.round(frames*48000/fps)), chars=segmentGraphemes(props.text);
-        const words=props.text.match(/\S+/g)?.length ?? 0;
-        let previous=0,last=-100,events=0;
-        for(let f=0;f<frames;f++){
-          const clock=mapMotionFrame(f,frames,props)*(props.speed||1);
-          const n=props.animationStyle==="glitch" ? Number(Math.floor(clock/20)%2===0 && clock%4<2 && words>0) : props.animationStyle==="slide-in" ? Math.min(words,Math.ceil(clock/4)) : visibleCount(clock,chars.length,props,fps);
-          const revealed=n>previous && (props.animationStyle!=="typewriter" || chars.slice(previous,n).some(c=>c.trim()));previous=n;
-          if(!revealed || f-last<density)continue;
+        const mix=new Float32Array(Math.round(frames*48000/fps));
+        let last=-100,events=0;
+        for(const [index,f] of analysis.events.entries()){
+          if(chosen===signature && ai?.signature===signature && !ai.events.includes(index))continue;
+          if(f-last<density || events>=256)continue;
           last=f;events++;
           const target=Math.round((f+offset)*48000/fps);
           for(let i=left;i<right;i++){
@@ -72,7 +90,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
       })().catch(e=>{if(active)setStatus(String(e.message))});
     }
     return ()=>{active=false;if(object)URL.revokeObjectURL(object)};
-  },[props,frames,mode,library,seed,gain,offset,density,trim,tail,onSound]);
+  },[props,frames,mode,library,seed,gain,offset,density,trim,tail,onSound,chosen,signature,ai]);
   React.useEffect(()=>{onSound(enabled ? url : '');return ()=>onSound('')},[enabled,url,onSound]);
 
   React.useEffect(()=>{if(enabled && url && heard===url) window.audioLabTake={url,props};return ()=>{delete window.audioLabTake}},[enabled,url,heard,props]);
@@ -80,6 +98,9 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const button="rounded border border-neutral-500 px-3 py-1 font-medium";
   return <details className="shrink-0 max-h-[45%] overflow-auto border-b border-neutral-600 bg-neutral-900 p-2 text-sm text-white">
     <summary className="cursor-pointer font-semibold">Sound Design · {labels[props.animationStyle]}</summary>
+    <section className="my-2"><strong>Animation Analysis</strong><p>{analysis.words} palabras · {analysis.events.length} eventos visuales · clip de {(frames/fps).toFixed(2)} s</p>{analysis.truncated && <p>El texto no termina de aparecer dentro del clip.</p>}</section>
+    <section><strong>Sugerencias por reglas locales</strong><div className="flex gap-2">{styles.map(s=><button key={s.name} className={button} onClick={()=>{setChosen('');setDensity(s.density);setGain(s.gain);setTail(s.tail);setSeed(s.variant)}}>{s.name}</button>)}</div></section>
+    <section><strong>AI Sound Suggestions</strong> <button className={button} disabled={!analysis.events.length} onClick={suggest}>Consultar IA local</button> {directorStatus} {ai?.signature===signature && <button className={button} onClick={()=>setChosen(signature)}>Aplicar {ai.events.length} acentos · {ai.model}</button>}</section>
     <div className="my-2 flex flex-wrap items-center gap-2">
       <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>
       {['Procedural','Library'].map(m=><button key={m} aria-pressed={mode===m} onClick={()=>setMode(m)} className={button+(mode===m?' bg-white text-black':' bg-neutral-800 text-white')}>{m}</button>)}
@@ -95,6 +116,8 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     </div>
   </details>;
 }
+
+
 
 
 
