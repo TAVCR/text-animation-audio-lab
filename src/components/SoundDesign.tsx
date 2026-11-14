@@ -7,6 +7,7 @@ import {mapMotionFrame} from '@/remotion/useMotionFrame';
 import {segmentGraphemes} from '@/remotion/templates/typewriterUtils';
 import {REMOTION_FPS as fps} from '@/lib/videoConfig';
 
+const labels:Record<string,string>={typewriter:"Typewriter",glitch:"Cyberpunk Glitch","slide-in":"Slide In"};
 export function SoundPreview({soundUrl,...props}:AnimationProps & {soundUrl?:string}) {
   return <><MainComposition {...props}/>{soundUrl && <Audio src={soundUrl}/>}</>;
 }
@@ -36,11 +37,12 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   React.useEffect(()=>{
     let active=true,object='';
     setUrl('');setStatus('Preparando mezcla…');
-    if(props.animationStyle==='typewriter' && props.showTextLayer!==false){
+    if(labels[props.animationStyle] && props.showTextLayer!==false){
       (async()=>{
         let buf=library;
         if(mode==='Procedural'){
-          const key='/audio-lab/key'+seed%4+'.wav';
+          const prefix=props.animationStyle==='glitch'?'glitch':props.animationStyle==='slide-in'?'slide':'key';
+          const key='/audio-lab/'+prefix+seed%4+'.wav';
           if(!cache.has(key)) cache.set(key,fetch(key).then(r=>{if(!r.ok)throw Error('Error al cargar Earshot');return r.arrayBuffer()}).then(decode).catch(e=>{cache.delete(key);throw e}));
           buf=await cache.get(key);
         }
@@ -52,10 +54,12 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         if(peak<.0001)throw Error('Segmento silencioso');
         const left=Math.max(start,hit-240),right=Math.min(src.length,hit+tail*48);
         const mix=new Float32Array(Math.round(frames*48000/fps)), chars=segmentGraphemes(props.text);
+        const words=props.text.match(/\S+/g)?.length ?? 0;
         let previous=0,last=-100,events=0;
         for(let f=0;f<frames;f++){
-          const n=visibleCount(mapMotionFrame(f,frames,props)*(props.speed||1),chars.length,props,fps);
-          const revealed=n>previous && chars.slice(previous,n).some(c=>c.trim());previous=n;
+          const clock=mapMotionFrame(f,frames,props)*(props.speed||1);
+          const n=props.animationStyle==="glitch" ? Number(Math.floor(clock/20)%2===0 && clock%4<2 && words>0) : props.animationStyle==="slide-in" ? Math.min(words,Math.ceil(clock/4)) : visibleCount(clock,chars.length,props,fps);
+          const revealed=n>previous && (props.animationStyle!=="typewriter" || chars.slice(previous,n).some(c=>c.trim()));previous=n;
           if(!revealed || f-last<density)continue;
           last=f;events++;
           const target=Math.round((f+offset)*48000/fps);
@@ -71,10 +75,11 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   },[props,frames,mode,library,seed,gain,offset,density,trim,tail,onSound]);
   React.useEffect(()=>{onSound(enabled ? url : '');return ()=>onSound('')},[enabled,url,onSound]);
 
-  if(props.animationStyle!=='typewriter')return null;
+  React.useEffect(()=>{if(enabled && url && heard===url) window.audioLabTake={url,props};return ()=>{delete window.audioLabTake}},[enabled,url,heard,props]);
+  if(!labels[props.animationStyle])return null;
   const button="rounded border border-neutral-500 px-3 py-1 font-medium";
   return <details className="shrink-0 max-h-[45%] overflow-auto border-b border-neutral-600 bg-neutral-900 p-2 text-sm text-white">
-    <summary className="cursor-pointer font-semibold">Sound Design · Typewriter</summary>
+    <summary className="cursor-pointer font-semibold">Sound Design · {labels[props.animationStyle]}</summary>
     <div className="my-2 flex flex-wrap items-center gap-2">
       <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>
       {['Procedural','Library'].map(m=><button key={m} aria-pressed={mode===m} onClick={()=>setMode(m)} className={button+(mode===m?' bg-white text-black':' bg-neutral-800 text-white')}>{m}</button>)}
@@ -82,7 +87,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         setEnabled(true);onPreview();setHeard(url)
       }}>Probar animación con sonido</button>
       <span role="status">{status}</span>
-      {enabled && url && heard===url && <a className="underline" href={url} download="typewriter.wav">Guardar WAV de esta vista previa</a>}    </div>
+      {enabled && url && heard===url && <a className="underline" href={url} download={props.animationStyle+".wav"}>Guardar WAV de esta vista previa</a>}    {enabled && url && heard===url && <span>Esta mezcla se incluirá al exportar el video individual.</span>}</div>
     {mode==='Procedural' ? <div className="flex flex-wrap items-center gap-2">Earshot
       {[0,1,2,3].map(i=><button key={i} onClick={()=>setSeed(i)} aria-pressed={seed===i} className={button+(seed===i?' bg-white text-black':' bg-neutral-800 text-white')}>Variante {i+1}</button>)}</div>
       : <input aria-label="Elegir SFX" type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()))}catch{setStatus('Archivo incompatible')}}}/>}
@@ -90,6 +95,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     </div>
   </details>;
 }
+
 
 
 

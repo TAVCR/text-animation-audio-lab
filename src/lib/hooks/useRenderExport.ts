@@ -194,6 +194,8 @@ export const useRenderExport = ({ props, setProps, exportSession }: UseRenderExp
     async (options: { transparentCodec: RenderCodec; batchTexts?: string[]; publishResult?: boolean; renderPipelinePreference?: 'auto' | 'gpu' | 'cpu' }): Promise<RenderResult> => {
       try {
         setIsRendering(true);
+        const take=window.audioLabTake;
+        const audio=take && take.props===props && !options.batchTexts?.length ? await (await fetch(take.url)).blob() : null;
         const payload: Record<string, unknown> = { ...props };
         if (props.isTransparent) {
           payload.transparentCodec = options.transparentCodec;
@@ -231,7 +233,14 @@ export const useRenderExport = ({ props, setProps, exportSession }: UseRenderExp
         }
 
         if (data.success && data.url) {
-          const url = String(data.url);
+          let url = String(data.url);
+          if(audio){
+            try {
+              const mux=await fetch("/api/audio-mux?video="+encodeURIComponent(url.split("/").pop()!),{method:"POST",body:audio});
+              if(!mux.ok)throw Error("mux");
+              url=(await mux.json()).url;
+            } catch { alert("Se conservó el video sin audio. Puedes guardar la mezcla con Guardar WAV."); }
+          }
           if (options.publishResult !== false) setRenderUrl(url);
           setRenderDiagnostics(data.diagnostics ?? null);
           return { mode: 'single', url, diagnostics: data.diagnostics };
@@ -300,3 +309,4 @@ export const useRenderExport = ({ props, setProps, exportSession }: UseRenderExp
     handlePropChange,
   };
 };
+
