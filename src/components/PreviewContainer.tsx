@@ -24,7 +24,7 @@ export default function PreviewContainer() {
   const viewportRef = React.useRef<HTMLDivElement>(null);
   const [viewportSize, setViewportSize] = React.useState({ width: dims.width, height: dims.height });
   const playerRef = React.useRef<PlayerRef>(null);
-  const previewFromStart=React.useCallback(()=>{const player=playerRef.current;if(player){player.seekTo(0);player.play()}},[]);
+  const previewFromStart=React.useCallback(()=>{const player=playerRef.current;if(player){player.pause();player.unmute();player.setVolume(1);player.seekTo(0);player.play()}},[]);
   const [currentFrame, setCurrentFrame] = React.useState(0);
   const playerKey = `${dims.width}x${dims.height}:${props.animationStyle}`;
 
@@ -215,5 +215,6 @@ export default function PreviewContainer() {
     </div>
   );
 }
+
 
 
