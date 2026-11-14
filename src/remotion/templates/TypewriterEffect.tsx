@@ -1,27 +1,21 @@
 import React from 'react';
-import { useVideoConfig, interpolate } from 'remotion';
-import { AnimationProps, getEasing } from '@/lib/AnimationContext';
+import { useVideoConfig } from 'remotion';
+import { AnimationProps } from '@/lib/AnimationContext';
 import { useMotionFrame } from '@/remotion/useMotionFrame';
 import { StyledRangeText } from '@/remotion/text/StyledRangeText';
-import { getTypewriterRevealFrames, sanitizeCharactersPerSecond, segmentGraphemes } from './typewriterUtils';
+import { segmentGraphemes } from './typewriterUtils';
+import {visibleCount} from './visibleCount';
 export const TypewriterEffect: React.FC<AnimationProps> = (props) => {
   const baseFrame = useMotionFrame(props);
   const speed = props.speed || 1;
   const frame = baseFrame * speed;
   const { fps } = useVideoConfig();
-  const easing = getEasing(props.easingStyle);
+
 
   // Reveal one character every 2 frames
   const graphemes = segmentGraphemes(props.text);
   const totalChars = graphemes.length;
-  const charactersPerSecond = sanitizeCharactersPerSecond(props.typewriterCharactersPerSecond);
-  const totalRevealFrames = getTypewriterRevealFrames(totalChars, charactersPerSecond, fps);
-  const revealProgress = interpolate(frame, [0, totalRevealFrames], [0, 1], {
-    easing,
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-  const charsShown = Math.min(totalChars, Math.round(revealProgress * totalChars));
+  const charsShown = visibleCount(frame,totalChars,props,fps);
   const textToShow = graphemes.slice(0, charsShown).join('');
   const showCursor = props.typewriterShowCursor ?? true;
   const cursorStyle = props.typewriterCursorStyle ?? 'bar';
@@ -63,3 +57,4 @@ export const TypewriterEffect: React.FC<AnimationProps> = (props) => {
     </div>
   );
 };
+

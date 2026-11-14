@@ -4,7 +4,7 @@ import React from 'react';
 import { Player } from '@remotion/player';
 import type { PlayerRef } from '@remotion/player';
 import { useAnimation } from '@/lib/AnimationContext';
-import { MainComposition } from '@/remotion/MainComposition';
+import { SoundPreview, SoundDesign } from './SoundDesign';
 import { getCompositionDimensions, REMOTION_FPS, getResolvedDurationInFrames } from '@/lib/videoConfig';
 
 function PlaybackIcon({ kind }: { kind: 'start' | 'back' | 'play' | 'pause' | 'forward' }) {
@@ -18,6 +18,7 @@ function PlaybackIcon({ kind }: { kind: 'start' | 'back' | 'play' | 'pause' | 'f
 
 export default function PreviewContainer() {
   const { props, setProps, setPreviewFrame } = useAnimation();
+  const [soundUrl,setSoundUrl]=React.useState('');
   const dims = getCompositionDimensions(props.aspectRatio, props.resolutionPreset);
   const totalDurationInFrames = getResolvedDurationInFrames(props, REMOTION_FPS);
   const viewportRef = React.useRef<HTMLDivElement>(null);
@@ -81,7 +82,7 @@ export default function PreviewContainer() {
   
   return (
     <div className="w-full h-full flex flex-col p-0 overflow-hidden bg-neutral-950">
-      {/* Canvas Viewport Area */}
+      <SoundDesign props={props} frames={totalDurationInFrames} onSound={setSoundUrl}/>
       <div ref={viewportRef} className="w-full flex-1 min-h-0 flex items-center justify-center relative p-3">
         {/* Layer Visibility Toggles */}
         <div className="absolute top-3 right-3 z-20 pointer-events-auto">
@@ -134,8 +135,8 @@ export default function PreviewContainer() {
             ref={playerRef}
             key={playerKey}
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            component={MainComposition as React.ComponentType<any>}
-            inputProps={props}
+            component={SoundPreview as React.ComponentType<any>}
+            inputProps={{...props,soundUrl}}
             durationInFrames={totalDurationInFrames}
             fps={REMOTION_FPS}
             compositionWidth={dims.width}
@@ -213,3 +214,4 @@ export default function PreviewContainer() {
     </div>
   );
 }
+
