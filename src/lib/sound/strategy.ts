@@ -1,9 +1,9 @@
-export type Strategy={density:'sparse'|'moderate'|'busy'; grouping:'phrase'|'pulse'|'gesture'; closing:'accent'|'rest'; character:'soft'|'bright'|'rough'; space:'short'|'long'};
-const options={density:['sparse','moderate','busy'],grouping:['phrase','pulse','gesture'],closing:['accent','rest'],character:['soft','bright','rough'],space:['short','long']};
+export type Strategy={voice:'click'|'sweep'|'pulse'|'texture'; landing:'silent'|'last';density:'sparse'|'moderate'|'busy'; grouping:'phrase'|'pulse'|'gesture'; closing:'accent'|'rest'; character:'soft'|'bright'|'rough'; space:'short'|'long'};
+const options={voice:['click','sweep','pulse','texture'],landing:['silent','last'],density:['sparse','moderate','busy'],grouping:['phrase','pulse','gesture'],closing:['accent','rest'],character:['soft','bright','rough'],space:['short','long']};
 export const strategySchema={type:'object',additionalProperties:false,required:Object.keys(options),properties:Object.fromEntries(Object.entries(options).map(([k,v])=>[k,{type:'string',enum:v}]))};
 export function valid(value:unknown):value is Strategy{
   if(!value || typeof value!=='object')return false;
-  return Object.entries(options).every(([k,v])=>v.includes((value as Record<string,string>)[k])) && Object.keys(value).length===5;
+  return Object.entries(options).every(([k,v])=>v.includes((value as Record<string,string>)[k])) && Object.keys(value).length===Object.keys(options).length;
 }
 export function distribute(frames:number[],family:string,s:Strategy,heads:number[]=[]){
   const end=frames.length-1, span=frames[end]-frames[0];
@@ -27,3 +27,4 @@ export function distribute(frames:number[],family:string,s:Strategy,heads:number
   }
   return selected.sort((a,b)=>a-b);
 }
+

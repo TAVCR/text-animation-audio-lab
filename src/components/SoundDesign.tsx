@@ -35,8 +35,9 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
 
   const analysis=React.useMemo(()=>analyze(props,frames,fps),[props,frames]);
   const signature=JSON.stringify([props.animationStyle,props.text,frames,analysis.events]);
-  const [ai,setAi]=React.useState<{signature:string;events:number[];model:string;variant:number;gain:number;tail:number;offset:number;reason:string}|null>(null);
+  const [ai,setAi]=React.useState<{strategy:{voice:string;landing:string};signature:string;events:number[];model:string;variant:number;gain:number;tail:number;offset:number;reason:string}|null>(null);
   const [port,setPort]=React.useState(3218),[model,setModel]=React.useState(''),[models,setModels]=React.useState<string[]>([]);
+  const [approved,setApproved]=React.useState<typeof ai>(null);
   const [chosen,setChosen]=React.useState('');
   const [directorStatus,setDirectorStatus]=React.useState('');
   const request=React.useRef<AbortController|null>(null);
@@ -46,7 +47,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     const controller=new AbortController();request.current=controller;
     setDirectorStatus('Consultando el modelo local…');
     try{
-      const res=await fetch('/api/sound-director',{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,heads:analysis.heads,port,model})});
+      const res=await fetch('/api/sound-director',{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,heads:analysis.heads,motion:{decelerationFrames:analysis.decelerations.slice(0,12),peakFrames:analysis.peaks.slice(0,12),settleFrames:analysis.stops.slice(-12),backwardSamples:analysis.rebounds.length,visibleChanges:analysis.visibleChanges},port,model})});
       const data=await res.json();
       if(!controller.signal.aborted){
         if(data.events)setAi({...data,signature});
@@ -61,9 +62,10 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     setUrl('');setStatus('Preparando mezcla…');
     if(labels[props.animationStyle] && props.showTextLayer!==false){
       (async()=>{
+        const plan=chosen===signature && approved?.signature===signature?approved:null;
         let buf=library;
         if(mode==='Procedural'){
-          const prefix=props.animationStyle==='glitch'?'glitch':props.animationStyle==='slide-in'?'slide':'key';
+          const prefix=plan ? ({click:'key',sweep:'slide',pulse:'glitch',texture:'texture'}[plan.strategy.voice]||'key') : props.animationStyle==='glitch'?'glitch':props.animationStyle==='slide-in'?'slide':'key';
           const key='/audio-lab/'+prefix+seed%4+'.wav';
           if(!cache.has(key)) cache.set(key,fetch(key).then(r=>{if(!r.ok)throw Error('Error al cargar Earshot');return r.arrayBuffer()}).then(decode).catch(e=>{cache.delete(key);throw e}));
           buf=await cache.get(key);
@@ -74,12 +76,13 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         let peak=0,hit=start;
         for(let i=start;i<src.length;i++)if(Math.abs(src[i])>peak){peak=Math.abs(src[i]);hit=i;}
         if(peak<.0001)throw Error('Segmento silencioso');
-        const left=Math.max(start,hit-240),right=Math.min(src.length,hit+tail*48);
+        const lead=plan?.strategy.voice==="sweep" ? Math.min(hit-start,4800) : 240;
+        const left=Math.max(start,hit-lead),right=Math.min(src.length,hit+tail*48);
         const mix=new Float32Array(Math.round(frames*48000/fps));
         let last=-100,events=0;
         for(let index=0;index<analysis.events.length;index++){
           const f=analysis.events[index];
-          if(chosen===signature && ai?.signature===signature && !ai.events.includes(index))continue;
+          if(plan && !plan.events.includes(index))continue;
           if(f-last<density || events>=256)continue;
           last=f;events++;
           const target=Math.round((f+offset)*48000/fps);
@@ -88,11 +91,15 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
             if(j>=0 && j<mix.length)mix[j]+=src[i]/peak*gain*Math.min(1,(i-left)/48,(right-i)/240);
           }
         }
+        if(plan?.strategy.landing==='last' && analysis.stops.length){
+          const at=Math.round(analysis.stops[analysis.stops.length-1]*48000/fps);
+          for(let i=0;i<3600 && at+i<mix.length;i++)mix[at+i]+=.35*gain*Math.sin(i*.025)*Math.exp(-i/650);
+        }
         object=URL.createObjectURL(wave(mix));setUrl(object);setStatus(events+' eventos');
       })().catch(e=>{if(active)setStatus(String(e.message))});
     }
     return ()=>{active=false;if(object)URL.revokeObjectURL(object)};
-  },[props,frames,mode,library,seed,gain,offset,density,trim,tail,onSound,chosen,signature,ai]);
+  },[props,frames,mode,library,seed,gain,offset,density,trim,tail,onSound,chosen,signature,approved]);
   React.useEffect(()=>{onSound(enabled ? url : '');return ()=>onSound('')},[enabled,url,onSound]);
 
   React.useEffect(()=>{if(enabled && url && heard===url) window.audioLabTake={url,props};return ()=>{delete window.audioLabTake}},[enabled,url,heard,props]);
@@ -100,9 +107,9 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const button="rounded border border-neutral-500 px-3 py-1 font-medium";
   return <details className="shrink-0 max-h-[45%] overflow-auto border-b border-neutral-600 bg-neutral-900 p-2 text-sm text-white">
     <summary className="cursor-pointer font-semibold">Sound Design · {labels[props.animationStyle]}</summary>
-    <section className="my-2"><strong>Animation Analysis</strong><p>{analysis.words} palabras · {analysis.events.length} eventos visuales · clip de {(frames/fps).toFixed(2)} s</p>{analysis.truncated && <p>El texto no termina de aparecer dentro del clip.</p>}</section>
+    <section className="my-2"><strong>Animation Analysis</strong><p>{analysis.words} palabras · {analysis.events.length} eventos visuales · clip de {(frames/fps).toFixed(2)} s</p>{analysis.stops.length>0 && <p>Asentamiento al 1 % · último fotograma {analysis.stops[analysis.stops.length-1]}</p>}{analysis.truncated && <p>El texto no termina de aparecer dentro del clip.</p>}</section>
     <section><strong>Sugerencias por reglas locales</strong><div className="flex gap-2">{styles.map(s=><button key={s.name} className={button} onClick={()=>{setChosen('');setDensity(s.density);setGain(s.gain);setTail(s.tail);setSeed(s.variant)}}>{s.name}</button>)}</div></section>
-    <section><strong>AI Sound Suggestions</strong> <select aria-label="Proveedor local" value={port} onChange={e=>{setPort(+e.target.value);setModel('');setModels([])}}>{[[3218,"Audio Lab · llama.cpp"],[11434,"Ollama"],[1234,"API local 1234"],[8080,"API local 8080"]].map(([v,n])=><option key={v} value={v}>{n}</option>)}</select> <button className={button} onClick={async()=>{try{const r=await fetch("/api/sound-director",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({probe:true,port})});const d=await r.json();setModels(d.models||[]);setDirectorStatus(d.models?.length?"Conectado":d.error)}catch{setDirectorStatus("Sin conexión")}}}>Comprobar conexión</button> {models.length>0 && <select aria-label="Modelo" value={model||models[0]} onChange={e=>setModel(e.target.value)}>{models.map(m=><option key={m}>{m}</option>)}</select>} <button className={button} disabled={!analysis.events.length} onClick={suggest}>Consultar IA local</button> {directorStatus} {ai?.signature===signature && <button className={button} title={ai.reason} onClick={()=>{setChosen(signature);setDensity(1);setSeed(ai.variant);setGain(ai.gain);setTail(ai.tail);setOffset(ai.offset)}}>Aplicar {ai.events.length} acentos · {ai.model}</button>}</section>
+    <section><strong>AI Sound Suggestions</strong> <select aria-label="Proveedor local" value={port} onChange={e=>{setPort(+e.target.value);setModel('');setModels([])}}>{[[3218,"Audio Lab · llama.cpp"],[11434,"Ollama"],[1234,"API local 1234"],[8080,"API local 8080"]].map(([v,n])=><option key={v} value={v}>{n}</option>)}</select> <button className={button} onClick={async()=>{try{const r=await fetch("/api/sound-director",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({probe:true,port})});const d=await r.json();setModels(d.models||[]);setDirectorStatus(d.models?.length?"Conectado":d.error)}catch{setDirectorStatus("Sin conexión")}}}>Comprobar conexión</button> {models.length>0 && <select aria-label="Modelo" value={model||models[0]} onChange={e=>setModel(e.target.value)}>{models.map(m=><option key={m}>{m}</option>)}</select>} <button className={button} disabled={!analysis.events.length} onClick={suggest}>Consultar IA local</button> {directorStatus} {ai?.signature===signature && <button className={button} title={ai.reason} onClick={()=>{setApproved(ai);setChosen(signature);setDensity(1);setSeed(ai.variant);setGain(ai.gain);setTail(ai.tail);setOffset(ai.offset)}}>Aplicar {ai.events.length} acentos · {ai.model}</button>}</section>
     <div className="my-2 flex flex-wrap items-center gap-2">
       <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>
       {['Procedural','Library'].map(m=><button key={m} aria-pressed={mode===m} onClick={()=>setMode(m)} className={button+(mode===m?' bg-white text-black':' bg-neutral-800 text-white')}>{m}</button>)}
@@ -118,6 +125,9 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     </div>
   </details>;
 }
+
+
+
 
 
 

@@ -3,6 +3,7 @@ import { useVideoConfig, spring, interpolate } from 'remotion';
 import { AnimationProps, getEasing } from '@/lib/AnimationContext';
 import { useMotionFrame } from '@/remotion/useMotionFrame';
 import { StyledRangeText } from '@/remotion/text/StyledRangeText';
+import {slidePosition} from './slidePosition';
 export const KineticSlideIn: React.FC<AnimationProps> = (props) => {
   const baseFrame = useMotionFrame(props);
   const speed = props.speed || 1;
@@ -60,17 +61,7 @@ export const KineticSlideIn: React.FC<AnimationProps> = (props) => {
                 : [];
               globalWordIndex += 1;
               
-              const ySpringRaw = spring({
-                fps,
-                frame: frame - delay,
-                config: { damping: 12, mass: 0.5, stiffness: 100 },
-                durationInFrames: 30,
-              });
-              const ySpring = interpolate(ySpringRaw, [0, 1], [0, 1], {
-                easing,
-                extrapolateLeft: 'clamp',
-                extrapolateRight: 'clamp',
-              });
+              const ySpring = slidePosition(frame-delay,fps,easing);
               
               const distanceY = height / 3;
               const distanceX = width / 3;
@@ -127,3 +118,4 @@ export const KineticSlideIn: React.FC<AnimationProps> = (props) => {
     </div>
   );
 };
+

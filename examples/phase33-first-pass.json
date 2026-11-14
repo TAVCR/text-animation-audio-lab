@@ -1,0 +1,1885 @@
+[
+  {
+    "input": {
+      "template": "typewriter",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+      "words": 16,
+      "frames": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        40,
+        42,
+        43,
+        44,
+        46,
+        47,
+        49,
+        51,
+        53,
+        54,
+        55,
+        58,
+        60,
+        61,
+        63,
+        64,
+        68,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        84,
+        86,
+        91,
+        94,
+        100,
+        104,
+        108,
+        113,
+        118,
+        124,
+        133,
+        147
+      ],
+      "heads": [
+        0,
+        2,
+        5,
+        10,
+        13,
+        16,
+        23,
+        24,
+        26,
+        33,
+        38,
+        41,
+        45,
+        50,
+        60,
+        62
+      ],
+      "motion": {
+        "peakFrames": [],
+        "settleFrames": [],
+        "backwardSamples": 0,
+        "visibleChanges": 81
+      },
+      "port": 3218,
+      "model": ""
+    },
+    "speed": 1,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            10,
+            23,
+            33,
+            41,
+            50,
+            58,
+            62,
+            66,
+            68
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "sparse",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\"voice\":\"sweep\",\"landing\":\"silent\",\"density\":\"sparse\",\"grouping\":\"phrase\",\"closing\":\"rest\",\"character\":\"soft\",\"space\":\"short\"}",
+          "correction": null,
+          "reason": "70 eventos · 10 acentos · fotogramas 1, 13, 26, 39, 51, 68, 84, 100, 118, 133 · cierre libre"
+        },
+        "seconds": 1.1118390999981784
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            5,
+            10,
+            23,
+            33,
+            41,
+            45,
+            50,
+            60,
+            62,
+            66,
+            68
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "70 eventos · 12 acentos · fotogramas 1, 7, 13, 26, 39, 51, 58, 68, 91, 100, 118, 133 · cierre libre"
+        },
+        "seconds": 0.9868682000014815
+      }
+    ],
+    "wav": "examples/phase33-typewriter-1-3218.wav",
+    "measurements": [
+      {
+        "frame": 1,
+        "visual_ms": 33.333333333333336,
+        "creative_frames": 0,
+        "peak_ms": 33.333333333333336,
+        "onset_ms": 20.833333333333332,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 7,
+        "visual_ms": 233.33333333333334,
+        "creative_frames": 0,
+        "peak_ms": 233.33333333333334,
+        "onset_ms": 220.83333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 13,
+        "visual_ms": 433.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 433.3333333333333,
+        "onset_ms": 420.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 26,
+        "visual_ms": 866.6666666666666,
+        "creative_frames": 0,
+        "peak_ms": 866.6666666666666,
+        "onset_ms": 854.1666666666666,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 39,
+        "visual_ms": 1300.0,
+        "creative_frames": 0,
+        "peak_ms": 1300.0,
+        "onset_ms": 1287.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 51,
+        "visual_ms": 1700.0,
+        "creative_frames": 0,
+        "peak_ms": 1700.0,
+        "onset_ms": 1687.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 58,
+        "visual_ms": 1933.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 1933.3333333333333,
+        "onset_ms": 1920.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 68,
+        "visual_ms": 2266.6666666666665,
+        "creative_frames": 0,
+        "peak_ms": 2266.6666666666665,
+        "onset_ms": 2254.1666666666665,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 91,
+        "visual_ms": 3033.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 3033.3333333333335,
+        "onset_ms": 3020.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 100,
+        "visual_ms": 3333.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 3333.3333333333335,
+        "onset_ms": 3320.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 118,
+        "visual_ms": 3933.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 3933.3333333333335,
+        "onset_ms": 3920.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 133,
+        "visual_ms": 4433.333333333333,
+        "creative_frames": 0,
+        "peak_ms": 4433.333333333333,
+        "onset_ms": 4420.833333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  },
+  {
+    "input": {
+      "template": "typewriter",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+      "words": 16,
+      "frames": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        40,
+        42,
+        43,
+        44,
+        46,
+        47,
+        49,
+        51,
+        53,
+        54,
+        55,
+        58,
+        60,
+        61,
+        63,
+        64,
+        68,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        84,
+        86,
+        91,
+        94,
+        100,
+        104,
+        108,
+        113,
+        118,
+        124,
+        133,
+        147
+      ],
+      "heads": [
+        0,
+        2,
+        5,
+        10,
+        13,
+        16,
+        23,
+        24,
+        26,
+        33,
+        38,
+        41,
+        45,
+        50,
+        60,
+        62
+      ],
+      "motion": {
+        "decelerationFrames": [],
+        "peakFrames": [],
+        "settleFrames": [],
+        "backwardSamples": 0,
+        "visibleChanges": 81
+      },
+      "port": 8080,
+      "model": ""
+    },
+    "speed": 1,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            5,
+            10,
+            23,
+            33,
+            41,
+            45,
+            50,
+            60,
+            62,
+            66,
+            68
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "70 eventos · 12 acentos · fotogramas 1, 7, 13, 26, 39, 51, 58, 68, 91, 100, 118, 133 · cierre libre"
+        },
+        "seconds": 1.5418407000033767
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            5,
+            10,
+            23,
+            33,
+            41,
+            45,
+            50,
+            60,
+            62,
+            66,
+            68
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "70 eventos · 12 acentos · fotogramas 1, 7, 13, 26, 39, 51, 58, 68, 91, 100, 118, 133 · cierre libre"
+        },
+        "seconds": 1.3500964999984717
+      }
+    ],
+    "wav": "examples/phase33-typewriter-1-8080.wav",
+    "measurements": [
+      {
+        "frame": 1,
+        "visual_ms": 33.333333333333336,
+        "creative_frames": 0,
+        "peak_ms": 33.333333333333336,
+        "onset_ms": 20.833333333333332,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 7,
+        "visual_ms": 233.33333333333334,
+        "creative_frames": 0,
+        "peak_ms": 233.33333333333334,
+        "onset_ms": 220.83333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 13,
+        "visual_ms": 433.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 433.3333333333333,
+        "onset_ms": 420.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 26,
+        "visual_ms": 866.6666666666666,
+        "creative_frames": 0,
+        "peak_ms": 866.6666666666666,
+        "onset_ms": 854.1666666666666,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 39,
+        "visual_ms": 1300.0,
+        "creative_frames": 0,
+        "peak_ms": 1300.0,
+        "onset_ms": 1287.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 51,
+        "visual_ms": 1700.0,
+        "creative_frames": 0,
+        "peak_ms": 1700.0,
+        "onset_ms": 1687.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 58,
+        "visual_ms": 1933.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 1933.3333333333333,
+        "onset_ms": 1920.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 68,
+        "visual_ms": 2266.6666666666665,
+        "creative_frames": 0,
+        "peak_ms": 2266.6666666666665,
+        "onset_ms": 2254.1666666666665,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 91,
+        "visual_ms": 3033.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 3033.3333333333335,
+        "onset_ms": 3020.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 100,
+        "visual_ms": 3333.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 3333.3333333333335,
+        "onset_ms": 3320.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 118,
+        "visual_ms": 3933.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 3933.3333333333335,
+        "onset_ms": 3920.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 133,
+        "visual_ms": 4433.333333333333,
+        "creative_frames": 0,
+        "peak_ms": 4433.333333333333,
+        "onset_ms": 4420.833333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  },
+  {
+    "input": {
+      "template": "slide-in",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+      "words": 16,
+      "frames": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61
+      ],
+      "heads": [],
+      "motion": {
+        "decelerationFrames": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40,
+          44,
+          48
+        ],
+        "peakFrames": [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27,
+          31,
+          35,
+          39,
+          43,
+          47
+        ],
+        "settleFrames": [
+          27,
+          31,
+          35,
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          67,
+          71
+        ],
+        "backwardSamples": 0,
+        "visibleChanges": 16
+      },
+      "port": 3218,
+      "model": ""
+    },
+    "speed": 1,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": -1,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "sparse",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\"voice\":\"sweep\",\"landing\":\"silent\",\"density\":\"sparse\",\"grouping\":\"phrase\",\"closing\":\"rest\",\"character\":\"soft\",\"space\":\"short\"}",
+          "correction": null,
+          "reason": "16 eventos · 5 acentos · fotogramas 1, 13, 29, 41, 57 · cierre libre"
+        },
+        "seconds": 1.0721163000052911
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": -1,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "sparse",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\"voice\":\"sweep\",\"landing\":\"silent\",\"density\":\"sparse\",\"grouping\":\"phrase\",\"closing\":\"rest\",\"character\":\"soft\",\"space\":\"short\"}",
+          "correction": null,
+          "reason": "16 eventos · 5 acentos · fotogramas 1, 13, 29, 41, 57 · cierre libre"
+        },
+        "seconds": 0.8542163000020082
+      }
+    ],
+    "wav": "examples/phase33-slide-in-1-3218.wav",
+    "measurements": [
+      {
+        "frame": 1,
+        "visual_ms": 33.333333333333336,
+        "creative_frames": -1,
+        "peak_ms": 0.0,
+        "onset_ms": 0.0,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 13,
+        "visual_ms": 433.3333333333333,
+        "creative_frames": -1,
+        "peak_ms": 400.0,
+        "onset_ms": 387.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 29,
+        "visual_ms": 966.6666666666666,
+        "creative_frames": -1,
+        "peak_ms": 933.3333333333334,
+        "onset_ms": 920.8333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 41,
+        "visual_ms": 1366.6666666666667,
+        "creative_frames": -1,
+        "peak_ms": 1333.3333333333333,
+        "onset_ms": 1320.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 57,
+        "visual_ms": 1900.0,
+        "creative_frames": -1,
+        "peak_ms": 1866.6666666666667,
+        "onset_ms": 1854.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  },
+  {
+    "input": {
+      "template": "slide-in",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+      "words": 16,
+      "frames": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61
+      ],
+      "heads": [],
+      "motion": {
+        "decelerationFrames": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40,
+          44,
+          48
+        ],
+        "peakFrames": [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27,
+          31,
+          35,
+          39,
+          43,
+          47
+        ],
+        "settleFrames": [
+          27,
+          31,
+          35,
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          67,
+          71
+        ],
+        "backwardSamples": 0,
+        "visibleChanges": 16
+      },
+      "port": 8080,
+      "model": ""
+    },
+    "speed": 1,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            3,
+            5,
+            7,
+            10,
+            12,
+            14
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": -1,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "16 eventos · 7 acentos · fotogramas 1, 13, 21, 29, 41, 49, 57 · cierre libre"
+        },
+        "seconds": 1.3301344999999856
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            3,
+            5,
+            7,
+            10,
+            12,
+            14
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": -1,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "16 eventos · 7 acentos · fotogramas 1, 13, 21, 29, 41, 49, 57 · cierre libre"
+        },
+        "seconds": 1.2700973999963026
+      }
+    ],
+    "wav": "examples/phase33-slide-in-1-8080.wav",
+    "measurements": [
+      {
+        "frame": 1,
+        "visual_ms": 33.333333333333336,
+        "creative_frames": -1,
+        "peak_ms": 0.0,
+        "onset_ms": 0.0,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 13,
+        "visual_ms": 433.3333333333333,
+        "creative_frames": -1,
+        "peak_ms": 400.0,
+        "onset_ms": 387.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 21,
+        "visual_ms": 700.0,
+        "creative_frames": -1,
+        "peak_ms": 666.6666666666666,
+        "onset_ms": 654.1666666666666,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 29,
+        "visual_ms": 966.6666666666666,
+        "creative_frames": -1,
+        "peak_ms": 933.3333333333334,
+        "onset_ms": 920.8333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 41,
+        "visual_ms": 1366.6666666666667,
+        "creative_frames": -1,
+        "peak_ms": 1333.3333333333333,
+        "onset_ms": 1320.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 49,
+        "visual_ms": 1633.3333333333333,
+        "creative_frames": -1,
+        "peak_ms": 1600.0,
+        "onset_ms": 1587.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 57,
+        "visual_ms": 1900.0,
+        "creative_frames": -1,
+        "peak_ms": 1866.6666666666667,
+        "onset_ms": 1854.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  },
+  {
+    "input": {
+      "template": "glitch",
+      "text": "Interferencia",
+      "words": 1,
+      "frames": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        40,
+        44,
+        48,
+        52,
+        56,
+        80,
+        84,
+        88,
+        92,
+        96,
+        120,
+        124,
+        128,
+        132,
+        136
+      ],
+      "heads": [],
+      "motion": {
+        "decelerationFrames": [],
+        "peakFrames": [],
+        "settleFrames": [],
+        "backwardSamples": 0,
+        "visibleChanges": 20
+      },
+      "port": 3218,
+      "model": ""
+    },
+    "speed": 1,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            4,
+            5,
+            9,
+            10,
+            14,
+            15
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "sparse",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\"voice\":\"sweep\",\"landing\":\"silent\",\"density\":\"sparse\",\"grouping\":\"phrase\",\"closing\":\"rest\",\"character\":\"soft\",\"space\":\"short\"}",
+          "correction": null,
+          "reason": "20 eventos · 7 acentos · fotogramas 0, 16, 40, 56, 80, 96, 120 · cierre libre"
+        },
+        "seconds": 1.0622707000002265
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            4,
+            5,
+            9,
+            10,
+            15,
+            19
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "sparse",
+            "grouping": "phrase",
+            "closing": "accent",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\"voice\":\"sweep\",\"landing\":\"silent\",\"density\":\"sparse\",\"grouping\":\"phrase\",\"closing\":\"accent\",\"character\":\"soft\",\"space\":\"short\"}",
+          "correction": null,
+          "reason": "20 eventos · 7 acentos · fotogramas 0, 16, 40, 56, 80, 120, 136 · cierre acentuado"
+        },
+        "seconds": 1.0149547000037273
+      }
+    ],
+    "wav": "examples/phase33-glitch-1-3218.wav",
+    "measurements": [
+      {
+        "frame": 0,
+        "visual_ms": 0.0,
+        "creative_frames": 0,
+        "peak_ms": 0.0,
+        "onset_ms": 0.0,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 16,
+        "visual_ms": 533.3333333333334,
+        "creative_frames": 0,
+        "peak_ms": 533.3333333333334,
+        "onset_ms": 520.8333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 40,
+        "visual_ms": 1333.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 1333.3333333333333,
+        "onset_ms": 1320.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 56,
+        "visual_ms": 1866.6666666666667,
+        "creative_frames": 0,
+        "peak_ms": 1866.6666666666667,
+        "onset_ms": 1854.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 80,
+        "visual_ms": 2666.6666666666665,
+        "creative_frames": 0,
+        "peak_ms": 2666.6666666666665,
+        "onset_ms": 2654.1666666666665,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 120,
+        "visual_ms": 4000.0,
+        "creative_frames": 0,
+        "peak_ms": 4000.0,
+        "onset_ms": 3987.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 136,
+        "visual_ms": 4533.333333333333,
+        "creative_frames": 0,
+        "peak_ms": 4533.333333333333,
+        "onset_ms": 4520.833333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  },
+  {
+    "input": {
+      "template": "glitch",
+      "text": "Interferencia",
+      "words": 1,
+      "frames": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        40,
+        44,
+        48,
+        52,
+        56,
+        80,
+        84,
+        88,
+        92,
+        96,
+        120,
+        124,
+        128,
+        132,
+        136
+      ],
+      "heads": [],
+      "motion": {
+        "decelerationFrames": [],
+        "peakFrames": [],
+        "settleFrames": [],
+        "backwardSamples": 0,
+        "visibleChanges": 20
+      },
+      "port": 8080,
+      "model": ""
+    },
+    "speed": 1,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            4,
+            5,
+            9,
+            10,
+            14,
+            15
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "20 eventos · 7 acentos · fotogramas 0, 16, 40, 56, 80, 96, 120 · cierre libre"
+        },
+        "seconds": 1.4474267000041436
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            4,
+            5,
+            9,
+            10,
+            14,
+            15
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 180,
+          "offset": 0,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "long"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"long\"\n}",
+          "correction": null,
+          "reason": "20 eventos · 7 acentos · fotogramas 0, 16, 40, 56, 80, 96, 120 · cierre libre"
+        },
+        "seconds": 1.3418705000003683
+      }
+    ],
+    "wav": "examples/phase33-glitch-1-8080.wav",
+    "measurements": [
+      {
+        "frame": 0,
+        "visual_ms": 0.0,
+        "creative_frames": 0,
+        "peak_ms": 0.0,
+        "onset_ms": 0.0,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 16,
+        "visual_ms": 533.3333333333334,
+        "creative_frames": 0,
+        "peak_ms": 533.3333333333334,
+        "onset_ms": 520.8333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 40,
+        "visual_ms": 1333.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 1333.3333333333333,
+        "onset_ms": 1320.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 56,
+        "visual_ms": 1866.6666666666667,
+        "creative_frames": 0,
+        "peak_ms": 1866.6666666666667,
+        "onset_ms": 1854.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 80,
+        "visual_ms": 2666.6666666666665,
+        "creative_frames": 0,
+        "peak_ms": 2666.6666666666665,
+        "onset_ms": 2654.1666666666665,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 96,
+        "visual_ms": 3200.0,
+        "creative_frames": 0,
+        "peak_ms": 3200.0,
+        "onset_ms": 3187.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 120,
+        "visual_ms": 4000.0,
+        "creative_frames": 0,
+        "peak_ms": 4000.0,
+        "onset_ms": 3987.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  },
+  {
+    "input": {
+      "template": "typewriter",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+      "words": 16,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        46,
+        47,
+        50,
+        52,
+        54,
+        57,
+        59,
+        62,
+        67,
+        74
+      ],
+      "heads": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        9,
+        12,
+        13,
+        15,
+        19,
+        22,
+        25,
+        28,
+        32,
+        42,
+        44
+      ],
+      "motion": {
+        "decelerationFrames": [],
+        "peakFrames": [],
+        "settleFrames": [],
+        "backwardSamples": 0,
+        "visibleChanges": 55
+      },
+      "port": 3218,
+      "model": ""
+    },
+    "speed": 2,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            6,
+            12,
+            19,
+            25,
+            32,
+            40,
+            44,
+            48,
+            50
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "52 eventos · 10 acentos · fotogramas 1, 7, 13, 20, 26, 34, 42, 50, 59, 67 · cierre libre"
+        },
+        "seconds": 1.2567791999972542
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            6,
+            12,
+            19,
+            25,
+            32,
+            40,
+            44,
+            48,
+            50
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "audio-director",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "52 eventos · 10 acentos · fotogramas 1, 7, 13, 20, 26, 34, 42, 50, 59, 67 · cierre libre"
+        },
+        "seconds": 0.998866599999019
+      }
+    ],
+    "wav": "examples/phase33-typewriter-2-3218.wav",
+    "measurements": [
+      {
+        "frame": 1,
+        "visual_ms": 33.333333333333336,
+        "creative_frames": 0,
+        "peak_ms": 33.333333333333336,
+        "onset_ms": 20.833333333333332,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 7,
+        "visual_ms": 233.33333333333334,
+        "creative_frames": 0,
+        "peak_ms": 233.33333333333334,
+        "onset_ms": 220.83333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 13,
+        "visual_ms": 433.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 433.3333333333333,
+        "onset_ms": 420.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 20,
+        "visual_ms": 666.6666666666666,
+        "creative_frames": 0,
+        "peak_ms": 666.6666666666666,
+        "onset_ms": 654.1666666666666,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 26,
+        "visual_ms": 866.6666666666666,
+        "creative_frames": 0,
+        "peak_ms": 866.6666666666666,
+        "onset_ms": 854.1666666666666,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 34,
+        "visual_ms": 1133.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 1133.3333333333333,
+        "onset_ms": 1120.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 42,
+        "visual_ms": 1400.0,
+        "creative_frames": 0,
+        "peak_ms": 1400.0,
+        "onset_ms": 1387.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 50,
+        "visual_ms": 1666.6666666666667,
+        "creative_frames": 0,
+        "peak_ms": 1666.6666666666667,
+        "onset_ms": 1654.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 59,
+        "visual_ms": 1966.6666666666667,
+        "creative_frames": 0,
+        "peak_ms": 1966.6666666666667,
+        "onset_ms": 1954.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 67,
+        "visual_ms": 2233.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 2233.3333333333335,
+        "onset_ms": 2220.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  },
+  {
+    "input": {
+      "template": "typewriter",
+      "text": "Una idea empieza con una palabra y va tomando forma con cada nuevo movimiento en pantalla",
+      "words": 16,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        46,
+        47,
+        50,
+        52,
+        54,
+        57,
+        59,
+        62,
+        67,
+        74
+      ],
+      "heads": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        9,
+        12,
+        13,
+        15,
+        19,
+        22,
+        25,
+        28,
+        32,
+        42,
+        44
+      ],
+      "motion": {
+        "decelerationFrames": [],
+        "peakFrames": [],
+        "settleFrames": [],
+        "backwardSamples": 0,
+        "visibleChanges": 55
+      },
+      "port": 8080,
+      "model": ""
+    },
+    "speed": 2,
+    "runs": [
+      {
+        "plan": {
+          "events": [
+            0,
+            6,
+            12,
+            19,
+            25,
+            32,
+            40,
+            44,
+            48,
+            50
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 180,
+          "offset": 0,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "long"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"long\"\n}",
+          "correction": null,
+          "reason": "52 eventos · 10 acentos · fotogramas 1, 7, 13, 20, 26, 34, 42, 50, 59, 67 · cierre libre"
+        },
+        "seconds": 1.4197918999998365
+      },
+      {
+        "plan": {
+          "events": [
+            0,
+            6,
+            12,
+            19,
+            25,
+            32,
+            40,
+            44,
+            48,
+            50
+          ],
+          "variant": 0,
+          "gain": 0.4,
+          "tail": 65,
+          "offset": 0,
+          "model": "mistral-nemo",
+          "strategy": {
+            "voice": "sweep",
+            "landing": "silent",
+            "density": "moderate",
+            "grouping": "phrase",
+            "closing": "rest",
+            "character": "soft",
+            "space": "short"
+          },
+          "raw": "{\n  \"voice\": \"sweep\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\"\n}",
+          "correction": null,
+          "reason": "52 eventos · 10 acentos · fotogramas 1, 7, 13, 20, 26, 34, 42, 50, 59, 67 · cierre libre"
+        },
+        "seconds": 1.2840952000042307
+      }
+    ],
+    "wav": "examples/phase33-typewriter-2-8080.wav",
+    "measurements": [
+      {
+        "frame": 1,
+        "visual_ms": 33.333333333333336,
+        "creative_frames": 0,
+        "peak_ms": 33.333333333333336,
+        "onset_ms": 20.833333333333332,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 7,
+        "visual_ms": 233.33333333333334,
+        "creative_frames": 0,
+        "peak_ms": 233.33333333333334,
+        "onset_ms": 220.83333333333334,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 13,
+        "visual_ms": 433.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 433.3333333333333,
+        "onset_ms": 420.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 20,
+        "visual_ms": 666.6666666666666,
+        "creative_frames": 0,
+        "peak_ms": 666.6666666666666,
+        "onset_ms": 654.1666666666666,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 26,
+        "visual_ms": 866.6666666666666,
+        "creative_frames": 0,
+        "peak_ms": 866.6666666666666,
+        "onset_ms": 854.1666666666666,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 34,
+        "visual_ms": 1133.3333333333333,
+        "creative_frames": 0,
+        "peak_ms": 1133.3333333333333,
+        "onset_ms": 1120.8333333333333,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 42,
+        "visual_ms": 1400.0,
+        "creative_frames": 0,
+        "peak_ms": 1400.0,
+        "onset_ms": 1387.5,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 50,
+        "visual_ms": 1666.6666666666667,
+        "creative_frames": 0,
+        "peak_ms": 1666.6666666666667,
+        "onset_ms": 1654.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 59,
+        "visual_ms": 1966.6666666666667,
+        "creative_frames": 0,
+        "peak_ms": 1966.6666666666667,
+        "onset_ms": 1954.1666666666667,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      },
+      {
+        "frame": 67,
+        "visual_ms": 2233.3333333333335,
+        "creative_frames": 0,
+        "peak_ms": 2233.3333333333335,
+        "onset_ms": 2220.8333333333335,
+        "error_ms": 0.0,
+        "error_frames": 0.0,
+        "peak": 0.39999985694885254
+      }
+    ]
+  }
+]
