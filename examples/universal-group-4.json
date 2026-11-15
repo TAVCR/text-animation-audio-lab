@@ -409,47 +409,35 @@
     "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
     "region": [
       0,
-      0.9700000000000001
+      1.0366666666666666
     ],
     "family": "pulse",
-    "LibraryPeak": 0.6,
+    "LibraryPeak": 0.6486,
     "events": [
-      6,
-      30,
-      54,
-      77,
-      101,
-      124,
-      148
+      26,
+      39,
+      52,
+      78,
+      130
     ],
     "recipe": "glitch/chirp",
-    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "LibraryMaxLocalPeakErrorMs": 7.9,
     "restored": true,
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "textOnly": "5 palabras · 7 eventos visuales · clip de 5.00 s · intervalo típico 800 ms",
+    "textOnly": "5 palabras · 5 eventos visuales · clip de 5.00 s · intervalo típico 867 ms",
     "textOnlyFrames": [
-      6,
-      30,
-      54,
-      77,
-      101,
-      124,
-      148
-    ],
-    "speedOnly": "3 palabras · 10 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
-    "speedOnlyFrames": [
-      4,
-      19,
-      34,
-      48,
-      63,
+      26,
+      39,
+      52,
       78,
-      93,
-      107,
-      122,
-      137
+      130
+    ],
+    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 533 ms",
+    "speedOnlyFrames": [
+      33,
+      49
     ],
     "pageErrors": []
   }
