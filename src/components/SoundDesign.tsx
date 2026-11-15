@@ -105,7 +105,14 @@ export function SoundDesign(input:Props){
     <select aria-label="Director" className={button} value={provider} onChange={e=>setProvider(+e.target.value)}><option value={0}>Reglas locales</option><option value={3218}>Qwen local</option><option value={8080}>Mistral local</option></select>
     <button className={button} disabled={!!busy||!analysis.events.length} onClick={()=>generate(styles)}>Auto Sound Design</button>
     {busy && <button className={button} onClick={()=>cancel.current?.abort()}>Cancelar · {busy}</button>}</div>
-    {styles.map(s=><button key={s} className={button} aria-pressed={active===s} disabled={!plans[s]} onClick={()=>setActive(s)}>{s}</button>)}
+    {styles.map(style=>{
+      const ready=!!plans[style] && bound===signature;
+      return <button key={style} className={button} aria-pressed={active===style && ready}
+        disabled={!ready && (!!busy || !analysis.events.length)}
+        title={ready?'Seleccionar '+style:'Generar '+style}
+        onClick={()=>ready?setActive(style):void generate([style])}>{style}</button>;
+    })}
+    {busy && <span role="status">{styles.includes(busy)?'Generando '+busy+'…':busy}</span>}
     {plan && <div><p>{active} · {plan.method} · {plan.layers.reduce((n,l)=>n+l.takes.length,0)} acentos · {(plan.frames/30).toFixed(2)} s</p>
     {plan.syncVersion!==2 && plan.layers.some(layer=>layer.takes.some(take=>take.visualEvent!==undefined)) &&
       <button className={button} disabled={!!busy || bound!==signature} onClick={()=>setPlans(old=>({...old,[active]:{...old[active],syncVersion:2}}))}>Ajustar sincronización de esta mezcla</button>}
