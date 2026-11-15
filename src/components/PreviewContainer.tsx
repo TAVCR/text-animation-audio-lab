@@ -187,7 +187,7 @@ export default function PreviewContainer() {
             {[
               ['Volver al inicio', 'start', () => playerRef.current?.seekTo(0)],
               ['Retroceder', 'back', () => playerRef.current?.seekTo(Math.max(0, currentFrame - 30))],
-              ['Reproducir', 'play', () => playerRef.current?.play()],
+              ['Reproducir', 'play', () => {const player=playerRef.current;if(player){player.unmute();player.play()}}],
               ['Pausar', 'pause', () => playerRef.current?.pause()],
               ['Avanzar', 'forward', () => playerRef.current?.seekTo(Math.min(totalDurationInFrames - 1, currentFrame + 30))],
             ].map(([label, icon, action]) => (

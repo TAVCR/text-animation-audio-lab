@@ -26,7 +26,7 @@ export function SoundDesign(input:Props){
   const [active,setActive]=React.useState('Minimal'),[bound,setBound]=React.useState('');
   const [busy,setBusy]=React.useState(''),[status,setStatus]=React.useState('');
   const [provider,setProvider]=React.useState(0);
-  const [url,setUrl]=React.useState(''),[heard,setHeard]=React.useState('');
+  const [url,setUrl]=React.useState('');
   const cancel=React.useRef<AbortController|null>(null);
   const panel=React.useRef<HTMLDetailsElement>(null);
   const plan=plans[active];
@@ -44,7 +44,7 @@ export function SoundDesign(input:Props){
   },[saved]);
   React.useEffect(()=>{
     let current=true,object='';
-    setUrl('');setHeard('');
+    setUrl('');
     if(plan && bound===signature && !legacy)mixDesign(plan).then(blob=>{
       if(current){object=URL.createObjectURL(blob);setUrl(object)}
     }).catch(e=>{if(current)setStatus(e.message)});
@@ -52,10 +52,14 @@ export function SoundDesign(input:Props){
   },[plan,bound,signature,legacy]);
   React.useEffect(()=>{
     if(legacy)return;
-    onSound(url && heard===url?url:'');
-    if(url && heard===url)window.audioLabTake={url,props};
-    return ()=>{onSound('');delete window.audioLabTake};
-  },[url,heard,props,onSound,legacy]);
+    onSound(url);
+    return ()=>onSound('');
+  },[url,onSound,legacy]);
+  React.useEffect(()=>{
+    if(legacy)return;
+    if(url && bound===signature)window.audioLabTake={url,props};
+    return ()=>{delete window.audioLabTake};
+  },[url,bound,signature,props,legacy]);
   async function generate(names:string[],regenerate=false){
     cancel.current?.abort();
     const controller=new AbortController();cancel.current=controller;
@@ -111,9 +115,9 @@ export function SoundDesign(input:Props){
     {layer.takes.some(t=>t.params.pitch) && <label>Tono (semitonos) <input className={button} name="transpose" type="number" defaultValue="0" min="-6" max="6"/></label>}
     {layer.takes.some(t=>t.params.dur || t.params.pitch) && <button disabled={!!busy} className={button}>Aplicar a la capa</button>}</form></div>)}
     <button className={button} disabled={!!busy} onClick={()=>generate([active],true)}>Regenerar {active}</button>
-    <button className={button} disabled={!url} onClick={()=>{setHeard(url);onPreview()}}>Probar animación con sonido</button>
+    <button className={button} disabled={!url} onClick={onPreview}>Probar animación con sonido</button>
     <button className={button} disabled={!url} onClick={()=>setProps(p=>({...p,soundDesign:{version:1,template:p.animationStyle,mode:'Procedural',family:classification.ranked[0],seed:plan.variant,density:1,gain:1,offset:0,trim:0,tail:0,procedural:{signature,design:plan}}}))}>Guardar diseño en proyecto</button>
-    {url && heard===url && <a className={button} href={url} download={props.animationStyle+'-'+active+'.wav'}>Guardar WAV de esta vista previa</a>}
+    {url && bound===signature && <a className={button} href={url} download={props.animationStyle+'-'+active+'.wav'}>Guardar WAV de esta vista previa</a>}
     {bound!==signature && <p>Los eventos cambiaron. Genera las interpretaciones para el nuevo movimiento.</p>}</div>}
     <span role="status">{status}</span></details>;
 }
