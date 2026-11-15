@@ -20,6 +20,7 @@ with sync_playwright() as driver:
         page = context.new_page()
         row = {'template':template}
         errors = []
+        context.on('page', lambda new: new.on('pageerror',lambda exc: errors.append(str(exc))))
         page.on('pageerror', lambda exc: errors.append(str(exc)))
         try:
             page.goto('http://127.0.0.1:3217')
@@ -34,6 +35,8 @@ with sync_playwright() as driver:
                 page.get_by_role('button',name='Auto Sound Design',exact=True).click()
             candidate=response.value.json()
             row['library']=candidate.get('name') or candidate.get('error')
+            row['region']=candidate.get('region')
+            row['family']=candidate.get('family')
             for mode in (['Library'] if candidate.get('url') else [])+['Procedural']:
                 page.get_by_role('button',name=mode,exact=True).click()
                 page.get_by_text('Probar animación con sonido').click()
@@ -48,6 +51,19 @@ with sync_playwright() as driver:
                     peak=int(np.max(np.abs(signal)))
                     assert 0<peak<8388607
                     row[mode+'Peak']=round(peak/8388608,4)
+                page.get_by_text('Guardar diseño en proyecto').click()
+                page.wait_for_function('([k,m])=>JSON.parse(localStorage.getItem(k)).soundDesign?.mode===m',arg=[key,mode])
+                design=page.evaluate('(k)=>JSON.parse(localStorage.getItem(k)).soundDesign',key)
+                row['events']=design['events']
+                row['recipe']=design['recipe']
+                envelope=np.abs(signal.reshape(-1,wav.getnchannels())).max(axis=1)
+                offsets=[]
+                for frame in design['events']:
+                    nominal=frame*1600
+                    left=max(0,nominal-800)
+                    local=envelope[left:min(len(envelope),nominal+801)]
+                    if len(local):offsets.append(abs(left+int(local.argmax())-nominal)/48)
+                row[mode+'MaxLocalPeakErrorMs']=round(max(offsets),2)
                 if mode=='Library':
                     page.get_by_text('Guardar diseño en proyecto').click()
                     page.wait_for_function('(k)=>JSON.parse(localStorage.getItem(k)).soundDesign?.sourceUrl',arg=key)
@@ -56,11 +72,22 @@ with sync_playwright() as driver:
                     page.goto('http://127.0.0.1:3217')
                     page.locator('summary').filter(has_text='Sound Design').click()
                     page.get_by_text('Probar animación con sonido').click()
-                    assert page.get_by_text('Guardar WAV de esta vista previa').is_visible()
+                    with page.expect_download() as restored:
+                        page.get_by_text('Guardar WAV de esta vista previa').click()
+                    assert Path(restored.value.path()).read_bytes()==target.read_bytes()
                     row['restored']=True
-            configure('Nuevo texto y otra velocidad',1.6)
-            row['modified']=page.get_by_text(re.compile(r'palabras · \d+ eventos visuales')).inner_text()
-            assert not re.search(r'· 0 eventos',row['modified'])
+            page.get_by_text('Probar animación con sonido').click()
+            page.wait_for_function("()=>Array.from(document.querySelectorAll('audio')).some(a=>!a.paused && a.currentTime>0 && !a.muted)",timeout=8000)
+            page.get_by_role('button',name='Pausar',exact=True).click()
+            page.wait_for_function("()=>Array.from(document.querySelectorAll('audio')).every(a=>a.paused)",timeout=4000)
+            row['playPause']=True
+            for field,text,speed in [('textOnly','Nuevo texto y otra velocidad',1),('speedOnly','Motion sound test',1.6)]:
+                configure(text,speed)
+                row[field]=page.get_by_text(re.compile(r'palabras · \d+ eventos visuales')).inner_text()
+                assert not re.search(r'· 0 eventos',row[field])
+                page.get_by_text('Guardar diseño en proyecto').click()
+                page.wait_for_function('([k,t,v])=>{let p=JSON.parse(localStorage.getItem(k));return p.text===t && p.speed===v && p.soundDesign?.events?.length>0}',arg=[key,text,speed])
+                row[field+'Frames']=page.evaluate('(k)=>JSON.parse(localStorage.getItem(k)).soundDesign.events',key)
             row['pageErrors']=errors
         except Exception as exc:
             row['error']=str(exc)[:500]

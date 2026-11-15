@@ -26,11 +26,11 @@ export async function POST(req:Request){
     const raw=answer.choices?.[0]?.message?.content;
     let value:unknown;try{value=JSON.parse(raw)}catch{}
     const accepted=valid(value) && allowed.includes(value.voice);
-    const strategy:Strategy=accepted && valid(value)?value:{voice:allowed[0],landing:'silent',density:'moderate',grouping:template==='glitch'?'pulse':template==='slide-in'?'gesture':'phrase',closing:'accent',character:'soft',space:'short'};
+    const strategy:Strategy=accepted && valid(value)?value:{voice:allowed[0],intensity:'medium',attack:'natural',landing:'silent',density:'moderate',grouping:template==='glitch'?'pulse':template==='slide-in'?'gesture':'phrase',closing:'accent',character:'soft',space:'short'};
     const events=distribute(frames,template,strategy,heads);
     const variant={soft:0,bright:1,rough:3}[strategy.character];
-    const reason=frames.length+' eventos · '+events.length+' acentos · fotogramas '+events.map(i=>frames[i]).join(', ')+' · '+(events.includes(frames.length-1)?'cierre acentuado':'cierre libre');
-    return NextResponse.json({events,variant,gain:strategy.character==='soft'?.4:.65,tail:strategy.voice==='texture'?(strategy.space==='short'?240:480):strategy.space==='short'?65:180,offset:template==='slide-in'?-1:0,model:accepted?selected:'Reglas de respaldo',strategy,raw,correction:accepted?null:'Respuesta incompatible',reason});  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
+    const reason=(accepted?'':'Respuesta incompatible. Se aplicaron reglas de '+allowed[0]+'. ')+frames.length+' eventos · '+events.length+' acentos · fotogramas '+events.map(i=>frames[i]).join(', ')+' · '+(events.includes(frames.length-1)?'cierre acentuado':'cierre libre');
+    return NextResponse.json({events,variant,gain:({subtle:.35,medium:.55,strong:.75})[strategy.intensity],tail:strategy.voice==='texture'?(strategy.space==='short'?240:480):strategy.space==='short'?65:180,offset:template==='slide-in'?-1:0,model:accepted?selected:'Reglas de respaldo',strategy,raw,correction:accepted?null:'Respuesta incompatible',reason});  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
 }
 
 

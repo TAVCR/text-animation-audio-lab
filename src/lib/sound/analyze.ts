@@ -1,3 +1,4 @@
+import {boxLandmarks} from './boxLandmarks';
 import {interpolate,random} from 'remotion';
 import {slidePosition} from '@/remotion/templates/slidePosition';
 import {getEasing,type AnimationProps} from '@/lib/AnimationContext';
@@ -47,7 +48,7 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
         const rate=interpolate(p.speed,[.2,1,3],[.12,.38,1.35],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
         return speeds.map((v,i)=>(1+i*(p.viralWordStagger??8))*p.speed/rate/Math.max(.2,v??1));
       }
-      case 'kinetic-box-sequence':return [1]; // First box entrance; internal transitions need a segment adapter.
+      case 'kinetic-box-sequence':return boxLandmarks(p,words,frames,fps);
       default:return [];
     }
   };
@@ -57,13 +58,17 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
     while(lo<hi){const mid=(lo+hi)>>>1;if(marks[mid]<=clock)lo=mid+1;else hi=mid}
     return lo;
   };
-  for(let f=0;words && p.showTextLayer!==false && f<frames;f++){
+  const secondary=p.secondaryTextLayer;
+  const secondaryVisible=p.animationStyle==='dual-text-layers' && secondary?.enabled && secondary.opacity>0 && secondary.text.trim();
+  const otherWordVisible=p.animationStyle==='viral-text' && ((p.showWordTwo && p.wordTwo?.trim()) || (p.showWordThree && p.wordThree?.trim()));
+  const hasContent=words || secondaryVisible || otherWordVisible || p.animationStyle==='kinetic-box-sequence';
+  for(let f=0;hasContent && p.showTextLayer!==false && f<frames;f++){
     const raw=f*(p.speed||1), clock=mapMotionFrame(f,frames,p)*(p.speed||1);
     let state=0, audible=true;
     switch(p.animationStyle){
       case 'dual-text-layers':{
         const layer=p.secondaryTextLayer,stamp=Math.max(1,p.inkStampFrames??6);
-        state=Number(f>=(p.dualPrimaryDelayFrames??0)+stamp/p.speed)+Number(!!layer?.enabled && !!layer.text.trim() && f>=layer.delayFrames+stamp/layer.speed);
+        state=Number(words>0 && p.opacity>0 && f>=(p.dualPrimaryDelayFrames??0)+stamp/p.speed)+Number(!!layer && !!secondaryVisible && f>=layer.delayFrames+stamp/layer.speed);
         break;
       }
       case 'variable-weight-wave':{
@@ -98,7 +103,8 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
     }
     before=state;maxShown=Math.max(state,maxShown);
   }
-  return {words,events,heads,stops,peaks,starts,decelerations,rebounds,visibleChanges,maxShown,graphemes:chars.length,truncated:p.animationStyle==='typewriter' && maxShown<chars.length};
+  const precision=marks.length?'Hitos de la trayectoria':p.animationStyle==='slide-in'?'Trayectoria y asentamiento':'Eventos temporales';
+  return {precision,words,events,heads,stops,peaks,starts,decelerations,rebounds,visibleChanges,maxShown,graphemes:chars.length,truncated:p.animationStyle==='typewriter' && maxShown<chars.length};
 }
 export const styles=[
   {name:'Minimal',gain:.35,tail:45,density:12,variant:0},

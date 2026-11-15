@@ -429,6 +429,11 @@ export interface SoundDesignSettings {
   mode: 'Procedural' | 'Library';
   sourceName?: string;
   sourceUrl?: string;
+  libraryPath?: string;
+  method?: string;
+  recipe?: string;
+  fadeInMs?: number;
+  fadeOutMs?: number;
   eventVersion?: number;
   events?: number[];
   family: string;
