@@ -40,6 +40,17 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       }
       return anchor;
     };
+    // Invert the visual easing once per analysis so fractional staggers and
+    // playback speeds can cross the same visibility boundary as the renderer.
+    const crossing=(duration:number,threshold=.5)=>{
+      let lo=0,hi=1;
+      for(let i=0;i<54;i++){
+        const mid=(lo+hi)/2;
+        if(easing(mid)>=threshold)hi=mid;else lo=mid;
+      }
+      return duration*hi;
+    };
+    const letterMarks=(stagger:number,offset:number)=>letters.flatMap((c,i)=>c.trim()?[i*stagger+offset]:[]);
     switch(p.animationStyle){
       case 'wipe-reveal': return [strongestReveal(10,Math.floor(fps*1.5),200,50)];
       case 'blur-reveal': return [strongestReveal(10,45,100,50)];
@@ -49,8 +60,19 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       case 'cinematic': return [1,frames*.14,frames*.8];
       case 'fly-through': return [1,15];
       case 'extruded-3d': return [1,frames*.1/.72,frames*.548/.72,frames*.9/.72];
-      case 'clean-modern': return letters.flatMap((c,i)=>c.trim()?[i*2+1]:[]);
-      case 'follower-grow': return letters.flatMap((c,i)=>c.trim()?[Math.abs(i-Math.floor(letters.length/2))*2+1]:[]);
+      case 'clean-modern':return letterMarks(2,5);
+      case 'rotation':return letterMarks(3,crossing(10));
+      case 'follower':return letterMarks(2,crossing(10));
+      case 'apple-style':return letterMarks(2.5,crossing(10));
+      case 'blur-cascade':return letterMarks(2,crossing(15));
+      case 'smooth-sliding':{
+        const offset=crossing(20,.2);
+        return Array.from({length:words},(_,i)=>i*3+offset);
+      }
+      case 'follower-grow':{
+        const offset=crossing(10);
+        return letters.flatMap((c,i)=>c.trim()?[Math.abs(i-Math.floor(letters.length/2))*2+offset]:[]);
+      }
       case 'flicker': case 'flicker-outline-fill':
         return letters.flatMap((c,i)=>c.trim()?[4,16,28,36].map(n=>random(p.animationStyle+'-'+i)*fps*1.5+n):[]);
       case 'viral-text': {
@@ -114,11 +136,7 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       default:state=crossed(clock);break;
       case 'typewriter':state=visibleCount(clock,chars.length,p,fps);audible=chars.slice(before,state).some(c=>c.trim());break;
       case 'glitch':state=Number(Math.floor(clock/20)%2===0 && clock%4<2);break;
-      case 'slide-in':case 'smooth-sliding':state=Math.min(words,Math.ceil(clock/(p.animationStyle==='slide-in'?4:3)));break;
-      case 'rotation':case 'follower':case 'apple-style':{
-        const stagger=p.animationStyle==='rotation'?3:p.animationStyle==='follower'?2:2.5;
-        state=Math.min(letters.length,Math.ceil(clock/stagger));audible=letters.slice(before,state).some(c=>c.trim());break;
-      }
+      case 'slide-in':state=Math.min(words,Math.ceil(clock/4));break;
       case 'glyph-tile-assemble':state=raw>=Math.max(1,(p.glyphTileAssemblySeconds??.8)*fps)?2:raw>0?1:0;break;
       case 'word-highlight-tracker':state=1+getWordHighlightIndex(raw,words,p.wordHighlightSeconds??.4,fps);break;
       case 'ink-stamp-print':state=raw>=Math.max(1,p.inkStampFrames??6)?1:0;break;
@@ -129,7 +147,6 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
         for(let i=state;i<=latest;i++)if(bubbleVisible(position-i*8))state++;
         break;
       }
-      case 'blur-cascade':state=Math.min(letters.length,Math.ceil(clock/2));audible=letters.slice(before,state).some(c=>c.trim());break;
       case 'paper-cutout-assemble':{
         // Per-word delays use composition frames; only the settling ramp is speed-scaled.
         const delay=Math.max(0,p.paperCutoutWordDelayFrames??4);
@@ -139,6 +156,7 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
         break;
       }
     }
+    if(f===0 && clock>0 && marks.length)before=state;
     if(state>before)visibleChanges++;
     if((state>before || ((marks.length || p.animationStyle==='bubble-pop') && f>0 && state<before)) && audible){
       if(p.animationStyle==='typewriter' && chars.slice(before,state).some((c,j)=>c.trim() && (before+j===0 || !chars[before+j-1].trim())))heads.push(events.length);
