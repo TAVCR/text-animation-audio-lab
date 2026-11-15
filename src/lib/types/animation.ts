@@ -423,7 +423,23 @@ export type AnimationProps =
   & CircuitHudProps
   & DualTextLayerProps;
 
+export interface SoundDesignSettings {
+  version: 1;
+  template: AnimationStyle;
+  mode: 'Procedural' | 'Library';
+  sourceName?: string;
+  family: string;
+  seed: number;
+  density: number;
+  gain: number;
+  offset: number;
+  trim: number;
+  tail: number;
+  plan?: unknown;
+}
+
 export interface DualTextLayerProps {
+  soundDesign?: SoundDesignSettings;
   secondaryTextLayer?: TextLayer;
   dualLayerOrder?: 'primary-front' | 'secondary-front';
   dualPrimaryDelayFrames?: number;

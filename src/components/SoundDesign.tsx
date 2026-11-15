@@ -2,6 +2,7 @@ import React from 'react';
 import {Audio} from 'remotion';
 import {MainComposition} from '@/remotion/MainComposition';
 import type {AnimationProps} from '@/lib/AnimationContext';
+import {useAnimation} from '@/lib/AnimationContext';
 import {visibleCount} from '@/remotion/templates/visibleCount';
 import {mapMotionFrame} from '@/remotion/useMotionFrame';
 import {segmentGraphemes} from '@/remotion/templates/typewriterUtils';
@@ -28,8 +29,10 @@ async function decode(bytes:ArrayBuffer) {
   return new OfflineAudioContext(2,1,48000).decodeAudioData(bytes);
 }
 export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationProps;frames:number;onSound:(s:string)=>void;onPreview:()=>void}) {
+  const {setProps}=useAnimation();
   const [enabled,setEnabled]=React.useState(false),[mode,setMode]=React.useState('Procedural');
   const [library,setLibrary]=React.useState<AudioBuffer>(),[seed,setSeed]=React.useState(0);
+  const [sourceName,setSourceName]=React.useState('');
   const [soundFamily,setSoundFamily]=React.useState('automatic');
   const [density,setDensity]=React.useState(1),[gain,setGain]=React.useState(.6),[offset,setOffset]=React.useState(0);
   const [trim,setTrim]=React.useState(0),[tail,setTail]=React.useState(100);
@@ -41,6 +44,13 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const [approved,setApproved]=React.useState<typeof ai>(null);
   const [chosen,setChosen]=React.useState('');
   const [directorStatus,setDirectorStatus]=React.useState('');
+  React.useEffect(()=>{
+    const saved=props.soundDesign;
+    if(!saved || saved.version!==1 || saved.template!==props.animationStyle)return;
+    setMode(saved.mode);setSoundFamily(saved.family);setSeed(saved.seed);setDensity(saved.density);setGain(saved.gain);setOffset(saved.offset);setTrim(saved.trim);setTail(saved.tail);setSourceName(saved.sourceName??'');
+    if(saved.plan && typeof saved.plan==='object' && 'signature' in saved.plan){const plan=saved.plan as NonNullable<typeof ai>;setApproved(plan);setChosen(plan.signature)}
+    if(saved.mode==='Library')setDirectorStatus('Vuelve a seleccionar el archivo '+(saved.sourceName??'de biblioteca'));
+  },[props.soundDesign,props.animationStyle]);
   const request=React.useRef<AbortController|null>(null);
   React.useEffect(()=>{setDirectorStatus('');return ()=>request.current?.abort()},[signature]);
   async function suggest(){
@@ -66,8 +76,9 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         const plan=chosen===signature && approved?.signature===signature?approved:null;
         let buf=library;
         if(mode==='Procedural'){
-          const prefix=plan ? ({click:'key',sweep:'slide',pulse:'glitch',texture:'texture'}[plan.strategy.voice]||'key') : props.animationStyle==='glitch'?'glitch':props.animationStyle==='slide-in'?'slide':'key';
-          const key=soundFamily==='automatic' ? '/audio-lab/'+prefix+seed%4+'.wav' : '/audio-lab/'+soundFamily+'.wav';
+          const prefix=props.animationStyle==='glitch'?'glitch':props.animationStyle==='slide-in'?'slide':'key';
+          const directed=plan && ({click:'click',sweep:'whoosh',pulse:'digital'}[plan.strategy.voice]);
+          const key=soundFamily!=='automatic' ? '/audio-lab/'+soundFamily+'.wav' : directed ? '/audio-lab/'+directed+'.wav' : plan?.strategy.voice==='texture' ? '/audio-lab/texture'+seed%4+'.wav' : '/audio-lab/'+prefix+seed%4+'.wav';
           if(!cache.has(key)) cache.set(key,fetch(key).then(r=>{if(!r.ok)throw Error('Error al cargar Earshot');return r.arrayBuffer()}).then(decode).catch(e=>{cache.delete(key);throw e}));
           buf=await cache.get(key);
         }
@@ -80,14 +91,15 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         const lead=plan?.strategy.voice==="sweep" ? Math.min(hit-start,4800) : 240;
         const left=Math.max(start,hit-lead),right=Math.min(src.length,hit+tail*48);
         const mix=new Float32Array(Math.round(frames*48000/fps));
-        let last=-100,events=0,shortened=0,omitted=0;
+        let last=-100,events=0,shortened=0,adjusted=0;
         for(let index=0;index<analysis.events.length;index++){
           const f=analysis.events[index];
           if(plan && !plan.events.includes(index))continue;
           if(f-last<density || events>=256)continue;
-          const target=Math.max(0,Math.round((f+offset)*48000/fps));
-          // A peak at the very first sample cannot have a fade before it.
-          if(target<48){omitted++;continue;}
+          const requestedTarget=Math.round((f+offset)*48000/fps);
+          // Reserve one millisecond for a fade when the requested peak is at the clip boundary.
+          const target=Math.max(48,requestedTarget);
+          if(target!==requestedTarget)adjusted++;
           last=f;events++;
           const boundedLeft=Math.max(left,hit-target);
           if(boundedLeft>left)shortened++;
@@ -100,7 +112,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
           const at=Math.round(analysis.stops[analysis.stops.length-1]*48000/fps);
           for(let i=0;i<3600 && at+i<mix.length;i++)mix[at+i]+=.35*gain*Math.sin(i*.025)*Math.exp(-i/650);
         }
-        object=URL.createObjectURL(wave(mix));setUrl(object);setStatus(events+' eventos'+(shortened ? ` · ${shortened} ataques acortados al inicio del clip` : '')+(omitted ? ` · ${omitted} eventos omitidos por falta de espacio para el ataque` : ''));
+        object=URL.createObjectURL(wave(mix));setUrl(object);setStatus(events+' eventos'+(shortened ? ` · ${shortened} ataques acortados al inicio del clip` : '')+(adjusted ? ` · ${adjusted} picos ajustados al primer milisegundo` : ''));
       })().catch(e=>{if(active)setStatus(String(e.message))});
     }
     return ()=>{active=false;if(object)URL.revokeObjectURL(object)};
@@ -116,6 +128,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     <section><strong>Sugerencias por reglas locales</strong><div className="flex gap-2">{styles.map(s=><button key={s.name} className={button} onClick={()=>{setChosen('');setDensity(s.density);setGain(s.gain);setTail(s.tail);setSeed(s.variant)}}>{s.name}</button>)}</div></section>
     <section><strong>AI Sound Suggestions</strong> <select aria-label="Proveedor local" value={port} onChange={e=>{setPort(+e.target.value);setModel('');setModels([])}}>{[[3218,"Audio Lab · llama.cpp"],[11434,"Ollama"],[1234,"API local 1234"],[8080,"API local 8080"]].map(([v,n])=><option key={v} value={v}>{n}</option>)}</select> <button className={button} onClick={async()=>{try{const r=await fetch("/api/sound-director",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({probe:true,port})});const d=await r.json();setModels(d.models||[]);setDirectorStatus(d.models?.length?"Conectado":d.error)}catch{setDirectorStatus("Sin conexión")}}}>Comprobar conexión</button> {models.length>0 && <select aria-label="Modelo" value={model||models[0]} onChange={e=>setModel(e.target.value)}>{models.map(m=><option key={m}>{m}</option>)}</select>} <button className={button} disabled={!analysis.events.length} onClick={suggest}>Consultar IA local</button> {directorStatus} {ai?.signature===signature && <button className={button} title={ai.reason} onClick={()=>{setApproved(ai);setChosen(signature);setDensity(1);setSeed(ai.variant);setGain(ai.gain);setTail(ai.tail);setOffset(ai.offset)}}>Aplicar {ai.events.length} acentos · {ai.model}</button>}</section>
     <div className="my-2 flex flex-wrap items-center gap-2">
+      <button className={button} onClick={()=>setProps(prev=>({...prev,soundDesign:{version:1,template:props.animationStyle,mode:mode==='Library'?'Library':'Procedural',sourceName,family:soundFamily,seed,density,gain,offset,trim,tail,plan:chosen===signature?approved:undefined}}))}>Guardar diseño en proyecto</button>
       <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>
       {['Procedural','Library'].map(m=><button key={m} aria-pressed={mode===m} onClick={()=>setMode(m)} className={button+(mode===m?' bg-white text-black':' bg-neutral-800 text-white')}>{m}</button>)}
       <button className={button+" bg-emerald-300 text-black"} disabled={!url} onClick={()=>{
@@ -126,7 +139,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     {mode==='Procedural' ? <div className="flex flex-wrap items-center gap-2">Earshot
       <select aria-label="Familia sonora" value={soundFamily} onChange={e=>setSoundFamily(e.target.value)} className="bg-neutral-800 text-white"><option value="automatic">Automática</option><option value="whoosh">Whoosh · crisp</option><option value="impact">Impacto · punch</option><option value="riser">Riser · air</option><option value="swish">Transición suave</option><option value="click">Click suave</option><option value="digital">Interferencia digital</option></select>
       {[0,1,2,3].map(i=><button key={i} onClick={()=>setSeed(i)} aria-pressed={seed===i} className={button+(seed===i?' bg-white text-black':' bg-neutral-800 text-white')}>Variante {i+1}</button>)}</div>
-      : <input aria-label="Elegir SFX" type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()))}catch{setStatus('Archivo incompatible')}}}/>}
+      : <input aria-label="Elegir SFX" type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()));setSourceName(file.name)}catch{setStatus('Archivo incompatible')}}}/>}
     <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1">    {([[ 'Intervalo (frames)',density,setDensity,1,15,1],['Ganancia',gain,setGain,0,1,.05],['Desfase (frames)',offset,setOffset,-10,10,1],['Buscar desde (%)',trim,setTrim,0,99,1],['Cola (ms)',tail,setTail,10,500,1]] as const).map(([name,value,set,min,max,step])=><label key={name}>{name} {value}<input type="range" value={value} min={min} max={max} step={step} onChange={e=>set(Number(e.target.value))}/></label>)}
     </div>
   </details>;
