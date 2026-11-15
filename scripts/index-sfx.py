@@ -1,4 +1,6 @@
 """Read-only pilot catalogue. All generated files live in Audio Lab."""
+raise SystemExit('Flujo de biblioteca retirado en fase 5. Checkpoint: phase5-before-procedural-a562de7.')
+
 import sqlite3, pathlib, subprocess, json, argparse, hashlib
 ROOT=pathlib.Path(r'L:/TODO LO DEMAS/PRODUCCION/AUDIO/AUDIO/SOUND FX')
 DB=pathlib.Path(__file__).resolve().parents[1]/'.audio-lab/library.sqlite'

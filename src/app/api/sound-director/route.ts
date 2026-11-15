@@ -1,5 +1,5 @@
-import {readFile} from 'node:fs/promises';
-import path from 'node:path';
+import bank from '@/lib/sound/earshot-bank.json';
+import roles from '@/lib/sound/procedural-roles.json';
 import {NextResponse} from 'next/server';
 import {strategySchema,valid,distribute,type Strategy} from '@/lib/sound/strategy';
 import {compatibleVoices} from '@/lib/sound/capabilities';
@@ -23,16 +23,24 @@ export async function POST(req:Request){
     const observation=template==='typewriter'?'Glyphs appear instantly without spatial travel. Spaces are silent.':template==='glitch'?'Abrupt RGB splits alternate with unchanged text in separated clusters.':template==='slide-in'?'Overlapping spring trajectories accelerate, decelerate and settle.':family;
     const allowed=compatibleVoices(template);
     if(!allowed.length)throw Error('Movimiento desconocido');
-    const prompt='Select a compatible Earshot voice from the supplied list. Describe travel only when present. Choose landing last only for a measured settling motion meriting an extra impact. Direct sound for a 30fps animation. Choose a qualitative strategy. Evaluate overlap, pace and discontinuities. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({voices:allowed,family,text:String(inputText??'').slice(0,1000),words,groups,motion,observation});
-    const schema={...strategySchema,properties:{...strategySchema.properties,voice:{type:"string",enum:allowed}}};    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,seed:33,max_tokens:350,messages:[{role:'user',content:prompt}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
+    const categories=allowed.flatMap(v=>roles[v]);
+    const recipes=bank.filter(r=>categories.includes(r.category)).map(r=>r.id);
+    const extra={preferredRecipe:{type:'string',enum:recipes},extraLayer:{type:'string',enum:['none','accent','resonance']}};
+    const prompt='Select a compatible Earshot voice from the supplied list. Describe travel only when present. Choose landing last only for a measured settling motion meriting an extra impact. Direct sound for a 30fps animation. Choose a qualitative strategy. Evaluate overlap, pace and discontinuities. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({voices:allowed,recipes,family,text:String(inputText??'').slice(0,1000),words,groups,motion,observation});
+    const schema={...strategySchema,required:[...strategySchema.required,...Object.keys(extra)],properties:{...strategySchema.properties,...extra,voice:{type:"string",enum:allowed}}};    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,seed:33,max_tokens:350,messages:[{role:'user',content:prompt}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
     const raw=answer.choices?.[0]?.message?.content;
     let value:unknown;try{value=JSON.parse(raw)}catch{}
-    const accepted=valid(value) && allowed.includes(value.voice);
+    let preferredRecipe:string|undefined,extraLayer:string|undefined;
+    if(value && typeof value==='object' && 'preferredRecipe' in value && 'extraLayer' in value){
+      preferredRecipe=String(value.preferredRecipe);extraLayer=String(value.extraLayer);
+      delete (value as Record<string,unknown>).preferredRecipe;delete (value as Record<string,unknown>).extraLayer;
+    }
+    const accepted=recipes.includes(preferredRecipe??'') && extra.extraLayer.enum.includes(extraLayer??'') && valid(value) && allowed.includes(value.voice);
     const strategy:Strategy=accepted && valid(value)?value:{voice:allowed[0],intensity:'medium',attack:'natural',landing:'silent',density:'moderate',grouping:template==='glitch'?'pulse':template==='slide-in'?'gesture':'phrase',closing:'accent',character:'soft',space:'short'};
     const events=distribute(frames,template,strategy,heads);
     const variant={soft:0,bright:1,rough:3}[strategy.character];
     const reason=(accepted?'':'Respuesta incompatible. Se aplicaron reglas de '+allowed[0]+'. ')+frames.length+' eventos · '+events.length+' acentos · fotogramas '+events.map(i=>frames[i]).join(', ')+' · '+(events.includes(frames.length-1)?'cierre acentuado':'cierre libre');
-    return NextResponse.json({events,variant,gain:({subtle:.35,medium:.55,strong:.75})[strategy.intensity],tail:strategy.voice==='texture'?(strategy.space==='short'?240:480):strategy.space==='short'?65:180,offset:template==='slide-in'?-1:0,model:accepted?selected:'Reglas de respaldo',strategy,raw,correction:accepted?null:'Respuesta incompatible',reason});  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
+    return NextResponse.json({events,variant,preferredRecipe:accepted?preferredRecipe:undefined,extraLayer:accepted?extraLayer:undefined,gain:({subtle:.35,medium:.55,strong:.75})[strategy.intensity],tail:strategy.voice==='texture'?(strategy.space==='short'?240:480):strategy.space==='short'?65:180,offset:template==='slide-in'?-1:0,model:accepted?selected:'Reglas de respaldo',strategy,raw,correction:accepted?null:'Respuesta incompatible',reason});  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
 }
 
 

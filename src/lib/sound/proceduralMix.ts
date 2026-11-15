@@ -4,12 +4,18 @@ export type Layer={role:string;gain:number;offset:number;mute:boolean;fadeIn:num
 export type Design={style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
 export type SavedDesign={signature:string;design:Design};
 const cache=new Map<string,Promise<AudioBuffer>>();
-function buffer(url:string){
+function buffer(take:Take){
+  const url=take.url;
   if(!/^\/audio-lab\/synthesis\/[a-f0-9]{64}\.wav$/.test(url))throw Error('Referencia de síntesis inválida');
   let pending=cache.get(url);
   if(!pending){
     pending=fetch(url).then(async r=>{
-      if(!r.ok)throw Error('Falta una toma de la caché local');
+      if(r.status===404){
+        const recovered=await fetch('/api/procedural',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({restore:take})});
+        if(!recovered.ok)throw Error('No se pudo reconstruir la toma guardada');
+        r=await fetch(url,{cache:'reload'});
+      }
+      if(!r.ok)throw Error('No se pudo cargar la toma');
       return new OfflineAudioContext(2,1,48000).decodeAudioData(await r.arrayBuffer());
     }).catch(e=>{cache.delete(url);throw e});
     if(cache.size>=120)cache.delete(cache.keys().next().value!);
@@ -23,7 +29,7 @@ export async function mixDesign(plan:Design){
   for(const layer of plan.layers){
     if(layer.mute)continue;
     for(const take of layer.takes){
-      const src=await buffer(take.url);
+      const src=await buffer(take);
       const target=Math.max(48,Math.round(take.frame*1600+layer.offset*48));
       const start=target-take.peak;
       const first=Math.max(0,-start),last=Math.min(src.length,length-start);

@@ -1,4 +1,6 @@
 """Find up to three suitable, distinct local source regions for the requested motion."""
+raise SystemExit('Flujo de biblioteca retirado en fase 5. Checkpoint: phase5-before-procedural-a562de7.')
+
 from collections import defaultdict
 import hashlib
 import json

@@ -1,0 +1,63 @@
+{
+  "typing": [
+    "typing_key",
+    "pro_typing_key",
+    "tap"
+  ],
+  "click": [
+    "click",
+    "toggle",
+    "hover_tick",
+    "pro_click"
+  ],
+  "whoosh": [
+    "whoosh_fast",
+    "swipe",
+    "swish"
+  ],
+  "sweep": [
+    "swipe",
+    "swish",
+    "pro_zip"
+  ],
+  "swish": [
+    "swish",
+    "swipe",
+    "hover_tick"
+  ],
+  "impact": [
+    "impact",
+    "cut_hit",
+    "knock",
+    "pro_impact"
+  ],
+  "riser": [
+    "riser",
+    "reverse_swell",
+    "whoosh_big"
+  ],
+  "digital": [
+    "glitch",
+    "pro_glitch"
+  ],
+  "glitch": [
+    "glitch",
+    "pro_glitch",
+    "shutter"
+  ],
+  "pop": [
+    "pop",
+    "ui_pop",
+    "pro_pop_in"
+  ],
+  "pulse": [
+    "glitch",
+    "pluck",
+    "mallet"
+  ],
+  "texture": [
+    "reverse_swell",
+    "riser",
+    "downlifter"
+  ]
+}

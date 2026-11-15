@@ -1,4 +1,6 @@
 """Compare three retrieval methods over the same measured, real library regions."""
+raise SystemExit('Flujo de biblioteca retirado en fase 5. Checkpoint: phase5-before-procedural-a562de7.')
+
 import json
 import os
 from pathlib import Path
