@@ -1,0 +1,38 @@
+[
+  {
+    "template": "scramble",
+    "library": "CINEMATIC GLITCH (1).wav",
+    "LibraryPeak": 0.6594,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 28 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "flicker",
+    "library": "OutwardInversion,contactmic,homemade,VinylRecord,scratch,arch,stutter,zigzag,multiples.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.7821,
+    "modified": "5 palabras · 39 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "flicker-outline-fill",
+    "library": "OutwardInversion,contactmic,homemade,VinylRecord,scratch,arch,stutter,zigzag,multiples.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.7821,
+    "modified": "5 palabras · 39 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "neon-pulse",
+    "library": "APX_Long_170_Thunderworld_pulse_CT.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 10 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]
