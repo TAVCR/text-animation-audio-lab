@@ -1,24 +1,33 @@
 [
   {
     "template": "fly-through",
-    "library": "sharp-riser-327342.mp3",
+    "library": "AIRY WHOOSH (1).wav",
     "region": [
-      1.3133333333333335,
-      1.880813
+      1.1233333333333335,
+      2.09
     ],
-    "family": "riser",
+    "family": "whoosh",
     "LibraryPeak": 0.6,
     "events": [
       1,
       15
     ],
-    "recipe": "riser/air",
+    "recipe": "whoosh_fast/crisp",
     "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s",
+    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 467 ms",
+    "textOnlyFrames": [
+      1,
+      15
+    ],
+    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 300 ms",
+    "speedOnlyFrames": [
+      1,
+      10
+    ],
     "pageErrors": []
   },
   {
@@ -41,7 +50,19 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1533 ms",
+    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 3133 ms",
+    "textOnlyFrames": [
+      1,
+      21,
+      115
+    ],
+    "speedOnly": "3 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1533 ms",
+    "speedOnlyFrames": [
+      1,
+      14,
+      72,
+      118
+    ],
     "pageErrors": []
   },
   {
@@ -63,7 +84,16 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 467 ms",
+    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 767 ms",
+    "textOnlyFrames": [
+      1,
+      24
+    ],
+    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 467 ms",
+    "speedOnlyFrames": [
+      1,
+      15
+    ],
     "pageErrors": []
   },
   {
@@ -86,7 +116,20 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 1.0,
     "playPause": true,
-    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s · intervalo típico 133 ms",
+    "textOnly": "5 palabras · 5 eventos visuales · clip de 5.00 s · intervalo típico 133 ms",
+    "textOnlyFrames": [
+      0,
+      5,
+      9,
+      13,
+      17
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 167 ms",
+    "speedOnlyFrames": [
+      0,
+      5,
+      9
+    ],
     "pageErrors": []
   }
 ]
