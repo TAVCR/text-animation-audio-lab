@@ -9,9 +9,8 @@
     "family": "swish",
     "LibraryPeak": 0.6,
     "events": [
-      6,
-      36,
-      65
+      8,
+      38
     ],
     "recipe": "swish/soft",
     "LibraryMaxLocalPeakErrorMs": 0.0,
@@ -19,17 +18,15 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 1000 ms",
+    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 1000 ms",
     "textOnlyFrames": [
-      6,
-      36,
-      65
+      8,
+      38
     ],
-    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 633 ms",
+    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 633 ms",
     "speedOnlyFrames": [
-      4,
-      23,
-      41
+      5,
+      24
     ],
     "pageErrors": []
   },
@@ -69,18 +66,16 @@
   },
   {
     "template": "bar-reveal",
-    "library": "Page 10 - Whoosh_ Swish Sounds_7.mp3",
+    "library": "Page 10 - Whoosh_ Swish Sounds_8.mp3",
     "region": [
-      0.51,
-      1.802438
+      0,
+      2.115875
     ],
     "family": "swish",
     "LibraryPeak": 0.6,
     "events": [
-      1,
-      57,
-      75,
-      132
+      29,
+      104
     ],
     "recipe": "swish/soft",
     "LibraryMaxLocalPeakErrorMs": 0.0,
@@ -88,19 +83,15 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "textOnly": "5 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1867 ms",
+    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 2500 ms",
     "textOnlyFrames": [
-      1,
-      57,
-      75,
-      132
+      29,
+      104
     ],
-    "speedOnly": "3 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1167 ms",
+    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 1567 ms",
     "speedOnlyFrames": [
-      1,
-      36,
-      47,
-      83
+      18,
+      65
     ],
     "pageErrors": []
   },
