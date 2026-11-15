@@ -1,0 +1,38 @@
+[
+  {
+    "template": "bubble-pop",
+    "library": "bubble-pop-293342.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "apple-style",
+    "library": "bubble-pop-293342.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "glitch",
+    "library": "CINEMATIC GLITCH (1).wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 30 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "shake-flicker",
+    "library": "CINEMATIC GLITCH (1).wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 17 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]
