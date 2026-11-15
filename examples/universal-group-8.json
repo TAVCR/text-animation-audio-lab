@@ -1,0 +1,38 @@
+[
+  {
+    "template": "kinetic-box-sequence",
+    "library": "minecraft_click.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 11 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "ink-stamp-print",
+    "library": "Ice,Impact,Throw,Snowball,Step,Snow,Stalactite,Various12.M.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "dual-text-layers",
+    "library": "Ice,Impact,Throw,Snowball,Step,Snow,Stalactite,Various12.M.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "viral-text",
+    "library": "bubble-pop-293342.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]
