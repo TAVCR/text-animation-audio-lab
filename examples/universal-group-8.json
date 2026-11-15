@@ -1,38 +1,94 @@
 [
   {
     "template": "kinetic-box-sequence",
-    "library": "minecraft_click.mp3",
+    "library": "Digital Click - 8.mp3",
+    "region": [
+      0,
+      0.3632
+    ],
+    "family": "click",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      12,
+      21,
+      30,
+      51,
+      60,
+      122
+    ],
+    "recipe": "click/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
-    "modified": "5 palabras · 11 eventos visuales · clip de 5.00 s",
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 11 eventos visuales · clip de 5.00 s · intervalo típico 233 ms",
     "pageErrors": []
   },
   {
     "template": "ink-stamp-print",
     "library": "Ice,Impact,Throw,Snowball,Step,Snow,Stalactite,Various12.M.wav",
+    "region": [
+      0,
+      0.53
+    ],
+    "family": "impact",
     "LibraryPeak": 0.6,
+    "events": [
+      6
+    ],
+    "recipe": "impact/punch",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
-    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s",
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
     "pageErrors": []
   },
   {
     "template": "dual-text-layers",
     "library": "Ice,Impact,Throw,Snowball,Step,Snow,Stalactite,Various12.M.wav",
+    "region": [
+      0,
+      0.53
+    ],
+    "family": "impact",
     "LibraryPeak": 0.6,
+    "events": [
+      6
+    ],
+    "recipe": "impact/punch",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
-    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s",
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
     "pageErrors": []
   },
   {
     "template": "viral-text",
     "library": "bubble-pop-293342.mp3",
+    "region": [
+      0,
+      0.82
+    ],
+    "family": "pop",
     "LibraryPeak": 0.6,
+    "events": [
+      3,
+      24,
+      45
+    ],
+    "recipe": "pop/0",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
-    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 400 ms",
     "pageErrors": []
   }
 ]
