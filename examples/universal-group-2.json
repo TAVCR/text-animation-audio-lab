@@ -1,0 +1,38 @@
+[
+  {
+    "template": "smooth-sliding",
+    "library": "AIRY WHOOSH (1).wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "follower",
+    "library": "AIRY WHOOSH (1).wav",
+    "LibraryPeak": 0.7314,
+    "restored": true,
+    "ProceduralPeak": 0.7178,
+    "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "rotation",
+    "library": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "follower-grow",
+    "library": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 15 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]
