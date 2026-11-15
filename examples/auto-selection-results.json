@@ -1,0 +1,77 @@
+[
+  {
+    "template": "slide-in",
+    "method": "Library",
+    "candidate": {
+      "url": "/audio-lab/library-f2903493710e88b3a1561219.wav",
+      "name": "AIRY WHOOSH (1).wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\AIRY WHOOSH (1).wav",
+      "score": 3,
+      "method": "Nombre y carpeta; sin embeddings",
+      "region": [
+        0,
+        11.77263
+      ],
+      "indexed": 151
+    },
+    "wav": "examples/auto-slide-in-Library.wav"
+  },
+  {
+    "template": "slide-in",
+    "method": "Procedural",
+    "candidate": {
+      "recipe": "whoosh_fast/crisp"
+    },
+    "wav": "examples/auto-slide-in-Procedural.wav"
+  },
+  {
+    "template": "glitch",
+    "method": "Library",
+    "candidate": {
+      "url": "/audio-lab/library-c6d71cd75555d3f99367d518.wav",
+      "name": "CINEMATIC GLITCH (1).wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\CINEMATIC GLITCH (1).wav",
+      "score": 2,
+      "method": "Nombre y carpeta; sin embeddings",
+      "region": [
+        0,
+        6.01876
+      ],
+      "indexed": 152
+    },
+    "wav": "examples/auto-glitch-Library.wav"
+  },
+  {
+    "template": "glitch",
+    "method": "Procedural",
+    "candidate": {
+      "recipe": "glitch/data"
+    },
+    "wav": "examples/auto-glitch-Procedural.wav"
+  },
+  {
+    "template": "bubble-pop",
+    "method": "Library",
+    "candidate": {
+      "url": "/audio-lab/library-8c39ec9dba7f9d72cd2cf64e.wav",
+      "name": "bubble-pop-293342.mp3",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\bubble-pop-293342.mp3",
+      "score": 2,
+      "method": "Nombre y carpeta; sin embeddings",
+      "region": [
+        0,
+        0.912
+      ],
+      "indexed": 153
+    },
+    "wav": "examples/auto-bubble-pop-Library.wav"
+  },
+  {
+    "template": "bubble-pop",
+    "method": "Procedural",
+    "candidate": {
+      "recipe": "pop/0"
+    },
+    "wav": "examples/auto-bubble-pop-Procedural.wav"
+  }
+]

@@ -33,6 +33,18 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const [enabled,setEnabled]=React.useState(false),[mode,setMode]=React.useState('Procedural');
   const [library,setLibrary]=React.useState<AudioBuffer>(),[seed,setSeed]=React.useState(0);
   const [sourceName,setSourceName]=React.useState('');
+  const [autoBusy,setAutoBusy]=React.useState(false);
+  async function autoSound(){
+    setAutoBusy(true);setDirectorStatus('Buscando sonidos reales en SOUND FX…');
+    setSoundFamily(props.animationStyle==='slide-in'?'whoosh':props.animationStyle==='glitch'?'digital':'pop');
+    try{
+      const response=await fetch('/api/library-auto',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({template:props.animationStyle})});
+      const candidate=await response.json();if(!response.ok)throw Error(candidate.error);
+      const buffer=await decode(await (await fetch(candidate.url)).arrayBuffer());
+      setLibrary(buffer);setSourceName(candidate.name);setMode('Library');setDirectorStatus(candidate.name+' · '+candidate.method);
+    }catch(error){setDirectorStatus(error instanceof Error?error.message:'Búsqueda no disponible');setMode('Procedural')}
+    finally{setAutoBusy(false)}
+  }
   const [soundFamily,setSoundFamily]=React.useState('automatic');
   const [density,setDensity]=React.useState(1),[gain,setGain]=React.useState(.6),[offset,setOffset]=React.useState(0);
   const [trim,setTrim]=React.useState(0),[tail,setTail]=React.useState(100);
@@ -128,6 +140,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const button="rounded border border-neutral-500 px-3 py-1 font-medium";
   return <details className="shrink-0 max-h-[45%] overflow-auto border-b border-neutral-600 bg-neutral-900 p-2 text-sm text-white">
     <summary className="cursor-pointer rounded bg-emerald-300 px-3 py-2 font-semibold text-black">🔊 Sound Design · {labels[props.animationStyle]} — abrir opciones de sonido</summary>
+    {['slide-in','glitch','bubble-pop'].includes(props.animationStyle) && <div className="my-2"><button type="button" className={button} disabled={autoBusy} onClick={autoSound}>{autoBusy?'Buscando…':'Auto Sound Design'}</button><span className="ml-2">{sourceName && 'Library: '+sourceName} · Procedural: {soundFamily}</span></div>}
     {approved && approved.signature!==signature && <p role="status">La animación cambió. Los controles se conservan; consulta y aplica una propuesta nueva para adaptar los eventos.</p>}
     <section className="my-2"><strong>Animation Analysis</strong><p>{analysis.words} palabras · {analysis.events.length} eventos visuales · clip de {(frames/fps).toFixed(2)} s</p>{analysis.stops.length>0 && <p>Asentamiento al 1 % · último fotograma {analysis.stops[analysis.stops.length-1]}</p>}{analysis.truncated && <p>El texto no termina de aparecer dentro del clip.</p>}</section>
     <section><strong>Sugerencias por reglas locales</strong><div className="flex gap-2">{styles.map(s=><button key={s.name} className={button} onClick={()=>{setChosen('');setDensity(s.density);setGain(s.gain);setTail(s.tail);setSeed(s.variant)}}>{s.name}</button>)}</div></section>
@@ -142,13 +155,14 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
       <span role="status">{status}</span>
       {enabled && url && heard===url && <a className="underline" href={url} download={props.animationStyle+".wav"}>Guardar WAV de esta vista previa</a>}    {enabled && url && heard===url && <span>Esta mezcla se incluirá al exportar el video individual.</span>}</div>
     {mode==='Procedural' ? <div className="flex flex-wrap items-center gap-2">Earshot
-      <select aria-label="Familia sonora" value={soundFamily} onChange={e=>setSoundFamily(e.target.value)} className="bg-neutral-800 text-white"><option value="automatic">Automática</option><option value="whoosh">Whoosh · crisp</option><option value="impact">Impacto · punch</option><option value="riser">Riser · air</option><option value="swish">Transición suave</option><option value="click">Click suave</option><option value="digital">Interferencia digital</option></select>
+      <select aria-label="Familia sonora" value={soundFamily} onChange={e=>setSoundFamily(e.target.value)} className="bg-neutral-800 text-white"><option value="automatic">Automática</option><option value="whoosh">Whoosh · crisp</option><option value="impact">Impacto · punch</option><option value="riser">Riser · air</option><option value="swish">Transición suave</option><option value="click">Click suave</option><option value="digital">Interferencia digital</option><option value="pop">Pop · Earshot pop/0</option></select>
       {[0,1,2,3].map(i=><button key={i} onClick={()=>setSeed(i)} aria-pressed={seed===i} className={button+(seed===i?' bg-white text-black':' bg-neutral-800 text-white')}>Variante {i+1}</button>)}</div>
       : <input aria-label="Elegir SFX" type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()));setSourceName(file.name)}catch{setStatus('Archivo incompatible')}}}/>}
     <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1">    {([[ 'Intervalo (frames)',density,setDensity,1,15,1],['Ganancia',gain,setGain,0,1,.05],['Desfase (frames)',offset,setOffset,-10,10,1],['Buscar desde (%)',trim,setTrim,0,99,1],['Cola (ms)',tail,setTail,10,500,1]] as const).map(([name,value,set,min,max,step])=><label key={name}>{name} {value}<input type="range" value={value} min={min} max={max} step={step} onChange={e=>set(Number(e.target.value))}/></label>)}
     </div>
   </details>;
 }
+
 
 
 
