@@ -1,0 +1,354 @@
+[
+  {
+    "template": "typewriter",
+    "library": "typing_keyboard.mp3",
+    "family": "typing",
+    "recipe": "typing_key/crisp",
+    "region": [
+      9.38,
+      9.96
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "word-highlight-tracker",
+    "library": "Digital Click - 7.mp3",
+    "family": "click",
+    "recipe": "click/soft",
+    "region": [
+      0,
+      0.4352
+    ],
+    "LibraryMaxLocalPeakErrorMs": 1.0
+  },
+  {
+    "template": "clean-modern",
+    "library": "Digital Click - 8.mp3",
+    "family": "click",
+    "recipe": "click/soft",
+    "region": [
+      0.06000000000000001,
+      0.3632
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "slide-in",
+    "library": "AIRY WHOOSH (1).wav",
+    "family": "whoosh",
+    "recipe": "whoosh_fast/crisp",
+    "region": [
+      1.4566666666666668,
+      2.09
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "smooth-sliding",
+    "library": "AIRY WHOOSH (1).wav",
+    "family": "whoosh",
+    "recipe": "whoosh_fast/crisp",
+    "region": [
+      1.49,
+      2.09
+    ],
+    "LibraryMaxLocalPeakErrorMs": 5.69
+  },
+  {
+    "template": "follower",
+    "library": "AIRY WHOOSH (1).wav",
+    "family": "whoosh",
+    "recipe": "whoosh_fast/crisp",
+    "region": [
+      1.51,
+      2.09
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.08
+  },
+  {
+    "template": "rotation",
+    "library": "Sweep Phaser.wav",
+    "family": "sweep",
+    "recipe": "swipe/glide",
+    "region": [
+      0,
+      0.1875
+    ],
+    "LibraryMaxLocalPeakErrorMs": 15.75
+  },
+  {
+    "template": "follower-grow",
+    "library": "Sweep Phaser.wav",
+    "family": "sweep",
+    "recipe": "swipe/glide",
+    "region": [
+      0,
+      0.1875
+    ],
+    "LibraryMaxLocalPeakErrorMs": 6.4
+  },
+  {
+    "template": "bubble-pop",
+    "library": "bubble-pop-293342.mp3",
+    "family": "pop",
+    "recipe": "pop/0",
+    "region": [
+      0,
+      0.62
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "apple-style",
+    "library": "bubble-pop-293342.mp3",
+    "family": "pop",
+    "recipe": "pop/0",
+    "region": [
+      0.01999999999999999,
+      0.62
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "glitch",
+    "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
+    "family": "pulse",
+    "recipe": "glitch/chirp",
+    "region": [
+      0.03666666666666668,
+      0.67
+    ],
+    "LibraryMaxLocalPeakErrorMs": 1.0
+  },
+  {
+    "template": "shake-flicker",
+    "library": "glitch_interface_crunchanator_12.wav",
+    "family": "digital",
+    "recipe": "glitch/data",
+    "region": [
+      0,
+      0.64
+    ],
+    "LibraryMaxLocalPeakErrorMs": 14.48
+  },
+  {
+    "template": "scramble",
+    "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
+    "family": "pulse",
+    "recipe": "glitch/chirp",
+    "region": [
+      0.003333333333333355,
+      0.67
+    ],
+    "LibraryMaxLocalPeakErrorMs": 11.9
+  },
+  {
+    "template": "flicker",
+    "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
+    "family": "pulse",
+    "recipe": "glitch/chirp",
+    "region": [
+      0.09000000000000001,
+      0.67
+    ],
+    "LibraryMaxLocalPeakErrorMs": 7.94
+  },
+  {
+    "template": "flicker-outline-fill",
+    "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
+    "family": "pulse",
+    "recipe": "glitch/chirp",
+    "region": [
+      0.09000000000000001,
+      0.67
+    ],
+    "LibraryMaxLocalPeakErrorMs": 7.94
+  },
+  {
+    "template": "neon-pulse",
+    "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
+    "family": "pulse",
+    "recipe": "glitch/chirp",
+    "region": [
+      0,
+      1.0366666666666666
+    ],
+    "LibraryMaxLocalPeakErrorMs": 7.9
+  },
+  {
+    "template": "variable-weight-wave",
+    "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
+    "family": "pulse",
+    "recipe": "glitch/chirp",
+    "region": [
+      0,
+      2.17
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "blur-reveal",
+    "library": "Fast swish.wav",
+    "family": "swish",
+    "recipe": "swish/soft",
+    "region": [
+      0,
+      0.572021
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "blur-cascade",
+    "library": "Fast swish.wav",
+    "family": "swish",
+    "recipe": "swish/soft",
+    "region": [
+      0.12000000000000001,
+      0.572021
+    ],
+    "LibraryMaxLocalPeakErrorMs": 4.08
+  },
+  {
+    "template": "wipe-reveal",
+    "library": "Fast swish.wav",
+    "family": "swish",
+    "recipe": "swish/soft",
+    "region": [
+      0,
+      0.572021
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "slide-reveal",
+    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "family": "swish",
+    "recipe": "swish/soft",
+    "region": [
+      0.6000000000000001,
+      1.410563
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "shape-reveal",
+    "library": "Page 10 - Whoosh_ Swish Sounds_8.mp3",
+    "family": "swish",
+    "recipe": "swish/soft",
+    "region": [
+      0,
+      2.115875
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "bar-reveal",
+    "library": "Page 10 - Whoosh_ Swish Sounds_8.mp3",
+    "family": "swish",
+    "recipe": "swish/soft",
+    "region": [
+      0,
+      2.115875
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "cinematic",
+    "library": "sharp-riser-327342.mp3",
+    "family": "riser",
+    "recipe": "riser/air",
+    "region": [
+      1.28,
+      1.880813
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "fly-through",
+    "library": "AIRY WHOOSH (1).wav",
+    "family": "whoosh",
+    "recipe": "whoosh_fast/crisp",
+    "region": [
+      1.1233333333333335,
+      2.09
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "extruded-3d",
+    "library": "sharp-riser-327342.mp3",
+    "family": "riser",
+    "recipe": "riser/air",
+    "region": [
+      1.28,
+      1.880813
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "glyph-tile-assemble",
+    "library": "minecraft_click.mp3",
+    "family": "click",
+    "recipe": "click/soft",
+    "region": [
+      0.10999999999999999,
+      0.836984
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "paper-cutout-assemble",
+    "library": "Digital Click - 8.mp3",
+    "family": "click",
+    "recipe": "click/soft",
+    "region": [
+      0.006666666666666682,
+      0.3632
+    ],
+    "LibraryMaxLocalPeakErrorMs": 1.0
+  },
+  {
+    "template": "kinetic-box-sequence",
+    "library": "Digital Click - 8.mp3",
+    "family": "click",
+    "recipe": "click/soft",
+    "region": [
+      0,
+      0.3632
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "ink-stamp-print",
+    "library": "Ice,Impact,Throw,Snowball,Step,Snow,Stalactite,Various12.M.wav",
+    "family": "impact",
+    "recipe": "impact/punch",
+    "region": [
+      0,
+      0.53
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "dual-text-layers",
+    "library": "Ice,Impact,Throw,Snowball,Step,Snow,Stalactite,Various12.M.wav",
+    "family": "impact",
+    "recipe": "impact/punch",
+    "region": [
+      0,
+      0.53
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "viral-text",
+    "library": "bubble-pop-293342.mp3",
+    "family": "pop",
+    "recipe": "pop/0",
+    "region": [
+      0,
+      0.82
+    ],
+    "LibraryMaxLocalPeakErrorMs": 0.0
+  }
+]
