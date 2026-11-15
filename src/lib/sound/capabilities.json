@@ -6,7 +6,8 @@
         "click"
       ],
       "templates": [
-        "typewriter"
+        "typewriter",
+        "scramble"
       ]
     },
     "articulación progresiva": {
@@ -61,8 +62,7 @@
       ],
       "templates": [
         "glitch",
-        "shake-flicker",
-        "scramble"
+        "shake-flicker"
       ]
     },
     "parpadeo": {

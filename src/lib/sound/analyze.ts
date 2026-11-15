@@ -98,7 +98,15 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
         state=Number(tick%13===0 && intensity*(.3+random('neon-pulse-erratic-'+tick)*.4)<.4);
         break;
       }
-      case 'scramble':state=Math.ceil(letters.length*getEasing(p.easingStyle)(Math.min(1,clock/Math.max(1,Math.floor((frames-1)*(p.motionPhase==='in'?1:.55))))));break;
+      case 'scramble':{
+        // Scramble uses composition time even during its exit blur.
+        const end=Math.max(1,Math.floor(Math.max(1,frames-1)*(p.motionPhase==='in'?1:.55)));
+        const progress=interpolate(raw,[0,end],[0,1],{easing:getEasing(p.easingStyle),extrapolateRight:'clamp'});
+        state=before;
+        while(state<letters.length && (progress>=1 || progress>=state/letters.length+.1))state++;
+        audible=letters.slice(before,state).some(c=>c.trim());
+        break;
+      }
       case 'shake-flicker':{
         const exit=clock>frames-fps*1.5,local=exit?frames-clock:clock;
         state=local>=fps*1.5?1:Number(random((exit?'shake-out-':'shake-in-')+Math.floor(local/2))>interpolate(local,[0,fps*1.5],[.75,.4],{easing:getEasing(p.easingStyle),extrapolateLeft:'clamp',extrapolateRight:'clamp'}));break;

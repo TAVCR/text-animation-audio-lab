@@ -80,7 +80,7 @@ def generate(q,rows):
     strategy=director.get('strategy',{})
     voices=[k for k in q['voices'] if k in FAMILIES]
     if strategy.get('voice') in voices:voices.remove(strategy['voice']);voices.insert(0,strategy['voice'])
-    typing=q['template']=='typewriter'
+    typing=q['template'] in ('typewriter','scramble')
     voice='typing' if typing else voices[0]
     word_sequence=q['template'] in ('bubble-pop','slide-in','smooth-sliding','word-highlight-tracker','paper-cutout-assemble','viral-text','kinetic-box-sequence')
     preserve_events=word_sequence or typing

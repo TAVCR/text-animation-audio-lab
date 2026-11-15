@@ -15,7 +15,7 @@ it('counts visible typing changes once per frame at the selected character rate'
       changes.add(frame);
       if(text[i].trim())expected.add(frame);
     }
-    expect(analysis.events).toEqual([...expected]);
+    expect(analysis.events).toEqual(Array.from(expected));
     expect(analysis.visibleChanges).toBe(changes.size);
     expect(analysis.maxShown).toBe(speed===1?75:text.length);
   }
