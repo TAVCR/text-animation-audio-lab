@@ -111,7 +111,14 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       case 'ink-stamp-print':state=raw>=Math.max(1,p.inkStampFrames??6)?1:0;break;
       case 'bubble-pop':state=Math.min(words,Math.ceil(clock*.62/8));break;
       case 'blur-cascade':state=Math.min(letters.length,Math.ceil(clock/2));audible=letters.slice(before,state).some(c=>c.trim());break;
-      case 'paper-cutout-assemble':state=Math.min(words,Math.floor(Math.max(0,f-1)/Math.max(1,p.paperCutoutWordDelayFrames??4))+1);break;
+      case 'paper-cutout-assemble':{
+        // Per-word delays use composition frames; only the settling ramp is speed-scaled.
+        const delay=Math.max(0,p.paperCutoutWordDelayFrames??4);
+        const settle=Math.ceil(Math.max(1,p.paperCutoutSettleFrames??12)/(p.speed||1));
+        const countAt=(frame:number)=>frame<0?0:delay===0?words:Math.min(words,1+Math.floor(frame/delay));
+        state=countAt(f)+countAt(f-settle);
+        break;
+      }
     }
     if(state>before)visibleChanges++;
     if((state>before || (marks.length && state<before)) && audible){

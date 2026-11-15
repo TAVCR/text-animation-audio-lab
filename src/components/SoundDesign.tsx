@@ -51,7 +51,8 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     const controller=new AbortController();lookup.current=controller;
     setAutoBusy(true);setDirectorStatus('Buscando sonidos reales en SOUND FX…');
     const activePlan=chosen===signature?approved:null;
-    const preferred=activePlan && choices.includes(activePlan.strategy.voice as Voice)?activePlan.strategy.voice as Voice:choices[0];
+    const recommended=activePlan?.strategy.voice ?? soundFamily;
+    const preferred=choices.includes(recommended as Voice)?recommended as Voice:choices[0];
     const duration=classification.interval;
     if(!activePlan)setTail(Math.min(500,Math.max(45,Math.round(duration*800))));
     setSoundFamily(preferred);setMode('Procedural');setLibrary(undefined);setSourceName('');setSourceUrl('');setLibraryPath('');
@@ -81,6 +82,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     if(saved.plan && typeof saved.plan==='object' && 'signature' in saved.plan){const plan=saved.plan as NonNullable<typeof ai>;setApproved(plan);setChosen(plan.signature)}
     let current=true;
     if(saved.sourceUrl){
+      setLibrary(undefined);
       setSourceUrl(saved.sourceUrl);
       readSource(saved.sourceUrl).then(decode).then(b=>{if(current)setLibrary(b)}).catch(()=>{if(current)setDirectorStatus('Falta el archivo local. Pulsa Auto Sound Design para buscar otra toma.')});
     }else if(saved.mode==='Library')setDirectorStatus('Vuelve a seleccionar el archivo '+(saved.sourceName??'de biblioteca'));
