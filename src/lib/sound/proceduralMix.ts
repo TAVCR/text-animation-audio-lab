@@ -1,6 +1,6 @@
 import {wave} from './pcm';
 export type Take={recipe:string;url:string;frame:number;visualEvent?:number;peak:number;samples:number;onset:number;end:number;gain:number;params:{dur?:number;seed:number;pitch?:number;apex?:number}};
-export type Layer={air?:number;room?:number;rate?:number;role:string;gain:number;offset:number;mute:boolean;fadeIn:number;fadeOut:number;takes:Take[]};
+export type Layer={resonator?:'bubble'|'stamp';body?:number;air?:number;room?:number;rate?:number;role:string;gain:number;offset:number;mute:boolean;fadeIn:number;fadeOut:number;takes:Take[]};
 export type Design={syncVersion?:number;style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
 export type SavedDesign={signature:string;design:Design};
 const cache=new Map<string,Promise<AudioBuffer>>();
@@ -46,6 +46,26 @@ function airSweep(track:Float32Array,target:number,take:Take,layer:Layer,rate:nu
   }
 }
 
+// A bubble rises in pitch as it opens. A stamp excites a lower, falling
+// resonance. Both envelopes start at the measured contact frame.
+function addBody(track:Float32Array,target:number,take:Take,layer:Layer,rate:number){
+  const bubble=layer.resonator==='bubble';
+  const pitch=(bubble?390:88)*(1+((take.params.seed%17)-8)*.012);
+  const decay=bubble ? .042 : .067;
+  const duration=Math.ceil(6*decay*48000/rate);
+  const end=Math.min(duration,track.length/2-target);
+  let phase=0;
+  for(let i=0;i<end;i++){
+    const t=i*rate/48000;
+    const glide=Math.exp(-t/(bubble ? .024 : .013));
+    phase+=2*Math.PI*pitch*(bubble?1.65-.86*glide:1+1.15*glide)*rate/48000;
+    const envelope=(1-Math.exp(-t/.002))*Math.exp(-t/decay)*Math.min(1,(end-i-1)/96);
+    const tone=Math.sin(phase)+.22*Math.sin(phase*(bubble?2.04:2.76))*Math.exp(-t/.028);
+    const sample=tone*envelope*(layer.body??0)*take.gain*layer.gain;
+    track[(target+i)*2]+=sample;
+    track[(target+i)*2+1]+=sample;
+  }
+}
 // A deterministic, decorrelated stereo impulse gives the sweep a diffuse tail.
 async function addRoom(track:Float32Array,mix:Float32Array,wet:number){
   const frames=track.length/2;
@@ -80,6 +100,7 @@ export async function mixDesign(plan:Design){
     for(const take of layer.takes){
       const src=await buffer(take);
       const target=Math.max(48,Math.round(take.frame*1600+layer.offset*48));
+      if(layer.body && layer.resonator)addBody(track,target,take,layer,rate);
       if(layer.air)airSweep(track,target,take,layer,rate);
       const peak=Math.round(take.peak/rate);
       const start=target-peak;

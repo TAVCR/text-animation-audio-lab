@@ -100,6 +100,11 @@ def generate(q,rows):
                    fadeOut=12 if strategy.get('space')=='long' else 5,takes=[])
         if band_reveal:
             layer.update(air=[.34,.62,.48][index],room=[.20,.38,.32][index])
+        if role=='Movimiento' and q['template'] in ('bubble-pop','ink-stamp-print'):
+            layer.update(resonator='bubble' if q['template']=='bubble-pop' else 'stamp',
+                         body=[.15,.46,.34][index],room=[.04,.16,.23][index])
+        if role=='Movimiento' and q['template'] in ('cinematic','fly-through','extruded-3d'):
+            layer.update(air=[.12,.44,.28][index],room=[.14,.57,.39][index])
         for i,frame in enumerate(anchors):
             gap=(anchors[i+1]-frame)/30 if i+1<len(anchors) else interval
             duration=float(np.clip(gap*[.55,1.1,.78][index],.055,1.7))
