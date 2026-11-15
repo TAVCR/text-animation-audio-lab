@@ -1,5 +1,6 @@
 import React from 'react';
 import {Audio} from 'remotion';
+import {REMOTION_FPS} from '@/lib/videoConfig';
 import {MainComposition} from '@/remotion/MainComposition';
 import {useAnimation,type AnimationProps} from '@/lib/AnimationContext';
 import {analyze} from '@/lib/sound/analyze';
@@ -8,7 +9,7 @@ import {mixDesign,type Design,type Layer} from '@/lib/sound/proceduralMix';
 import {LegacySoundDesign} from './LegacySoundDesign';
 
 export function SoundPreview({soundUrl,...props}:AnimationProps & {soundUrl?:string}){
-  return <><MainComposition {...props}/>{soundUrl && <Audio src={soundUrl}/>}</>;
+  return <><MainComposition {...props}/>{soundUrl && <Audio src={soundUrl} pauseWhenBuffering acceptableTimeShiftInSeconds={1/REMOTION_FPS}/>}</>;
 }
 type Props={props:AnimationProps;frames:number;onSound:(s:string)=>void;onPreview:()=>void};
 const styles=['Minimal','Cinematic','Experimental'];
@@ -106,6 +107,8 @@ export function SoundDesign(input:Props){
     {busy && <button className={button} onClick={()=>cancel.current?.abort()}>Cancelar · {busy}</button>}</div>
     {styles.map(s=><button key={s} className={button} aria-pressed={active===s} disabled={!plans[s]} onClick={()=>setActive(s)}>{s}</button>)}
     {plan && <div><p>{active} · {plan.method} · {plan.layers.reduce((n,l)=>n+l.takes.length,0)} acentos · {(plan.frames/30).toFixed(2)} s</p>
+    {plan.syncVersion!==2 && plan.layers.some(layer=>layer.takes.some(take=>take.visualEvent!==undefined)) &&
+      <button className={button} disabled={!!busy || bound!==signature} onClick={()=>setPlans(old=>({...old,[active]:{...old[active],syncVersion:2}}))}>Ajustar sincronización de esta mezcla</button>}
     {plan.layers.map((layer,i)=><div className="my-2 flex flex-wrap items-center gap-3" key={i}>
     <strong>{layer.role}</strong><span>{Array.from(new Set(layer.takes.map(t=>t.recipe))).join(', ')}</span>
     <label><input type="checkbox" checked={layer.mute} onChange={e=>edit(i,{mute:e.target.checked})}/> Silenciar</label>

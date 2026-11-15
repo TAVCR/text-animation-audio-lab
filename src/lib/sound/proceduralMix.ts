@@ -1,7 +1,7 @@
 import {wave} from './pcm';
-export type Take={recipe:string;url:string;frame:number;peak:number;samples:number;onset:number;end:number;gain:number;params:{dur?:number;seed:number;pitch?:number;apex?:number}};
+export type Take={recipe:string;url:string;frame:number;visualEvent?:number;peak:number;samples:number;onset:number;end:number;gain:number;params:{dur?:number;seed:number;pitch?:number;apex?:number}};
 export type Layer={role:string;gain:number;offset:number;mute:boolean;fadeIn:number;fadeOut:number;takes:Take[]};
-export type Design={style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
+export type Design={syncVersion?:number;style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
 export type SavedDesign={signature:string;design:Design};
 const cache=new Map<string,Promise<AudioBuffer>>();
 function buffer(take:Take){
@@ -32,7 +32,12 @@ export async function mixDesign(plan:Design){
       const src=await buffer(take);
       const target=Math.max(48,Math.round(take.frame*1600+layer.offset*48));
       const start=target-take.peak;
-      const first=Math.max(0,-start),last=Math.min(src.length,length-start);
+      // Keep a short attack ramp while preventing long samples from sounding
+      // before their visual cue. Manual layer offsets move both boundaries.
+      const cue=plan.syncVersion===2 && take.visualEvent!==undefined
+        ? Math.round(Math.min(take.visualEvent,take.frame)*1600+layer.offset*48)-192
+        : 0;
+      const first=Math.max(0,Math.max(0,cue)-start),last=Math.min(src.length,length-start);
       const attack=Math.max(1,Math.min(layer.fadeIn*48,take.peak-first));
       const release=Math.max(1,Math.min(layer.fadeOut*48,last-take.peak));
       for(let c=0;c<2;c++){

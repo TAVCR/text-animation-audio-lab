@@ -82,7 +82,7 @@ def generate(q,rows):
     if strategy.get('voice') in voices:voices.remove(strategy['voice']);voices.insert(0,strategy['voice'])
     voice=voices[0]
     if director.get('events'):
-        events=[events[i] for i in director['events'] if isinstance(i,int) and 0<=i<len(events)] or events
+        events=sorted({events[i] for i in director['events'] if type(i) is int and 0<=i<len(events)}) or events
     interval=np.median(np.diff(events))/30 if len(events)>1 else min(.7,frames/30)
     limit=[4,8,10][index]
     if strategy.get('density')=='sparse':limit=max(1,limit//2)
@@ -135,7 +135,7 @@ def generate(q,rows):
     if director.get('extraLayer')!='none' and index==2 and len(events)>1:
         secondary='pulse' if voice in ('digital','glitch','pulse') else 'swish' if voice in ('riser','texture') else 'click'
         add('Acento' if director.get('extraLayer')=='accent' else 'Resonancia',secondary,selected[::max(1,len(selected)//2)][:2],.24)
-    return dict(style=style,variant=variant,layers=layers,frames=frames,method=director.get('model','Reglas locales'),strategy=strategy,preferredRecipe=director.get('preferredRecipe'),extraLayer=director.get('extraLayer'))
+    return dict(syncVersion=2,style=style,variant=variant,layers=layers,frames=frames,method=director.get('model','Reglas locales'),strategy=strategy,preferredRecipe=director.get('preferredRecipe'),extraLayer=director.get('extraLayer'))
 
 def canonical_params(params):
     # JSON round-trips through JavaScript turn integral floats into integers.
