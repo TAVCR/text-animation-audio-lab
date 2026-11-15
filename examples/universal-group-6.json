@@ -19,15 +19,26 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 1000 ms",
+    "textOnlyFrames": [
+      6,
+      36,
+      65
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 633 ms",
+    "speedOnlyFrames": [
+      4,
+      23,
+      41
+    ],
     "pageErrors": []
   },
   {
     "template": "shape-reveal",
-    "library": "Page 10 - Whoosh_ Swish Sounds_7.mp3",
+    "library": "Page 10 - Whoosh_ Swish Sounds_8.mp3",
     "region": [
-      0.51,
-      1.802438
+      0,
+      2.115875
     ],
     "family": "swish",
     "LibraryPeak": 0.6,
@@ -42,15 +53,26 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 2333 ms",
+    "textOnlyFrames": [
+      1,
+      40,
+      110
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 1467 ms",
+    "speedOnlyFrames": [
+      1,
+      25,
+      69
+    ],
     "pageErrors": []
   },
   {
     "template": "bar-reveal",
-    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "library": "Page 10 - Whoosh_ Swish Sounds_7.mp3",
     "region": [
-      0.6000000000000001,
-      1.410563
+      0.51,
+      1.802438
     ],
     "family": "swish",
     "LibraryPeak": 0.6,
@@ -66,7 +88,20 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 4 eventos visuales · clip de 5.00 s",
+    "textOnly": "5 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1867 ms",
+    "textOnlyFrames": [
+      1,
+      57,
+      75,
+      132
+    ],
+    "speedOnly": "3 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1167 ms",
+    "speedOnlyFrames": [
+      1,
+      36,
+      47,
+      83
+    ],
     "pageErrors": []
   },
   {
@@ -89,7 +124,18 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 3267 ms",
+    "textOnlyFrames": [
+      1,
+      22,
+      120
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 2033 ms",
+    "speedOnlyFrames": [
+      1,
+      14,
+      75
+    ],
     "pageErrors": []
   }
 ]
