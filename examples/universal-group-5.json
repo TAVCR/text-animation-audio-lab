@@ -1,0 +1,103 @@
+[
+  {
+    "template": "variable-weight-wave",
+    "library": "Electric, Switch ON OFF, power, turn-on, medium frequency, motor, pulse, hum.wav",
+    "region": [
+      0,
+      2.17
+    ],
+    "family": "pulse",
+    "LibraryPeak": 0.6,
+    "events": [
+      36,
+      108
+    ],
+    "recipe": "glitch/chirp",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "blur-reveal",
+    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "region": [
+      0.6000000000000001,
+      1.410563
+    ],
+    "family": "swish",
+    "LibraryPeak": 0.6,
+    "events": [
+      11,
+      55
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "blur-cascade",
+    "library": "Fast swish.wav",
+    "region": [
+      0.12000000000000001,
+      0.572021
+    ],
+    "family": "swish",
+    "LibraryPeak": 0.6308,
+    "events": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      15,
+      17,
+      19,
+      21,
+      23,
+      27,
+      29,
+      31,
+      33
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 4.08,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.02,
+    "playPause": true,
+    "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "wipe-reveal",
+    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "region": [
+      0.6000000000000001,
+      1.410563
+    ],
+    "family": "swish",
+    "LibraryPeak": 0.6,
+    "events": [
+      11,
+      55
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]
