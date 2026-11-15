@@ -38,6 +38,10 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       }
       case 'glyph-tile-assemble':state=raw>=Math.max(1,(p.glyphTileAssemblySeconds??.8)*fps)?2:raw>0?1:0;break;
       case 'word-highlight-tracker':state=1+getWordHighlightIndex(raw,words,p.wordHighlightSeconds??.4,fps);break;
+      case 'ink-stamp-print':state=raw>=Math.max(1,p.inkStampFrames??6)?1:0;break;
+      case 'bubble-pop':state=Math.min(words,Math.ceil(clock*.62/8));break;
+      case 'blur-cascade':state=Math.min(letters.length,Math.ceil(clock/2));audible=letters.slice(before,state).some(c=>c.trim());break;
+      case 'paper-cutout-assemble':state=Math.min(words,Math.floor(Math.max(0,f-1)/Math.max(1,p.paperCutoutWordDelayFrames??4))+1);break;
     }
     if(state>before)visibleChanges++;
     if(state>before && audible){

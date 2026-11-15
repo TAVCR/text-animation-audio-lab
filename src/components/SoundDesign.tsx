@@ -8,7 +8,7 @@ import {segmentGraphemes} from '@/remotion/templates/typewriterUtils';
 import {REMOTION_FPS as fps} from '@/lib/videoConfig';
 
 import {analyze,styles} from '@/lib/sound/analyze';
-const labels:Record<string,string>={typewriter:"Typewriter",glitch:"Cyberpunk Glitch",rotation:"Rotation",follower:"Follower","apple-style":"Apple Style","smooth-sliding":"Smooth Sliding","glyph-tile-assemble":"Glyph Tile Assemble","word-highlight-tracker":"Word Highlight Tracker","slide-in":"Slide In"};
+const labels:Record<string,string>={typewriter:"Typewriter",glitch:"Cyberpunk Glitch",rotation:"Rotation",follower:"Follower","apple-style":"Apple Style","smooth-sliding":"Smooth Sliding","glyph-tile-assemble":"Glyph Tile Assemble","word-highlight-tracker":"Word Highlight Tracker","slide-in":"Slide In","ink-stamp-print":"Ink Stamp Print","bubble-pop":"Bubble Pop","blur-cascade":"Blur Cascade","paper-cutout-assemble":"Paper Cutout Assemble"};
 export function SoundPreview({soundUrl,...props}:AnimationProps & {soundUrl?:string}) {
   return <><MainComposition {...props}/>{soundUrl && <Audio src={soundUrl}/>}</>;
 }
@@ -30,6 +30,7 @@ async function decode(bytes:ArrayBuffer) {
 export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationProps;frames:number;onSound:(s:string)=>void;onPreview:()=>void}) {
   const [enabled,setEnabled]=React.useState(false),[mode,setMode]=React.useState('Procedural');
   const [library,setLibrary]=React.useState<AudioBuffer>(),[seed,setSeed]=React.useState(0);
+  const [soundFamily,setSoundFamily]=React.useState('automatic');
   const [density,setDensity]=React.useState(1),[gain,setGain]=React.useState(.6),[offset,setOffset]=React.useState(0);
   const [trim,setTrim]=React.useState(0),[tail,setTail]=React.useState(100);
 
@@ -66,7 +67,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         let buf=library;
         if(mode==='Procedural'){
           const prefix=plan ? ({click:'key',sweep:'slide',pulse:'glitch',texture:'texture'}[plan.strategy.voice]||'key') : props.animationStyle==='glitch'?'glitch':props.animationStyle==='slide-in'?'slide':'key';
-          const key='/audio-lab/'+prefix+seed%4+'.wav';
+          const key=soundFamily==='automatic' ? '/audio-lab/'+prefix+seed%4+'.wav' : '/audio-lab/'+soundFamily+'.wav';
           if(!cache.has(key)) cache.set(key,fetch(key).then(r=>{if(!r.ok)throw Error('Error al cargar Earshot');return r.arrayBuffer()}).then(decode).catch(e=>{cache.delete(key);throw e}));
           buf=await cache.get(key);
         }
@@ -79,13 +80,15 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
         const lead=plan?.strategy.voice==="sweep" ? Math.min(hit-start,4800) : 240;
         const left=Math.max(start,hit-lead),right=Math.min(src.length,hit+tail*48);
         const mix=new Float32Array(Math.round(frames*48000/fps));
-        let last=-100,events=0,shortened=0;
+        let last=-100,events=0,shortened=0,omitted=0;
         for(let index=0;index<analysis.events.length;index++){
           const f=analysis.events[index];
           if(plan && !plan.events.includes(index))continue;
           if(f-last<density || events>=256)continue;
-          last=f;events++;
           const target=Math.max(0,Math.round((f+offset)*48000/fps));
+          // A peak at the very first sample cannot have a fade before it.
+          if(target<48){omitted++;continue;}
+          last=f;events++;
           const boundedLeft=Math.max(left,hit-target);
           if(boundedLeft>left)shortened++;
           for(let i=boundedLeft;i<right;i++){
@@ -97,11 +100,11 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
           const at=Math.round(analysis.stops[analysis.stops.length-1]*48000/fps);
           for(let i=0;i<3600 && at+i<mix.length;i++)mix[at+i]+=.35*gain*Math.sin(i*.025)*Math.exp(-i/650);
         }
-        object=URL.createObjectURL(wave(mix));setUrl(object);setStatus(events+' eventos'+(shortened ? ` · ${shortened} ataques acortados al inicio del clip` : ''));
+        object=URL.createObjectURL(wave(mix));setUrl(object);setStatus(events+' eventos'+(shortened ? ` · ${shortened} ataques acortados al inicio del clip` : '')+(omitted ? ` · ${omitted} eventos omitidos por falta de espacio para el ataque` : ''));
       })().catch(e=>{if(active)setStatus(String(e.message))});
     }
     return ()=>{active=false;if(object)URL.revokeObjectURL(object)};
-  },[props,frames,mode,library,seed,gain,offset,density,trim,tail,onSound,chosen,signature,approved]);
+  },[props,frames,mode,library,seed,gain,offset,density,trim,tail,onSound,chosen,signature,approved,soundFamily]);
   React.useEffect(()=>{onSound(enabled ? url : '');return ()=>onSound('')},[enabled,url,onSound]);
 
   React.useEffect(()=>{if(enabled && url && heard===url) window.audioLabTake={url,props};return ()=>{delete window.audioLabTake}},[enabled,url,heard,props]);
@@ -121,6 +124,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
       <span role="status">{status}</span>
       {enabled && url && heard===url && <a className="underline" href={url} download={props.animationStyle+".wav"}>Guardar WAV de esta vista previa</a>}    {enabled && url && heard===url && <span>Esta mezcla se incluirá al exportar el video individual.</span>}</div>
     {mode==='Procedural' ? <div className="flex flex-wrap items-center gap-2">Earshot
+      <select aria-label="Familia sonora" value={soundFamily} onChange={e=>setSoundFamily(e.target.value)} className="bg-neutral-800 text-white"><option value="automatic">Automática</option><option value="whoosh">Whoosh · crisp</option><option value="impact">Impacto · punch</option><option value="riser">Riser · air</option><option value="swish">Transición suave</option><option value="click">Click suave</option><option value="digital">Interferencia digital</option></select>
       {[0,1,2,3].map(i=><button key={i} onClick={()=>setSeed(i)} aria-pressed={seed===i} className={button+(seed===i?' bg-white text-black':' bg-neutral-800 text-white')}>Variante {i+1}</button>)}</div>
       : <input aria-label="Elegir SFX" type="file" accept="audio/*" onChange={async e=>{const file=e.target.files?.[0];if(file)try{setLibrary(await decode(await file.arrayBuffer()))}catch{setStatus('Archivo incompatible')}}}/>}
     <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1">    {([[ 'Intervalo (frames)',density,setDensity,1,15,1],['Ganancia',gain,setGain,0,1,.05],['Desfase (frames)',offset,setOffset,-10,10,1],['Buscar desde (%)',trim,setTrim,0,99,1],['Cola (ms)',tail,setTail,10,500,1]] as const).map(([name,value,set,min,max,step])=><label key={name}>{name} {value}<input type="range" value={value} min={min} max={max} step={step} onChange={e=>set(Number(e.target.value))}/></label>)}
