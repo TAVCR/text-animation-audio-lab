@@ -3,9 +3,6 @@ import {Audio} from 'remotion';
 import {MainComposition} from '@/remotion/MainComposition';
 import type {AnimationProps} from '@/lib/AnimationContext';
 import {useAnimation} from '@/lib/AnimationContext';
-import {visibleCount} from '@/remotion/templates/visibleCount';
-import {mapMotionFrame} from '@/remotion/useMotionFrame';
-import {segmentGraphemes} from '@/remotion/templates/typewriterUtils';
 import {REMOTION_FPS as fps} from '@/lib/videoConfig';
 
 import {analyze,styles} from '@/lib/sound/analyze';
@@ -75,15 +72,27 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const [approved,setApproved]=React.useState<typeof ai>(null);
   const [chosen,setChosen]=React.useState('');
   const [directorStatus,setDirectorStatus]=React.useState('');
+  const hadSavedDesign=React.useRef(false);
   React.useEffect(()=>{
     const saved=props.soundDesign;
-    if(!saved || saved.version!==1 || saved.template!==props.animationStyle)return;
+    if(!saved || saved.version!==1 || saved.template!==props.animationStyle){
+      if(hadSavedDesign.current){
+        setApproved(null);setChosen('');setSoundFamily('automatic');setEnabled(false);
+        setSourceUrl('');setSourceName('');setLibraryPath('');setLibrary(undefined);
+        setMode('Procedural');setSeed(0);setDensity(1);setGain(.6);setOffset(0);setTrim(0);setTail(100);
+      }
+      hadSavedDesign.current=false;
+      return;
+    }
+    hadSavedDesign.current=true;
+    setSourceUrl(saved.sourceUrl??'');
+    setLibrary(undefined);
+    setApproved(null);setChosen('');
+
     setLibraryPath(saved.libraryPath??'');setMode(saved.mode);setSoundFamily(saved.family);setSeed(saved.seed);setDensity(saved.density);setGain(saved.gain);setOffset(saved.offset);setTrim(saved.trim);setTail(saved.tail);setSourceName(saved.sourceName??'');
     if(saved.plan && typeof saved.plan==='object' && 'signature' in saved.plan){const plan=saved.plan as NonNullable<typeof ai>;setApproved(plan);setChosen(plan.signature)}
     let current=true;
     if(saved.sourceUrl){
-      setLibrary(undefined);
-      setSourceUrl(saved.sourceUrl);
       readSource(saved.sourceUrl).then(decode).then(b=>{if(current)setLibrary(b)}).catch(()=>{if(current)setDirectorStatus('Falta el archivo local. Pulsa Auto Sound Design para buscar otra toma.')});
     }else if(saved.mode==='Library')setDirectorStatus('Vuelve a seleccionar el archivo '+(saved.sourceName??'de biblioteca'));
     return ()=>{current=false};

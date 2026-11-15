@@ -15,7 +15,7 @@ with sync_playwright() as driver:
             page.goto('http://127.0.0.1:3217')
             key='remotion-fx:last-props:v1'
             page.wait_for_function('(k)=>localStorage.getItem(k)',arg=key)
-            page.evaluate("([k,t])=>{let p=JSON.parse(localStorage.getItem(k));Object.assign(p,{animationStyle:t,text:'Motion sound test',speed:1,showTextLayer:true,enableParticles:false});if(t==='variable-weight-wave')p.fontFamily='Bahnschrift';localStorage.setItem(k,JSON.stringify(p))}",[key,row['template']])
+            page.evaluate("([k,t])=>{let p=JSON.parse(localStorage.getItem(k));Object.assign(p,{animationStyle:t,text:'Motion sound test',speed:1,showTextLayer:true,enableParticles:false});if(t==='variable-weight-wave')p.fontFamily='Inter';localStorage.setItem(k,JSON.stringify(p))}",[key,row['template']])
             page.reload()
             player=page.locator('.remotion-player-clean')
             page.get_by_role('button',name='Pausar').click()
@@ -33,7 +33,7 @@ with sync_playwright() as driver:
                 at=pixels(anchor)
                 b=pixels(min(end,anchor+2))
                 samples.append({'frame':anchor,'changedPixels':int((np.maximum(np.abs(a-at),np.abs(at-b)).max(axis=2)>2).sum())})
-            records.append({'template':row['template'],'font':'Bahnschrift' if row['template']=='variable-weight-wave' else 'project default','samples':samples})
+            records.append({'template':row['template'],'font':'Inter' if row['template']=='variable-weight-wave' else 'project default','samples':samples})
             print(row['template'],samples,flush=True)
             page.close()
 Path('examples/universal-visual-anchors.json').write_text(json.dumps(records,indent=2),encoding='utf8')
