@@ -30,7 +30,7 @@ export async function POST(req:Request){
   try{
     const q=await req.json();
     if(q.revise){
-      if(!Array.isArray(q.revise.takes) || q.revise.takes.length>16)throw Error('Capa inválida');
+      if(!Array.isArray(q.revise.takes) || q.revise.takes.length>3600)throw Error('Capa inválida');
     }else if(q.restore){
       if(!/^\/audio-lab\/synthesis\/[a-f0-9]{64}\.wav$/.test(q.restore.url))throw Error('Referencia inválida');
     }else{

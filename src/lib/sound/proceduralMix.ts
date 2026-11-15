@@ -1,6 +1,6 @@
 import {wave} from './pcm';
 export type Take={recipe:string;url:string;frame:number;visualEvent?:number;peak:number;samples:number;onset:number;end:number;gain:number;params:{dur?:number;seed:number;pitch?:number;apex?:number}};
-export type Layer={role:string;gain:number;offset:number;mute:boolean;fadeIn:number;fadeOut:number;takes:Take[]};
+export type Layer={rate?:number;role:string;gain:number;offset:number;mute:boolean;fadeIn:number;fadeOut:number;takes:Take[]};
 export type Design={syncVersion?:number;style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
 export type SavedDesign={signature:string;design:Design};
 const cache=new Map<string,Promise<AudioBuffer>>();
@@ -28,23 +28,28 @@ export async function mixDesign(plan:Design){
   const mix=new Float32Array(length*2);
   for(const layer of plan.layers){
     if(layer.mute)continue;
+    const rate=Math.max(.5,Math.min(2,layer.rate??1));
     for(const take of layer.takes){
       const src=await buffer(take);
       const target=Math.max(48,Math.round(take.frame*1600+layer.offset*48));
-      const start=target-take.peak;
+      const peak=Math.round(take.peak/rate);
+      const start=target-peak;
       // Keep a short attack ramp while preventing long samples from sounding
       // before their visual cue. Manual layer offsets move both boundaries.
       const cue=plan.syncVersion===2 && take.visualEvent!==undefined
         ? Math.round(Math.min(take.visualEvent,take.frame)*1600+layer.offset*48)-192
         : 0;
-      const first=Math.max(0,Math.max(0,cue)-start),last=Math.min(src.length,length-start);
-      const attack=Math.max(1,Math.min(layer.fadeIn*48,take.peak-first));
-      const release=Math.max(1,Math.min(layer.fadeOut*48,last-take.peak));
+      const first=Math.max(0,Math.max(0,cue)-start),last=Math.min(Math.ceil(src.length/rate),length-start);
+      const attack=Math.max(1,Math.min(layer.fadeIn*48,peak-first));
+      const release=Math.max(1,Math.min(layer.fadeOut*48,last-peak));
       for(let c=0;c<2;c++){
         const samples=src.getChannelData(Math.min(c,src.numberOfChannels-1));
         for(let i=first;i<last;i++){
-          const fade=Math.min(1,take.peak===first?1:(i-first)/attack,(last-i-1)/release);
-          mix[(start+i)*2+c]+=samples[i]*layer.gain*take.gain*Math.max(0,fade);
+          const fade=Math.min(1,peak===first?1:(i-first)/attack,(last-i-1)/release);
+          const position=Math.min(samples.length-1,Math.max(0,take.peak+(i-peak)*rate));
+          const left=Math.floor(position);
+          const value=samples[left]+(samples[Math.min(left+1,samples.length-1)]-samples[left])*(position-left);
+          mix[(start+i)*2+c]+=value*layer.gain*take.gain*Math.max(0,fade);
         }
       }
     }

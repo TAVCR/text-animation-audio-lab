@@ -112,6 +112,7 @@ export function SoundDesign(input:Props){
     {plan.layers.map((layer,i)=><div className="my-2 flex flex-wrap items-center gap-3" key={i}>
     <strong>{layer.role}</strong><span>{Array.from(new Set(layer.takes.map(t=>t.recipe))).join(', ')}</span>
     <label><input type="checkbox" checked={layer.mute} onChange={e=>edit(i,{mute:e.target.checked})}/> Silenciar</label>
+    <label>Velocidad del efecto {(layer.rate??1).toFixed(2)}× <input aria-label={layer.role+' Velocidad del efecto'} type="range" min=".5" max="2" step=".05" value={layer.rate??1} onChange={e=>edit(i,{rate:Number(e.target.value)})}/></label>
     {([['Ganancia','gain',0,1,.01],['Desfase ms','offset',-250,250,1],['Ataque ms','fadeIn',0,40,1],['Salida ms','fadeOut',1,100,1]] as const).map(([name,key,min,max,step])=><label key={key}>{name} {layer[key]} <input aria-label={layer.role+' '+name} type="range" min={min} max={max} step={step} value={layer[key]} onChange={e=>edit(i,{[key]:+e.target.value})}/></label>)}
     <form onSubmit={e=>{e.preventDefault();void revise(i,e.currentTarget)}} className="flex flex-wrap gap-2">
     {layer.takes.some(t=>t.params.dur) && <label>Duración × <input className={button} name="scale" type="number" defaultValue="1" step=".1" min=".5" max="2"/></label>}

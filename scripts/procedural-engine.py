@@ -81,13 +81,14 @@ def generate(q,rows):
     voices=[k for k in q['voices'] if k in FAMILIES]
     if strategy.get('voice') in voices:voices.remove(strategy['voice']);voices.insert(0,strategy['voice'])
     voice=voices[0]
-    if director.get('events'):
+    word_sequence=q['template'] in ('bubble-pop','slide-in','smooth-sliding','word-highlight-tracker','paper-cutout-assemble','viral-text','kinetic-box-sequence')
+    if director.get('events') and not word_sequence:
         events=sorted({events[i] for i in director['events'] if type(i) is int and 0<=i<len(events)}) or events
     interval=np.median(np.diff(events))/30 if len(events)>1 else min(.7,frames/30)
     limit=[4,8,10][index]
     if strategy.get('density')=='sparse':limit=max(1,limit//2)
     if strategy.get('density')=='busy':limit+=2
-    selected=[events[int(i)] for i in np.linspace(0,len(events)-1,min(limit,len(events))).round()]
+    selected=events if word_sequence else [events[int(i)] for i in np.linspace(0,len(events)-1,min(limit,len(events))).round()]
     layers=[]
     def add(role,family,anchors,level):
         strength={'subtle':.75,'strong':1.12}.get(strategy.get('intensity'),1)
@@ -144,7 +145,7 @@ def canonical_params(params):
 def handle(q,rows):
     if q.get('revise'):
         revision=q['revise'];takes=revision['takes']
-        if not 0<len(takes)<=16:raise ValueError('Capa inválida')
+        if not 0<len(takes)<=3600:raise ValueError('Capa inválida')
         scale=float(revision['scale']);transpose=int(revision['transpose'])
         if not .5<=scale<=2 or not -6<=transpose<=6:raise ValueError('Ajuste fuera de rango')
         revised=[]

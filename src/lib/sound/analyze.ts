@@ -62,6 +62,11 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       default:return [];
     }
   };
+  // Bubble Pop scales and fades each word in. Anchor the pop when the word
+  // crosses half opacity, using the exact spring and easing of the text layer.
+  const bubbleVisible=(local:number)=>local>0 && getEasing(p.easingStyle)(Math.min(1,spring({
+    frame:local,fps,durationInFrames:16,config:{damping:130,stiffness:130}
+  })))>=.5;
   const marks=landmarks().sort((a,b)=>a-b);
   const crossed=(clock:number)=>{
     let lo=0,hi=marks.length;
@@ -109,7 +114,13 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       case 'glyph-tile-assemble':state=raw>=Math.max(1,(p.glyphTileAssemblySeconds??.8)*fps)?2:raw>0?1:0;break;
       case 'word-highlight-tracker':state=1+getWordHighlightIndex(raw,words,p.wordHighlightSeconds??.4,fps);break;
       case 'ink-stamp-print':state=raw>=Math.max(1,p.inkStampFrames??6)?1:0;break;
-      case 'bubble-pop':state=Math.min(words,Math.ceil(clock*.62/8));break;
+      case 'bubble-pop':{
+        const position=clock*.62;
+        const latest=Math.min(words-1,Math.floor(position/8));
+        state=Math.max(0,latest-1);
+        for(let i=state;i<=latest;i++)if(bubbleVisible(position-i*8))state++;
+        break;
+      }
       case 'blur-cascade':state=Math.min(letters.length,Math.ceil(clock/2));audible=letters.slice(before,state).some(c=>c.trim());break;
       case 'paper-cutout-assemble':{
         // Per-word delays use composition frames; only the settling ramp is speed-scaled.
@@ -121,7 +132,7 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       }
     }
     if(state>before)visibleChanges++;
-    if((state>before || (marks.length && state<before)) && audible){
+    if((state>before || ((marks.length || p.animationStyle==='bubble-pop') && f>0 && state<before)) && audible){
       if(p.animationStyle==='typewriter' && chars.slice(before,state).some((c,j)=>c.trim() && (before+j===0 || !chars[before+j-1].trim())))heads.push(events.length);
       events.push(f);
     }
