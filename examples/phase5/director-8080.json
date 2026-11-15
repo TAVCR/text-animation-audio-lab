@@ -1,0 +1,26 @@
+{
+  "events": [
+    0
+  ],
+  "variant": 0,
+  "preferredRecipe": "hover_tick/mid",
+  "extraLayer": "none",
+  "gain": 0.55,
+  "tail": 65,
+  "offset": -1,
+  "model": "mistral-nemo",
+  "strategy": {
+    "intensity": "medium",
+    "attack": "immediate",
+    "voice": "swish",
+    "landing": "silent",
+    "density": "moderate",
+    "grouping": "pulse",
+    "closing": "rest",
+    "character": "soft",
+    "space": "short"
+  },
+  "raw": "{\n  \"intensity\": \"medium\",\n  \"attack\": \"immediate\",\n  \"voice\": \"swish\",\n  \"landing\": \"silent\",\n  \"density\": \"moderate\",\n  \"grouping\": \"pulse\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\",\n  \"preferredRecipe\": \"hover_tick/mid\",\n  \"extraLayer\": \"none\"\n}",
+  "correction": null,
+  "reason": "3 eventos · 1 acentos · fotogramas 1 · cierre libre"
+}

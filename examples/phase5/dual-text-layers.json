@@ -1,0 +1,166 @@
+[
+  {
+    "style": "Minimal",
+    "hash": "7d75aeb1695f3661648da3b3c8583d90ae2acbb644fc760353c6dcc87573a35c",
+    "peak": 2646037,
+    "design": {
+      "style": "Minimal",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.47,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "cut_hit/punch",
+              "params": {
+                "seed": 75715866,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 42.58
+              },
+              "url": "/audio-lab/synthesis/682fced116bda24f37c230fa35041d087abb2916d816ba168f650314f7effabe.wav",
+              "peak": 2566,
+              "onset": 4,
+              "end": 12603,
+              "samples": 13550,
+              "channels": 2,
+              "frame": 6,
+              "visualEvent": 6,
+              "gain": 0.948,
+              "requestedDuration": 0.385
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Cinematic",
+    "hash": "fd518f8d13fe5c80efeea38b1080cd484b36ebc04402f1b5478efdf341b60cca",
+    "peak": 5306404,
+    "design": {
+      "style": "Cinematic",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.63,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "pro_impact/air",
+              "params": {
+                "seed": 71415757,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 39.26
+              },
+              "url": "/audio-lab/synthesis/a1d86c2a95742aab87a9c4089c8221ff4d7a71e87a53e74165a353f15ffa8130.wav",
+              "peak": 6624,
+              "onset": 13,
+              "end": 39060,
+              "samples": 40685,
+              "channels": 2,
+              "frame": 6,
+              "visualEvent": 6,
+              "gain": 0.948,
+              "requestedDuration": 0.77
+            }
+          ]
+        },
+        {
+          "role": "Asentamiento",
+          "gain": 0.31,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "toggle/rocker",
+              "params": {
+                "seed": 18752854,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 2181.14
+              },
+              "url": "/audio-lab/synthesis/6f19aad83c695480a9ed0f512df32eef1c00a5015127e492ace522e23a07d602.wav",
+              "peak": 4032,
+              "onset": 98,
+              "end": 7388,
+              "samples": 11414,
+              "channels": 2,
+              "frame": 6,
+              "visualEvent": 6,
+              "gain": 1,
+              "requestedDuration": 0.77
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Experimental",
+    "hash": "42dde52421604f3e7e5e72dfcdf51ad80de52babef668c056c536dd4df84ad7c",
+    "peak": 2884119,
+    "design": {
+      "style": "Experimental",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.55,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "cut_hit/air",
+              "params": {
+                "seed": 125273468,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 48.1
+              },
+              "url": "/audio-lab/synthesis/986e1055837aa0f4769ab1f1e924f723bd8e4dc9f9a783a834afd194d5292d68.wav",
+              "peak": 2378,
+              "onset": 6,
+              "end": 23824,
+              "samples": 26366,
+              "channels": 2,
+              "frame": 6,
+              "visualEvent": 6,
+              "gain": 0.883,
+              "requestedDuration": 0.546
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  }
+]

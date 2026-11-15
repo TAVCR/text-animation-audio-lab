@@ -1,0 +1,278 @@
+[
+  {
+    "style": "Minimal",
+    "hash": "22781787b7d26202f294a97d81ddfbe300b098758bb5ef9e848adf8a1c238c22",
+    "peak": 2573467,
+    "design": {
+      "style": "Minimal",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.47,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "whoosh_fast/tight",
+              "params": {
+                "seed": 182869504,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.257,
+                "apex": 0.154
+              },
+              "url": "/audio-lab/synthesis/fae408bd2260e5a0af289438dcd31365553f31d652aab04d6cb975712c92aec1.wav",
+              "peak": 7289,
+              "onset": 126,
+              "end": 10987,
+              "samples": 12336,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 0.922,
+              "requestedDuration": 0.257
+            },
+            {
+              "recipe": "swish/bright",
+              "params": {
+                "seed": 253650607,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.257,
+                "apex": 0.154
+              },
+              "url": "/audio-lab/synthesis/e4f243ca8363feeae6ce0844794ad9a8602499c6b2514507be6283a3bbead5c3.wav",
+              "peak": 7362,
+              "onset": 72,
+              "end": 10134,
+              "samples": 12336,
+              "channels": 2,
+              "frame": 15,
+              "visualEvent": 15,
+              "gain": 0.883,
+              "requestedDuration": 0.257
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Cinematic",
+    "hash": "5f18176374a0fc74de5393c4d2047d1d36b937257a60fefa682397f9807cd33d",
+    "peak": 4440974,
+    "design": {
+      "style": "Cinematic",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.63,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "swipe/flick",
+              "params": {
+                "seed": 178534974,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.513,
+                "apex": 0.308
+              },
+              "url": "/audio-lab/synthesis/7a69e07d7ad0855f876cdef4d961d2f5b963f31599c7c8e32626cd32f55afeec.wav",
+              "peak": 14812,
+              "onset": 195,
+              "end": 20257,
+              "samples": 24624,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 0.896,
+              "requestedDuration": 0.513
+            },
+            {
+              "recipe": "swish/zing",
+              "params": {
+                "seed": 26812316,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.513,
+                "apex": 0.308
+              },
+              "url": "/audio-lab/synthesis/077cbccf82dee18bec04b8f2a926368a47ee411e147abf438ea7d98a8579d0bb.wav",
+              "peak": 14200,
+              "onset": 224,
+              "end": 21415,
+              "samples": 24624,
+              "channels": 2,
+              "frame": 15,
+              "visualEvent": 15,
+              "gain": 0.909,
+              "requestedDuration": 0.513
+            }
+          ]
+        },
+        {
+          "role": "Resonancia",
+          "gain": 0.21,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "swish/stick",
+              "params": {
+                "seed": 203986054,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.513,
+                "apex": 0.308
+              },
+              "url": "/audio-lab/synthesis/221a17f30a088ccd1e4fee098e2d0e5d43cc78b4622abb985a96760b0f7cdb37.wav",
+              "peak": 14885,
+              "onset": 484,
+              "end": 21239,
+              "samples": 24624,
+              "channels": 2,
+              "frame": 15,
+              "visualEvent": 15,
+              "gain": 0.974,
+              "requestedDuration": 0.513
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Experimental",
+    "hash": "1894b7544cd47d8607130269d0b5c26993a20ac221f8d8e4178f5de3010bf62d",
+    "peak": 4406628,
+    "design": {
+      "style": "Experimental",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.55,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "swish/bright",
+              "params": {
+                "seed": 65100263,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.364,
+                "apex": 0.153
+              },
+              "url": "/audio-lab/synthesis/e0aa4dc735ea5f17baa9749162ff0b2cc786193d0bfb3f502c8b4c473095fdee.wav",
+              "peak": 7425,
+              "onset": 99,
+              "end": 13310,
+              "samples": 17472,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 0.974,
+              "requestedDuration": 0.364
+            },
+            {
+              "recipe": "whoosh_fast/tight",
+              "params": {
+                "seed": 42490517,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.364,
+                "apex": 0.153
+              },
+              "url": "/audio-lab/synthesis/5ae9bace1ab81d29e5aa214e35ac05ac6e8272263d90baaaebbd0ed8f222f2d6.wav",
+              "peak": 7662,
+              "onset": 309,
+              "end": 12506,
+              "samples": 17472,
+              "channels": 2,
+              "frame": 15,
+              "visualEvent": 15,
+              "gain": 0.909,
+              "requestedDuration": 0.364
+            }
+          ]
+        },
+        {
+          "role": "Resonancia",
+          "gain": 0.24,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "toggle/rocker",
+              "params": {
+                "seed": 94407808,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 2181.14
+              },
+              "url": "/audio-lab/synthesis/dd4ec2907e177ecf3cae10a2e69e8a12b112cc5d879932663e4ccccbad996bcb.wav",
+              "peak": 4123,
+              "onset": 98,
+              "end": 6948,
+              "samples": 11506,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 0.87,
+              "requestedDuration": 0.364
+            },
+            {
+              "recipe": "toggle/latch",
+              "params": {
+                "seed": 77957820,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 3002.11
+              },
+              "url": "/audio-lab/synthesis/ec0ecf176f710c21d89c08bf57152a5dbf8de363b6a8ee7aafd9913a32da47ed.wav",
+              "peak": 104,
+              "onset": 97,
+              "end": 7206,
+              "samples": 10589,
+              "channels": 2,
+              "frame": 15,
+              "visualEvent": 15,
+              "gain": 0.948,
+              "requestedDuration": 0.364
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  }
+]

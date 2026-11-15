@@ -1,0 +1,51 @@
+{
+  "style": "Cinematic",
+  "variant": 0,
+  "layers": [
+    {
+      "role": "Movimiento",
+      "gain": 0.63,
+      "mute": false,
+      "offset": 0,
+      "fadeIn": 1,
+      "fadeOut": 5,
+      "takes": [
+        {
+          "recipe": "swish/soft",
+          "params": {
+            "seed": 88034598,
+            "sr": 48000,
+            "peak_db": -3,
+            "dur": 0.77,
+            "apex": 0.462
+          },
+          "url": "/audio-lab/synthesis/46a0e07e64834b65a1b4c3928c7ff9da27e8d5bbed991c26e4963a2af1b5a9e6.wav",
+          "peak": 22123,
+          "onset": 59,
+          "end": 32469,
+          "samples": 36960,
+          "channels": 2,
+          "frame": 3,
+          "visualEvent": 1,
+          "gain": 0.909,
+          "requestedDuration": 0.77
+        }
+      ]
+    }
+  ],
+  "frames": 150,
+  "method": "audio-director",
+  "strategy": {
+    "intensity": "medium",
+    "attack": "immediate",
+    "voice": "swish",
+    "landing": "last",
+    "density": "sparse",
+    "grouping": "phrase",
+    "closing": "rest",
+    "character": "soft",
+    "space": "short"
+  },
+  "preferredRecipe": "swish/soft",
+  "extraLayer": "none"
+}

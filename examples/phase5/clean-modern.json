@@ -1,0 +1,552 @@
+[
+  {
+    "style": "Minimal",
+    "hash": "419213f1ecc94abfd1534da2664fa0a39bed9599e3f1e92708a16ff14433834d",
+    "peak": 2718608,
+    "design": {
+      "style": "Minimal",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.47,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "toggle/on",
+              "params": {
+                "seed": 206202741,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 4169.04
+              },
+              "url": "/audio-lab/synthesis/bb4f6f44a0ab6897f31967f195c87e97592fb204f57996628c16d3a4762a7f0b.wav",
+              "peak": 116,
+              "onset": 97,
+              "end": 4311,
+              "samples": 8191,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 0.974,
+              "requestedDuration": 0.183
+            },
+            {
+              "recipe": "toggle/on",
+              "params": {
+                "seed": 179263043,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 4416.94
+              },
+              "url": "/audio-lab/synthesis/2386abde9891ad3ab983d267d64d8717693d255c7ea7e0acc762cf333ec05222.wav",
+              "peak": 110,
+              "onset": 96,
+              "end": 4312,
+              "samples": 8091,
+              "channels": 2,
+              "frame": 11,
+              "visualEvent": 11,
+              "gain": 0.909,
+              "requestedDuration": 0.183
+            },
+            {
+              "recipe": "toggle/latch",
+              "params": {
+                "seed": 50700969,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 3002.11
+              },
+              "url": "/audio-lab/synthesis/57bfcff6db582ba864ceb631c50af134326630a30cd819b8f85f67ac5f9334f0.wav",
+              "peak": 101,
+              "onset": 97,
+              "end": 7183,
+              "samples": 10545,
+              "channels": 2,
+              "frame": 21,
+              "visualEvent": 21,
+              "gain": 0.87,
+              "requestedDuration": 0.22
+            },
+            {
+              "recipe": "click/double",
+              "params": {
+                "seed": 1007128,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.055,
+                "pitch": 2671.7
+              },
+              "url": "/audio-lab/synthesis/46f6595773280ce474a3d75d98aa8f9c16225120ad717a2b555db04ea97e769c.wav",
+              "peak": 114,
+              "onset": 97,
+              "end": 2259,
+              "samples": 2640,
+              "channels": 2,
+              "frame": 33,
+              "visualEvent": 33,
+              "gain": 0.883,
+              "requestedDuration": 0.055
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Cinematic",
+    "hash": "2f0ffaedcdcc03d9451ae7cb204e61cce4b651040917beca1fd589d973bbf8cb",
+    "peak": 3644105,
+    "design": {
+      "style": "Cinematic",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.63,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "toggle/off",
+              "params": {
+                "seed": 128818219,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 2382.64
+              },
+              "url": "/audio-lab/synthesis/8cdb8b7d2dedb66614d84b8921a57498cae8fed5234572644f206407b3c619d7.wav",
+              "peak": 104,
+              "onset": 97,
+              "end": 5297,
+              "samples": 6614,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 0.896,
+              "requestedDuration": 0.147
+            },
+            {
+              "recipe": "click/double",
+              "params": {
+                "seed": 244948580,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.147,
+                "pitch": 3270.3
+              },
+              "url": "/audio-lab/synthesis/d2e18b1f31b70dd0e138aa242853db028a272d4fbc38c00053c88776fa3adcc8.wav",
+              "peak": 106,
+              "onset": 97,
+              "end": 3044,
+              "samples": 7056,
+              "channels": 2,
+              "frame": 5,
+              "visualEvent": 5,
+              "gain": 0.974,
+              "requestedDuration": 0.147
+            },
+            {
+              "recipe": "toggle/rocker",
+              "params": {
+                "seed": 248422790,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 2058.72
+              },
+              "url": "/audio-lab/synthesis/a348e0cfd72c33d41e0e7e745e4788c0e666d8501edb72fa4b841ed986f69dba.wav",
+              "peak": 4068,
+              "onset": 99,
+              "end": 7446,
+              "samples": 11455,
+              "channels": 2,
+              "frame": 9,
+              "visualEvent": 9,
+              "gain": 0.87,
+              "requestedDuration": 0.22
+            },
+            {
+              "recipe": "click/thock",
+              "params": {
+                "seed": 99404602,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.147
+              },
+              "url": "/audio-lab/synthesis/430f028a18860495083613921c5834778785e2df0e4cf59e6195063b6bd9acad.wav",
+              "peak": 121,
+              "onset": 99,
+              "end": 3767,
+              "samples": 7056,
+              "channels": 2,
+              "frame": 15,
+              "visualEvent": 15,
+              "gain": 0.87,
+              "requestedDuration": 0.147
+            },
+            {
+              "recipe": "toggle/off",
+              "params": {
+                "seed": 128818219,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 2382.64
+              },
+              "url": "/audio-lab/synthesis/8cdb8b7d2dedb66614d84b8921a57498cae8fed5234572644f206407b3c619d7.wav",
+              "peak": 104,
+              "onset": 97,
+              "end": 5297,
+              "samples": 6614,
+              "channels": 2,
+              "frame": 19,
+              "visualEvent": 19,
+              "gain": 0.896,
+              "requestedDuration": 0.147
+            },
+            {
+              "recipe": "toggle/latch",
+              "params": {
+                "seed": 244948580,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 3782.43
+              },
+              "url": "/audio-lab/synthesis/dfc21f8341d7eca2943b95ae70b1bc86f82efd9f86f95877c0cb4226baf2ceab.wav",
+              "peak": 104,
+              "onset": 97,
+              "end": 7586,
+              "samples": 10486,
+              "channels": 2,
+              "frame": 23,
+              "visualEvent": 23,
+              "gain": 0.974,
+              "requestedDuration": 0.22
+            },
+            {
+              "recipe": "toggle/on",
+              "params": {
+                "seed": 248422790,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 3714.19
+              },
+              "url": "/audio-lab/synthesis/c3ef1471ce89648504885989d9884f37702610e8b9adfcaaac5cc8dcd9398ccf.wav",
+              "peak": 103,
+              "onset": 98,
+              "end": 4325,
+              "samples": 8224,
+              "channels": 2,
+              "frame": 29,
+              "visualEvent": 29,
+              "gain": 0.87,
+              "requestedDuration": 0.147
+            },
+            {
+              "recipe": "click/thock",
+              "params": {
+                "seed": 99404602,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.073
+              },
+              "url": "/audio-lab/synthesis/c343065da66131eb59371951ec3c6576d800c6eeba6aec5e2a78594266b7579d.wav",
+              "peak": 121,
+              "onset": 99,
+              "end": 3040,
+              "samples": 3504,
+              "channels": 2,
+              "frame": 33,
+              "visualEvent": 33,
+              "gain": 0.87,
+              "requestedDuration": 0.073
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Experimental",
+    "hash": "509baacf47de9efebeff10b79ffe6c45c17f6f477f07f0f24c8ec4588a54ba14",
+    "peak": 4222862,
+    "design": {
+      "style": "Experimental",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.55,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "toggle/micro",
+              "params": {
+                "seed": 5495240,
+                "sr": 48000,
+                "peak_db": -3
+              },
+              "url": "/audio-lab/synthesis/4e4d8def5ad7b1dbcfa0224dc780b58d3de77a5359bb9d5a44b20d6469a5cdc1.wav",
+              "peak": 102,
+              "onset": 97,
+              "end": 2224,
+              "samples": 5909,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 0.909,
+              "requestedDuration": 0.104
+            },
+            {
+              "recipe": "click/tink",
+              "params": {
+                "seed": 4881118,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.055,
+                "pitch": 5373.64
+              },
+              "url": "/audio-lab/synthesis/62cfb6807b04f83048742fa4c839c9d6413d35ad580fa73a5abf37be669ca7ec.wav",
+              "peak": 130,
+              "onset": 101,
+              "end": 2036,
+              "samples": 2640,
+              "channels": 2,
+              "frame": 5,
+              "visualEvent": 5,
+              "gain": 0.87,
+              "requestedDuration": 0.055
+            },
+            {
+              "recipe": "click/soft",
+              "params": {
+                "seed": 206764550,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.104,
+                "pitch": 3258.97
+              },
+              "url": "/audio-lab/synthesis/3386fdd012764389421b9bdbf731b7d045031f77ebeb5ec78fd7933027a79f8a.wav",
+              "peak": 108,
+              "onset": 98,
+              "end": 2736,
+              "samples": 4992,
+              "channels": 2,
+              "frame": 7,
+              "visualEvent": 7,
+              "gain": 0.909,
+              "requestedDuration": 0.104
+            },
+            {
+              "recipe": "click/soft",
+              "params": {
+                "seed": 90325863,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.104,
+                "pitch": 2586.64
+              },
+              "url": "/audio-lab/synthesis/8728e00f43c91dfab559700162da73456cb85e9452c8f83aca1cc37378ef657a.wav",
+              "peak": 101,
+              "onset": 97,
+              "end": 3384,
+              "samples": 4992,
+              "channels": 2,
+              "frame": 11,
+              "visualEvent": 11,
+              "gain": 0.883,
+              "requestedDuration": 0.104
+            },
+            {
+              "recipe": "toggle/micro",
+              "params": {
+                "seed": 5495240,
+                "sr": 48000,
+                "peak_db": -3
+              },
+              "url": "/audio-lab/synthesis/4e4d8def5ad7b1dbcfa0224dc780b58d3de77a5359bb9d5a44b20d6469a5cdc1.wav",
+              "peak": 102,
+              "onset": 97,
+              "end": 2224,
+              "samples": 5909,
+              "channels": 2,
+              "frame": 15,
+              "visualEvent": 15,
+              "gain": 0.909,
+              "requestedDuration": 0.104
+            },
+            {
+              "recipe": "click/tink",
+              "params": {
+                "seed": 4881118,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.055,
+                "pitch": 5373.64
+              },
+              "url": "/audio-lab/synthesis/62cfb6807b04f83048742fa4c839c9d6413d35ad580fa73a5abf37be669ca7ec.wav",
+              "peak": 130,
+              "onset": 101,
+              "end": 2036,
+              "samples": 2640,
+              "channels": 2,
+              "frame": 19,
+              "visualEvent": 19,
+              "gain": 0.87,
+              "requestedDuration": 0.055
+            },
+            {
+              "recipe": "toggle/off",
+              "params": {
+                "seed": 206764550,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 2674.42
+              },
+              "url": "/audio-lab/synthesis/b6054ab447d2861ac42a6f532a45b2bdb7caaadaf537e2701f48c2e5a82b3720.wav",
+              "peak": 101,
+              "onset": 98,
+              "end": 4942,
+              "samples": 6511,
+              "channels": 2,
+              "frame": 21,
+              "visualEvent": 21,
+              "gain": 0.909,
+              "requestedDuration": 0.156
+            },
+            {
+              "recipe": "click/snap",
+              "params": {
+                "seed": 90325863,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.055,
+                "pitch": 1965.44
+              },
+              "url": "/audio-lab/synthesis/3304b32b807edb663cc5b16c840e4a336542d03a2301610c5c33121e71be9395.wav",
+              "peak": 132,
+              "onset": 100,
+              "end": 2095,
+              "samples": 2640,
+              "channels": 2,
+              "frame": 27,
+              "visualEvent": 27,
+              "gain": 0.883,
+              "requestedDuration": 0.055
+            },
+            {
+              "recipe": "toggle/micro",
+              "params": {
+                "seed": 5495240,
+                "sr": 48000,
+                "peak_db": -3
+              },
+              "url": "/audio-lab/synthesis/4e4d8def5ad7b1dbcfa0224dc780b58d3de77a5359bb9d5a44b20d6469a5cdc1.wav",
+              "peak": 102,
+              "onset": 97,
+              "end": 2224,
+              "samples": 5909,
+              "channels": 2,
+              "frame": 29,
+              "visualEvent": 29,
+              "gain": 0.909,
+              "requestedDuration": 0.104
+            },
+            {
+              "recipe": "click/tink",
+              "params": {
+                "seed": 4881118,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.055,
+                "pitch": 5373.64
+              },
+              "url": "/audio-lab/synthesis/62cfb6807b04f83048742fa4c839c9d6413d35ad580fa73a5abf37be669ca7ec.wav",
+              "peak": 130,
+              "onset": 101,
+              "end": 2036,
+              "samples": 2640,
+              "channels": 2,
+              "frame": 33,
+              "visualEvent": 33,
+              "gain": 0.87,
+              "requestedDuration": 0.055
+            }
+          ]
+        },
+        {
+          "role": "Resonancia",
+          "gain": 0.24,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "toggle/rocker",
+              "params": {
+                "seed": 51941636,
+                "sr": 48000,
+                "peak_db": -3,
+                "pitch": 2448.25
+              },
+              "url": "/audio-lab/synthesis/8e8c3c30f279e473d64123300ea30442c94bd0e6b76020b89680fa690a11ae52.wav",
+              "peak": 4124,
+              "onset": 98,
+              "end": 7337,
+              "samples": 11491,
+              "channels": 2,
+              "frame": 1,
+              "visualEvent": 1,
+              "gain": 1,
+              "requestedDuration": 0.468
+            },
+            {
+              "recipe": "click/snap",
+              "params": {
+                "seed": 213940291,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.055,
+                "pitch": 2206.13
+              },
+              "url": "/audio-lab/synthesis/33af3e22c3a1de964e7d99f638ba59f8c226b3a85040157ea93046852af772a2.wav",
+              "peak": 134,
+              "onset": 106,
+              "end": 1884,
+              "samples": 2640,
+              "channels": 2,
+              "frame": 19,
+              "visualEvent": 19,
+              "gain": 0.922,
+              "requestedDuration": 0.055
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  }
+]

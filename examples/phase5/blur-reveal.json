@@ -1,0 +1,140 @@
+[
+  {
+    "style": "Minimal",
+    "hash": "3e62676d2771b7bc419b2d68bfbe1738c42acead5aab9123ebfe12b14755d519",
+    "peak": 2428326,
+    "design": {
+      "style": "Minimal",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.47,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "swish/bright",
+              "params": {
+                "seed": 91788983,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.385,
+                "apex": 0.231
+              },
+              "url": "/audio-lab/synthesis/13dc1be8e314e50e2cefa20f53a6599299738ee793a95cdb5e32e94004edea9f.wav",
+              "peak": 10740,
+              "onset": 412,
+              "end": 15027,
+              "samples": 18480,
+              "channels": 2,
+              "frame": 14,
+              "visualEvent": 14,
+              "gain": 0.87,
+              "requestedDuration": 0.385
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Cinematic",
+    "hash": "626dd465193e8bab14e374afe5ff10718e6aee2d8efcc1f28f007f1ee090a987",
+    "peak": 3692729,
+    "design": {
+      "style": "Cinematic",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.63,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "swish/soft",
+              "params": {
+                "seed": 51339770,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.77,
+                "apex": 0.462
+              },
+              "url": "/audio-lab/synthesis/0b2f30edec86dffbb61547c3dd16d08a147e66b3912026d42f14ab30ac3290df.wav",
+              "peak": 22268,
+              "onset": 719,
+              "end": 32348,
+              "samples": 36960,
+              "channels": 2,
+              "frame": 14,
+              "visualEvent": 14,
+              "gain": 0.987,
+              "requestedDuration": 0.77
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  },
+  {
+    "style": "Experimental",
+    "hash": "7f2648e19610b7c4eb24e623a324a5dc77417c556a2fef9c592cd0b9701f2c20",
+    "peak": 3011504,
+    "design": {
+      "style": "Experimental",
+      "variant": 0,
+      "layers": [
+        {
+          "role": "Movimiento",
+          "gain": 0.55,
+          "mute": false,
+          "offset": 0,
+          "fadeIn": 1,
+          "fadeOut": 5,
+          "takes": [
+            {
+              "recipe": "swish/zing",
+              "params": {
+                "seed": 161686562,
+                "sr": 48000,
+                "peak_db": -3,
+                "dur": 0.546,
+                "apex": 0.229
+              },
+              "url": "/audio-lab/synthesis/e0c04827e65391853bb300ae0dd4d38ce48b26de77cfc79249731613cb3c9141.wav",
+              "peak": 11073,
+              "onset": 119,
+              "end": 19971,
+              "samples": 26208,
+              "channels": 2,
+              "frame": 14,
+              "visualEvent": 14,
+              "gain": 0.922,
+              "requestedDuration": 0.546
+            }
+          ]
+        }
+      ],
+      "frames": 150,
+      "method": "Reglas locales",
+      "strategy": {},
+      "preferredRecipe": null,
+      "extraLayer": null
+    }
+  }
+]

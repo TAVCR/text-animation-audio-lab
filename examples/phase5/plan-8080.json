@@ -1,0 +1,51 @@
+{
+  "style": "Cinematic",
+  "variant": 0,
+  "layers": [
+    {
+      "role": "Movimiento",
+      "gain": 0.63,
+      "mute": false,
+      "offset": 0,
+      "fadeIn": 1,
+      "fadeOut": 5,
+      "takes": [
+        {
+          "recipe": "swish/cane",
+          "params": {
+            "seed": 88034598,
+            "sr": 48000,
+            "peak_db": -3,
+            "dur": 0.77,
+            "apex": 0.462
+          },
+          "url": "/audio-lab/synthesis/6f983cbe731695bffa531e00509660dbf07ff25bbfb39aa411f3e0286a5fc13b.wav",
+          "peak": 22093,
+          "onset": 96,
+          "end": 32278,
+          "samples": 36960,
+          "channels": 2,
+          "frame": 3,
+          "visualEvent": 1,
+          "gain": 0.909,
+          "requestedDuration": 0.77
+        }
+      ]
+    }
+  ],
+  "frames": 150,
+  "method": "mistral-nemo",
+  "strategy": {
+    "intensity": "medium",
+    "attack": "immediate",
+    "voice": "swish",
+    "landing": "silent",
+    "density": "moderate",
+    "grouping": "pulse",
+    "closing": "rest",
+    "character": "soft",
+    "space": "short"
+  },
+  "preferredRecipe": "hover_tick/mid",
+  "extraLayer": "none"
+}

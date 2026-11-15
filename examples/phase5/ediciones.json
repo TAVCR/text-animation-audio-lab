@@ -1,0 +1,124 @@
+[
+  {
+    "template": "typewriter",
+    "edit": "texto",
+    "frames": 150,
+    "anchors": [
+      1,
+      7,
+      14,
+      29
+    ]
+  },
+  {
+    "template": "typewriter",
+    "edit": "velocidad",
+    "frames": 150,
+    "anchors": [
+      1,
+      4,
+      9,
+      15
+    ]
+  },
+  {
+    "template": "slide-in",
+    "edit": "texto",
+    "frames": 150,
+    "anchors": [
+      3,
+      7,
+      11,
+      15
+    ]
+  },
+  {
+    "template": "slide-in",
+    "edit": "velocidad",
+    "frames": 150,
+    "anchors": [
+      2,
+      5,
+      7
+    ]
+  },
+  {
+    "template": "glitch",
+    "edit": "texto",
+    "frames": 150,
+    "anchors": [
+      0,
+      44,
+      92,
+      136
+    ]
+  },
+  {
+    "template": "glitch",
+    "edit": "velocidad",
+    "frames": 150,
+    "anchors": [
+      0,
+      50,
+      85,
+      135
+    ]
+  },
+  {
+    "template": "bubble-pop",
+    "edit": "texto",
+    "frames": 150,
+    "anchors": [
+      1,
+      13,
+      26,
+      39
+    ]
+  },
+  {
+    "template": "bubble-pop",
+    "edit": "velocidad",
+    "frames": 150,
+    "anchors": [
+      1,
+      9,
+      17
+    ]
+  },
+  {
+    "template": "ink-stamp-print",
+    "edit": "texto",
+    "frames": 150,
+    "anchors": [
+      6
+    ]
+  },
+  {
+    "template": "ink-stamp-print",
+    "edit": "velocidad",
+    "frames": 150,
+    "anchors": [
+      4
+    ]
+  },
+  {
+    "template": "cinematic",
+    "edit": "texto",
+    "frames": 150,
+    "anchors": [
+      1,
+      22,
+      120
+    ]
+  },
+  {
+    "template": "cinematic",
+    "edit": "velocidad",
+    "frames": 150,
+    "anchors": [
+      1,
+      14,
+      75
+    ]
+  }
+]

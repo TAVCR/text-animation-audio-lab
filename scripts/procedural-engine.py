@@ -75,6 +75,7 @@ def generate(q,rows):
     a=q['analysis'];events=sorted(set(int(f) for f in a['events'] if 0<=int(f)<frames))
     style=q['style'];index=STYLES.index(style);variant=int(q['variant'])
     if not events:raise ValueError('Sin eventos visuales')
+    visual_indices={frame:i for i,frame in enumerate(events)}
     director=q.get('director') or {}
     strategy=director.get('strategy',{})
     voices=[k for k in q['voices'] if k in FAMILIES]
@@ -97,7 +98,8 @@ def generate(q,rows):
             gap=(anchors[i+1]-frame)/30 if i+1<len(anchors) else interval
             duration=float(np.clip(gap*[.55,1.1,.78][index],.055,1.7))
             if family in ('whoosh','sweep','riser','swish','texture') and a.get('stops'):
-                stop=next((s for s in a['stops'] if s>frame),None)
+                stops=a['stops']
+                stop=stops[visual_indices[frame]] if len(stops)==len(visual_indices) and frame in visual_indices else next((s for s in stops if s>frame),None)
                 if stop is not None:duration=max(duration,min(1.8,(stop-frame)/30))
             seed=int(identity([q['template'],role,style,variant,i%4])[:7],16)
             eligible=[r for r in rows if r['category'] in FAMILIES[family] and r['dur_s']]
@@ -116,7 +118,8 @@ def generate(q,rows):
             if take is None:raise ValueError('Ninguna receta compatible para '+family)
             anchor=frame
             if role=='Movimiento' and family in ('whoosh','sweep','swish') and a.get('peaks'):
-                anchor=min(a['peaks'],key=lambda v:abs(v-frame))
+                peaks=a['peaks']
+                anchor=peaks[visual_indices[frame]] if len(peaks)==len(visual_indices) and frame in visual_indices else min(peaks,key=lambda v:abs(v-frame))
             take.update(frame=int(anchor),visualEvent=int(frame),gain=round(.87+.13*(seed%11)/10,3),requestedDuration=round(duration,3))
             layer['takes'].append(take)
         layers.append(layer)

@@ -1,0 +1,32 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Escuchas procedurales · Audio Lab</title><style>*{box-sizing:border-box}body{max-width:1000px;margin:auto;padding:24px;font:16px/1.5 system-ui;color:#e8eeed;background:#171b1b}a{color:#a5ecd2}section{border-bottom:1px solid #46534d;padding:10px 0}button{font:inherit;color:#f1f9f4;background:#293a31;border:1px solid #739182;padding:7px 16px;margin:0 8px 8px 0;border-radius:4px;cursor:pointer}button[aria-pressed=true]{background:#b1eccf;color:#14221a}aside{position:sticky;top:0;background:#212925;padding:14px}audio{display:block;width:100%;max-width:650px}small{display:block}h2{font-size:1.15rem}</style><h1>Escuchas procedurales</h1><p>Las tres interpretaciones de cada plantilla acompañan el mismo texto y la misma animación. Selecciona una para escuchar el WAV exportado desde el editor.</p><aside><strong id="name" aria-live="polite">Selecciona una interpretación</strong><audio controls id="player"></audio><small id="info"></small></aside>
+<section><h2>typewriter</h2>
+<button aria-pressed="false" data-url="typewriter-Minimal.wav" data-name="typewriter · Minimal" data-info="Movimiento — pro_typing_key/blip, tap/glass, typing_key/crisp, pro_typing_key/glass">Minimal</button>
+<button aria-pressed="false" data-url="typewriter-Cinematic.wav" data-name="typewriter · Cinematic" data-info="Movimiento — pro_typing_key/crackle, tap/finger, pro_typing_key/glass, typing_key/laptop, typing_key/deep">Cinematic</button>
+<button aria-pressed="false" data-url="typewriter-Experimental.wav" data-name="typewriter · Experimental" data-info="Movimiento — pro_typing_key/glass, pro_typing_key/tick, pro_typing_key/crackle, pro_typing_key/blip, typing_key/light · Resonancia — toggle/latch, click/snap">Experimental</button>
+</section>
+<section><h2>slide-in</h2>
+<button aria-pressed="false" data-url="slide-in-Minimal.wav" data-name="slide-in · Minimal" data-info="Movimiento — swish/bright">Minimal</button>
+<button aria-pressed="false" data-url="slide-in-Cinematic.wav" data-name="slide-in · Cinematic" data-info="Movimiento — whoosh_fast/tight, swish/blade · Asentamiento — ui_pop/boop">Cinematic</button>
+<button aria-pressed="false" data-url="slide-in-Experimental.wav" data-name="slide-in · Experimental" data-info="Movimiento — swish/bright, swish/flick · Resonancia — click/soft, click/double">Experimental</button>
+</section>
+<section><h2>glitch</h2>
+<button aria-pressed="false" data-url="glitch-Minimal.wav" data-name="glitch · Minimal" data-info="Movimiento — glitch/dropout, glitch/scramble, glitch/stutter, glitch/hit">Minimal</button>
+<button aria-pressed="false" data-url="glitch-Cinematic.wav" data-name="glitch · Cinematic" data-info="Movimiento — glitch/scramble, glitch/burst, glitch/chirp, glitch/stutter, glitch/mid">Cinematic</button>
+<button aria-pressed="false" data-url="glitch-Experimental.wav" data-name="glitch · Experimental" data-info="Movimiento — glitch/chirp, glitch/mid, glitch/dropout · Resonancia — glitch/dropout, glitch/hit">Experimental</button>
+</section>
+<section><h2>bubble-pop</h2>
+<button aria-pressed="false" data-url="bubble-pop-Minimal.wav" data-name="bubble-pop · Minimal" data-info="Movimiento — ui_pop/wide, pop/2, pop/0">Minimal</button>
+<button aria-pressed="false" data-url="bubble-pop-Cinematic.wav" data-name="bubble-pop · Cinematic" data-info="Movimiento — pop/0, pop/4, pop/2">Cinematic</button>
+<button aria-pressed="false" data-url="bubble-pop-Experimental.wav" data-name="bubble-pop · Experimental" data-info="Movimiento — pop/2, ui_pop/boop · Resonancia — toggle/rocker">Experimental</button>
+</section>
+<section><h2>ink-stamp-print</h2>
+<button aria-pressed="false" data-url="ink-stamp-print-Minimal.wav" data-name="ink-stamp-print · Minimal" data-info="Movimiento — cut_hit/kick">Minimal</button>
+<button aria-pressed="false" data-url="ink-stamp-print-Cinematic.wav" data-name="ink-stamp-print · Cinematic" data-info="Movimiento — cut_hit/air · Asentamiento — toggle/rocker">Cinematic</button>
+<button aria-pressed="false" data-url="ink-stamp-print-Experimental.wav" data-name="ink-stamp-print · Experimental" data-info="Movimiento — cut_hit/air">Experimental</button>
+</section>
+<section><h2>cinematic</h2>
+<button aria-pressed="false" data-url="cinematic-Minimal.wav" data-name="cinematic · Minimal" data-info="Movimiento — riser/snatch, riser/build, riser/dark">Minimal</button>
+<button aria-pressed="false" data-url="cinematic-Cinematic.wav" data-name="cinematic · Cinematic" data-info="Movimiento — riser/snatch, riser/rush, whoosh_big/gust · Resonancia — swipe/paper">Cinematic</button>
+<button aria-pressed="false" data-url="cinematic-Experimental.wav" data-name="cinematic · Experimental" data-info="Movimiento — riser/snatch, riser/rush, reverse_swell/ring · Resonancia — swish/cane, swish/soft">Experimental</button>
+</section>
+<p><a href="/?sound=1">Abrir Sound Design en el editor</a></p><script>const player=document.querySelector('audio');document.querySelectorAll('button').forEach(b=>b.onclick=()=>{document.querySelector('[aria-pressed=true]')?.setAttribute('aria-pressed','false');b.setAttribute('aria-pressed','true');document.querySelector('#name').textContent=b.dataset.name;document.querySelector('#info').textContent=b.dataset.info;player.src=b.dataset.url;player.play().catch(()=>document.querySelector('#info').textContent='Usa el control de reproducción.')});</script></html>
