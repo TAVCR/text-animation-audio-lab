@@ -1,0 +1,38 @@
+[
+  {
+    "template": "fly-through",
+    "library": "360-riser-impact-370401.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "extruded-3d",
+    "library": "360-riser-impact-370401.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 4 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "glyph-tile-assemble",
+    "library": "minecraft_click.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "paper-cutout-assemble",
+    "library": "minecraft_click.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]
