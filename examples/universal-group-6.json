@@ -1,37 +1,94 @@
 [
   {
     "template": "slide-reveal",
-    "library": "Fast swish.wav",
+    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "region": [
+      0.6000000000000001,
+      1.410563
+    ],
+    "family": "swish",
     "LibraryPeak": 0.6,
+    "events": [
+      6,
+      36,
+      65
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "shape-reveal",
-    "library": "Fast swish.wav",
+    "library": "Page 10 - Whoosh_ Swish Sounds_7.mp3",
+    "region": [
+      0.51,
+      1.802438
+    ],
+    "family": "swish",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      40,
+      110
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "bar-reveal",
-    "library": "Fast swish.wav",
+    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "region": [
+      0.6000000000000001,
+      1.410563
+    ],
+    "family": "swish",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      57,
+      75,
+      132
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 4 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "cinematic",
-    "library": "360-riser-impact-370401.mp3",
+    "library": "sharp-riser-327342.mp3",
+    "region": [
+      1.28,
+      1.880813
+    ],
+    "family": "riser",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      22,
+      120
+    ],
+    "recipe": "riser/air",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   }
