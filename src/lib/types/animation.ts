@@ -428,6 +428,9 @@ export interface SoundDesignSettings {
   template: AnimationStyle;
   mode: 'Procedural' | 'Library';
   sourceName?: string;
+  sourceUrl?: string;
+  eventVersion?: number;
+  events?: number[];
   family: string;
   seed: number;
   density: number;

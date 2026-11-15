@@ -1,0 +1,256 @@
+{
+  "motions": {
+    "escritura": {
+      "voices": [
+        "typing",
+        "click"
+      ],
+      "templates": [
+        "typewriter"
+      ]
+    },
+    "articulación progresiva": {
+      "voices": [
+        "click",
+        "pop",
+        "swish"
+      ],
+      "templates": [
+        "word-highlight-tracker",
+        "clean-modern"
+      ]
+    },
+    "desplazamiento": {
+      "voices": [
+        "whoosh",
+        "sweep",
+        "swish"
+      ],
+      "templates": [
+        "slide-in",
+        "smooth-sliding",
+        "follower"
+      ]
+    },
+    "giro": {
+      "voices": [
+        "sweep",
+        "whoosh"
+      ],
+      "templates": [
+        "rotation",
+        "follower-grow"
+      ]
+    },
+    "crecimiento elástico": {
+      "voices": [
+        "pop",
+        "impact",
+        "pulse"
+      ],
+      "templates": [
+        "bubble-pop",
+        "apple-style"
+      ]
+    },
+    "interrupción digital": {
+      "voices": [
+        "digital",
+        "glitch",
+        "pulse"
+      ],
+      "templates": [
+        "glitch",
+        "shake-flicker",
+        "scramble"
+      ]
+    },
+    "parpadeo": {
+      "voices": [
+        "glitch",
+        "pulse",
+        "digital"
+      ],
+      "templates": [
+        "flicker",
+        "flicker-outline-fill"
+      ]
+    },
+    "pulso continuo": {
+      "voices": [
+        "pulse",
+        "texture"
+      ],
+      "templates": [
+        "neon-pulse",
+        "variable-weight-wave"
+      ]
+    },
+    "revelado": {
+      "voices": [
+        "swish",
+        "sweep",
+        "texture"
+      ],
+      "templates": [
+        "blur-reveal",
+        "blur-cascade",
+        "wipe-reveal",
+        "slide-reveal",
+        "shape-reveal",
+        "bar-reveal"
+      ]
+    },
+    "profundidad": {
+      "voices": [
+        "riser",
+        "whoosh",
+        "texture"
+      ],
+      "templates": [
+        "cinematic",
+        "fly-through",
+        "extruded-3d"
+      ]
+    },
+    "ensamblado": {
+      "voices": [
+        "click",
+        "impact",
+        "sweep"
+      ],
+      "templates": [
+        "glyph-tile-assemble",
+        "paper-cutout-assemble",
+        "kinetic-box-sequence"
+      ]
+    },
+    "impresión": {
+      "voices": [
+        "impact",
+        "click"
+      ],
+      "templates": [
+        "ink-stamp-print",
+        "dual-text-layers"
+      ]
+    },
+    "entrada escalonada": {
+      "voices": [
+        "pop",
+        "swish",
+        "impact"
+      ],
+      "templates": [
+        "viral-text"
+      ]
+    }
+  },
+  "voices": {
+    "typing": {
+      "recipe": "typing_key/crisp",
+      "asset": "key#",
+      "terms": [
+        "typing",
+        "keyboard",
+        "typewriter"
+      ]
+    },
+    "click": {
+      "recipe": "click/soft",
+      "asset": "click",
+      "terms": [
+        "mechanical click",
+        "click"
+      ]
+    },
+    "whoosh": {
+      "recipe": "whoosh_fast/crisp",
+      "asset": "whoosh",
+      "terms": [
+        "airy whoosh",
+        "whoosh",
+        "swoosh"
+      ]
+    },
+    "sweep": {
+      "recipe": "swipe/glide",
+      "asset": "slide2",
+      "terms": [
+        "sweep",
+        "swipe",
+        "whoosh"
+      ]
+    },
+    "swish": {
+      "recipe": "swish/soft",
+      "asset": "swish",
+      "terms": [
+        "swish",
+        "soft transition",
+        "swipe"
+      ]
+    },
+    "impact": {
+      "recipe": "impact/punch",
+      "asset": "impact",
+      "terms": [
+        "impact",
+        "thud",
+        "hit"
+      ]
+    },
+    "pop": {
+      "recipe": "pop/0",
+      "asset": "pop",
+      "terms": [
+        "bubble pop",
+        "bubble-pop",
+        "pop"
+      ]
+    },
+    "digital": {
+      "recipe": "glitch/data",
+      "asset": "digital",
+      "terms": [
+        "digital glitch",
+        "glitch",
+        "interference"
+      ]
+    },
+    "glitch": {
+      "recipe": "glitch/stutter",
+      "asset": "glitch3",
+      "terms": [
+        "stutter",
+        "interference",
+        "glitch"
+      ]
+    },
+    "pulse": {
+      "recipe": "glitch/chirp",
+      "asset": "glitch1",
+      "terms": [
+        "pulse",
+        "chirp",
+        "bleep"
+      ]
+    },
+    "texture": {
+      "recipe": "shimmer/m0",
+      "asset": "texture0",
+      "terms": [
+        "shimmer",
+        "texture"
+      ]
+    },
+    "riser": {
+      "recipe": "riser/air",
+      "asset": "riser",
+      "terms": [
+        "riser",
+        "rising"
+      ]
+    }
+  }
+}

@@ -1,5 +1,6 @@
-export type Strategy={voice:'click'|'sweep'|'pulse'|'texture'; landing:'silent'|'last';density:'sparse'|'moderate'|'busy'; grouping:'phrase'|'pulse'|'gesture'; closing:'accent'|'rest'; character:'soft'|'bright'|'rough'; space:'short'|'long'};
-const options={voice:['click','sweep','pulse','texture'],landing:['silent','last'],density:['sparse','moderate','busy'],grouping:['phrase','pulse','gesture'],closing:['accent','rest'],character:['soft','bright','rough'],space:['short','long']};
+import {voices,type Voice} from './capabilities';
+export type Strategy={voice:Voice; landing:'silent'|'last';density:'sparse'|'moderate'|'busy'; grouping:'phrase'|'pulse'|'gesture'; closing:'accent'|'rest'; character:'soft'|'bright'|'rough'; space:'short'|'long'};
+const options={voice:Object.keys(voices),landing:['silent','last'],density:['sparse','moderate','busy'],grouping:['phrase','pulse','gesture'],closing:['accent','rest'],character:['soft','bright','rough'],space:['short','long']};
 export const strategySchema={type:'object',additionalProperties:false,required:Object.keys(options),properties:Object.fromEntries(Object.entries(options).map(([k,v])=>[k,{type:'string',enum:v}]))};
 export function valid(value:unknown):value is Strategy{
   if(!value || typeof value!=='object')return false;

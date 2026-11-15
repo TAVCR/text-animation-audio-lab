@@ -1,3 +1,4 @@
+import {interpolate,random} from 'remotion';
 import {slidePosition} from '@/remotion/templates/slidePosition';
 import {getEasing,type AnimationProps} from '@/lib/AnimationContext';
 import {mapMotionFrame} from '@/remotion/useMotionFrame';
@@ -25,10 +26,57 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       if(peak>=0){peaks.push(peak);const slowing=velocities.findIndex((v,i)=>first+i>peak && v<fast);if(slowing>=0)decelerations.push(first+slowing)}
     }
   }
+  // Thresholds are expressed on the visual component's clock. Crossing a
+  // threshold in either direction also covers mirrored motion phases.
+  const landmarks = ():number[] => {
+    switch(p.animationStyle){
+      case 'wipe-reveal': return [11,10+Math.floor(fps*1.5)];
+      case 'blur-reveal': return [11,55];
+      case 'slide-reveal': return [6,36,65];
+      case 'shape-reveal': return [1,40,Math.max(41,frames-40)];
+      case 'bar-reveal': return [1,frames*.38,frames*.50,frames*.88];
+      case 'cinematic': return [1,frames*.14,frames*.8];
+      case 'fly-through': return [1,15];
+      case 'extruded-3d': return [1,frames*.1/.72,frames*.548/.72,frames*.9/.72];
+      case 'clean-modern': return letters.flatMap((c,i)=>c.trim()?[i*2+1]:[]);
+      case 'follower-grow': return letters.flatMap((c,i)=>c.trim()?[Math.abs(i-Math.floor(letters.length/2))*2+1]:[]);
+      case 'flicker': case 'flicker-outline-fill':
+        return letters.flatMap((c,i)=>c.trim()?[4,16,28,36].map(n=>random(p.animationStyle+'-'+i)*fps*1.5+n):[]);
+      case 'viral-text': {
+        const speeds=[p.wordSpeedOne,...(p.showWordTwo?[p.wordSpeedTwo]:[]),...(p.showWordThree?[p.wordSpeedThree]:[])];
+        const rate=interpolate(p.speed,[.2,1,3],[.12,.38,1.35],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+        return speeds.map((v,i)=>(1+i*(p.viralWordStagger??8))*p.speed/rate/Math.max(.2,v??1));
+      }
+      case 'kinetic-box-sequence':return [1]; // First box entrance; internal transitions need a segment adapter.
+      default:return [];
+    }
+  };
+  const marks=landmarks().sort((a,b)=>a-b);
+  const crossed=(clock:number)=>{
+    let lo=0,hi=marks.length;
+    while(lo<hi){const mid=(lo+hi)>>>1;if(marks[mid]<=clock)lo=mid+1;else hi=mid}
+    return lo;
+  };
   for(let f=0;words && p.showTextLayer!==false && f<frames;f++){
     const raw=f*(p.speed||1), clock=mapMotionFrame(f,frames,p)*(p.speed||1);
     let state=0, audible=true;
     switch(p.animationStyle){
+      case 'dual-text-layers':{
+        const layer=p.secondaryTextLayer,stamp=Math.max(1,p.inkStampFrames??6);
+        state=Number(f>=(p.dualPrimaryDelayFrames??0)+stamp/p.speed)+Number(!!layer?.enabled && !!layer.text.trim() && f>=layer.delayFrames+stamp/layer.speed);
+        break;
+      }
+      case 'variable-weight-wave':{
+        const period=Math.max(1,p.variableWeightCycleSeconds??2.4)*fps;
+        state=Math.floor(raw/period+.5);break;
+      }
+      case 'neon-pulse':state=Math.floor(clock/(2*Math.PI*fps/8)+.75);break;
+      case 'scramble':state=Math.ceil(letters.length*getEasing(p.easingStyle)(Math.min(1,clock/Math.max(1,Math.floor((frames-1)*(p.motionPhase==='in'?1:.55))))));break;
+      case 'shake-flicker':{
+        const exit=clock>frames-fps*1.5,local=exit?frames-clock:clock;
+        state=local>=fps*1.5?1:Number(random((exit?'shake-out-':'shake-in-')+Math.floor(local/2))>interpolate(local,[0,fps*1.5],[.75,.4],{easing:getEasing(p.easingStyle),extrapolateLeft:'clamp',extrapolateRight:'clamp'}));break;
+      }
+      default:state=crossed(clock);break;
       case 'typewriter':state=visibleCount(clock,chars.length,p,fps);audible=chars.slice(before,state).some(c=>c.trim());break;
       case 'glitch':state=Number(Math.floor(clock/20)%2===0 && clock%4<2);break;
       case 'slide-in':case 'smooth-sliding':state=Math.min(words,Math.ceil(clock/(p.animationStyle==='slide-in'?4:3)));break;
@@ -44,7 +92,7 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       case 'paper-cutout-assemble':state=Math.min(words,Math.floor(Math.max(0,f-1)/Math.max(1,p.paperCutoutWordDelayFrames??4))+1);break;
     }
     if(state>before)visibleChanges++;
-    if(state>before && audible){
+    if((state>before || (marks.length && state<before)) && audible){
       if(p.animationStyle==='typewriter' && chars.slice(before,state).some((c,j)=>c.trim() && (before+j===0 || !chars[before+j-1].trim())))heads.push(events.length);
       events.push(f);
     }

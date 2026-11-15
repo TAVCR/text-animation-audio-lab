@@ -83,7 +83,7 @@ export default function PreviewContainer() {
   
   return (
     <div className="w-full h-full flex flex-col p-0 overflow-hidden bg-neutral-950">
-      <SoundDesign props={props} frames={totalDurationInFrames} onSound={setSoundUrl} onPreview={previewFromStart}/>
+      <SoundDesign key={props.animationStyle} props={props} frames={totalDurationInFrames} onSound={setSoundUrl} onPreview={previewFromStart}/>
       <div ref={viewportRef} className="w-full flex-1 min-h-0 flex items-center justify-center relative p-3">
         {/* Layer Visibility Toggles */}
         <div className="absolute top-3 right-3 z-20 pointer-events-auto">

@@ -1,0 +1,38 @@
+[
+  {
+    "template": "typewriter",
+    "library": "typing_keyboard.mp3",
+    "LibraryPeak": 0.6011,
+    "restored": true,
+    "ProceduralPeak": 0.6615,
+    "modified": "5 palabras · 19 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "word-highlight-tracker",
+    "library": "minecraft_click.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "clean-modern",
+    "library": "minecraft_click.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "slide-in",
+    "library": "AIRY WHOOSH (1).wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]

@@ -1,5 +1,6 @@
 import {NextResponse} from 'next/server';
 import {strategySchema,valid,distribute,type Strategy} from '@/lib/sound/strategy';
+import {compatibleVoices} from '@/lib/sound/capabilities';
 export async function POST(req:Request){
   if(req.headers.get('origin')!=='http://'+req.headers.get('host'))return new Response(null,{status:403});
   try{
@@ -18,12 +19,14 @@ export async function POST(req:Request){
       return {start:frames[first],end:frames[last],count:last-first+1,wordStarts:heads.filter(h=>h>=first&&h<=last).length};
     });
     const observation=template==='typewriter'?'Glyphs appear instantly without spatial travel. Spaces are silent.':template==='glitch'?'Abrupt RGB splits alternate with unchanged text in separated clusters.':template==='slide-in'?'Overlapping spring trajectories accelerate, decelerate and settle.':family;
-    const prompt='Select acoustic envelope from click (discrete articulation), sweep (directional travel), pulse (digital interruption), texture (sustained fragment). Describe travel only when present. Choose landing last only for a measured settling motion meriting an extra impact. Direct sound for a 30fps animation. Choose a qualitative strategy. Evaluate overlap, pace and discontinuities. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({family,text:String(inputText??'').slice(0,1000),words,groups,motion,observation});
-    const schema=strategySchema;    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,seed:33,max_tokens:350,messages:[{role:'user',content:prompt}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
+    const allowed=compatibleVoices(template);
+    if(!allowed.length)throw Error('Movimiento desconocido');
+    const prompt='Select a compatible Earshot voice from the supplied list. Describe travel only when present. Choose landing last only for a measured settling motion meriting an extra impact. Direct sound for a 30fps animation. Choose a qualitative strategy. Evaluate overlap, pace and discontinuities. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({voices:allowed,family,text:String(inputText??'').slice(0,1000),words,groups,motion,observation});
+    const schema={...strategySchema,properties:{...strategySchema.properties,voice:{type:"string",enum:allowed}}};    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,seed:33,max_tokens:350,messages:[{role:'user',content:prompt}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
     const raw=answer.choices?.[0]?.message?.content;
     let value:unknown;try{value=JSON.parse(raw)}catch{}
-    const accepted=valid(value);
-    const strategy:Strategy=valid(value)?value:{voice:'click',landing:'silent',density:'moderate',grouping:template==='glitch'?'pulse':template==='slide-in'?'gesture':'phrase',closing:'accent',character:'soft',space:'short'};
+    const accepted=valid(value) && allowed.includes(value.voice);
+    const strategy:Strategy=accepted && valid(value)?value:{voice:allowed[0],landing:'silent',density:'moderate',grouping:template==='glitch'?'pulse':template==='slide-in'?'gesture':'phrase',closing:'accent',character:'soft',space:'short'};
     const events=distribute(frames,template,strategy,heads);
     const variant={soft:0,bright:1,rough:3}[strategy.character];
     const reason=frames.length+' eventos · '+events.length+' acentos · fotogramas '+events.map(i=>frames[i]).join(', ')+' · '+(events.includes(frames.length-1)?'cierre acentuado':'cierre libre');

@@ -7,11 +7,22 @@ DB.parent.mkdir(exist_ok=True)
 con=sqlite3.connect(DB)
 con.execute('CREATE TABLE IF NOT EXISTS sounds(id TEXT PRIMARY KEY,path TEXT UNIQUE,size INTEGER,mtime INTEGER,metadata TEXT)')
 count=0
-for f in ROOT.rglob('*'):
+from collections import defaultdict, deque
+folders=defaultdict(deque)
+for item in ROOT.rglob('*'):
+ if item.suffix.lower() in ('.wav','.mp3','.aiff','.aif','.flac','.ogg'):
+  folders[item.parent].append(item)
+def diverse_files():
+ active=deque(folders.values())
+ while active:
+  folder=active.popleft()
+  yield folder.popleft()
+  if folder:active.append(folder)
+for f in diverse_files():
  if not f.is_file() or f.suffix.lower() not in ('.wav','.mp3','.aiff','.aif','.flac','.ogg'):continue
  if count>=max(1,min(args.limit,200)):break
  stat=f.stat();hit=con.execute('SELECT size,mtime FROM sounds WHERE path=?',(str(f),)).fetchone()
- if hit==(stat.st_size,stat.st_mtime_ns):count+=1;continue
+ if hit==(stat.st_size,stat.st_mtime_ns):continue
  try:
   probe=subprocess.run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(f)],capture_output=True,timeout=10,check=True)
   meta=json.loads(probe.stdout);stream=next(s for s in meta['streams'] if s['codec_type']=='audio')
