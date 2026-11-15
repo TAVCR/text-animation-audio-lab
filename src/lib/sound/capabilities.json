@@ -86,6 +86,10 @@
         "variable-weight-wave"
       ]
     },
+    "barrido de franja": {
+      "voices": ["whoosh"],
+      "templates": ["slide-reveal"]
+    },
     "revelado": {
       "voices": [
         "swish",
@@ -96,7 +100,6 @@
         "blur-reveal",
         "blur-cascade",
         "wipe-reveal",
-        "slide-reveal",
         "shape-reveal",
         "bar-reveal"
       ]

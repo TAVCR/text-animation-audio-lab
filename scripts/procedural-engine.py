@@ -83,7 +83,8 @@ def generate(q,rows):
     typing=q['template'] in ('typewriter','scramble')
     voice='typing' if typing else voices[0]
     word_sequence=q['template'] in ('bubble-pop','slide-in','smooth-sliding','word-highlight-tracker','paper-cutout-assemble','viral-text','kinetic-box-sequence')
-    preserve_events=word_sequence or typing
+    band_reveal=q['template']=='slide-reveal'
+    preserve_events=word_sequence or typing or band_reveal
     if director.get('events') and not preserve_events:
         events=sorted({events[i] for i in director['events'] if type(i) is int and 0<=i<len(events)}) or events
     interval=np.median(np.diff(events))/30 if len(events)>1 else min(.7,frames/30)
@@ -128,7 +129,7 @@ def generate(q,rows):
             layer['takes'].append(take)
         layers.append(layer)
     add('Movimiento',voice,selected,[.47,.63,.55][index])
-    if director.get('extraLayer')!='none' and index==1 and (a.get('stops') or voice in ('impact','riser','whoosh','sweep')):
+    if not band_reveal and director.get('extraLayer')!='none' and index==1 and (a.get('stops') or voice in ('impact','riser','whoosh','sweep')):
         # A camera flight or a continuous sweep has no collision unless analysis
         # observed a stop. Use a quiet trailing gesture for those movements.
         stops=a.get('stops') or []
@@ -136,7 +137,7 @@ def generate(q,rows):
         resonance=continuous or director.get('extraLayer')=='resonance'
         accent='swish' if continuous else 'click' if voice=='impact' else 'pop'
         add('Resonancia' if resonance else 'Asentamiento',accent,[min(frames-1,(stops or selected)[-1])],.21 if resonance else .31)
-    if not typing and director.get('extraLayer')!='none' and index==2 and len(events)>1:
+    if not typing and not band_reveal and director.get('extraLayer')!='none' and index==2 and len(events)>1:
         secondary='pulse' if voice in ('digital','glitch','pulse') else 'swish' if voice in ('riser','texture') else 'click'
         add('Acento' if director.get('extraLayer')=='accent' else 'Resonancia',secondary,selected[::max(1,len(selected)//2)][:2],.24)
     return dict(syncVersion=2,style=style,variant=variant,layers=layers,frames=frames,method=director.get('model','Reglas locales'),strategy=strategy,preferredRecipe=director.get('preferredRecipe'),extraLayer=director.get('extraLayer'))
