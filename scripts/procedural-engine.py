@@ -98,6 +98,8 @@ def generate(q,rows):
         layer=dict(role=role,gain=round(level*strength,3),mute=False,offset=0,
                    fadeIn=4 if strategy.get('attack')=='gradual' else 1,
                    fadeOut=12 if strategy.get('space')=='long' else 5,takes=[])
+        if band_reveal:
+            layer.update(air=[.34,.62,.48][index],room=[.20,.38,.32][index])
         for i,frame in enumerate(anchors):
             gap=(anchors[i+1]-frame)/30 if i+1<len(anchors) else interval
             duration=float(np.clip(gap*[.55,1.1,.78][index],.055,1.7))
