@@ -33,16 +33,15 @@
   },
   {
     "template": "blur-reveal",
-    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "library": "Fast swish.wav",
     "region": [
-      0.6000000000000001,
-      1.410563
+      0,
+      0.572021
     ],
     "family": "swish",
     "LibraryPeak": 0.6,
     "events": [
-      11,
-      55
+      14
     ],
     "recipe": "swish/soft",
     "LibraryMaxLocalPeakErrorMs": 0.0,
@@ -50,15 +49,13 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 1467 ms",
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
     "textOnlyFrames": [
-      11,
-      55
+      14
     ],
-    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 933 ms",
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
     "speedOnlyFrames": [
-      7,
-      35
+      9
     ],
     "pageErrors": []
   },
@@ -143,16 +140,15 @@
   },
   {
     "template": "wipe-reveal",
-    "library": "Page 10 - Whoosh_ Swish Sounds_10.mp3",
+    "library": "Fast swish.wav",
     "region": [
-      0.6000000000000001,
-      1.410563
+      0,
+      0.572021
     ],
     "family": "swish",
     "LibraryPeak": 0.6,
     "events": [
-      11,
-      55
+      14
     ],
     "recipe": "swish/soft",
     "LibraryMaxLocalPeakErrorMs": 0.0,
@@ -160,15 +156,13 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 1467 ms",
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
     "textOnlyFrames": [
-      11,
-      55
+      14
     ],
-    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 933 ms",
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
     "speedOnlyFrames": [
-      7,
-      35
+      9
     ],
     "pageErrors": []
   }
