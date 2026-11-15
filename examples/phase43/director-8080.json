@@ -1,0 +1,25 @@
+{
+  "events": [
+    0
+  ],
+  "variant": 0,
+  "candidateId": "6be9931eba35c02a57d2d4bd",
+  "gain": 0.55,
+  "tail": 65,
+  "offset": -1,
+  "model": "mistral-nemo",
+  "strategy": {
+    "intensity": "medium",
+    "attack": "gradual",
+    "voice": "whoosh",
+    "landing": "last",
+    "density": "moderate",
+    "grouping": "phrase",
+    "closing": "rest",
+    "character": "soft",
+    "space": "short"
+  },
+  "raw": "{\n  \"intensity\": \"medium\",\n  \"attack\": \"gradual\",\n  \"voice\": \"whoosh\",\n  \"landing\": \"last\",\n  \"density\": \"moderate\",\n  \"grouping\": \"phrase\",\n  \"closing\": \"rest\",\n  \"character\": \"soft\",\n  \"space\": \"short\",\n  \"candidateId\": \"6be9931eba35c02a57d2d4bd\"\n}",
+  "correction": null,
+  "reason": "Library sugerida: Fast whoosh.wav · 3 eventos · 1 acentos · fotogramas 1 · cierre libre"
+}

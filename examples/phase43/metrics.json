@@ -1,0 +1,407 @@
+[
+  {
+    "template": "bubble-pop",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -32.71,
+      -41.1
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 1.9770529147145055e-07
+  },
+  {
+    "template": "bubble-pop",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -32.02,
+      -32.02
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0859555560637233e-07
+  },
+  {
+    "template": "bubble-pop",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -30.32,
+      -30.32
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0677762124776677e-07
+  },
+  {
+    "template": "cinematic",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -24.77,
+      -24.77
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 1.9904090087230486e-07
+  },
+  {
+    "template": "cinematic",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -23.17,
+      -19.36
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0781541787417979e-07
+  },
+  {
+    "template": "cinematic",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -25.01,
+      -25.28
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.083390795437623e-07
+  },
+  {
+    "template": "glitch",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -21.47,
+      -22.15
+    ],
+    "maxLocalPeakErrorMs": 1.0,
+    "maxSampleResidual": 2.0625543473151708e-07
+  },
+  {
+    "template": "glitch",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -20.49,
+      -20.45
+    ],
+    "maxLocalPeakErrorMs": 1.0,
+    "maxSampleResidual": 1.9213411628360433e-07
+  },
+  {
+    "template": "glitch",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -23.66,
+      -23.7
+    ],
+    "maxLocalPeakErrorMs": 1.0,
+    "maxSampleResidual": 2.0811345768922962e-07
+  },
+  {
+    "template": "ink-stamp-print",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -28.29,
+      -27.8
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0767373343222317e-07
+  },
+  {
+    "template": "ink-stamp-print",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -26.51,
+      -27.42
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0723967897318119e-07
+  },
+  {
+    "template": "ink-stamp-print",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -27.99,
+      -28.26
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 1.9595806788341719e-07
+  },
+  {
+    "template": "neon-pulse",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -2.453,
+    "rmsDB": [
+      -18.55,
+      -19.31
+    ],
+    "maxLocalPeakErrorMs": 0.02,
+    "maxSampleResidual": 2.665732367068685e-07
+  },
+  {
+    "template": "neon-pulse",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -3.101,
+    "rmsDB": [
+      -17.3,
+      -21.32
+    ],
+    "maxLocalPeakErrorMs": 3.19,
+    "maxSampleResidual": 2.220306916100867e-07
+  },
+  {
+    "template": "neon-pulse",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -29.29,
+      -29.43
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0811345768922962e-07
+  },
+  {
+    "template": "slide-in",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -27.12,
+      -29.31
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0355743901578904e-07
+  },
+  {
+    "template": "slide-in",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -26.4,
+      -25.01
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.062411350589599e-07
+  },
+  {
+    "template": "slide-in",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -26.19,
+      -25.79
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0839161540830986e-07
+  },
+  {
+    "template": "typewriter",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.324,
+    "rmsDB": [
+      -35.91,
+      -37.54
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 1.5490415949948044e-07
+  },
+  {
+    "template": "typewriter",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -24.63,
+      -24.45
+    ],
+    "maxLocalPeakErrorMs": 0.6,
+    "maxSampleResidual": 2.0716307858048566e-07
+  },
+  {
+    "template": "typewriter",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -3.779,
+    "rmsDB": [
+      -32.63,
+      -32.61
+    ],
+    "maxLocalPeakErrorMs": 0.4,
+    "maxSampleResidual": 2.0757378449420827e-07
+  },
+  {
+    "template": "wipe-reveal",
+    "label": "A",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -29.11,
+      -26.83
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.0815409529362228e-07
+  },
+  {
+    "template": "wipe-reveal",
+    "label": "B",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -28.51,
+      -36.2
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 1.972153106377661e-07
+  },
+  {
+    "template": "wipe-reveal",
+    "label": "Procedural",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -37.62,
+      -37.89
+    ],
+    "maxLocalPeakErrorMs": 0.0,
+    "maxSampleResidual": 2.069553606265373e-07
+  },
+  {
+    "template": "bubble-pop",
+    "label": "anterior",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -28.58,
+      -28.53
+    ],
+    "maxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "cinematic",
+    "label": "anterior",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -35.35,
+      -32.63
+    ],
+    "maxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "glitch",
+    "label": "anterior",
+    "channels": 1,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -19.21
+    ],
+    "maxLocalPeakErrorMs": 1.0
+  },
+  {
+    "template": "ink-stamp-print",
+    "label": "anterior",
+    "channels": 1,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -39.84
+    ],
+    "maxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "neon-pulse",
+    "label": "anterior",
+    "channels": 1,
+    "seconds": 5.0,
+    "peakDB": -3.76,
+    "rmsDB": [
+      -24.66
+    ],
+    "maxLocalPeakErrorMs": 7.9
+  },
+  {
+    "template": "slide-in",
+    "label": "anterior",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -2.694,
+    "rmsDB": [
+      -24.39,
+      -24.09
+    ],
+    "maxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "typewriter",
+    "label": "anterior",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -3.173,
+    "rmsDB": [
+      -30.08,
+      -30.42
+    ],
+    "maxLocalPeakErrorMs": 0.0
+  },
+  {
+    "template": "wipe-reveal",
+    "label": "anterior",
+    "channels": 2,
+    "seconds": 5.0,
+    "peakDB": -4.437,
+    "rmsDB": [
+      -30.46,
+      -29.74
+    ],
+    "maxLocalPeakErrorMs": 0.0
+  }
+]

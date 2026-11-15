@@ -1,0 +1,1184 @@
+[
+  {
+    "template": "bubble-pop",
+    "label": "A",
+    "candidate": {
+      "id": "dd8a355a85c264dd494458d2",
+      "url": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+      "name": "floraphonic-ui-pop-up-5-197889.mp3",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\floraphonic-ui-pop-up-5-197889.mp3",
+      "family": "pop",
+      "region": [
+        0.12,
+        0.16
+      ],
+      "features": {
+        "start": 0.12,
+        "end": 0.16,
+        "hit": 0.12,
+        "attack": 0,
+        "centroid": 668.9580452727824,
+        "high": 0.0016106854471005202,
+        "crest": 3.660846471786499,
+        "overload": 0
+      },
+      "score": 6.45,
+      "method": "pop · 40 ms · ataque 0 ms · centro espectral 669 Hz · 3 regiones · CLAP 0.306",
+      "semantic": 0.3061373829841614
+    },
+    "design": {
+      "version": 1,
+      "template": "bubble-pop",
+      "mode": "Library",
+      "sourceName": "floraphonic-ui-pop-up-5-197889.mp3",
+      "sourceUrl": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\floraphonic-ui-pop-up-5-197889.mp3",
+      "method": "Reglas locales",
+      "recipe": "pop/0",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        13,
+        26
+      ],
+      "family": "pop",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 347
+    }
+  },
+  {
+    "template": "bubble-pop",
+    "label": "B",
+    "candidate": {
+      "id": "cb53e22d9a9285693d6b8a52",
+      "url": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+      "name": "multi-pop-6-188170.mp3",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\multi-pop-6-188170.mp3",
+      "family": "pop",
+      "region": [
+        0.03,
+        0.06
+      ],
+      "features": {
+        "start": 0.03,
+        "end": 0.06,
+        "hit": 0.03,
+        "attack": 0,
+        "centroid": 582.5340956290146,
+        "high": 0.0002753543408980375,
+        "crest": 2.627671718597412,
+        "overload": 0
+      },
+      "score": 6.23,
+      "method": "pop · 30 ms · ataque 0 ms · centro espectral 583 Hz · 3 regiones · CLAP 0.377",
+      "semantic": 0.3767259120941162
+    },
+    "design": {
+      "version": 1,
+      "template": "bubble-pop",
+      "mode": "Library",
+      "sourceName": "multi-pop-6-188170.mp3",
+      "sourceUrl": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\multi-pop-6-188170.mp3",
+      "method": "Reglas locales",
+      "recipe": "pop/0",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        13,
+        26
+      ],
+      "family": "pop",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 347
+    }
+  },
+  {
+    "template": "bubble-pop",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "bubble-pop",
+      "mode": "Procedural",
+      "sourceName": "multi-pop-6-188170.mp3",
+      "sourceUrl": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\multi-pop-6-188170.mp3",
+      "method": "Reglas locales",
+      "recipe": "pop/0",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        13,
+        26
+      ],
+      "family": "pop",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 347
+    }
+  },
+  {
+    "template": "cinematic",
+    "label": "A",
+    "candidate": {
+      "id": "7429b735bb4da00117a867f9",
+      "url": "/audio-lab/library-7429b735bb4da00117a867f9.wav",
+      "name": "Piercing Riser, Harsh, Metallic, Layer, Creepy, Horror 7.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\344 Audio - Supernatural Ghosts\\Piercing Riser, Harsh, Metallic, Layer, Creepy, Horror 7.wav",
+      "family": "riser",
+      "region": [
+        2.87,
+        3.6
+      ],
+      "features": {
+        "start": 2.87,
+        "end": 3.6,
+        "hit": 3.47,
+        "attack": 0.6,
+        "centroid": 3719.0562580281894,
+        "high": 0.882975547096669,
+        "crest": 4.3160319328308105,
+        "overload": 0
+      },
+      "score": 6.05,
+      "method": "riser · 730 ms · ataque 600 ms · centro espectral 3719 Hz · 5 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "cinematic",
+      "mode": "Library",
+      "sourceName": "Piercing Riser, Harsh, Metallic, Layer, Creepy, Horror 7.wav",
+      "sourceUrl": "/audio-lab/library-7429b735bb4da00117a867f9.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\344 Audio - Supernatural Ghosts\\Piercing Riser, Harsh, Metallic, Layer, Creepy, Horror 7.wav",
+      "method": "Reglas locales",
+      "recipe": "riser/air",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        22,
+        120
+      ],
+      "family": "riser",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 500
+    }
+  },
+  {
+    "template": "cinematic",
+    "label": "B",
+    "candidate": {
+      "id": "ac970b8e775560658d666e1c",
+      "url": "/audio-lab/library-ac970b8e775560658d666e1c.wav",
+      "name": "Riser 027.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\Federico Soler Fernandez - Effective Trailer Risers\\Riser 027.wav",
+      "family": "riser",
+      "region": [
+        13.11,
+        14.52
+      ],
+      "features": {
+        "start": 13.11,
+        "end": 14.52,
+        "hit": 13.71,
+        "attack": 0.6,
+        "centroid": 1476.4668893903026,
+        "high": 0.10911057788998843,
+        "crest": 4.024134159088135,
+        "overload": 0
+      },
+      "score": 5.99,
+      "method": "riser · 1410 ms · ataque 600 ms · centro espectral 1476 Hz · 24 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "cinematic",
+      "mode": "Library",
+      "sourceName": "Riser 027.wav",
+      "sourceUrl": "/audio-lab/library-ac970b8e775560658d666e1c.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\Federico Soler Fernandez - Effective Trailer Risers\\Riser 027.wav",
+      "method": "Reglas locales",
+      "recipe": "riser/air",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        22,
+        120
+      ],
+      "family": "riser",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 500
+    }
+  },
+  {
+    "template": "cinematic",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "cinematic",
+      "mode": "Procedural",
+      "sourceName": "Riser 027.wav",
+      "sourceUrl": "/audio-lab/library-ac970b8e775560658d666e1c.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\Federico Soler Fernandez - Effective Trailer Risers\\Riser 027.wav",
+      "method": "Reglas locales",
+      "recipe": "riser/air",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        22,
+        120
+      ],
+      "family": "riser",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 500
+    }
+  },
+  {
+    "template": "glitch",
+    "label": "A",
+    "candidate": {
+      "id": "46e50f7301e6c23e2d9e4973",
+      "url": "/audio-lab/library-46e50f7301e6c23e2d9e4973.wav",
+      "name": "Engine_Distortion_Interference_002.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\MatiasMacSD - MENTAL STRAIN\\Engine_Distortion_Interference_002.wav",
+      "family": "pulse",
+      "region": [
+        13.297,
+        13.407
+      ],
+      "features": {
+        "start": 13.297,
+        "end": 13.407,
+        "hit": 13.347,
+        "attack": 0.05,
+        "centroid": 973.7020119307244,
+        "high": 0.04784018951058716,
+        "crest": 4.017916679382324,
+        "overload": 0
+      },
+      "score": 7.35,
+      "method": "pulse · 110 ms · ataque 50 ms · centro espectral 974 Hz · 24 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "glitch",
+      "mode": "Library",
+      "sourceName": "Engine_Distortion_Interference_002.wav",
+      "sourceUrl": "/audio-lab/library-46e50f7301e6c23e2d9e4973.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\MatiasMacSD - MENTAL STRAIN\\Engine_Distortion_Interference_002.wav",
+      "method": "Reglas locales",
+      "recipe": "glitch/chirp",
+      "recipeSeed": 1,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        40,
+        44,
+        48,
+        52,
+        56,
+        80,
+        84,
+        88,
+        92,
+        96,
+        120,
+        124,
+        128,
+        132,
+        136
+      ],
+      "family": "pulse",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 107
+    }
+  },
+  {
+    "template": "glitch",
+    "label": "B",
+    "candidate": {
+      "id": "efd6c3fedf65efa3bf250296",
+      "url": "/audio-lab/library-efd6c3fedf65efa3bf250296.wav",
+      "name": "SFXW002_Crowd Interference_C3.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\SoundFxwizard - SYNTHESIZED MOODS\\SFXW002_Crowd Interference_C3.wav",
+      "family": "pulse",
+      "region": [
+        19.18,
+        19.32
+      ],
+      "features": {
+        "start": 19.18,
+        "end": 19.32,
+        "hit": 19.22,
+        "attack": 0.04,
+        "centroid": 1824.4548278780549,
+        "high": 0.030183154926511063,
+        "crest": 3.8586111068725586,
+        "overload": 0
+      },
+      "score": 7.06,
+      "method": "pulse · 140 ms · ataque 40 ms · centro espectral 1824 Hz · 32 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "glitch",
+      "mode": "Library",
+      "sourceName": "SFXW002_Crowd Interference_C3.wav",
+      "sourceUrl": "/audio-lab/library-efd6c3fedf65efa3bf250296.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\SoundFxwizard - SYNTHESIZED MOODS\\SFXW002_Crowd Interference_C3.wav",
+      "method": "Reglas locales",
+      "recipe": "glitch/chirp",
+      "recipeSeed": 1,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        40,
+        44,
+        48,
+        52,
+        56,
+        80,
+        84,
+        88,
+        92,
+        96,
+        120,
+        124,
+        128,
+        132,
+        136
+      ],
+      "family": "pulse",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 107
+    }
+  },
+  {
+    "template": "glitch",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "glitch",
+      "mode": "Procedural",
+      "sourceName": "SFXW002_Crowd Interference_C3.wav",
+      "sourceUrl": "/audio-lab/library-efd6c3fedf65efa3bf250296.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\SoundFxwizard - SYNTHESIZED MOODS\\SFXW002_Crowd Interference_C3.wav",
+      "method": "Reglas locales",
+      "recipe": "glitch/chirp",
+      "recipeSeed": 1,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        40,
+        44,
+        48,
+        52,
+        56,
+        80,
+        84,
+        88,
+        92,
+        96,
+        120,
+        124,
+        128,
+        132,
+        136
+      ],
+      "family": "pulse",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 107
+    }
+  },
+  {
+    "template": "ink-stamp-print",
+    "label": "A",
+    "candidate": {
+      "id": "c16693f81ee52885f8f7638f",
+      "url": "/audio-lab/library-c16693f81ee52885f8f7638f.wav",
+      "name": "Signum_source_composite_impact_2.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Blik Blinks - SIGNUM_ Sci-fi Cinematic SFX Pack\\Signum_source_composite_impact_2.wav",
+      "family": "impact",
+      "region": [
+        0.64,
+        1.14
+      ],
+      "features": {
+        "start": 0.64,
+        "end": 1.14,
+        "hit": 0.72,
+        "attack": 0.08,
+        "centroid": 86.08372824291789,
+        "high": 2.736198647535402e-07,
+        "crest": 4.321688652038574,
+        "overload": 0
+      },
+      "score": 8.9,
+      "method": "impact · 500 ms · ataque 80 ms · centro espectral 86 Hz · 8 regiones · CLAP 0.168",
+      "semantic": 0.1683436632156372
+    },
+    "design": {
+      "version": 1,
+      "template": "ink-stamp-print",
+      "mode": "Library",
+      "sourceName": "Signum_source_composite_impact_2.wav",
+      "sourceUrl": "/audio-lab/library-c16693f81ee52885f8f7638f.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Blik Blinks - SIGNUM_ Sci-fi Cinematic SFX Pack\\Signum_source_composite_impact_2.wav",
+      "method": "Reglas locales",
+      "recipe": "impact/punch",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        6
+      ],
+      "family": "impact",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 400
+    }
+  },
+  {
+    "template": "ink-stamp-print",
+    "label": "B",
+    "candidate": {
+      "id": "68b5381e38609e4159195b95",
+      "url": "/audio-lab/library-68b5381e38609e4159195b95.wav",
+      "name": "Impact_Boom_Distorted_02.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Bottle Rocket Fx - Impact Collection\\Impact_Boom_Distorted_02.wav",
+      "family": "impact",
+      "region": [
+        0.43,
+        1.16
+      ],
+      "features": {
+        "start": 0.43,
+        "end": 1.16,
+        "hit": 0.49,
+        "attack": 0.06,
+        "centroid": 72.62597543582285,
+        "high": 0.0024661768022306366,
+        "crest": 4.41984224319458,
+        "overload": 0
+      },
+      "score": 8.44,
+      "method": "impact · 730 ms · ataque 60 ms · centro espectral 73 Hz · 8 regiones · CLAP 0.089",
+      "semantic": 0.08862310647964478
+    },
+    "design": {
+      "version": 1,
+      "template": "ink-stamp-print",
+      "mode": "Library",
+      "sourceName": "Impact_Boom_Distorted_02.wav",
+      "sourceUrl": "/audio-lab/library-68b5381e38609e4159195b95.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Bottle Rocket Fx - Impact Collection\\Impact_Boom_Distorted_02.wav",
+      "method": "Reglas locales",
+      "recipe": "impact/punch",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        6
+      ],
+      "family": "impact",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 400
+    }
+  },
+  {
+    "template": "ink-stamp-print",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "ink-stamp-print",
+      "mode": "Procedural",
+      "sourceName": "Impact_Boom_Distorted_02.wav",
+      "sourceUrl": "/audio-lab/library-68b5381e38609e4159195b95.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Bottle Rocket Fx - Impact Collection\\Impact_Boom_Distorted_02.wav",
+      "method": "Reglas locales",
+      "recipe": "impact/punch",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        6
+      ],
+      "family": "impact",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 400
+    }
+  },
+  {
+    "template": "neon-pulse",
+    "label": "A",
+    "candidate": {
+      "id": "5f4254bafd6f4a5c669bb67a",
+      "url": "/audio-lab/library-5f4254bafd6f4a5c669bb67a.wav",
+      "name": "1117 - Dark Pulse Ambience - Loop.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\The Sound Pack Tree - Unreal Ambiences\\1117 - Dark Pulse Ambience - Loop.wav",
+      "family": "pulse",
+      "region": [
+        40.952,
+        41.812
+      ],
+      "features": {
+        "start": 40.952,
+        "end": 41.812,
+        "hit": 41.002,
+        "attack": 0.05,
+        "centroid": 125.37235910292847,
+        "high": 4.3609314618908226e-05,
+        "crest": 3.9442708492279053,
+        "overload": 0
+      },
+      "score": 6.25,
+      "method": "pulse · 860 ms · ataque 50 ms · centro espectral 125 Hz · 32 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "neon-pulse",
+      "mode": "Library",
+      "sourceName": "1117 - Dark Pulse Ambience - Loop.wav",
+      "sourceUrl": "/audio-lab/library-5f4254bafd6f4a5c669bb67a.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\The Sound Pack Tree - Unreal Ambiences\\1117 - Dark Pulse Ambience - Loop.wav",
+      "method": "Reglas locales",
+      "recipe": "glitch/chirp",
+      "recipeSeed": 1,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        26,
+        39,
+        52,
+        78,
+        130
+      ],
+      "family": "pulse",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 500
+    }
+  },
+  {
+    "template": "neon-pulse",
+    "label": "B",
+    "candidate": {
+      "id": "55356e80cd8ad2567ade93a0",
+      "url": "/audio-lab/library-55356e80cd8ad2567ade93a0.wav",
+      "name": "Drone,Cyber,Deep,Pulse,Disturbing,Invasive,Loop.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\Airborne Sound – Light and Dark Drones\\Drone,Cyber,Deep,Pulse,Disturbing,Invasive,Loop.wav",
+      "family": "pulse",
+      "region": [
+        6.446,
+        7.306
+      ],
+      "features": {
+        "start": 6.446,
+        "end": 7.306,
+        "hit": 6.496,
+        "attack": 0.05,
+        "centroid": 67.19856567262394,
+        "high": 3.207685709204159e-08,
+        "crest": 4.0453643798828125,
+        "overload": 0
+      },
+      "score": 6.12,
+      "method": "pulse · 860 ms · ataque 50 ms · centro espectral 67 Hz · 32 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "neon-pulse",
+      "mode": "Library",
+      "sourceName": "Drone,Cyber,Deep,Pulse,Disturbing,Invasive,Loop.wav",
+      "sourceUrl": "/audio-lab/library-55356e80cd8ad2567ade93a0.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\Airborne Sound – Light and Dark Drones\\Drone,Cyber,Deep,Pulse,Disturbing,Invasive,Loop.wav",
+      "method": "Reglas locales",
+      "recipe": "glitch/chirp",
+      "recipeSeed": 1,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        26,
+        39,
+        52,
+        78,
+        130
+      ],
+      "family": "pulse",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 500
+    }
+  },
+  {
+    "template": "neon-pulse",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "neon-pulse",
+      "mode": "Procedural",
+      "sourceName": "Drone,Cyber,Deep,Pulse,Disturbing,Invasive,Loop.wav",
+      "sourceUrl": "/audio-lab/library-55356e80cd8ad2567ade93a0.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\Airborne Sound – Light and Dark Drones\\Drone,Cyber,Deep,Pulse,Disturbing,Invasive,Loop.wav",
+      "method": "Reglas locales",
+      "recipe": "glitch/chirp",
+      "recipeSeed": 1,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        26,
+        39,
+        52,
+        78,
+        130
+      ],
+      "family": "pulse",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 500
+    }
+  },
+  {
+    "template": "slide-in",
+    "label": "A",
+    "candidate": {
+      "id": "6be9931eba35c02a57d2d4bd",
+      "url": "/audio-lab/library-6be9931eba35c02a57d2d4bd.wav",
+      "name": "Fast whoosh.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\Fast whoosh.wav",
+      "family": "whoosh",
+      "region": [
+        0.28,
+        0.39
+      ],
+      "features": {
+        "start": 0.28,
+        "end": 0.39,
+        "hit": 0.36,
+        "attack": 0.08,
+        "centroid": 264.7294784330262,
+        "high": 0.0012772958253586346,
+        "crest": 3.688279867172241,
+        "overload": 0
+      },
+      "score": 7.66,
+      "method": "whoosh · 110 ms · ataque 80 ms · centro espectral 265 Hz · 3 regiones · CLAP 0.081",
+      "semantic": 0.08095715194940567
+    },
+    "design": {
+      "version": 1,
+      "template": "slide-in",
+      "mode": "Library",
+      "sourceName": "Fast whoosh.wav",
+      "sourceUrl": "/audio-lab/library-6be9931eba35c02a57d2d4bd.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\Fast whoosh.wav",
+      "method": "Reglas locales",
+      "recipe": "whoosh_fast/crisp",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        5,
+        9
+      ],
+      "family": "whoosh",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 107
+    }
+  },
+  {
+    "template": "slide-in",
+    "label": "B",
+    "candidate": {
+      "id": "7c35a639da577dbf914e3586",
+      "url": "/audio-lab/library-7c35a639da577dbf914e3586.wav",
+      "name": "EFX SD Sliding Whoosh By 06.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC - Game Audio Bundle\\Coll Anderson - Sliding Whoosh By\\EFX SD Sliding Whoosh By 06.wav",
+      "family": "whoosh",
+      "region": [
+        2.36,
+        2.64
+      ],
+      "features": {
+        "start": 2.36,
+        "end": 2.64,
+        "hit": 2.42,
+        "attack": 0.06,
+        "centroid": 554.8212586049326,
+        "high": 0.06496353590892398,
+        "crest": 4.136845588684082,
+        "overload": 0
+      },
+      "score": 7.74,
+      "method": "whoosh · 280 ms · ataque 60 ms · centro espectral 555 Hz · 8 regiones · CLAP 0.040",
+      "semantic": 0.039642080664634705
+    },
+    "design": {
+      "version": 1,
+      "template": "slide-in",
+      "mode": "Library",
+      "sourceName": "EFX SD Sliding Whoosh By 06.wav",
+      "sourceUrl": "/audio-lab/library-7c35a639da577dbf914e3586.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC - Game Audio Bundle\\Coll Anderson - Sliding Whoosh By\\EFX SD Sliding Whoosh By 06.wav",
+      "method": "Reglas locales",
+      "recipe": "whoosh_fast/crisp",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        5,
+        9
+      ],
+      "family": "whoosh",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 107
+    }
+  },
+  {
+    "template": "slide-in",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "slide-in",
+      "mode": "Procedural",
+      "sourceName": "EFX SD Sliding Whoosh By 06.wav",
+      "sourceUrl": "/audio-lab/library-7c35a639da577dbf914e3586.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC - Game Audio Bundle\\Coll Anderson - Sliding Whoosh By\\EFX SD Sliding Whoosh By 06.wav",
+      "method": "Reglas locales",
+      "recipe": "whoosh_fast/crisp",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        5,
+        9
+      ],
+      "family": "whoosh",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 107
+    }
+  },
+  {
+    "template": "typewriter",
+    "label": "A",
+    "candidate": {
+      "id": "6f342caf6a85df46b32e0708",
+      "url": "/audio-lab/library-6f342caf6a85df46b32e0708.wav",
+      "name": "Laptop Keyboard 5.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\Hear and Now Sound - Office Equipment and Supplies\\Laptop Keyboard 5.wav",
+      "family": "typing",
+      "region": [
+        1.64,
+        1.69
+      ],
+      "features": {
+        "start": 1.64,
+        "end": 1.69,
+        "hit": 1.64,
+        "attack": 0,
+        "centroid": 406.1974340569055,
+        "high": 0.03115947670557777,
+        "crest": 9.169867515563965,
+        "overload": 0
+      },
+      "score": 7.46,
+      "method": "typing · 50 ms · ataque 0 ms · centro espectral 406 Hz · 24 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "typewriter",
+      "mode": "Library",
+      "sourceName": "Laptop Keyboard 5.wav",
+      "sourceUrl": "/audio-lab/library-6f342caf6a85df46b32e0708.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\Hear and Now Sound - Office Equipment and Supplies\\Laptop Keyboard 5.wav",
+      "method": "Reglas locales",
+      "recipe": "typing_key/crisp",
+      "recipeSeed": 0,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        14,
+        17,
+        19,
+        24
+      ],
+      "family": "typing",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 45
+    }
+  },
+  {
+    "template": "typewriter",
+    "label": "B",
+    "candidate": {
+      "id": "2d520308bec7de28fee591ea",
+      "url": "/audio-lab/library-2d520308bec7de28fee591ea.wav",
+      "name": "typing_keyboard.mp3",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\typing_keyboard.mp3",
+      "family": "typing",
+      "region": [
+        7.6,
+        7.66
+      ],
+      "features": {
+        "start": 7.6,
+        "end": 7.66,
+        "hit": 7.6,
+        "attack": 0,
+        "centroid": 454.9421761399749,
+        "high": 0.03347730205196353,
+        "crest": 6.766150951385498,
+        "overload": 0
+      },
+      "score": 6.7,
+      "method": "typing · 60 ms · ataque 0 ms · centro espectral 455 Hz · 16 regiones"
+    },
+    "design": {
+      "version": 1,
+      "template": "typewriter",
+      "mode": "Library",
+      "sourceName": "typing_keyboard.mp3",
+      "sourceUrl": "/audio-lab/library-2d520308bec7de28fee591ea.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\typing_keyboard.mp3",
+      "method": "Reglas locales",
+      "recipe": "typing_key/crisp",
+      "recipeSeed": 0,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        14,
+        17,
+        19,
+        24
+      ],
+      "family": "typing",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 45
+    }
+  },
+  {
+    "template": "typewriter",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "typewriter",
+      "mode": "Procedural",
+      "sourceName": "typing_keyboard.mp3",
+      "sourceUrl": "/audio-lab/library-2d520308bec7de28fee591ea.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\typing_keyboard.mp3",
+      "method": "Reglas locales",
+      "recipe": "typing_key/crisp",
+      "recipeSeed": 0,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        14,
+        17,
+        19,
+        24
+      ],
+      "family": "typing",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 45
+    }
+  },
+  {
+    "template": "wipe-reveal",
+    "label": "A",
+    "candidate": {
+      "id": "6ac1b2c28ad8d30e30800d97",
+      "url": "/audio-lab/library-6ac1b2c28ad8d30e30800d97.wav",
+      "name": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Transition Sound Effects\\Page 10 - Whoosh_ Swish Sounds_3.mp3",
+      "family": "swish",
+      "region": [
+        1.04,
+        1.73
+      ],
+      "features": {
+        "start": 1.04,
+        "end": 1.73,
+        "hit": 1.08,
+        "attack": 0.04,
+        "centroid": 262.4392499168082,
+        "high": 0.0043858184140364576,
+        "crest": 4.960886478424072,
+        "overload": 0
+      },
+      "score": 7.47,
+      "method": "swish · 690 ms · ataque 40 ms · centro espectral 262 Hz · 8 regiones · CLAP -0.048",
+      "semantic": -0.04843134433031082
+    },
+    "design": {
+      "version": 1,
+      "template": "wipe-reveal",
+      "mode": "Library",
+      "sourceName": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+      "sourceUrl": "/audio-lab/library-6ac1b2c28ad8d30e30800d97.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Transition Sound Effects\\Page 10 - Whoosh_ Swish Sounds_3.mp3",
+      "method": "Reglas locales",
+      "recipe": "swish/soft",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        14
+      ],
+      "family": "swish",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 400
+    }
+  },
+  {
+    "template": "wipe-reveal",
+    "label": "B",
+    "candidate": {
+      "id": "961101cb1f04ad02af1f7e5d",
+      "url": "/audio-lab/library-961101cb1f04ad02af1f7e5d.wav",
+      "name": "Rumble swish.wav",
+      "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Swishes\\Rumble swish.wav",
+      "family": "swish",
+      "region": [
+        1.34,
+        1.78
+      ],
+      "features": {
+        "start": 1.34,
+        "end": 1.78,
+        "hit": 1.39,
+        "attack": 0.05,
+        "centroid": 146.67725794845109,
+        "high": 0.008001039786077423,
+        "crest": 5.795421600341797,
+        "overload": 0
+      },
+      "score": 6.7,
+      "method": "swish · 440 ms · ataque 50 ms · centro espectral 147 Hz · 8 regiones · CLAP 0.026",
+      "semantic": 0.02578871324658394
+    },
+    "design": {
+      "version": 1,
+      "template": "wipe-reveal",
+      "mode": "Library",
+      "sourceName": "Rumble swish.wav",
+      "sourceUrl": "/audio-lab/library-961101cb1f04ad02af1f7e5d.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Swishes\\Rumble swish.wav",
+      "method": "Reglas locales",
+      "recipe": "swish/soft",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        14
+      ],
+      "family": "swish",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 400
+    }
+  },
+  {
+    "template": "wipe-reveal",
+    "label": "Procedural",
+    "candidate": null,
+    "design": {
+      "version": 1,
+      "template": "wipe-reveal",
+      "mode": "Procedural",
+      "sourceName": "Rumble swish.wav",
+      "sourceUrl": "/audio-lab/library-961101cb1f04ad02af1f7e5d.wav",
+      "libraryPath": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Swishes\\Rumble swish.wav",
+      "method": "Reglas locales",
+      "recipe": "swish/soft",
+      "recipeSeed": 17,
+      "fadeInMs": 1,
+      "fadeOutMs": 5,
+      "eventVersion": 1,
+      "events": [
+        14
+      ],
+      "family": "swish",
+      "seed": 0,
+      "density": 1,
+      "gain": 0.6,
+      "offset": 0,
+      "trim": 0,
+      "tail": 400
+    }
+  }
+]

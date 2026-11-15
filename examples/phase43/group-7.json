@@ -1,0 +1,438 @@
+[
+  {
+    "template": "fly-through",
+    "candidates": [
+      {
+        "id": "6fdde60648ec598fc51003d0",
+        "url": "/audio-lab/library-6fdde60648ec598fc51003d0.wav",
+        "name": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Transition Sound Effects\\Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
+        "family": "whoosh",
+        "region": [
+          0.86,
+          1.18
+        ],
+        "features": {
+          "start": 0.86,
+          "end": 1.18,
+          "hit": 0.92,
+          "attack": 0.06,
+          "centroid": 423.828967909489,
+          "high": 0.005230199592755672,
+          "crest": 4.089160919189453,
+          "overload": 0
+        },
+        "score": 8.34,
+        "method": "whoosh · 320 ms · ataque 60 ms · centro espectral 424 Hz · 8 regiones · CLAP 0.107",
+        "semantic": 0.10711620002985
+      },
+      {
+        "id": "41e62e30780f0a7755d04cb1",
+        "url": "/audio-lab/library-41e62e30780f0a7755d04cb1.wav",
+        "name": "swoosh-riser-reverb-390309.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\swoosh-riser-reverb-390309.mp3",
+        "family": "whoosh",
+        "region": [
+          1.8,
+          2.34
+        ],
+        "features": {
+          "start": 1.8,
+          "end": 2.34,
+          "hit": 1.86,
+          "attack": 0.06,
+          "centroid": 490.6949704531898,
+          "high": 0.020253462553258564,
+          "crest": 5.5921854972839355,
+          "overload": 0
+        },
+        "score": 7.64,
+        "method": "whoosh · 540 ms · ataque 60 ms · centro espectral 491 Hz · 8 regiones · CLAP 0.048",
+        "semantic": 0.047810330986976624
+      },
+      {
+        "id": "1c5a7946da2a454d52abc8df",
+        "url": "/audio-lab/library-1c5a7946da2a454d52abc8df.wav",
+        "name": "EFX SD Sliding Whoosh By 06.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC - Game Audio Bundle\\Coll Anderson - Sliding Whoosh By\\EFX SD Sliding Whoosh By 06.wav",
+        "family": "whoosh",
+        "region": [
+          2.3,
+          2.64
+        ],
+        "features": {
+          "start": 2.3,
+          "end": 2.64,
+          "hit": 2.35,
+          "attack": 0.05,
+          "centroid": 508.06982393323125,
+          "high": 0.057821570240173426,
+          "crest": 3.8538997173309326,
+          "overload": 0
+        },
+        "score": 7.4,
+        "method": "whoosh · 340 ms · ataque 50 ms · centro espectral 508 Hz · 8 regiones · CLAP 0.119",
+        "semantic": 0.11854544281959534
+      }
+    ],
+    "matched": 464,
+    "library": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
+    "region": [
+      0.86,
+      1.18
+    ],
+    "family": "whoosh",
+    "LibraryPeak": 0.6,
+    "events": [
+      1,
+      15
+    ],
+    "recipe": "whoosh_fast/crisp",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "6fdde60648ec598fc51003d0",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 467 ms",
+    "textOnlyFrames": [
+      1,
+      15
+    ],
+    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 300 ms",
+    "speedOnlyFrames": [
+      1,
+      10
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "extruded-3d",
+    "candidates": [
+      {
+        "id": "7429b735bb4da00117a867f9",
+        "url": "/audio-lab/library-7429b735bb4da00117a867f9.wav",
+        "name": "Piercing Riser, Harsh, Metallic, Layer, Creepy, Horror 7.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\344 Audio - Supernatural Ghosts\\Piercing Riser, Harsh, Metallic, Layer, Creepy, Horror 7.wav",
+        "family": "riser",
+        "region": [
+          2.87,
+          3.6
+        ],
+        "features": {
+          "start": 2.87,
+          "end": 3.6,
+          "hit": 3.47,
+          "attack": 0.6,
+          "centroid": 3719.0562580281894,
+          "high": 0.882975547096669,
+          "crest": 4.3160319328308105,
+          "overload": 0
+        },
+        "score": 6.05,
+        "method": "riser · 730 ms · ataque 600 ms · centro espectral 3719 Hz · 5 regiones"
+      },
+      {
+        "id": "ac970b8e775560658d666e1c",
+        "url": "/audio-lab/library-ac970b8e775560658d666e1c.wav",
+        "name": "Riser 027.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\Federico Soler Fernandez - Effective Trailer Risers\\Riser 027.wav",
+        "family": "riser",
+        "region": [
+          13.11,
+          14.52
+        ],
+        "features": {
+          "start": 13.11,
+          "end": 14.52,
+          "hit": 13.71,
+          "attack": 0.6,
+          "centroid": 1476.4668893903026,
+          "high": 0.10911057788998843,
+          "crest": 4.024134159088135,
+          "overload": 0
+        },
+        "score": 5.99,
+        "method": "riser · 1410 ms · ataque 600 ms · centro espectral 1476 Hz · 24 regiones"
+      },
+      {
+        "id": "8264704c9e22fc7e77b840da",
+        "url": "/audio-lab/library-8264704c9e22fc7e77b840da.wav",
+        "name": "Drone_Rhythmic_Tweak_Glitch_Shepard_Tone_Pitch_Rising.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\Sound Spark LLC - Drone Shepard Tones\\Drone_Rhythmic_Tweak_Glitch_Shepard_Tone_Pitch_Rising.wav",
+        "family": "riser",
+        "region": [
+          4.27,
+          5.68
+        ],
+        "features": {
+          "start": 4.27,
+          "end": 5.68,
+          "hit": 4.87,
+          "attack": 0.6,
+          "centroid": 1408.1054675919895,
+          "high": 0.13522141539409516,
+          "crest": 5.587060928344727,
+          "overload": 0
+        },
+        "score": 5.62,
+        "method": "riser · 1410 ms · ataque 600 ms · centro espectral 1408 Hz · 24 regiones"
+      }
+    ],
+    "matched": 136,
+    "library": "Piercing Riser, Harsh, Metallic, Layer, Creepy, Horror 7.wav",
+    "region": [
+      2.87,
+      3.6
+    ],
+    "family": "riser",
+    "LibraryPeak": 0.6,
+    "events": [
+      1,
+      21,
+      115
+    ],
+    "recipe": "riser/air",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "7429b735bb4da00117a867f9",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 3133 ms",
+    "textOnlyFrames": [
+      1,
+      21,
+      115
+    ],
+    "speedOnly": "3 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1533 ms",
+    "speedOnlyFrames": [
+      1,
+      14,
+      72,
+      118
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "glyph-tile-assemble",
+    "candidates": [
+      {
+        "id": "286f3cd2989d8e5022905f3c",
+        "url": "/audio-lab/library-286f3cd2989d8e5022905f3c.wav",
+        "name": "Click_01.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Clicks\\Click_01.wav",
+        "family": "click",
+        "region": [
+          0.25,
+          0.54
+        ],
+        "features": {
+          "start": 0.25,
+          "end": 0.54,
+          "hit": 0.25,
+          "attack": 0,
+          "centroid": 1164.7299656360262,
+          "high": 0.0010137702660770673,
+          "crest": 4.365133285522461,
+          "overload": 0
+        },
+        "score": 5.69,
+        "method": "click · 290 ms · ataque 0 ms · centro espectral 1165 Hz · 4 regiones"
+      },
+      {
+        "id": "cb7a45b50ee4b77e5ee71af6",
+        "url": "/audio-lab/library-cb7a45b50ee4b77e5ee71af6.wav",
+        "name": "lamp-click_on_off-104823.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\lamp-click_on_off-104823.mp3",
+        "family": "click",
+        "region": [
+          0.4,
+          0.44
+        ],
+        "features": {
+          "start": 0.4,
+          "end": 0.44,
+          "hit": 0.4,
+          "attack": 0,
+          "centroid": 2358.919694507219,
+          "high": 0.1711412965079782,
+          "crest": 5.83085298538208,
+          "overload": 0
+        },
+        "score": 5.33,
+        "method": "click · 40 ms · ataque 0 ms · centro espectral 2359 Hz · 13 regiones"
+      },
+      {
+        "id": "1962e4da890f2fde6d785ac2",
+        "url": "/audio-lab/library-1962e4da890f2fde6d785ac2.wav",
+        "name": "Electric power surge protector turned on with beep and loud relay clicks, pause, relay click with buzz2.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\Omar Alvarado - Household, kitchen and hotel sounds\\Electric power surge protector turned on with beep and loud relay clicks, pause, relay click with buzz2.wav",
+        "family": "click",
+        "region": [
+          1.29,
+          1.31
+        ],
+        "features": {
+          "start": 1.29,
+          "end": 1.31,
+          "hit": 1.29,
+          "attack": 0,
+          "centroid": 1095.1945955921187,
+          "high": 0.05852609786316259,
+          "crest": 4.807977199554443,
+          "overload": 0
+        },
+        "score": 5.04,
+        "method": "click · 20 ms · ataque 0 ms · centro espectral 1095 Hz · 4 regiones"
+      }
+    ],
+    "matched": 60,
+    "library": "Click_01.wav",
+    "region": [
+      0.25,
+      0.54
+    ],
+    "family": "click",
+    "LibraryPeak": 0.6,
+    "events": [
+      1,
+      24
+    ],
+    "recipe": "click/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "286f3cd2989d8e5022905f3c",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 767 ms",
+    "textOnlyFrames": [
+      1,
+      24
+    ],
+    "speedOnly": "3 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 467 ms",
+    "speedOnlyFrames": [
+      1,
+      15
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "paper-cutout-assemble",
+    "candidates": [
+      {
+        "id": "286f3cd2989d8e5022905f3c",
+        "url": "/audio-lab/library-286f3cd2989d8e5022905f3c.wav",
+        "name": "Click_01.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Clicks\\Click_01.wav",
+        "family": "click",
+        "region": [
+          0.25,
+          0.54
+        ],
+        "features": {
+          "start": 0.25,
+          "end": 0.54,
+          "hit": 0.25,
+          "attack": 0,
+          "centroid": 1164.7299656360262,
+          "high": 0.0010137702660770673,
+          "crest": 4.365133285522461,
+          "overload": 0
+        },
+        "score": 5.8,
+        "method": "click · 290 ms · ataque 0 ms · centro espectral 1165 Hz · 4 regiones"
+      },
+      {
+        "id": "cb7a45b50ee4b77e5ee71af6",
+        "url": "/audio-lab/library-cb7a45b50ee4b77e5ee71af6.wav",
+        "name": "lamp-click_on_off-104823.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\lamp-click_on_off-104823.mp3",
+        "family": "click",
+        "region": [
+          0.4,
+          0.44
+        ],
+        "features": {
+          "start": 0.4,
+          "end": 0.44,
+          "hit": 0.4,
+          "attack": 0,
+          "centroid": 2358.919694507219,
+          "high": 0.1711412965079782,
+          "crest": 5.83085298538208,
+          "overload": 0
+        },
+        "score": 5.73,
+        "method": "click · 40 ms · ataque 0 ms · centro espectral 2359 Hz · 13 regiones"
+      },
+      {
+        "id": "7a446e2e86c6f1907cfa93a7",
+        "url": "/audio-lab/library-7a446e2e86c6f1907cfa93a7.wav",
+        "name": "G4F SFX11 - ExoInterface - Cursor Click 25.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\G4F SFX - SFX11 - ExoInterface\\G4F SFX11 - ExoInterface - Cursor Click 25.wav",
+        "family": "click",
+        "region": [
+          0.15,
+          0.34
+        ],
+        "features": {
+          "start": 0.15,
+          "end": 0.34,
+          "hit": 0.15,
+          "attack": 0,
+          "centroid": 3561.6653828066856,
+          "high": 0.40398031878696183,
+          "crest": 5.220415115356445,
+          "overload": 0
+        },
+        "score": 5.54,
+        "method": "click · 190 ms · ataque 0 ms · centro espectral 3562 Hz · 1 regiones"
+      }
+    ],
+    "matched": 60,
+    "library": "Click_01.wav",
+    "region": [
+      0.25,
+      0.54
+    ],
+    "family": "click",
+    "LibraryPeak": 0.6,
+    "events": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20
+    ],
+    "recipe": "click/soft",
+    "LibraryMaxLocalPeakErrorMs": 1.0,
+    "selectedId": "286f3cd2989d8e5022905f3c",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 1.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 8 eventos visuales · clip de 5.00 s · intervalo típico 133 ms",
+    "textOnlyFrames": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28
+    ],
+    "speedOnly": "3 palabras · 5 eventos visuales · clip de 5.00 s · intervalo típico 133 ms",
+    "speedOnlyFrames": [
+      0,
+      4,
+      8,
+      12,
+      16
+    ],
+    "pageErrors": []
+  }
+]

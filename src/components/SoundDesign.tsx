@@ -50,6 +50,19 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     if(!response.ok)throw Error('Segmento no disponible');
     const buffer=await decode(await response.arrayBuffer());
     if(signal.aborted)return;
+    // An onset at the first sample cannot receive the mixer's leading fade.
+    // Check the decoded take at output rate before adopting it.
+    let max=0,hit=0,rail=0;
+    for(let channel=0;channel<Math.min(2,buffer.numberOfChannels);channel++){
+      const samples=buffer.getChannelData(channel);
+      for(let i=0;i<samples.length;i++){
+        const level=Math.abs(samples[i]);
+        if(level>max){max=level;hit=i}
+        if(level>=.999)rail++;
+      }
+    }
+    if(max<.0001 || rail>buffer.length*Math.min(2,buffer.numberOfChannels)*.025 || hit===0 && max>.25)
+      throw Error('Transitorio sin margen para el fade o región saturada');
     setLibraryPath(candidate.path);setSourceUrl(candidate.url);setLibrary(buffer);setSourceName(candidate.name);setMode('Library');setDirectorStatus(candidate.method);
   }
   async function auditionCandidate(candidate:LibraryCandidate){
@@ -71,7 +84,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
       setSoundFamily(preferred);
     }
     try{
-      const response=await fetch('/api/library-auto',{signal:controller.signal,method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({family:preferred,duration})});
+      const response=await fetch('/api/library-auto',{signal:controller.signal,method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({template:props.animationStyle,family:preferred,duration})});
       const candidate=await response.json();if(!response.ok)throw Error(candidate.error);
       if(controller.signal.aborted)return;
       const options:LibraryCandidate[]=candidate.candidates;
@@ -89,7 +102,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   const [trim,setTrim]=React.useState(0),[tail,setTail]=React.useState(100);
 
   const signature=JSON.stringify([props.animationStyle,props.text,frames,analysis.events]);
-  const [ai,setAi]=React.useState<{strategy:{voice:string;landing:string;attack?:string};signature:string;events:number[];model:string;variant:number;gain:number;tail:number;offset:number;reason:string}|null>(null);
+  const [ai,setAi]=React.useState<{strategy:{voice:string;landing:string;attack?:string};signature:string;events:number[];model:string;variant:number;gain:number;tail:number;offset:number;reason:string;candidateId?:string}|null>(null);
   const [port,setPort]=React.useState(3218),[model,setModel]=React.useState(''),[models,setModels]=React.useState<string[]>([]);
   const [approved,setApproved]=React.useState<typeof ai>(null);
   const [chosen,setChosen]=React.useState('');
@@ -126,7 +139,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     const controller=new AbortController();request.current=controller;
     setDirectorStatus('Consultando el modelo local…');
     try{
-      const res=await fetch('/api/sound-director',{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({candidates:candidates.map(({id,name,method})=>({id,name,method})),template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,heads:analysis.heads,motion:{decelerationFrames:analysis.decelerations.slice(0,12),peakFrames:analysis.peaks.slice(0,12),settleFrames:analysis.stops.slice(-12),backwardSamples:analysis.rebounds.length,visibleChanges:analysis.visibleChanges},port,model})});
+      const res=await fetch('/api/sound-director',{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({candidates:candidates.map(c=>c.id),template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,heads:analysis.heads,motion:{decelerationFrames:analysis.decelerations.slice(0,12),peakFrames:analysis.peaks.slice(0,12),settleFrames:analysis.stops.slice(-12),backwardSamples:analysis.rebounds.length,visibleChanges:analysis.visibleChanges},port,model})});
       const data=await res.json();
       if(!controller.signal.aborted){
         if(data.events)setAi({...data,signature});
@@ -212,7 +225,7 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
     <section><strong>Sugerencias por reglas locales</strong><div className="flex gap-2">{styles.map(s=><button key={s.name} className={button} onClick={()=>{setChosen('');setDensity(s.density);setGain(s.gain);setTail(s.tail);setSeed(s.variant)}}>{s.name}</button>)}</div></section>
     <div className="my-2 flex flex-wrap items-center gap-2">Alternativas Earshot {choices.map(voice=><button type="button" key={voice} className={button} aria-pressed={mode==='Procedural' && soundFamily===voice} onClick={()=>{setMode('Procedural');setSoundFamily(voice)}}>{voices[voice].recipe}</button>)}</div>
     {candidates.length>0 && <section aria-label="Alternativas de biblioteca">{candidates.map((c,i)=><button type="button" key={c.id} className={button} title={c.method} aria-pressed={mode==='Library' && sourceUrl===c.url} onClick={()=>auditionCandidate(c)}>Library {String.fromCharCode(65+i)} · {c.name}</button>)}</section>}
-    <section><strong>AI Sound Suggestions</strong> <select aria-label="Proveedor local" value={port} onChange={e=>{setPort(+e.target.value);setModel('');setModels([])}}>{[[3218,"Audio Lab · llama.cpp"],[11434,"Ollama"],[1234,"API local 1234"],[8080,"API local 8080"]].map(([v,n])=><option key={v} value={v}>{n}</option>)}</select> <button className={button} onClick={async()=>{try{const r=await fetch("/api/sound-director",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({probe:true,port})});const d=await r.json();setModels(d.models||[]);setDirectorStatus(d.models?.length?"Conectado":d.error)}catch{setDirectorStatus("Sin conexión")}}}>Comprobar conexión</button> {models.length>0 && <select aria-label="Modelo" value={model||models[0]} onChange={e=>setModel(e.target.value)}>{models.map(m=><option key={m}>{m}</option>)}</select>} <button className={button} disabled={!analysis.events.length} onClick={suggest}>Consultar IA local</button> {directorStatus} {ai?.signature===signature && <button className={button} title={ai.reason} onClick={()=>{setApproved(ai);setSoundFamily(ai.strategy.voice);setMode('Procedural');setChosen(signature);setDensity(1);setSeed(ai.variant);setGain(ai.gain);setTail(ai.tail);setOffset(ai.offset)}}>Aplicar {ai.events.length} acentos · {ai.model}</button>}</section>
+    <section><strong>AI Sound Suggestions</strong> <select aria-label="Proveedor local" value={port} onChange={e=>{setPort(+e.target.value);setModel('');setModels([])}}>{[[3218,"Audio Lab · llama.cpp"],[11434,"Ollama"],[1234,"API local 1234"],[8080,"API local 8080"]].map(([v,n])=><option key={v} value={v}>{n}</option>)}</select> <button className={button} onClick={async()=>{try{const r=await fetch("/api/sound-director",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({probe:true,port})});const d=await r.json();setModels(d.models||[]);setDirectorStatus(d.models?.length?"Conectado":d.error)}catch{setDirectorStatus("Sin conexión")}}}>Comprobar conexión</button> {models.length>0 && <select aria-label="Modelo" value={model||models[0]} onChange={e=>setModel(e.target.value)}>{models.map(m=><option key={m}>{m}</option>)}</select>} <button className={button} disabled={!analysis.events.length} onClick={suggest}>Consultar IA local</button> {directorStatus} {ai?.signature===signature && <button className={button} title={ai.reason} onClick={()=>{setApproved(ai);setSoundFamily(ai.strategy.voice);const take=candidates.find(c=>c.id===ai.candidateId);if(take)void auditionCandidate(take);else setMode('Procedural');setChosen(signature);setDensity(1);setSeed(ai.variant);setGain(ai.gain);setTail(ai.tail);setOffset(ai.offset)}}>Aplicar {ai.events.length} acentos · {ai.model}</button>}</section>
     <div className="my-2 flex flex-wrap items-center gap-2">
       <button className={button} onClick={()=>setProps(prev=>({...prev,soundDesign:{version:1,template:props.animationStyle,mode:mode==='Library'?'Library':'Procedural',sourceName,sourceUrl,libraryPath,method:chosen===signature && approved ? approved.model : 'Reglas locales',recipe:take.recipe,recipeSeed:take.seed,fadeInMs:1,fadeOutMs:5,eventVersion:1,events:analysis.events,family:soundFamily,seed,density,gain,offset,trim,tail,plan:chosen===signature?approved:undefined}}))}>Guardar diseño en proyecto</button>
       <label><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/> Audio</label>

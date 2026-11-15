@@ -1,0 +1,443 @@
+[
+  {
+    "template": "kinetic-box-sequence",
+    "candidates": [
+      {
+        "id": "286f3cd2989d8e5022905f3c",
+        "url": "/audio-lab/library-286f3cd2989d8e5022905f3c.wav",
+        "name": "Click_01.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Clicks\\Click_01.wav",
+        "family": "click",
+        "region": [
+          0.25,
+          0.54
+        ],
+        "features": {
+          "start": 0.25,
+          "end": 0.54,
+          "hit": 0.25,
+          "attack": 0,
+          "centroid": 1164.7299656360262,
+          "high": 0.0010137702660770673,
+          "crest": 4.365133285522461,
+          "overload": 0
+        },
+        "score": 6.3,
+        "method": "click · 290 ms · ataque 0 ms · centro espectral 1165 Hz · 4 regiones"
+      },
+      {
+        "id": "cb7a45b50ee4b77e5ee71af6",
+        "url": "/audio-lab/library-cb7a45b50ee4b77e5ee71af6.wav",
+        "name": "lamp-click_on_off-104823.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\lamp-click_on_off-104823.mp3",
+        "family": "click",
+        "region": [
+          0.4,
+          0.44
+        ],
+        "features": {
+          "start": 0.4,
+          "end": 0.44,
+          "hit": 0.4,
+          "attack": 0,
+          "centroid": 2358.919694507219,
+          "high": 0.1711412965079782,
+          "crest": 5.83085298538208,
+          "overload": 0
+        },
+        "score": 5.45,
+        "method": "click · 40 ms · ataque 0 ms · centro espectral 2359 Hz · 13 regiones"
+      },
+      {
+        "id": "7a446e2e86c6f1907cfa93a7",
+        "url": "/audio-lab/library-7a446e2e86c6f1907cfa93a7.wav",
+        "name": "G4F SFX11 - ExoInterface - Cursor Click 25.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\G4F SFX - SFX11 - ExoInterface\\G4F SFX11 - ExoInterface - Cursor Click 25.wav",
+        "family": "click",
+        "region": [
+          0.15,
+          0.34
+        ],
+        "features": {
+          "start": 0.15,
+          "end": 0.34,
+          "hit": 0.15,
+          "attack": 0,
+          "centroid": 3561.6653828066856,
+          "high": 0.40398031878696183,
+          "crest": 5.220415115356445,
+          "overload": 0
+        },
+        "score": 5.27,
+        "method": "click · 190 ms · ataque 0 ms · centro espectral 3562 Hz · 1 regiones"
+      }
+    ],
+    "matched": 60,
+    "library": "Click_01.wav",
+    "region": [
+      0.25,
+      0.54
+    ],
+    "family": "click",
+    "LibraryPeak": 0.6,
+    "events": [
+      1,
+      12,
+      21,
+      30,
+      51,
+      60,
+      122
+    ],
+    "recipe": "click/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "286f3cd2989d8e5022905f3c",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 11 eventos visuales · clip de 5.00 s · intervalo típico 367 ms",
+    "textOnlyFrames": [
+      1,
+      12,
+      21,
+      30,
+      51,
+      60,
+      81,
+      90,
+      111,
+      120,
+      138
+    ],
+    "speedOnly": "3 palabras · 7 eventos visuales · clip de 5.00 s · intervalo típico 233 ms",
+    "speedOnlyFrames": [
+      1,
+      8,
+      14,
+      19,
+      32,
+      38,
+      77
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "ink-stamp-print",
+    "candidates": [
+      {
+        "id": "c16693f81ee52885f8f7638f",
+        "url": "/audio-lab/library-c16693f81ee52885f8f7638f.wav",
+        "name": "Signum_source_composite_impact_2.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Blik Blinks - SIGNUM_ Sci-fi Cinematic SFX Pack\\Signum_source_composite_impact_2.wav",
+        "family": "impact",
+        "region": [
+          0.64,
+          1.14
+        ],
+        "features": {
+          "start": 0.64,
+          "end": 1.14,
+          "hit": 0.72,
+          "attack": 0.08,
+          "centroid": 86.08372824291789,
+          "high": 2.736198647535402e-07,
+          "crest": 4.321688652038574,
+          "overload": 0
+        },
+        "score": 8.9,
+        "method": "impact · 500 ms · ataque 80 ms · centro espectral 86 Hz · 8 regiones · CLAP 0.168",
+        "semantic": 0.1683436632156372
+      },
+      {
+        "id": "68b5381e38609e4159195b95",
+        "url": "/audio-lab/library-68b5381e38609e4159195b95.wav",
+        "name": "Impact_Boom_Distorted_02.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Bottle Rocket Fx - Impact Collection\\Impact_Boom_Distorted_02.wav",
+        "family": "impact",
+        "region": [
+          0.43,
+          1.16
+        ],
+        "features": {
+          "start": 0.43,
+          "end": 1.16,
+          "hit": 0.49,
+          "attack": 0.06,
+          "centroid": 72.62597543582285,
+          "high": 0.0024661768022306366,
+          "crest": 4.41984224319458,
+          "overload": 0
+        },
+        "score": 8.44,
+        "method": "impact · 730 ms · ataque 60 ms · centro espectral 73 Hz · 8 regiones · CLAP 0.089",
+        "semantic": 0.08862310647964478
+      },
+      {
+        "id": "cec4bb122a92dbd32b64a910",
+        "url": "/audio-lab/library-cec4bb122a92dbd32b64a910.wav",
+        "name": "Bluezone-BC0212-impact-007.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Bluezone - Cinematic Tension Sound Effects\\Bluezone-BC0212-impact-007.wav",
+        "family": "impact",
+        "region": [
+          0.42,
+          1.32
+        ],
+        "features": {
+          "start": 0.42,
+          "end": 1.32,
+          "hit": 0.51,
+          "attack": 0.09,
+          "centroid": 97.63566343298481,
+          "high": 0.0006527498374692753,
+          "crest": 3.525404930114746,
+          "overload": 0
+        },
+        "score": 8.22,
+        "method": "impact · 900 ms · ataque 90 ms · centro espectral 98 Hz · 8 regiones · CLAP 0.047",
+        "semantic": 0.0466679222881794
+      }
+    ],
+    "matched": 666,
+    "library": "Signum_source_composite_impact_2.wav",
+    "region": [
+      0.64,
+      1.14
+    ],
+    "family": "impact",
+    "LibraryPeak": 0.6,
+    "events": [
+      6
+    ],
+    "recipe": "impact/punch",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "c16693f81ee52885f8f7638f",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnlyFrames": [
+      6
+    ],
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "speedOnlyFrames": [
+      4
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "dual-text-layers",
+    "candidates": [
+      {
+        "id": "c16693f81ee52885f8f7638f",
+        "url": "/audio-lab/library-c16693f81ee52885f8f7638f.wav",
+        "name": "Signum_source_composite_impact_2.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Blik Blinks - SIGNUM_ Sci-fi Cinematic SFX Pack\\Signum_source_composite_impact_2.wav",
+        "family": "impact",
+        "region": [
+          0.64,
+          1.14
+        ],
+        "features": {
+          "start": 0.64,
+          "end": 1.14,
+          "hit": 0.72,
+          "attack": 0.08,
+          "centroid": 86.08372824291789,
+          "high": 2.736198647535402e-07,
+          "crest": 4.321688652038574,
+          "overload": 0
+        },
+        "score": 8.9,
+        "method": "impact · 500 ms · ataque 80 ms · centro espectral 86 Hz · 8 regiones · CLAP 0.168",
+        "semantic": 0.1683436632156372
+      },
+      {
+        "id": "68b5381e38609e4159195b95",
+        "url": "/audio-lab/library-68b5381e38609e4159195b95.wav",
+        "name": "Impact_Boom_Distorted_02.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Bottle Rocket Fx - Impact Collection\\Impact_Boom_Distorted_02.wav",
+        "family": "impact",
+        "region": [
+          0.43,
+          1.16
+        ],
+        "features": {
+          "start": 0.43,
+          "end": 1.16,
+          "hit": 0.49,
+          "attack": 0.06,
+          "centroid": 72.62597543582285,
+          "high": 0.0024661768022306366,
+          "crest": 4.41984224319458,
+          "overload": 0
+        },
+        "score": 8.44,
+        "method": "impact · 730 ms · ataque 60 ms · centro espectral 73 Hz · 8 regiones · CLAP 0.089",
+        "semantic": 0.08862310647964478
+      },
+      {
+        "id": "cec4bb122a92dbd32b64a910",
+        "url": "/audio-lab/library-cec4bb122a92dbd32b64a910.wav",
+        "name": "Bluezone-BC0212-impact-007.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\Bluezone - Cinematic Tension Sound Effects\\Bluezone-BC0212-impact-007.wav",
+        "family": "impact",
+        "region": [
+          0.42,
+          1.32
+        ],
+        "features": {
+          "start": 0.42,
+          "end": 1.32,
+          "hit": 0.51,
+          "attack": 0.09,
+          "centroid": 97.63566343298481,
+          "high": 0.0006527498374692753,
+          "crest": 3.525404930114746,
+          "overload": 0
+        },
+        "score": 8.22,
+        "method": "impact · 900 ms · ataque 90 ms · centro espectral 98 Hz · 8 regiones · CLAP 0.047",
+        "semantic": 0.0466679222881794
+      }
+    ],
+    "matched": 666,
+    "library": "Signum_source_composite_impact_2.wav",
+    "region": [
+      0.64,
+      1.14
+    ],
+    "family": "impact",
+    "LibraryPeak": 0.6,
+    "events": [
+      6
+    ],
+    "recipe": "impact/punch",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "c16693f81ee52885f8f7638f",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnlyFrames": [
+      6
+    ],
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "speedOnlyFrames": [
+      4
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "viral-text",
+    "candidates": [
+      {
+        "id": "cb53e22d9a9285693d6b8a52",
+        "url": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+        "name": "multi-pop-6-188170.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\multi-pop-6-188170.mp3",
+        "family": "pop",
+        "region": [
+          0.03,
+          0.06
+        ],
+        "features": {
+          "start": 0.03,
+          "end": 0.06,
+          "hit": 0.03,
+          "attack": 0,
+          "centroid": 582.5340956290146,
+          "high": 0.0002753543408980375,
+          "crest": 2.627671718597412,
+          "overload": 0
+        },
+        "score": 6.16,
+        "method": "pop · 30 ms · ataque 0 ms · centro espectral 583 Hz · 3 regiones · CLAP 0.377",
+        "semantic": 0.3767259120941162
+      },
+      {
+        "id": "dd8a355a85c264dd494458d2",
+        "url": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+        "name": "floraphonic-ui-pop-up-5-197889.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\floraphonic-ui-pop-up-5-197889.mp3",
+        "family": "pop",
+        "region": [
+          0.12,
+          0.16
+        ],
+        "features": {
+          "start": 0.12,
+          "end": 0.16,
+          "hit": 0.12,
+          "attack": 0,
+          "centroid": 668.9580452727824,
+          "high": 0.0016106854471005202,
+          "crest": 3.660846471786499,
+          "overload": 0
+        },
+        "score": 6.37,
+        "method": "pop · 40 ms · ataque 0 ms · centro espectral 669 Hz · 3 regiones · CLAP 0.306",
+        "semantic": 0.3061373829841614
+      },
+      {
+        "id": "7d2c852fdfbb5e2ebd106e55",
+        "url": "/audio-lab/library-7d2c852fdfbb5e2ebd106e55.wav",
+        "name": "Pop 31.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC - Game Audio Bundle\\Membrans - Pops Sound Pack 01\\Pop 31.wav",
+        "family": "pop",
+        "region": [
+          0,
+          0.03
+        ],
+        "features": {
+          "start": 0,
+          "end": 0.03,
+          "hit": 0,
+          "attack": 0,
+          "centroid": 696.4435295003047,
+          "high": 0.004396014540112309,
+          "crest": 5.324274063110352,
+          "overload": 0
+        },
+        "score": 5.49,
+        "method": "pop · 30 ms · ataque 0 ms · centro espectral 696 Hz · 1 regiones · CLAP 0.252",
+        "semantic": 0.2515612542629242
+      }
+    ],
+    "matched": 39,
+    "library": "multi-pop-6-188170.mp3",
+    "region": [
+      0.03,
+      0.06
+    ],
+    "family": "pop",
+    "LibraryPeak": 0.6,
+    "events": [
+      3,
+      24,
+      45
+    ],
+    "recipe": "pop/0",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "cb53e22d9a9285693d6b8a52",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 700 ms",
+    "textOnlyFrames": [
+      3,
+      24,
+      45
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 400 ms",
+    "speedOnlyFrames": [
+      2,
+      14,
+      26
+    ],
+    "pageErrors": []
+  }
+]

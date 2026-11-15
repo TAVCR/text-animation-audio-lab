@@ -1,0 +1,577 @@
+[
+  {
+    "template": "bubble-pop",
+    "candidates": [
+      {
+        "id": "dd8a355a85c264dd494458d2",
+        "url": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+        "name": "floraphonic-ui-pop-up-5-197889.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\floraphonic-ui-pop-up-5-197889.mp3",
+        "family": "pop",
+        "region": [
+          0.12,
+          0.16
+        ],
+        "features": {
+          "start": 0.12,
+          "end": 0.16,
+          "hit": 0.12,
+          "attack": 0,
+          "centroid": 668.9580452727824,
+          "high": 0.0016106854471005202,
+          "crest": 3.660846471786499,
+          "overload": 0
+        },
+        "score": 6.45,
+        "method": "pop · 40 ms · ataque 0 ms · centro espectral 669 Hz · 3 regiones · CLAP 0.306",
+        "semantic": 0.3061373829841614
+      },
+      {
+        "id": "cb53e22d9a9285693d6b8a52",
+        "url": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+        "name": "multi-pop-6-188170.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\multi-pop-6-188170.mp3",
+        "family": "pop",
+        "region": [
+          0.03,
+          0.06
+        ],
+        "features": {
+          "start": 0.03,
+          "end": 0.06,
+          "hit": 0.03,
+          "attack": 0,
+          "centroid": 582.5340956290146,
+          "high": 0.0002753543408980375,
+          "crest": 2.627671718597412,
+          "overload": 0
+        },
+        "score": 6.23,
+        "method": "pop · 30 ms · ataque 0 ms · centro espectral 583 Hz · 3 regiones · CLAP 0.377",
+        "semantic": 0.3767259120941162
+      },
+      {
+        "id": "7d2c852fdfbb5e2ebd106e55",
+        "url": "/audio-lab/library-7d2c852fdfbb5e2ebd106e55.wav",
+        "name": "Pop 31.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC - Game Audio Bundle\\Membrans - Pops Sound Pack 01\\Pop 31.wav",
+        "family": "pop",
+        "region": [
+          0,
+          0.03
+        ],
+        "features": {
+          "start": 0,
+          "end": 0.03,
+          "hit": 0,
+          "attack": 0,
+          "centroid": 696.4435295003047,
+          "high": 0.004396014540112309,
+          "crest": 5.324274063110352,
+          "overload": 0
+        },
+        "score": 5.56,
+        "method": "pop · 30 ms · ataque 0 ms · centro espectral 696 Hz · 1 regiones · CLAP 0.252",
+        "semantic": 0.2515612542629242
+      }
+    ],
+    "matched": 39,
+    "library": "floraphonic-ui-pop-up-5-197889.mp3",
+    "region": [
+      0.12,
+      0.16
+    ],
+    "family": "pop",
+    "LibraryPeak": 0.6,
+    "events": [
+      1,
+      13,
+      26
+    ],
+    "recipe": "pop/0",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "dd8a355a85c264dd494458d2",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 5 eventos visuales · clip de 5.00 s · intervalo típico 433 ms",
+    "textOnlyFrames": [
+      1,
+      13,
+      26,
+      39,
+      52
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 267 ms",
+    "speedOnlyFrames": [
+      1,
+      9,
+      17
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "apple-style",
+    "candidates": [
+      {
+        "id": "dd8a355a85c264dd494458d2",
+        "url": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+        "name": "floraphonic-ui-pop-up-5-197889.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\mix\\floraphonic-ui-pop-up-5-197889.mp3",
+        "family": "pop",
+        "region": [
+          0.12,
+          0.16
+        ],
+        "features": {
+          "start": 0.12,
+          "end": 0.16,
+          "hit": 0.12,
+          "attack": 0,
+          "centroid": 668.9580452727824,
+          "high": 0.0016106854471005202,
+          "crest": 3.660846471786499,
+          "overload": 0
+        },
+        "score": 6.9,
+        "method": "pop · 40 ms · ataque 0 ms · centro espectral 669 Hz · 3 regiones · CLAP 0.306",
+        "semantic": 0.3061373829841614
+      },
+      {
+        "id": "cb53e22d9a9285693d6b8a52",
+        "url": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+        "name": "multi-pop-6-188170.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\336 SFX\\MIX\\multi-pop-6-188170.mp3",
+        "family": "pop",
+        "region": [
+          0.03,
+          0.06
+        ],
+        "features": {
+          "start": 0.03,
+          "end": 0.06,
+          "hit": 0.03,
+          "attack": 0,
+          "centroid": 582.5340956290146,
+          "high": 0.0002753543408980375,
+          "crest": 2.627671718597412,
+          "overload": 0
+        },
+        "score": 6.59,
+        "method": "pop · 30 ms · ataque 0 ms · centro espectral 583 Hz · 3 regiones · CLAP 0.377",
+        "semantic": 0.3767259120941162
+      },
+      {
+        "id": "8f8e686fb50a43ea0260e32f",
+        "url": "/audio-lab/library-8f8e686fb50a43ea0260e32f.wav",
+        "name": "Champagne_Cork_Pop_Fienup_001.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC - Game Audio Bundle\\Soundopolis - Foley Plus_Full\\Champagne_Cork_Pop_Fienup_001.wav",
+        "family": "pop",
+        "region": [
+          0,
+          0.1
+        ],
+        "features": {
+          "start": 0,
+          "end": 0.1,
+          "hit": 0.01,
+          "attack": 0.01,
+          "centroid": 556.3208759153605,
+          "high": 0.0016768917110577524,
+          "crest": 3.552307605743408,
+          "overload": 0
+        },
+        "score": 6.52,
+        "method": "pop · 100 ms · ataque 10 ms · centro espectral 556 Hz · 1 regiones · CLAP 0.037",
+        "semantic": 0.03731894493103027
+      }
+    ],
+    "matched": 39,
+    "library": "floraphonic-ui-pop-up-5-197889.mp3",
+    "region": [
+      0.12,
+      0.16
+    ],
+    "family": "pop",
+    "LibraryPeak": 0.6,
+    "events": [
+      1,
+      3,
+      6,
+      8,
+      11,
+      13,
+      18,
+      21,
+      23,
+      26,
+      28,
+      33,
+      36,
+      38,
+      41
+    ],
+    "recipe": "pop/0",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "dd8a355a85c264dd494458d2",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 24 eventos visuales · clip de 5.00 s · intervalo típico 100 ms",
+    "textOnlyFrames": [
+      1,
+      3,
+      6,
+      8,
+      11,
+      16,
+      18,
+      21,
+      23,
+      26,
+      31,
+      36,
+      38,
+      41,
+      43,
+      48,
+      51,
+      53,
+      56,
+      58,
+      61,
+      63,
+      66,
+      68
+    ],
+    "speedOnly": "3 palabras · 15 eventos visuales · clip de 5.00 s · intervalo típico 67 ms",
+    "speedOnlyFrames": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      11,
+      13,
+      15,
+      16,
+      18,
+      21,
+      22,
+      24,
+      26
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "glitch",
+    "candidates": [
+      {
+        "id": "46e50f7301e6c23e2d9e4973",
+        "url": "/audio-lab/library-46e50f7301e6c23e2d9e4973.wav",
+        "name": "Engine_Distortion_Interference_002.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2016- Game Audio Bundle\\MatiasMacSD - MENTAL STRAIN\\Engine_Distortion_Interference_002.wav",
+        "family": "pulse",
+        "region": [
+          13.297,
+          13.407
+        ],
+        "features": {
+          "start": 13.297,
+          "end": 13.407,
+          "hit": 13.347,
+          "attack": 0.05,
+          "centroid": 973.7020119307244,
+          "high": 0.04784018951058716,
+          "crest": 4.017916679382324,
+          "overload": 0
+        },
+        "score": 7.35,
+        "method": "pulse · 110 ms · ataque 50 ms · centro espectral 974 Hz · 24 regiones"
+      },
+      {
+        "id": "efd6c3fedf65efa3bf250296",
+        "url": "/audio-lab/library-efd6c3fedf65efa3bf250296.wav",
+        "name": "SFXW002_Crowd Interference_C3.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\SoundFxwizard - SYNTHESIZED MOODS\\SFXW002_Crowd Interference_C3.wav",
+        "family": "pulse",
+        "region": [
+          19.18,
+          19.32
+        ],
+        "features": {
+          "start": 19.18,
+          "end": 19.32,
+          "hit": 19.22,
+          "attack": 0.04,
+          "centroid": 1824.4548278780549,
+          "high": 0.030183154926511063,
+          "crest": 3.8586111068725586,
+          "overload": 0
+        },
+        "score": 7.06,
+        "method": "pulse · 140 ms · ataque 40 ms · centro espectral 1824 Hz · 32 regiones"
+      },
+      {
+        "id": "d95359fcd67d17df8523e1f5",
+        "url": "/audio-lab/library-d95359fcd67d17df8523e1f5.wav",
+        "name": "Process Malfunction - Computer Glitch 02.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\Glitchedtones - Process Malfunction\\Process Malfunction - Computer Glitch 02.wav",
+        "family": "pulse",
+        "region": [
+          1.1,
+          1.22
+        ],
+        "features": {
+          "start": 1.1,
+          "end": 1.22,
+          "hit": 1.11,
+          "attack": 0.01,
+          "centroid": 1137.0050659154795,
+          "high": 0.1883142075870337,
+          "crest": 4.4777445793151855,
+          "overload": 0
+        },
+        "score": 6.84,
+        "method": "pulse · 120 ms · ataque 10 ms · centro espectral 1137 Hz · 32 regiones"
+      }
+    ],
+    "matched": 111,
+    "library": "Engine_Distortion_Interference_002.wav",
+    "region": [
+      13.297,
+      13.407
+    ],
+    "family": "pulse",
+    "LibraryPeak": 0.6,
+    "events": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      40,
+      44,
+      48,
+      52,
+      56,
+      80,
+      84,
+      88,
+      92,
+      96,
+      120,
+      124,
+      128,
+      132,
+      136
+    ],
+    "recipe": "glitch/chirp",
+    "LibraryMaxLocalPeakErrorMs": 1.0,
+    "selectedId": "46e50f7301e6c23e2d9e4973",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 1.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 20 eventos visuales · clip de 5.00 s · intervalo típico 133 ms",
+    "textOnlyFrames": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      40,
+      44,
+      48,
+      52,
+      56,
+      80,
+      84,
+      88,
+      92,
+      96,
+      120,
+      124,
+      128,
+      132,
+      136
+    ],
+    "speedOnly": "3 palabras · 30 eventos visuales · clip de 5.00 s · intervalo típico 100 ms",
+    "speedOnlyFrames": [
+      0,
+      3,
+      5,
+      8,
+      10,
+      25,
+      28,
+      30,
+      33,
+      35,
+      50,
+      53,
+      55,
+      58,
+      60,
+      75,
+      78,
+      80,
+      83,
+      85,
+      100,
+      103,
+      105,
+      108,
+      110,
+      125,
+      128,
+      130,
+      133,
+      135
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "shake-flicker",
+    "candidates": [
+      {
+        "id": "5d87ac3eff15869c46577177",
+        "url": "/audio-lab/library-5d87ac3eff15869c46577177.wav",
+        "name": "Glitch Abstract FX (19).wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2020 - Game Audio Bundle\\Glitchedtones - Glitches\\Glitch Abstract FX (19).wav",
+        "family": "digital",
+        "region": [
+          0.42,
+          0.76
+        ],
+        "features": {
+          "start": 0.42,
+          "end": 0.76,
+          "hit": 0.46,
+          "attack": 0.04,
+          "centroid": 1266.915433032562,
+          "high": 0.1319710227750442,
+          "crest": 4.578058242797852,
+          "overload": 0
+        },
+        "score": 8.27,
+        "method": "digital · 340 ms · ataque 40 ms · centro espectral 1267 Hz · 8 regiones · CLAP 0.164",
+        "semantic": 0.1639813780784607
+      },
+      {
+        "id": "7c28d5d6877c3e6e8d3ba033",
+        "url": "/audio-lab/library-7c28d5d6877c3e6e8d3ba033.wav",
+        "name": "Granular Texture UI Glitch 02.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\Glitchedtones - Granular Textures\\Granular Texture UI Glitch 02.wav",
+        "family": "digital",
+        "region": [
+          11.88,
+          12.04
+        ],
+        "features": {
+          "start": 11.88,
+          "end": 12.04,
+          "hit": 11.9,
+          "attack": 0.02,
+          "centroid": 1736.6916591405234,
+          "high": 0.03911687809470004,
+          "crest": 6.093417644500732,
+          "overload": 0
+        },
+        "score": 7.64,
+        "method": "digital · 160 ms · ataque 20 ms · centro espectral 1737 Hz · 32 regiones · CLAP 0.251",
+        "semantic": 0.2514004111289978
+      },
+      {
+        "id": "ab6274c2a20b958ca654b0ae",
+        "url": "/audio-lab/library-ab6274c2a20b958ca654b0ae.wav",
+        "name": "Glitch_Error_Malfunction_018.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\MatiasMacSD - INACCURACY (GLITCHES)\\Glitch_Error_Malfunction_018.wav",
+        "family": "digital",
+        "region": [
+          0.58,
+          0.62
+        ],
+        "features": {
+          "start": 0.58,
+          "end": 0.62,
+          "hit": 0.58,
+          "attack": 0,
+          "centroid": 2456.143899624441,
+          "high": 0.23813261031516678,
+          "crest": 4.387581825256348,
+          "overload": 0
+        },
+        "score": 7.4,
+        "method": "digital · 40 ms · ataque 0 ms · centro espectral 2456 Hz · 8 regiones · CLAP 0.144",
+        "semantic": 0.14351433515548706
+      }
+    ],
+    "matched": 128,
+    "library": "Glitch Abstract FX (19).wav",
+    "region": [
+      0.42,
+      0.76
+    ],
+    "family": "digital",
+    "LibraryPeak": 0.6,
+    "events": [
+      6,
+      16,
+      34,
+      40,
+      107,
+      113,
+      117,
+      121,
+      131,
+      135,
+      149
+    ],
+    "recipe": "glitch/data",
+    "LibraryMaxLocalPeakErrorMs": 7.67,
+    "selectedId": "5d87ac3eff15869c46577177",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 11 eventos visuales · clip de 5.00 s · intervalo típico 333 ms",
+    "textOnlyFrames": [
+      6,
+      16,
+      34,
+      40,
+      107,
+      113,
+      117,
+      121,
+      131,
+      135,
+      149
+    ],
+    "speedOnly": "3 palabras · 17 eventos visuales · clip de 5.00 s · intervalo típico 167 ms",
+    "speedOnlyFrames": [
+      4,
+      10,
+      22,
+      25,
+      67,
+      71,
+      73,
+      76,
+      82,
+      84,
+      93,
+      96,
+      102,
+      106,
+      111,
+      116,
+      119
+    ],
+    "pageErrors": []
+  }
+]

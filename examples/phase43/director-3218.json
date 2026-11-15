@@ -1,0 +1,25 @@
+{
+  "events": [
+    0
+  ],
+  "variant": 0,
+  "candidateId": "6be9931eba35c02a57d2d4bd",
+  "gain": 0.55,
+  "tail": 65,
+  "offset": -1,
+  "model": "audio-director",
+  "strategy": {
+    "intensity": "medium",
+    "attack": "immediate",
+    "voice": "whoosh",
+    "landing": "last",
+    "density": "sparse",
+    "grouping": "phrase",
+    "closing": "rest",
+    "character": "soft",
+    "space": "short"
+  },
+  "raw": "{\"intensity\":\"medium\",\"attack\":\"immediate\",\"voice\":\"whoosh\",\"landing\":\"last\",\"density\":\"sparse\",\"grouping\":\"phrase\",\"closing\":\"rest\",\"character\":\"soft\",\"space\":\"short\",\"candidateId\":\"6be9931eba35c02a57d2d4bd\"}",
+  "correction": null,
+  "reason": "Library sugerida: Fast whoosh.wav · 3 eventos · 1 acentos · fotogramas 1 · cierre libre"
+}

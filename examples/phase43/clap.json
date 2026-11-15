@@ -1,0 +1,414 @@
+{
+  "model": "laion/larger_clap_general",
+  "revision": "16c8cc3159a3c8a31e8ff5ef1f66b0d9ab3667db",
+  "queries": {
+    "whoosh": "a fast airy directional whoosh passing by",
+    "impact": "a single dry heavy impact or stamp",
+    "digital": "a short burst of electronic digital glitch interference",
+    "pop": "a single short elastic bubble pop",
+    "swish": "a soft smooth swishing transition"
+  },
+  "pool": 48,
+  "scores": {
+    "whoosh": {
+      "metadata": [
+        {
+          "id": "8eda146d7f59f7d4ea23a1be",
+          "name": "whoosh.mp3",
+          "url": "/audio-lab/library-8eda146d7f59f7d4ea23a1be.wav",
+          "metadata": 9.4484,
+          "semantic": 0.25043,
+          "combined": 6.9775
+        },
+        {
+          "id": "45e80c56b66af62be6ef64e3",
+          "name": "HKAP2 Seq1.2 Whoosh 5.wav",
+          "url": "/audio-lab/library-45e80c56b66af62be6ef64e3.wav",
+          "metadata": 9.1957,
+          "semantic": -0.00077,
+          "combined": 6.4283
+        },
+        {
+          "id": "6be9931eba35c02a57d2d4bd",
+          "name": "Fast whoosh.wav",
+          "url": "/audio-lab/library-6be9931eba35c02a57d2d4bd.wav",
+          "metadata": 9.1906,
+          "semantic": 0.08096,
+          "combined": 6.5521
+        }
+      ],
+      "semantic": [
+        {
+          "id": "8eda146d7f59f7d4ea23a1be",
+          "name": "whoosh.mp3",
+          "url": "/audio-lab/library-8eda146d7f59f7d4ea23a1be.wav",
+          "metadata": 9.4484,
+          "semantic": 0.25043,
+          "combined": 6.9775
+        },
+        {
+          "id": "cae79068651ec0872d6012ab",
+          "name": "Leg Swipe & Grab.wav",
+          "url": "/audio-lab/library-cae79068651ec0872d6012ab.wav",
+          "metadata": 1.5519,
+          "semantic": 0.15522,
+          "combined": 3.8202
+        },
+        {
+          "id": "5d87ac3eff15869c46577177",
+          "name": "Glitch Abstract FX (19).wav",
+          "url": "/audio-lab/library-5d87ac3eff15869c46577177.wav",
+          "metadata": 1.0533,
+          "semantic": 0.12387,
+          "combined": 4.1679
+        }
+      ],
+      "combined": [
+        {
+          "id": "6fdde60648ec598fc51003d0",
+          "name": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
+          "url": "/audio-lab/library-6fdde60648ec598fc51003d0.wav",
+          "metadata": 8.9003,
+          "semantic": 0.10712,
+          "combined": 8.4477
+        },
+        {
+          "id": "1c5a7946da2a454d52abc8df",
+          "name": "EFX SD Sliding Whoosh By 06.wav",
+          "url": "/audio-lab/library-1c5a7946da2a454d52abc8df.wav",
+          "metadata": 8.9215,
+          "semantic": 0.11855,
+          "combined": 8.1771
+        },
+        {
+          "id": "7c35a639da577dbf914e3586",
+          "name": "EFX SD Sliding Whoosh By 06.wav",
+          "url": "/audio-lab/library-7c35a639da577dbf914e3586.wav",
+          "metadata": 8.9215,
+          "semantic": 0.03964,
+          "combined": 7.7429
+        }
+      ]
+    },
+    "impact": {
+      "metadata": [
+        {
+          "id": "c16693f81ee52885f8f7638f",
+          "name": "Signum_source_composite_impact_2.wav",
+          "url": "/audio-lab/library-c16693f81ee52885f8f7638f.wav",
+          "metadata": 9.9185,
+          "semantic": 0.16834,
+          "combined": 8.8831
+        },
+        {
+          "id": "cec4bb122a92dbd32b64a910",
+          "name": "Bluezone-BC0212-impact-007.wav",
+          "url": "/audio-lab/library-cec4bb122a92dbd32b64a910.wav",
+          "metadata": 9.8732,
+          "semantic": 0.04667,
+          "combined": 8.129
+        },
+        {
+          "id": "68b5381e38609e4159195b95",
+          "name": "Impact_Boom_Distorted_02.wav",
+          "url": "/audio-lab/library-68b5381e38609e4159195b95.wav",
+          "metadata": 9.779,
+          "semantic": 0.08862,
+          "combined": 8.4039
+        }
+      ],
+      "semantic": [
+        {
+          "id": "961101cb1f04ad02af1f7e5d",
+          "name": "Rumble swish.wav",
+          "url": "/audio-lab/library-961101cb1f04ad02af1f7e5d.wav",
+          "metadata": 0.8844,
+          "semantic": 0.27737,
+          "combined": 5.4757
+        },
+        {
+          "id": "2d520308bec7de28fee591ea",
+          "name": "typing_keyboard.mp3",
+          "url": "/audio-lab/library-2d520308bec7de28fee591ea.wav",
+          "metadata": 0.6685,
+          "semantic": 0.25738,
+          "combined": 2.869
+        },
+        {
+          "id": "6f342caf6a85df46b32e0708",
+          "name": "Laptop Keyboard 5.wav",
+          "url": "/audio-lab/library-6f342caf6a85df46b32e0708.wav",
+          "metadata": 0.6177,
+          "semantic": 0.22268,
+          "combined": 2.5531
+        }
+      ],
+      "combined": [
+        {
+          "id": "c16693f81ee52885f8f7638f",
+          "name": "Signum_source_composite_impact_2.wav",
+          "url": "/audio-lab/library-c16693f81ee52885f8f7638f.wav",
+          "metadata": 9.9185,
+          "semantic": 0.16834,
+          "combined": 8.8831
+        },
+        {
+          "id": "68b5381e38609e4159195b95",
+          "name": "Impact_Boom_Distorted_02.wav",
+          "url": "/audio-lab/library-68b5381e38609e4159195b95.wav",
+          "metadata": 9.779,
+          "semantic": 0.08862,
+          "combined": 8.4039
+        },
+        {
+          "id": "cec4bb122a92dbd32b64a910",
+          "name": "Bluezone-BC0212-impact-007.wav",
+          "url": "/audio-lab/library-cec4bb122a92dbd32b64a910.wav",
+          "metadata": 9.8732,
+          "semantic": 0.04667,
+          "combined": 8.129
+        }
+      ]
+    },
+    "digital": {
+      "metadata": [
+        {
+          "id": "ab6274c2a20b958ca654b0ae",
+          "name": "Glitch_Error_Malfunction_018.wav",
+          "url": "/audio-lab/library-ab6274c2a20b958ca654b0ae.wav",
+          "metadata": 9.2843,
+          "semantic": 0.14351,
+          "combined": 7.2209
+        },
+        {
+          "id": "b359255320ee99e79101f1ce",
+          "name": "glitch_interface_crunchanator_12.wav",
+          "url": "/audio-lab/library-b359255320ee99e79101f1ce.wav",
+          "metadata": 9.2223,
+          "semantic": 0.16741,
+          "combined": 6.7169
+        },
+        {
+          "id": "5d87ac3eff15869c46577177",
+          "name": "Glitch Abstract FX (19).wav",
+          "url": "/audio-lab/library-5d87ac3eff15869c46577177.wav",
+          "metadata": 9.0533,
+          "semantic": 0.16398,
+          "combined": 8.1395
+        }
+      ],
+      "semantic": [
+        {
+          "id": "cb7a45b50ee4b77e5ee71af6",
+          "name": "lamp-click_on_off-104823.mp3",
+          "url": "/audio-lab/library-cb7a45b50ee4b77e5ee71af6.wav",
+          "metadata": 0.679,
+          "semantic": 0.40923,
+          "combined": 4.8868
+        },
+        {
+          "id": "a87acacee41a12706b14e710",
+          "name": "lamp-click_on_off-104823.mp3",
+          "url": "/audio-lab/library-a87acacee41a12706b14e710.wav",
+          "metadata": 0.679,
+          "semantic": 0.35625,
+          "combined": 4.5036
+        },
+        {
+          "id": "efd6c3fedf65efa3bf250296",
+          "name": "SFXW002_Crowd Interference_C3.wav",
+          "url": "/audio-lab/library-efd6c3fedf65efa3bf250296.wav",
+          "metadata": 7.4878,
+          "semantic": 0.30009,
+          "combined": 7.26
+        }
+      ],
+      "combined": [
+        {
+          "id": "5d87ac3eff15869c46577177",
+          "name": "Glitch Abstract FX (19).wav",
+          "url": "/audio-lab/library-5d87ac3eff15869c46577177.wav",
+          "metadata": 9.0533,
+          "semantic": 0.16398,
+          "combined": 8.1395
+        },
+        {
+          "id": "7c28d5d6877c3e6e8d3ba033",
+          "name": "Granular Texture UI Glitch 02.wav",
+          "url": "/audio-lab/library-7c28d5d6877c3e6e8d3ba033.wav",
+          "metadata": 8.5659,
+          "semantic": 0.2514,
+          "combined": 7.7627
+        },
+        {
+          "id": "efd6c3fedf65efa3bf250296",
+          "name": "SFXW002_Crowd Interference_C3.wav",
+          "url": "/audio-lab/library-efd6c3fedf65efa3bf250296.wav",
+          "metadata": 7.4878,
+          "semantic": 0.30009,
+          "combined": 7.26
+        }
+      ]
+    },
+    "pop": {
+      "metadata": [
+        {
+          "id": "cb53e22d9a9285693d6b8a52",
+          "name": "multi-pop-6-188170.mp3",
+          "url": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+          "metadata": 9.6012,
+          "semantic": 0.37673,
+          "combined": 7.3917
+        },
+        {
+          "id": "7d2c852fdfbb5e2ebd106e55",
+          "name": "Pop 31.wav",
+          "url": "/audio-lab/library-7d2c852fdfbb5e2ebd106e55.wav",
+          "metadata": 9.5806,
+          "semantic": 0.25156,
+          "combined": 6.3434
+        },
+        {
+          "id": "dd8a355a85c264dd494458d2",
+          "name": "floraphonic-ui-pop-up-5-197889.mp3",
+          "url": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+          "metadata": 9.061,
+          "semantic": 0.30614,
+          "combined": 7.4037
+        }
+      ],
+      "semantic": [
+        {
+          "id": "cb53e22d9a9285693d6b8a52",
+          "name": "multi-pop-6-188170.mp3",
+          "url": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+          "metadata": 9.6012,
+          "semantic": 0.37673,
+          "combined": 7.3917
+        },
+        {
+          "id": "dd8a355a85c264dd494458d2",
+          "name": "floraphonic-ui-pop-up-5-197889.mp3",
+          "url": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+          "metadata": 9.061,
+          "semantic": 0.30614,
+          "combined": 7.4037
+        },
+        {
+          "id": "6f342caf6a85df46b32e0708",
+          "name": "Laptop Keyboard 5.wav",
+          "url": "/audio-lab/library-6f342caf6a85df46b32e0708.wav",
+          "metadata": 0.6177,
+          "semantic": 0.30411,
+          "combined": 3.1605
+        }
+      ],
+      "combined": [
+        {
+          "id": "dd8a355a85c264dd494458d2",
+          "name": "floraphonic-ui-pop-up-5-197889.mp3",
+          "url": "/audio-lab/library-dd8a355a85c264dd494458d2.wav",
+          "metadata": 9.061,
+          "semantic": 0.30614,
+          "combined": 7.4037
+        },
+        {
+          "id": "cb53e22d9a9285693d6b8a52",
+          "name": "multi-pop-6-188170.mp3",
+          "url": "/audio-lab/library-cb53e22d9a9285693d6b8a52.wav",
+          "metadata": 9.6012,
+          "semantic": 0.37673,
+          "combined": 7.3917
+        },
+        {
+          "id": "7d2c852fdfbb5e2ebd106e55",
+          "name": "Pop 31.wav",
+          "url": "/audio-lab/library-7d2c852fdfbb5e2ebd106e55.wav",
+          "metadata": 9.5806,
+          "semantic": 0.25156,
+          "combined": 6.3434
+        }
+      ]
+    },
+    "swish": {
+      "metadata": [
+        {
+          "id": "f34c50da120b1b82813c0ab3",
+          "name": "Fast swish.wav",
+          "url": "/audio-lab/library-f34c50da120b1b82813c0ab3.wav",
+          "metadata": 11.0117,
+          "semantic": 0.06004,
+          "combined": 6.9464
+        },
+        {
+          "id": "6ac1b2c28ad8d30e30800d97",
+          "name": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+          "url": "/audio-lab/library-6ac1b2c28ad8d30e30800d97.wav",
+          "metadata": 10.0251,
+          "semantic": -0.04843,
+          "combined": 6.4023
+        },
+        {
+          "id": "911656448a87ac9bb7b4369b",
+          "name": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+          "url": "/audio-lab/library-911656448a87ac9bb7b4369b.wav",
+          "metadata": 10.0251,
+          "semantic": -0.11263,
+          "combined": 5.8357
+        }
+      ],
+      "semantic": [
+        {
+          "id": "cb7a45b50ee4b77e5ee71af6",
+          "name": "lamp-click_on_off-104823.mp3",
+          "url": "/audio-lab/library-cb7a45b50ee4b77e5ee71af6.wav",
+          "metadata": 0.679,
+          "semantic": 0.25996,
+          "combined": 2.7413
+        },
+        {
+          "id": "6fdde60648ec598fc51003d0",
+          "name": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
+          "url": "/audio-lab/library-6fdde60648ec598fc51003d0.wav",
+          "metadata": 0.9003,
+          "semantic": 0.14026,
+          "combined": 4.4158
+        },
+        {
+          "id": "8eda146d7f59f7d4ea23a1be",
+          "name": "whoosh.mp3",
+          "url": "/audio-lab/library-8eda146d7f59f7d4ea23a1be.wav",
+          "metadata": 1.4484,
+          "semantic": 0.11689,
+          "combined": 3.3292
+        }
+      ],
+      "combined": [
+        {
+          "id": "f34c50da120b1b82813c0ab3",
+          "name": "Fast swish.wav",
+          "url": "/audio-lab/library-f34c50da120b1b82813c0ab3.wav",
+          "metadata": 11.0117,
+          "semantic": 0.06004,
+          "combined": 6.9464
+        },
+        {
+          "id": "961101cb1f04ad02af1f7e5d",
+          "name": "Rumble swish.wav",
+          "url": "/audio-lab/library-961101cb1f04ad02af1f7e5d.wav",
+          "metadata": 9.8844,
+          "semantic": 0.02579,
+          "combined": 6.6354
+        },
+        {
+          "id": "6ac1b2c28ad8d30e30800d97",
+          "name": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+          "url": "/audio-lab/library-6ac1b2c28ad8d30e30800d97.wav",
+          "metadata": 10.0251,
+          "semantic": -0.04843,
+          "combined": 6.4023
+        }
+      ]
+    }
+  }
+}

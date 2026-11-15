@@ -1,0 +1,470 @@
+[
+  {
+    "template": "variable-weight-wave",
+    "candidates": [
+      {
+        "id": "2ee94182e4054df794e6ca17",
+        "url": "/audio-lab/library-2ee94182e4054df794e6ca17.wav",
+        "name": "Bluezone_BC0230_synth_texture_022.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\Bluezone Corporation - Spectral Line - Cinematic Trailer Sounds\\Bluezone_BC0230_synth_texture_022.wav",
+        "family": "pulse",
+        "region": [
+          7.58,
+          7.93
+        ],
+        "features": {
+          "start": 7.58,
+          "end": 7.93,
+          "hit": 7.64,
+          "attack": 0.06,
+          "centroid": 1169.8466030389836,
+          "high": 0.0832407585041353,
+          "crest": 3.7667086124420166,
+          "overload": 0
+        },
+        "score": 5.38,
+        "method": "pulse · 350 ms · ataque 60 ms · centro espectral 1170 Hz · 16 regiones"
+      },
+      {
+        "id": "75bbbd8d36a0820b8ff34855",
+        "url": "/audio-lab/library-75bbbd8d36a0820b8ff34855.wav",
+        "name": "Granular Texture Ambient Atmosphere 01.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2017 - Game Audio Bundle\\Glitchedtones - Granular Textures\\Granular Texture Ambient Atmosphere 01.wav",
+        "family": "pulse",
+        "region": [
+          47.031,
+          47.171
+        ],
+        "features": {
+          "start": 47.031,
+          "end": 47.171,
+          "hit": 47.071,
+          "attack": 0.04,
+          "centroid": 832.4894727148287,
+          "high": 0.0001055207379708071,
+          "crest": 3.708548069000244,
+          "overload": 0
+        },
+        "score": 5.35,
+        "method": "pulse · 140 ms · ataque 40 ms · centro espectral 832 Hz · 32 regiones"
+      },
+      {
+        "id": "5f4254bafd6f4a5c669bb67a",
+        "url": "/audio-lab/library-5f4254bafd6f4a5c669bb67a.wav",
+        "name": "1117 - Dark Pulse Ambience - Loop.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sonniss.com - GDC 2018 - Game Audio Bundle\\The Sound Pack Tree - Unreal Ambiences\\1117 - Dark Pulse Ambience - Loop.wav",
+        "family": "pulse",
+        "region": [
+          40.952,
+          41.812
+        ],
+        "features": {
+          "start": 40.952,
+          "end": 41.812,
+          "hit": 41.002,
+          "attack": 0.05,
+          "centroid": 125.37235910292847,
+          "high": 4.3609314618908226e-05,
+          "crest": 3.9442708492279053,
+          "overload": 0
+        },
+        "score": 5.35,
+        "method": "pulse · 860 ms · ataque 50 ms · centro espectral 125 Hz · 32 regiones"
+      }
+    ],
+    "matched": 94,
+    "library": "Bluezone_BC0230_synth_texture_022.wav",
+    "region": [
+      7.58,
+      7.93
+    ],
+    "family": "pulse",
+    "LibraryPeak": 0.6,
+    "events": [
+      36,
+      108
+    ],
+    "recipe": "glitch/chirp",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "2ee94182e4054df794e6ca17",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 2400 ms",
+    "textOnlyFrames": [
+      36,
+      108
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 1500 ms",
+    "speedOnlyFrames": [
+      23,
+      68,
+      113
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "blur-reveal",
+    "candidates": [
+      {
+        "id": "6ac1b2c28ad8d30e30800d97",
+        "url": "/audio-lab/library-6ac1b2c28ad8d30e30800d97.wav",
+        "name": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Transition Sound Effects\\Page 10 - Whoosh_ Swish Sounds_3.mp3",
+        "family": "swish",
+        "region": [
+          1.04,
+          1.73
+        ],
+        "features": {
+          "start": 1.04,
+          "end": 1.73,
+          "hit": 1.08,
+          "attack": 0.04,
+          "centroid": 262.4392499168082,
+          "high": 0.0043858184140364576,
+          "crest": 4.960886478424072,
+          "overload": 0
+        },
+        "score": 7.47,
+        "method": "swish · 690 ms · ataque 40 ms · centro espectral 262 Hz · 8 regiones · CLAP -0.048",
+        "semantic": -0.04843134433031082
+      },
+      {
+        "id": "961101cb1f04ad02af1f7e5d",
+        "url": "/audio-lab/library-961101cb1f04ad02af1f7e5d.wav",
+        "name": "Rumble swish.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Swishes\\Rumble swish.wav",
+        "family": "swish",
+        "region": [
+          1.34,
+          1.78
+        ],
+        "features": {
+          "start": 1.34,
+          "end": 1.78,
+          "hit": 1.39,
+          "attack": 0.05,
+          "centroid": 146.67725794845109,
+          "high": 0.008001039786077423,
+          "crest": 5.795421600341797,
+          "overload": 0
+        },
+        "score": 6.7,
+        "method": "swish · 440 ms · ataque 50 ms · centro espectral 147 Hz · 8 regiones · CLAP 0.026",
+        "semantic": 0.02578871324658394
+      },
+      {
+        "id": "8371ed46ccdf4f9de5c948ac",
+        "url": "/audio-lab/library-8371ed46ccdf4f9de5c948ac.wav",
+        "name": "55 crash,  auto large side swipe.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\SMARTSOUND EFFECTS\\2007 residential door bells news cameras skids crashes demolition\\55 crash,  auto large side swipe.wav",
+        "family": "swish",
+        "region": [
+          9.808,
+          10.628
+        ],
+        "features": {
+          "start": 9.808,
+          "end": 10.628,
+          "hit": 9.868,
+          "attack": 0.06,
+          "centroid": 392.0501641428748,
+          "high": 0.011861758136847459,
+          "crest": 6.300358772277832,
+          "overload": 0
+        },
+        "score": 6.96,
+        "method": "swish · 820 ms · ataque 60 ms · centro espectral 392 Hz · 32 regiones · CLAP -0.126",
+        "semantic": -0.12580035626888275
+      }
+    ],
+    "matched": 119,
+    "library": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+    "region": [
+      1.04,
+      1.73
+    ],
+    "family": "swish",
+    "LibraryPeak": 0.6,
+    "events": [
+      14
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "6ac1b2c28ad8d30e30800d97",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnlyFrames": [
+      14
+    ],
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "speedOnlyFrames": [
+      9
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "blur-cascade",
+    "candidates": [
+      {
+        "id": "cae79068651ec0872d6012ab",
+        "url": "/audio-lab/library-cae79068651ec0872d6012ab.wav",
+        "name": "Leg Swipe & Grab.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\Sony Pictures Sound Effects Series Vol 1-10  2.4 GB\\Volume 7\\Hand To Hand Combat\\Leg Swipe & Grab.wav",
+        "family": "swish",
+        "region": [
+          0.02,
+          0.11
+        ],
+        "features": {
+          "start": 0.02,
+          "end": 0.11,
+          "hit": 0.05,
+          "attack": 0.03,
+          "centroid": 388.58894904163094,
+          "high": 0.013540882789432154,
+          "crest": 4.460015773773193,
+          "overload": 0
+        },
+        "score": 6.92,
+        "method": "swish · 90 ms · ataque 30 ms · centro espectral 389 Hz · 2 regiones · CLAP 0.108",
+        "semantic": 0.10847244411706924
+      },
+      {
+        "id": "f34c50da120b1b82813c0ab3",
+        "url": "/audio-lab/library-f34c50da120b1b82813c0ab3.wav",
+        "name": "Fast swish.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Swishes\\Fast swish.wav",
+        "family": "swish",
+        "region": [
+          0.33,
+          0.48
+        ],
+        "features": {
+          "start": 0.33,
+          "end": 0.48,
+          "hit": 0.37,
+          "attack": 0.04,
+          "centroid": 385.884718570845,
+          "high": 0.04021359633916155,
+          "crest": 5.324714660644531,
+          "overload": 0
+        },
+        "score": 6.91,
+        "method": "swish · 150 ms · ataque 40 ms · centro espectral 386 Hz · 3 regiones · CLAP 0.060",
+        "semantic": 0.06003895774483681
+      },
+      {
+        "id": "84b73953b6819969a1c41d2f",
+        "url": "/audio-lab/library-84b73953b6819969a1c41d2f.wav",
+        "name": "55 crash,  auto large side swipe.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\SMARTSOUND EFFECTS\\2007 residential door bells news cameras skids crashes demolition\\55 crash,  auto large side swipe.wav",
+        "family": "swish",
+        "region": [
+          9.978,
+          10.058
+        ],
+        "features": {
+          "start": 9.978,
+          "end": 10.058,
+          "hit": 9.998,
+          "attack": 0.02,
+          "centroid": 416.7105326969374,
+          "high": 0.019374524321035123,
+          "crest": 3.3123226165771484,
+          "overload": 0
+        },
+        "score": 7.16,
+        "method": "swish · 80 ms · ataque 20 ms · centro espectral 417 Hz · 32 regiones · CLAP -0.037",
+        "semantic": -0.03716857731342316
+      }
+    ],
+    "matched": 119,
+    "library": "Leg Swipe & Grab.wav",
+    "region": [
+      0.02,
+      0.11
+    ],
+    "family": "swish",
+    "LibraryPeak": 0.6,
+    "events": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      15,
+      17,
+      19,
+      21,
+      23,
+      27,
+      29,
+      31,
+      33
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "cae79068651ec0872d6012ab",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.02,
+    "playPause": true,
+    "textOnly": "5 palabras · 24 eventos visuales · clip de 5.00 s · intervalo típico 67 ms",
+    "textOnlyFrames": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      13,
+      15,
+      17,
+      19,
+      21,
+      25,
+      29,
+      31,
+      33,
+      35,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55
+    ],
+    "speedOnly": "3 palabras · 15 eventos visuales · clip de 5.00 s · intervalo típico 33 ms",
+    "speedOnlyFrames": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      11,
+      12,
+      13,
+      14,
+      17,
+      18,
+      19,
+      21
+    ],
+    "pageErrors": []
+  },
+  {
+    "template": "wipe-reveal",
+    "candidates": [
+      {
+        "id": "6ac1b2c28ad8d30e30800d97",
+        "url": "/audio-lab/library-6ac1b2c28ad8d30e30800d97.wav",
+        "name": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Transition Sound Effects\\Page 10 - Whoosh_ Swish Sounds_3.mp3",
+        "family": "swish",
+        "region": [
+          1.04,
+          1.73
+        ],
+        "features": {
+          "start": 1.04,
+          "end": 1.73,
+          "hit": 1.08,
+          "attack": 0.04,
+          "centroid": 262.4392499168082,
+          "high": 0.0043858184140364576,
+          "crest": 4.960886478424072,
+          "overload": 0
+        },
+        "score": 7.47,
+        "method": "swish · 690 ms · ataque 40 ms · centro espectral 262 Hz · 8 regiones · CLAP -0.048",
+        "semantic": -0.04843134433031082
+      },
+      {
+        "id": "961101cb1f04ad02af1f7e5d",
+        "url": "/audio-lab/library-961101cb1f04ad02af1f7e5d.wav",
+        "name": "Rumble swish.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\1000+UR.FASTEDITOR SFX\\1000+UR.FASTEDITOR SFX\\450 cinematic sound effects\\Swishes\\Rumble swish.wav",
+        "family": "swish",
+        "region": [
+          1.34,
+          1.78
+        ],
+        "features": {
+          "start": 1.34,
+          "end": 1.78,
+          "hit": 1.39,
+          "attack": 0.05,
+          "centroid": 146.67725794845109,
+          "high": 0.008001039786077423,
+          "crest": 5.795421600341797,
+          "overload": 0
+        },
+        "score": 6.7,
+        "method": "swish · 440 ms · ataque 50 ms · centro espectral 147 Hz · 8 regiones · CLAP 0.026",
+        "semantic": 0.02578871324658394
+      },
+      {
+        "id": "8371ed46ccdf4f9de5c948ac",
+        "url": "/audio-lab/library-8371ed46ccdf4f9de5c948ac.wav",
+        "name": "55 crash,  auto large side swipe.wav",
+        "path": "L:\\TODO LO DEMAS\\PRODUCCION\\AUDIO\\AUDIO\\SOUND FX\\SMARTSOUND EFFECTS\\2007 residential door bells news cameras skids crashes demolition\\55 crash,  auto large side swipe.wav",
+        "family": "swish",
+        "region": [
+          9.808,
+          10.628
+        ],
+        "features": {
+          "start": 9.808,
+          "end": 10.628,
+          "hit": 9.868,
+          "attack": 0.06,
+          "centroid": 392.0501641428748,
+          "high": 0.011861758136847459,
+          "crest": 6.300358772277832,
+          "overload": 0
+        },
+        "score": 6.96,
+        "method": "swish · 820 ms · ataque 60 ms · centro espectral 392 Hz · 32 regiones · CLAP -0.126",
+        "semantic": -0.12580035626888275
+      }
+    ],
+    "matched": 119,
+    "library": "Page 10 - Whoosh_ Swish Sounds_3.mp3",
+    "region": [
+      1.04,
+      1.73
+    ],
+    "family": "swish",
+    "LibraryPeak": 0.6,
+    "events": [
+      14
+    ],
+    "recipe": "swish/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
+    "selectedId": "6ac1b2c28ad8d30e30800d97",
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnlyFrames": [
+      14
+    ],
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "speedOnlyFrames": [
+      9
+    ],
+    "pageErrors": []
+  }
+]

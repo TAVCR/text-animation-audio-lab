@@ -10,7 +10,8 @@ from playwright.sync_api import sync_playwright
 catalog = json.loads(Path('src/lib/sound/capabilities.json').read_text(encoding='utf8'))
 templates = [t for motion in catalog['motions'].values() for t in motion['templates']]
 group = int(sys.argv[1])
-out = Path('.audio-lab/universal')
+phase43 = '--phase43' in sys.argv
+out = Path('.audio-lab/phase43' if phase43 else '.audio-lab/universal')
 out.mkdir(exist_ok=True)
 report = []
 with sync_playwright() as driver:
@@ -34,6 +35,10 @@ with sync_playwright() as driver:
             with page.expect_response(lambda r:'/api/library-auto' in r.url,timeout=75000) as response:
                 page.get_by_role('button',name='Auto Sound Design',exact=True).click()
             candidate=response.value.json()
+            if phase43:
+                row['candidates']=candidate.get('candidates',[])
+                row['matched']=candidate.get('matched')
+                assert row['candidates'],candidate
             row['library']=candidate.get('name') or candidate.get('error')
             row['region']=candidate.get('region')
             row['family']=candidate.get('family')
@@ -65,6 +70,10 @@ with sync_playwright() as driver:
                     if len(local):offsets.append(abs(left+int(local.argmax())-nominal)/48)
                 row[mode+'MaxLocalPeakErrorMs']=round(max(offsets),2)
                 if mode=='Library':
+                    if phase43:
+                        assert design['sourceUrl'] in [c['url'] for c in row['candidates']]
+                        row['selectedId']=design['sourceUrl'].split('library-')[-1].split('.')[0]
+                        row['library']=design['sourceName']
                     page.get_by_text('Guardar diseño en proyecto').click()
                     page.wait_for_function('(k)=>JSON.parse(localStorage.getItem(k)).soundDesign?.sourceUrl',arg=key)
                     page.close()
@@ -95,6 +104,6 @@ with sync_playwright() as driver:
             print(template,row.get('error','OK'),flush=True)
             report.append(row)
             context.close()
-Path('examples/universal-group-'+str(group+1)+'.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf8')
+Path(('examples/phase43/group-' if phase43 else 'examples/universal-group-')+str(group+1)+'.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf8')
 sys.exit(any(r.get('error') or r.get('pageErrors') for r in report))
 

@@ -1,0 +1,66 @@
+[
+  {
+    "template": "word-highlight-tracker",
+    "font": "project default",
+    "samples": [
+      {
+        "frame": 0,
+        "changedPixels": 0
+      },
+      {
+        "frame": 12,
+        "changedPixels": 26050
+      },
+      {
+        "frame": 24,
+        "changedPixels": 20242
+      }
+    ]
+  },
+  {
+    "template": "variable-weight-wave",
+    "font": "Inter",
+    "samples": [
+      {
+        "frame": 36,
+        "changedPixels": 3340
+      },
+      {
+        "frame": 108,
+        "changedPixels": 3340
+      }
+    ]
+  },
+  {
+    "template": "fly-through",
+    "font": "project default",
+    "samples": [
+      {
+        "frame": 1,
+        "changedPixels": 0
+      },
+      {
+        "frame": 15,
+        "changedPixels": 59854
+      }
+    ]
+  },
+  {
+    "template": "extruded-3d",
+    "font": "project default",
+    "samples": [
+      {
+        "frame": 1,
+        "changedPixels": 0
+      },
+      {
+        "frame": 21,
+        "changedPixels": 11874
+      },
+      {
+        "frame": 115,
+        "changedPixels": 0
+      }
+    ]
+  }
+]
