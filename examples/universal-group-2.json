@@ -2,36 +2,122 @@
   {
     "template": "smooth-sliding",
     "library": "AIRY WHOOSH (1).wav",
-    "LibraryPeak": 0.6,
+    "region": [
+      1.49,
+      2.09
+    ],
+    "family": "whoosh",
+    "LibraryPeak": 0.6563,
+    "events": [
+      1,
+      4,
+      7
+    ],
+    "recipe": "whoosh_fast/crisp",
+    "LibraryMaxLocalPeakErrorMs": 5.69,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "follower",
     "library": "AIRY WHOOSH (1).wav",
-    "LibraryPeak": 0.7314,
+    "region": [
+      1.51,
+      2.09
+    ],
+    "family": "whoosh",
+    "LibraryPeak": 1.0,
+    "events": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      15,
+      17,
+      19,
+      21,
+      23,
+      27,
+      29,
+      31,
+      33
+    ],
+    "recipe": "whoosh_fast/crisp",
+    "LibraryMaxLocalPeakErrorMs": 10.31,
     "restored": true,
-    "ProceduralPeak": 0.7178,
+    "ProceduralPeak": 0.6645,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "rotation",
-    "library": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
-    "LibraryPeak": 0.6,
+    "library": "Sweep Phaser.wav",
+    "region": [
+      0,
+      0.1875
+    ],
+    "family": "sweep",
+    "LibraryPeak": 1.0,
+    "events": [
+      1,
+      4,
+      7,
+      10,
+      13,
+      16,
+      22,
+      25,
+      28,
+      31,
+      34,
+      40,
+      43,
+      46,
+      49
+    ],
+    "recipe": "swipe/glide",
+    "LibraryMaxLocalPeakErrorMs": 15.75,
     "restored": true,
-    "ProceduralPeak": 0.6,
+    "ProceduralPeak": 0.7828,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "follower-grow",
-    "library": "Sound Design_Title Sfx_Metal Shimmer_Whoosh_Sweep_Low Reverse_HutchSFX_3.mp3",
-    "LibraryPeak": 0.6,
+    "library": "Sweep Phaser.wav",
+    "region": [
+      0,
+      0.1875
+    ],
+    "family": "sweep",
+    "LibraryPeak": 1.0,
+    "events": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17
+    ],
+    "recipe": "swipe/glide",
+    "LibraryMaxLocalPeakErrorMs": 6.4,
     "restored": true,
-    "ProceduralPeak": 0.6,
+    "ProceduralPeak": 0.6157,
+    "ProceduralMaxLocalPeakErrorMs": 0.62,
+    "playPause": true,
     "modified": "5 palabras · 15 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   }
