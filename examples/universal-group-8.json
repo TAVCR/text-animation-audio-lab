@@ -23,7 +23,30 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 11 eventos visuales · clip de 5.00 s · intervalo típico 233 ms",
+    "textOnly": "5 palabras · 11 eventos visuales · clip de 5.00 s · intervalo típico 367 ms",
+    "textOnlyFrames": [
+      1,
+      12,
+      21,
+      30,
+      51,
+      60,
+      81,
+      90,
+      111,
+      120,
+      138
+    ],
+    "speedOnly": "3 palabras · 7 eventos visuales · clip de 5.00 s · intervalo típico 233 ms",
+    "speedOnlyFrames": [
+      1,
+      8,
+      14,
+      19,
+      32,
+      38,
+      77
+    ],
     "pageErrors": []
   },
   {
@@ -44,7 +67,14 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnlyFrames": [
+      6
+    ],
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "speedOnlyFrames": [
+      4
+    ],
     "pageErrors": []
   },
   {
@@ -65,7 +95,14 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnly": "5 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "textOnlyFrames": [
+      6
+    ],
+    "speedOnly": "3 palabras · 1 eventos visuales · clip de 5.00 s · intervalo típico 500 ms",
+    "speedOnlyFrames": [
+      4
+    ],
     "pageErrors": []
   },
   {
@@ -88,7 +125,18 @@
     "ProceduralPeak": 0.6,
     "ProceduralMaxLocalPeakErrorMs": 0.0,
     "playPause": true,
-    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 400 ms",
+    "textOnly": "5 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 700 ms",
+    "textOnlyFrames": [
+      3,
+      24,
+      45
+    ],
+    "speedOnly": "3 palabras · 3 eventos visuales · clip de 5.00 s · intervalo típico 400 ms",
+    "speedOnlyFrames": [
+      2,
+      14,
+      26
+    ],
     "pageErrors": []
   }
 ]
