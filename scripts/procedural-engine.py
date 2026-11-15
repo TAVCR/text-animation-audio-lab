@@ -80,15 +80,17 @@ def generate(q,rows):
     strategy=director.get('strategy',{})
     voices=[k for k in q['voices'] if k in FAMILIES]
     if strategy.get('voice') in voices:voices.remove(strategy['voice']);voices.insert(0,strategy['voice'])
-    voice=voices[0]
+    typing=q['template']=='typewriter'
+    voice='typing' if typing else voices[0]
     word_sequence=q['template'] in ('bubble-pop','slide-in','smooth-sliding','word-highlight-tracker','paper-cutout-assemble','viral-text','kinetic-box-sequence')
-    if director.get('events') and not word_sequence:
+    preserve_events=word_sequence or typing
+    if director.get('events') and not preserve_events:
         events=sorted({events[i] for i in director['events'] if type(i) is int and 0<=i<len(events)}) or events
     interval=np.median(np.diff(events))/30 if len(events)>1 else min(.7,frames/30)
     limit=[4,8,10][index]
     if strategy.get('density')=='sparse':limit=max(1,limit//2)
     if strategy.get('density')=='busy':limit+=2
-    selected=events if word_sequence else [events[int(i)] for i in np.linspace(0,len(events)-1,min(limit,len(events))).round()]
+    selected=events if preserve_events else [events[int(i)] for i in np.linspace(0,len(events)-1,min(limit,len(events))).round()]
     layers=[]
     def add(role,family,anchors,level):
         strength={'subtle':.75,'strong':1.12}.get(strategy.get('intensity'),1)
@@ -103,7 +105,8 @@ def generate(q,rows):
                 stop=stops[visual_indices[frame]] if len(stops)==len(visual_indices) and frame in visual_indices else next((s for s in stops if s>frame),None)
                 if stop is not None:duration=max(duration,min(1.8,(stop-frame)/30))
             seed=int(identity([q['template'],role,style,variant,i%4])[:7],16)
-            eligible=[r for r in rows if r['category'] in FAMILIES[family] and r['dur_s']]
+            eligible=[r for r in rows if r['category'] in FAMILIES[family] and r['dur_s']
+                      and (not typing or r['category'] in ('typing_key','pro_typing_key'))]
             def rank(r):
                 jitter=int(identity([seed//4,r['id']])[:5],16)/0xfffff
                 spectral=abs(math.log(max(60,r['centroid_hz'] or 1000)/[1300,900,3000][index]))
@@ -133,7 +136,7 @@ def generate(q,rows):
         resonance=continuous or director.get('extraLayer')=='resonance'
         accent='swish' if continuous else 'click' if voice=='impact' else 'pop'
         add('Resonancia' if resonance else 'Asentamiento',accent,[min(frames-1,(stops or selected)[-1])],.21 if resonance else .31)
-    if director.get('extraLayer')!='none' and index==2 and len(events)>1:
+    if not typing and director.get('extraLayer')!='none' and index==2 and len(events)>1:
         secondary='pulse' if voice in ('digital','glitch','pulse') else 'swish' if voice in ('riser','texture') else 'click'
         add('Acento' if director.get('extraLayer')=='accent' else 'Resonancia',secondary,selected[::max(1,len(selected)//2)][:2],.24)
     return dict(syncVersion=2,style=style,variant=variant,layers=layers,frames=frames,method=director.get('model','Reglas locales'),strategy=strategy,preferredRecipe=director.get('preferredRecipe'),extraLayer=director.get('extraLayer'))
