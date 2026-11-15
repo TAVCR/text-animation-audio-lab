@@ -212,7 +212,29 @@
         "pre_gap",
         "width"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "key0",
+          "recipe": "typing_key/crisp",
+          "seed": 0
+        },
+        {
+          "asset": "key1",
+          "recipe": "typing_key/crisp",
+          "seed": 1
+        },
+        {
+          "asset": "key2",
+          "recipe": "typing_key/crisp",
+          "seed": 2
+        },
+        {
+          "asset": "key3",
+          "recipe": "typing_key/crisp",
+          "seed": 3
+        }
+      ]
     },
     "click": {
       "recipe": "click/soft",
@@ -254,7 +276,14 @@
         "release_ms",
         "width"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "click",
+          "recipe": "click/soft",
+          "seed": 17
+        }
+      ]
     },
     "whoosh": {
       "recipe": "whoosh_fast/crisp",
@@ -324,7 +353,14 @@
         "tail_tau",
         "hiss_q"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "whoosh",
+          "recipe": "whoosh_fast/crisp",
+          "seed": 17
+        }
+      ]
     },
     "sweep": {
       "recipe": "swipe/glide",
@@ -396,7 +432,29 @@
         "room_damp",
         "low_width"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "recipe": "swipe/glide",
+          "asset": "slide2",
+          "seed": 2
+        },
+        {
+          "recipe": "swipe/cloth",
+          "asset": "slide0",
+          "seed": 0
+        },
+        {
+          "recipe": "swipe/flick",
+          "asset": "slide1",
+          "seed": 1
+        },
+        {
+          "recipe": "swipe/paper",
+          "asset": "slide3",
+          "seed": 3
+        }
+      ]
     },
     "swish": {
       "recipe": "swish/soft",
@@ -465,7 +523,14 @@
         "hiss_rustle",
         "hiss_lo"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "swish",
+          "recipe": "swish/soft",
+          "seed": 17
+        }
+      ]
     },
     "impact": {
       "recipe": "impact/punch",
@@ -548,7 +613,14 @@
         "scatter_s",
         "grain_jit"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "impact",
+          "recipe": "impact/punch",
+          "seed": 17
+        }
+      ]
     },
     "pop": {
       "recipe": "pop/0",
@@ -644,7 +716,14 @@
         "fade",
         "width"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "pop",
+          "recipe": "pop/0",
+          "seed": 17
+        }
+      ]
     },
     "digital": {
       "recipe": "glitch/data",
@@ -697,7 +776,14 @@
         "floor_db",
         "pattern"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "digital",
+          "recipe": "glitch/data",
+          "seed": 17
+        }
+      ]
     },
     "glitch": {
       "recipe": "glitch/stutter",
@@ -750,7 +836,29 @@
         "floor_db",
         "pattern"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "recipe": "glitch/stutter",
+          "asset": "glitch3",
+          "seed": 3
+        },
+        {
+          "recipe": "glitch/burst",
+          "asset": "glitch0",
+          "seed": 0
+        },
+        {
+          "recipe": "glitch/chirp",
+          "asset": "glitch1",
+          "seed": 1
+        },
+        {
+          "recipe": "glitch/data",
+          "asset": "glitch2",
+          "seed": 2
+        }
+      ]
     },
     "pulse": {
       "recipe": "glitch/chirp",
@@ -791,7 +899,14 @@
         "end_tail",
         "pattern"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "recipe": "glitch/chirp",
+          "asset": "glitch1",
+          "seed": 1
+        }
+      ]
     },
     "texture": {
       "recipe": "shimmer/m0",
@@ -855,7 +970,29 @@
         "f_decay",
         "tail_fade"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "recipe": "shimmer/m0",
+          "asset": "texture0",
+          "seed": 0
+        },
+        {
+          "recipe": "shimmer/m1",
+          "asset": "texture1",
+          "seed": 1
+        },
+        {
+          "recipe": "shimmer/m2",
+          "asset": "texture2",
+          "seed": 2
+        },
+        {
+          "recipe": "shimmer/m3",
+          "asset": "texture3",
+          "seed": 3
+        }
+      ]
     },
     "riser": {
       "recipe": "riser/air",
@@ -919,7 +1056,14 @@
         "rswell_rt",
         "pre_dip_ms"
       ],
-      "channels": 2
+      "channels": 2,
+      "takes": [
+        {
+          "asset": "riser",
+          "recipe": "riser/air",
+          "seed": 17
+        }
+      ]
     }
   }
 }

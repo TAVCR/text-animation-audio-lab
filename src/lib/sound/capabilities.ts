@@ -7,10 +7,13 @@ export function motionFor(template: string) {
 export function compatibleVoices(template: string): Voice[] {
   return (motionFor(template)?.[1].voices ?? []) as Voice[];
 }
-export function soundAsset(voice: Voice, seed: number) {
-  return '/audio-lab/' + voices[voice].asset.replace('#', String(seed % 4)) + '.wav';
+export function soundTake(voice: Voice, variant:number) {
+  const takes=voices[voice].takes;
+  return takes[Math.max(0,Math.floor(variant)) % takes.length] ?? takes[0];
 }
-
+export function soundAsset(voice: Voice, variant: number) {
+  return '/audio-lab/' + soundTake(voice,variant).asset + '.wav';
+}
 // Penalize long approaches when the visible movement leaves little room before
 // successive accents. The first compatible voice retains a small artistic bias.
 export function classifyMotion(template:string, events:number[], fps:number) {

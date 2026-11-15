@@ -1,5 +1,5 @@
 import {boxLandmarks} from './boxLandmarks';
-import {interpolate,random} from 'remotion';
+import {interpolate,random,spring} from 'remotion';
 import {slidePosition} from '@/remotion/templates/slidePosition';
 import {getEasing,type AnimationProps} from '@/lib/AnimationContext';
 import {mapMotionFrame} from '@/remotion/useMotionFrame';
@@ -30,12 +30,22 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
   // Thresholds are expressed on the visual component's clock. Crossing a
   // threshold in either direction also covers mirrored motion phases.
   const landmarks = ():number[] => {
+    const easing=getEasing(p.easingStyle);
+    const strongestReveal=(delay:number,duration:number,damping:number,stiffness:number)=>{
+      let best=0,anchor=delay+1,previous=0;
+      for(let t=1;t<=duration;t++){
+        const progress=easing(spring({frame:t,fps,durationInFrames:duration,config:{damping,stiffness,mass:1}}));
+        if(progress-previous>best){best=progress-previous;anchor=delay+t}
+        previous=progress;
+      }
+      return anchor;
+    };
     switch(p.animationStyle){
-      case 'wipe-reveal': return [11,10+Math.floor(fps*1.5)];
-      case 'blur-reveal': return [11,55];
-      case 'slide-reveal': return [6,36,65];
+      case 'wipe-reveal': return [strongestReveal(10,Math.floor(fps*1.5),200,50)];
+      case 'blur-reveal': return [strongestReveal(10,45,100,50)];
+      case 'slide-reveal': return [strongestReveal(5,30,100,150),strongestReveal(35,30,100,150)];
       case 'shape-reveal': return [1,40,Math.max(41,frames-40)];
-      case 'bar-reveal': return [1,frames*.38,frames*.50,frames*.88];
+      case 'bar-reveal': return [frames*.19,frames*.69]; // Midpoints of the outward and return sweeps.
       case 'cinematic': return [1,frames*.14,frames*.8];
       case 'fly-through': return [1,15];
       case 'extruded-3d': return [1,frames*.1/.72,frames*.548/.72,frames*.9/.72];
@@ -73,9 +83,16 @@ export function analyze(p:AnimationProps,frames:number,fps:number){
       }
       case 'variable-weight-wave':{
         const period=Math.max(1,p.variableWeightCycleSeconds??2.4)*fps;
-        state=Math.floor(raw/period+.5);break;
+        state=p.variableWeightBaseWeight===p.variableWeightPeakWeight && p.variableWeightBaseWeight!==undefined?0:Math.floor(raw/period+.5);break;
       }
-      case 'neon-pulse':state=Math.floor(clock/(2*Math.PI*fps/8)+.75);break;
+      case 'neon-pulse':{
+        if(p.enableShadow){state=Math.floor(clock/(2*Math.PI*fps/8)+.75);break}
+        const tick=Math.floor(clock);
+        const wave=Math.sin(clock/(fps/8));
+        const intensity=interpolate(wave,[-1,1],[.85,1],{easing:getEasing(p.easingStyle)});
+        state=Number(tick%13===0 && intensity*(.3+random('neon-pulse-erratic-'+tick)*.4)<.4);
+        break;
+      }
       case 'scramble':state=Math.ceil(letters.length*getEasing(p.easingStyle)(Math.min(1,clock/Math.max(1,Math.floor((frames-1)*(p.motionPhase==='in'?1:.55))))));break;
       case 'shake-flicker':{
         const exit=clock>frames-fps*1.5,local=exit?frames-clock:clock;

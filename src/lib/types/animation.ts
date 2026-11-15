@@ -432,6 +432,7 @@ export interface SoundDesignSettings {
   libraryPath?: string;
   method?: string;
   recipe?: string;
+  recipeSeed?: number;
   fadeInMs?: number;
   fadeOutMs?: number;
   eventVersion?: number;
