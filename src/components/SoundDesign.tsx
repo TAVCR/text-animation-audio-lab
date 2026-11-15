@@ -29,7 +29,7 @@ async function decode(bytes:ArrayBuffer) {
   return new OfflineAudioContext(2,1,48000).decodeAudioData(bytes);
 }
 export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationProps;frames:number;onSound:(s:string)=>void;onPreview:()=>void}) {
-  const {setProps}=useAnimation();
+  const {setProps,selectTextTemplate}=useAnimation();
   const [enabled,setEnabled]=React.useState(false),[mode,setMode]=React.useState('Procedural');
   const [library,setLibrary]=React.useState<AudioBuffer>(),[seed,setSeed]=React.useState(0);
   const [sourceName,setSourceName]=React.useState('');
@@ -120,10 +120,14 @@ export function SoundDesign({props,frames,onSound,onPreview}:{props:AnimationPro
   React.useEffect(()=>{onSound(enabled ? url : '');return ()=>onSound('')},[enabled,url,onSound]);
 
   React.useEffect(()=>{if(enabled && url && heard===url) window.audioLabTake={url,props};return ()=>{delete window.audioLabTake}},[enabled,url,heard,props]);
-  if(!labels[props.animationStyle])return null;
+  if(!labels[props.animationStyle]) return <div className="shrink-0 flex flex-wrap items-center gap-3 border-b border-neutral-600 bg-neutral-900 px-4 py-3 text-sm text-white" role="status">
+    <strong>Sound Design</strong>
+    <span>El sonido aún no está disponible para esta plantilla.</span>
+    <button type="button" className="rounded border border-emerald-400 bg-emerald-300 px-3 py-1 font-semibold text-black" onClick={()=>selectTextTemplate('typewriter')}>Probar Typewriter con sonido</button>
+  </div>;
   const button="rounded border border-neutral-500 px-3 py-1 font-medium";
   return <details className="shrink-0 max-h-[45%] overflow-auto border-b border-neutral-600 bg-neutral-900 p-2 text-sm text-white">
-    <summary className="cursor-pointer font-semibold">Sound Design · {labels[props.animationStyle]}</summary>
+    <summary className="cursor-pointer rounded bg-emerald-300 px-3 py-2 font-semibold text-black">🔊 Sound Design · {labels[props.animationStyle]} — abrir opciones de sonido</summary>
     {approved && approved.signature!==signature && <p role="status">La animación cambió. Los controles se conservan; consulta y aplica una propuesta nueva para adaptar los eventos.</p>}
     <section className="my-2"><strong>Animation Analysis</strong><p>{analysis.words} palabras · {analysis.events.length} eventos visuales · clip de {(frames/fps).toFixed(2)} s</p>{analysis.stops.length>0 && <p>Asentamiento al 1 % · último fotograma {analysis.stops[analysis.stops.length-1]}</p>}{analysis.truncated && <p>El texto no termina de aparecer dentro del clip.</p>}</section>
     <section><strong>Sugerencias por reglas locales</strong><div className="flex gap-2">{styles.map(s=><button key={s.name} className={button} onClick={()=>{setChosen('');setDensity(s.density);setGain(s.gain);setTail(s.tail);setSeed(s.variant)}}>{s.name}</button>)}</div></section>
