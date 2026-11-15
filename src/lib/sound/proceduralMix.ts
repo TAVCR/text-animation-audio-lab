@@ -1,0 +1,42 @@
+import {wave} from './pcm';
+export type Take={recipe:string;url:string;frame:number;peak:number;samples:number;onset:number;end:number;gain:number;params:{dur?:number;seed:number;pitch?:number;apex?:number}};
+export type Layer={role:string;gain:number;offset:number;mute:boolean;fadeIn:number;fadeOut:number;takes:Take[]};
+export type Design={style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
+export type SavedDesign={signature:string;design:Design};
+const cache=new Map<string,Promise<AudioBuffer>>();
+function buffer(url:string){
+  if(!/^\/audio-lab\/synthesis\/[a-f0-9]{64}\.wav$/.test(url))throw Error('Referencia de síntesis inválida');
+  let pending=cache.get(url);
+  if(!pending){
+    pending=fetch(url).then(async r=>{
+      if(!r.ok)throw Error('Falta una toma de la caché local');
+      return new OfflineAudioContext(2,1,48000).decodeAudioData(await r.arrayBuffer());
+    }).catch(e=>{cache.delete(url);throw e});
+    if(cache.size>=120)cache.delete(cache.keys().next().value!);
+    cache.set(url,pending);
+  }
+  return pending;
+}
+export async function mixDesign(plan:Design){
+  const length=plan.frames*1600;
+  const mix=new Float32Array(length*2);
+  for(const layer of plan.layers){
+    if(layer.mute)continue;
+    for(const take of layer.takes){
+      const src=await buffer(take.url);
+      const target=Math.max(48,Math.round(take.frame*1600+layer.offset*48));
+      const start=target-take.peak;
+      const first=Math.max(0,-start),last=Math.min(src.length,length-start);
+      const attack=Math.max(1,Math.min(layer.fadeIn*48,take.peak-first));
+      const release=Math.max(1,Math.min(layer.fadeOut*48,last-take.peak));
+      for(let c=0;c<2;c++){
+        const samples=src.getChannelData(Math.min(c,src.numberOfChannels-1));
+        for(let i=first;i<last;i++){
+          const fade=Math.min(1,take.peak===first?1:(i-first)/attack,(last-i-1)/release);
+          mix[(start+i)*2+c]+=samples[i]*layer.gain*take.gain*Math.max(0,fade);
+        }
+      }
+    }
+  }
+  return wave(mix,2);
+}

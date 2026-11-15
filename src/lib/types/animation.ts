@@ -424,6 +424,7 @@ export type AnimationProps =
   & DualTextLayerProps;
 
 export interface SoundDesignSettings {
+  procedural?: import('../sound/proceduralMix').SavedDesign;
   version: 1;
   template: AnimationStyle;
   mode: 'Procedural' | 'Library';
