@@ -1,38 +1,92 @@
 [
   {
     "template": "fly-through",
-    "library": "360-riser-impact-370401.mp3",
+    "library": "sharp-riser-327342.mp3",
+    "region": [
+      1.3133333333333335,
+      1.880813
+    ],
+    "family": "riser",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      15
+    ],
+    "recipe": "riser/air",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "extruded-3d",
-    "library": "360-riser-impact-370401.mp3",
+    "library": "sharp-riser-327342.mp3",
+    "region": [
+      1.28,
+      1.880813
+    ],
+    "family": "riser",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      21,
+      115
+    ],
+    "recipe": "riser/air",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
-    "modified": "5 palabras · 4 eventos visuales · clip de 5.00 s",
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 4 eventos visuales · clip de 5.00 s · intervalo típico 1533 ms",
     "pageErrors": []
   },
   {
     "template": "glyph-tile-assemble",
     "library": "minecraft_click.mp3",
+    "region": [
+      0.10999999999999999,
+      0.836984
+    ],
+    "family": "click",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      24
+    ],
+    "recipe": "click/soft",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
-    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s",
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
+    "modified": "5 palabras · 2 eventos visuales · clip de 5.00 s · intervalo típico 467 ms",
     "pageErrors": []
   },
   {
     "template": "paper-cutout-assemble",
-    "library": "minecraft_click.mp3",
+    "library": "Digital Click - 8.mp3",
+    "region": [
+      0,
+      0.3632
+    ],
+    "family": "click",
     "LibraryPeak": 0.6,
+    "events": [
+      0,
+      5,
+      9
+    ],
+    "recipe": "click/soft",
+    "LibraryMaxLocalPeakErrorMs": 1.0,
     "restored": true,
     "ProceduralPeak": 0.6,
-    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
+    "ProceduralMaxLocalPeakErrorMs": 1.0,
+    "playPause": true,
+    "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s · intervalo típico 133 ms",
     "pageErrors": []
   }
 ]
