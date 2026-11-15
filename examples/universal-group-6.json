@@ -1,0 +1,38 @@
+[
+  {
+    "template": "slide-reveal",
+    "library": "Fast swish.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "shape-reveal",
+    "library": "Fast swish.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "bar-reveal",
+    "library": "Fast swish.wav",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 4 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  },
+  {
+    "template": "cinematic",
+    "library": "360-riser-impact-370401.mp3",
+    "LibraryPeak": 0.6,
+    "restored": true,
+    "ProceduralPeak": 0.6,
+    "modified": "5 palabras · 3 eventos visuales · clip de 5.00 s",
+    "pageErrors": []
+  }
+]
