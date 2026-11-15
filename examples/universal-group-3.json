@@ -2,36 +2,129 @@
   {
     "template": "bubble-pop",
     "library": "bubble-pop-293342.mp3",
+    "region": [
+      0,
+      0.62
+    ],
+    "family": "pop",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      13,
+      26
+    ],
+    "recipe": "pop/0",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 5 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "apple-style",
     "library": "bubble-pop-293342.mp3",
+    "region": [
+      0.024761904761904763,
+      0.62
+    ],
+    "family": "pop",
     "LibraryPeak": 0.6,
+    "events": [
+      1,
+      3,
+      6,
+      8,
+      11,
+      13,
+      18,
+      21,
+      23,
+      26,
+      28,
+      33,
+      36,
+      38,
+      41
+    ],
+    "recipe": "pop/0",
+    "LibraryMaxLocalPeakErrorMs": 0.0,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 24 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "glitch",
-    "library": "CINEMATIC GLITCH (1).wav",
-    "LibraryPeak": 0.6,
+    "library": "glitch_interface_crunchanator_12.wav",
+    "region": [
+      0,
+      0.64
+    ],
+    "family": "digital",
+    "LibraryPeak": 1.0,
+    "events": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      40,
+      44,
+      48,
+      52,
+      56,
+      80,
+      84,
+      88,
+      92,
+      96,
+      120,
+      124,
+      128,
+      132,
+      136
+    ],
+    "recipe": "glitch/data",
+    "LibraryMaxLocalPeakErrorMs": 14.48,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 1.0,
+    "playPause": true,
     "modified": "5 palabras · 30 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   },
   {
     "template": "shake-flicker",
-    "library": "CINEMATIC GLITCH (1).wav",
-    "LibraryPeak": 0.6,
+    "library": "glitch_interface_crunchanator_12.wav",
+    "region": [
+      0,
+      0.64
+    ],
+    "family": "digital",
+    "LibraryPeak": 1.0,
+    "events": [
+      6,
+      16,
+      34,
+      40,
+      107,
+      113,
+      117,
+      121,
+      131,
+      135,
+      149
+    ],
+    "recipe": "glitch/data",
+    "LibraryMaxLocalPeakErrorMs": 14.48,
     "restored": true,
     "ProceduralPeak": 0.6,
+    "ProceduralMaxLocalPeakErrorMs": 0.0,
+    "playPause": true,
     "modified": "5 palabras · 17 eventos visuales · clip de 5.00 s",
     "pageErrors": []
   }
