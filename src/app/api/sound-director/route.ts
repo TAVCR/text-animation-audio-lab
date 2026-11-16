@@ -8,7 +8,7 @@ import {compatibleVoices} from '@/lib/sound/capabilities';
 export async function POST(req:Request){
   if(req.headers.get('origin')!=='http://'+req.headers.get('host'))return new Response(null,{status:403});
   try{
-    const {template,text:inputText,words,frames,port=3218,model,probe,candidates=[],heads=[],motion={}}=await req.json();
+    const {template,text:inputText,words,frames,port=3218,model,styles,probe,candidates=[],heads=[],motion={}}=await req.json();
     if(![3218,11434,1234,8080].includes(port))throw Error('Puerto local no autorizado');
     const base='http://127.0.0.1:'+port+'/v1';
     const models=await fetch(base+'/models',{redirect:'error',cache:'no-store',signal:AbortSignal.timeout(3000)}).then(r=>r.json());
@@ -28,7 +28,7 @@ export async function POST(req:Request){
     const categories=allowed.flatMap(v=>roles[v]);
     const recipes=bank.filter(r=>categories.includes(r.category)).map(r=>r.id);
     const extra={preferredRecipe:{type:'string',enum:recipes},extraLayer:{type:'string',enum:['none','accent','resonance']}};
-    const prompt='Select a compatible Earshot voice from the supplied list. Describe travel only when present. Choose landing last only for a measured settling motion meriting an extra impact. Direct sound for a 30fps animation. Choose a qualitative strategy. Evaluate overlap, pace and discontinuities. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({voices:allowed,recipes,family,text:String(inputText??'').slice(0,1000),words,groups,motion,observation});
+    const prompt='Select a compatible Earshot voice from the supplied list. Describe travel only when present. Choose landing last only for a measured settling motion meriting an extra impact. Direct sound for a 30fps animation. Choose a qualitative strategy. Evaluate overlap, pace and discontinuities. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({styles,voices:allowed,recipes,family,text:String(inputText??'').slice(0,1000),words,groups,motion,observation});
     const pilot=Object.prototype.hasOwnProperty.call(pilots,template);
     const compositionSchema={type:'object',additionalProperties:false,required:Object.keys(compositionOptions),properties:Object.fromEntries(Object.entries(compositionOptions).map(([k,v])=>[k,{type:'string',enum:v}]))};
     const compositionField=pilot?{composition:compositionSchema}:{};

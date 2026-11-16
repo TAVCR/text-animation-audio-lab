@@ -37,7 +37,7 @@ export function renderComponent(input:ComponentInput):Float32Array[]{
     const other=channels[Math.min(1-c,channels.length-1)];
     const out=result[c];
     const delay=Math.round(48000*(.013+depth*.011+c*.007));
-    let low=0,slow=0,phase=0,previous=0;
+    let low=0,slow=0,phase=0,previous=0,bass=0;
     for(let i=0;i<out.length;i++){
       const delta=i-peak;
       const energy=Math.exp(-Math.abs(delta)/(delta<0?before:span*decay));
@@ -65,7 +65,11 @@ export function renderComponent(input:ComponentInput):Float32Array[]{
       const pan=direction*baseWidth*depth*(travel*response+.24*(input.position-.5));
       const gain=Math.sqrt(1+(c===0?-pan:pan));
       const reflection=ring && i>=delay?out[i-delay]*depth*(plan.space==='diffuse' ? .24 : .16):0;
-      out[i]=(gain*(direct+side+resonant+transient*intensity*.09)+reflection)*Math.min(1,(out.length-i-1)/120);
+      const combined=gain*(direct+side+resonant+transient*intensity*.09)+reflection;
+      // Leave space for the stamp's independently synthesized contact body.
+      bass+=.012*(combined-bass);
+      const balanced=gesture==='contact'?combined-.48*bass:combined;
+      out[i]=balanced*Math.min(1,(out.length-i-1)/120);
     }
   }
   return result;

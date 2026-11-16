@@ -92,7 +92,7 @@ async function addRoom(track:Float32Array,mix:Float32Array,wet:number){
     for(let i=0;i<frames;i++)mix[2*i+c]+=wet*channel[i]*Math.min(1,(frames-1-i)/240);
   }
 }
-export async function mixDesign(plan:Design){
+export async function mixDesign(plan:Design,signal?:AbortSignal){
   const length=plan.frames*1600;
   const mix=new Float32Array(length*2);
   for(const layer of plan.layers){
@@ -100,11 +100,14 @@ export async function mixDesign(plan:Design){
     const rate=Math.max(.5,Math.min(2,layer.rate??1));
     const track=layer.room ? new Float32Array(mix.length) : mix;
     for(const take of layer.takes){
+      signal?.throwIfAborted();
       const src=await buffer(take);
+      signal?.throwIfAborted();
       const composed=plan.composition ? await componentPCM(take.url,{
         plan:plan.composition,peak:take.peak,seed:take.params.seed,role:layer.role,
         span:take.gestureFrames??6,travel:take.travelFrames??0,position:take.position??take.frame/plan.frames,speed:plan.speed??1
       },src):undefined;
+      signal?.throwIfAborted();
       const target=Math.max(48,Math.round(take.frame*1600+layer.offset*48));
       if(layer.body && layer.resonator)addBody(track,target,take,layer,rate);
       if(layer.air)airSweep(track,target,take,layer,rate);

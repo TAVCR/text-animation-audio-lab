@@ -1,0 +1,128 @@
+[
+  {
+    "template": "bubble-pop",
+    "style": "Cinematic",
+    "target": 29,
+    "localPeakMs": 5.12,
+    "globalPeakMs": 5.12
+  },
+  {
+    "template": "bubble-pop",
+    "style": "Experimental",
+    "target": 29,
+    "localPeakMs": 4.92,
+    "globalPeakMs": 4.92
+  },
+  {
+    "template": "bubble-pop",
+    "style": "Minimal",
+    "target": 29,
+    "localPeakMs": 0.0,
+    "globalPeakMs": 0.0
+  },
+  {
+    "template": "cinematic",
+    "style": "Cinematic",
+    "target": 22,
+    "localPeakMs": -1.73,
+    "globalPeakMs": -1.73
+  },
+  {
+    "template": "cinematic",
+    "style": "Experimental",
+    "target": 22,
+    "localPeakMs": 0.0,
+    "globalPeakMs": 0.0
+  },
+  {
+    "template": "cinematic",
+    "style": "Minimal",
+    "target": 22,
+    "localPeakMs": -1.0,
+    "globalPeakMs": -1.0
+  },
+  {
+    "template": "extruded-3d",
+    "style": "Cinematic",
+    "target": 21,
+    "localPeakMs": 14.6,
+    "globalPeakMs": 14.6
+  },
+  {
+    "template": "extruded-3d",
+    "style": "Experimental",
+    "target": 21,
+    "localPeakMs": 0.0,
+    "globalPeakMs": 0.0
+  },
+  {
+    "template": "extruded-3d",
+    "style": "Minimal",
+    "target": 21,
+    "localPeakMs": 0.0,
+    "globalPeakMs": 0.0
+  },
+  {
+    "template": "glitch",
+    "style": "Cinematic",
+    "target": 84,
+    "localPeakMs": 0.0,
+    "globalPeakMs": 0.0
+  },
+  {
+    "template": "glitch",
+    "style": "Experimental",
+    "target": 84,
+    "localPeakMs": -0.02,
+    "globalPeakMs": -0.02
+  },
+  {
+    "template": "glitch",
+    "style": "Minimal",
+    "target": 92,
+    "localPeakMs": 0.0,
+    "globalPeakMs": 0.0
+  },
+  {
+    "template": "ink-stamp-print",
+    "style": "Cinematic",
+    "target": 6,
+    "localPeakMs": 7.35,
+    "globalPeakMs": 7.35
+  },
+  {
+    "template": "ink-stamp-print",
+    "style": "Experimental",
+    "target": 6,
+    "localPeakMs": 3.9,
+    "globalPeakMs": 3.9
+  },
+  {
+    "template": "ink-stamp-print",
+    "style": "Minimal",
+    "target": 6,
+    "localPeakMs": 1.38,
+    "globalPeakMs": 1.38
+  },
+  {
+    "template": "slide-in",
+    "style": "Cinematic",
+    "target": 11,
+    "localPeakMs": 0.79,
+    "globalPeakMs": 0.79
+  },
+  {
+    "template": "slide-in",
+    "style": "Experimental",
+    "target": 11,
+    "localPeakMs": -0.02,
+    "globalPeakMs": -0.02
+  },
+  {
+    "template": "slide-in",
+    "style": "Minimal",
+    "target": 11,
+    "localPeakMs": 0.02,
+    "globalPeakMs": 0.02
+  }
+]

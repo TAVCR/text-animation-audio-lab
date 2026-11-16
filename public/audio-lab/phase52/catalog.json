@@ -1,0 +1,1585 @@
+[
+  {
+    "template": "bubble-pop",
+    "style": "Cinematic",
+    "versions": [
+      {
+        "file": "bubble-pop-Cinematic-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "pop/0",
+              "pop/4",
+              "pop/2"
+            ],
+            "anchors": [
+              3,
+              16,
+              29,
+              42,
+              55
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -22.31,
+        "truePeak": -5.62,
+        "monoLossDb": -0.03,
+        "sub100Percent": 0.06,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "bubble-pop-Cinematic-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "pop/0",
+              "pop/4",
+              "pop/2"
+            ],
+            "anchors": [
+              3,
+              16,
+              29,
+              42,
+              55
+            ]
+          },
+          {
+            "role": "Textura de cierre",
+            "recipes": [
+              "pop/2"
+            ],
+            "anchors": [
+              55
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "elastic",
+          "concept": "Tensión y liberación elástica",
+          "intent": "expansive",
+          "spectrum": "bloom",
+          "space": "travel",
+          "synthesis": "modal",
+          "envelope": "snap",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.76,
+          "complexity": 0.57,
+          "depth": 0.76,
+          "response": 0.84
+        },
+        "method": "Reglas locales",
+        "lufs": -19.33,
+        "truePeak": -2.7,
+        "monoLossDb": -0.09,
+        "sub100Percent": 0.06,
+        "endPeak": 0.0,
+        "gain": 0.7095777679633888
+      }
+    ]
+  },
+  {
+    "template": "bubble-pop",
+    "style": "Experimental",
+    "versions": [
+      {
+        "file": "bubble-pop-Experimental-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "pop/2",
+              "ui_pop/boop"
+            ],
+            "anchors": [
+              3,
+              16,
+              29,
+              42,
+              55
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "toggle/rocker"
+            ],
+            "anchors": [
+              3,
+              29
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -22.92,
+        "truePeak": -5.28,
+        "monoLossDb": -0.06,
+        "sub100Percent": 0.09,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "bubble-pop-Experimental-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "pop/2",
+              "ui_pop/boop"
+            ],
+            "anchors": [
+              3,
+              16,
+              29,
+              42,
+              55
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "toggle/rocker"
+            ],
+            "anchors": [
+              3,
+              29
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "elastic",
+          "concept": "Tensión y liberación elástica",
+          "intent": "unstable",
+          "spectrum": "fracture",
+          "space": "diffuse",
+          "synthesis": "carrier",
+          "envelope": "snap",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.58,
+          "complexity": 0.88,
+          "depth": 0.49,
+          "response": 0.95
+        },
+        "method": "Reglas locales",
+        "lufs": -22.66,
+        "truePeak": -5.3,
+        "monoLossDb": -0.09,
+        "sub100Percent": 0.15,
+        "endPeak": 0.0,
+        "gain": 0.9705099672454894
+      }
+    ]
+  },
+  {
+    "template": "bubble-pop",
+    "style": "Minimal",
+    "versions": [
+      {
+        "file": "bubble-pop-Minimal-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "ui_pop/wide",
+              "pop/2",
+              "pop/0",
+              "pop/4"
+            ],
+            "anchors": [
+              3,
+              16,
+              29,
+              42,
+              55
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -26.89,
+        "truePeak": -9.66,
+        "monoLossDb": -0.69,
+        "sub100Percent": 0.07,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "bubble-pop-Minimal-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "ui_pop/wide",
+              "pop/2",
+              "pop/0",
+              "pop/4"
+            ],
+            "anchors": [
+              3,
+              16,
+              29,
+              42,
+              55
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "elastic",
+          "concept": "Tensión y liberación elástica",
+          "intent": "precise",
+          "spectrum": "focus",
+          "space": "center",
+          "synthesis": "modal",
+          "envelope": "snap",
+          "relation": "follow",
+          "ending": "dry",
+          "intensity": 0.32,
+          "complexity": 0.2,
+          "depth": 0.18,
+          "response": 0.62
+        },
+        "method": "Reglas locales",
+        "lufs": -23.71,
+        "truePeak": -7.76,
+        "monoLossDb": -0.7,
+        "sub100Percent": 0.06,
+        "endPeak": 0.0,
+        "gain": 0.6934258060165691
+      }
+    ]
+  },
+  {
+    "template": "cinematic",
+    "style": "Cinematic",
+    "versions": [
+      {
+        "file": "cinematic-Cinematic-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/rush",
+              "whoosh_big/gust"
+            ],
+            "anchors": [
+              1,
+              22,
+              120
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swipe/paper"
+            ],
+            "anchors": [
+              120
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -21.41,
+        "truePeak": -4.07,
+        "monoLossDb": -0.37,
+        "sub100Percent": 3.14,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "cinematic-Cinematic-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/rush",
+              "whoosh_big/gust"
+            ],
+            "anchors": [
+              1,
+              22,
+              120
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swipe/paper"
+            ],
+            "anchors": [
+              120
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "flight",
+          "concept": "Apertura y cambio de distancia",
+          "intent": "expansive",
+          "spectrum": "bloom",
+          "space": "travel",
+          "synthesis": "filtered",
+          "envelope": "swell",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.76,
+          "complexity": 0.57,
+          "depth": 0.76,
+          "response": 0.84
+        },
+        "method": "Reglas locales",
+        "lufs": -18.43,
+        "truePeak": -2.39,
+        "monoLossDb": -0.61,
+        "sub100Percent": 3.43,
+        "endPeak": 0.0,
+        "gain": 0.7095777679633888
+      }
+    ]
+  },
+  {
+    "template": "cinematic",
+    "style": "Experimental",
+    "versions": [
+      {
+        "file": "cinematic-Experimental-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/rush",
+              "reverse_swell/ring"
+            ],
+            "anchors": [
+              1,
+              22,
+              120
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swish/cane",
+              "swish/soft"
+            ],
+            "anchors": [
+              1,
+              22
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -26.79,
+        "truePeak": -5.05,
+        "monoLossDb": -0.34,
+        "sub100Percent": 2.54,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "cinematic-Experimental-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/rush",
+              "reverse_swell/ring"
+            ],
+            "anchors": [
+              1,
+              22,
+              120
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swish/cane",
+              "swish/soft"
+            ],
+            "anchors": [
+              1,
+              22
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "flight",
+          "concept": "Apertura y cambio de distancia",
+          "intent": "unstable",
+          "spectrum": "fracture",
+          "space": "diffuse",
+          "synthesis": "carrier",
+          "envelope": "swell",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.58,
+          "complexity": 0.88,
+          "depth": 0.49,
+          "response": 0.95
+        },
+        "method": "Reglas locales",
+        "lufs": -26.28,
+        "truePeak": -6.64,
+        "monoLossDb": -0.6,
+        "sub100Percent": 2.91,
+        "endPeak": 0.0,
+        "gain": 0.9429746114598997
+      }
+    ]
+  },
+  {
+    "template": "cinematic",
+    "style": "Minimal",
+    "versions": [
+      {
+        "file": "cinematic-Minimal-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/build",
+              "riser/dark"
+            ],
+            "anchors": [
+              1,
+              22,
+              120
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -29.15,
+        "truePeak": -8.88,
+        "monoLossDb": -0.02,
+        "sub100Percent": 47.41,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "cinematic-Minimal-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/build",
+              "riser/dark"
+            ],
+            "anchors": [
+              1,
+              22,
+              120
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "flight",
+          "concept": "Apertura y cambio de distancia",
+          "intent": "precise",
+          "spectrum": "focus",
+          "space": "center",
+          "synthesis": "filtered",
+          "envelope": "swell",
+          "relation": "follow",
+          "ending": "dry",
+          "intensity": 0.32,
+          "complexity": 0.2,
+          "depth": 0.18,
+          "response": 0.62
+        },
+        "method": "Reglas locales",
+        "lufs": -26.4,
+        "truePeak": -7.38,
+        "monoLossDb": -0.02,
+        "sub100Percent": 43.25,
+        "endPeak": 0.0,
+        "gain": 0.7286181745132277
+      }
+    ]
+  },
+  {
+    "template": "extruded-3d",
+    "style": "Cinematic",
+    "versions": [
+      {
+        "file": "extruded-3d-Cinematic-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "reverse_swell/short",
+              "riser/rush",
+              "riser/build"
+            ],
+            "anchors": [
+              1,
+              21,
+              115
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swish/soft"
+            ],
+            "anchors": [
+              115
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -21.2,
+        "truePeak": -5.16,
+        "monoLossDb": -0.34,
+        "sub100Percent": 36.7,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "extruded-3d-Cinematic-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "reverse_swell/short",
+              "riser/rush",
+              "riser/build"
+            ],
+            "anchors": [
+              1,
+              21,
+              115
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swish/soft"
+            ],
+            "anchors": [
+              115
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "orbit",
+          "concept": "Masa en vuelo y cambio de perspectiva",
+          "intent": "expansive",
+          "spectrum": "bloom",
+          "space": "travel",
+          "synthesis": "filtered",
+          "envelope": "swell",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.76,
+          "complexity": 0.57,
+          "depth": 0.76,
+          "response": 0.84
+        },
+        "method": "Reglas locales",
+        "lufs": -18.87,
+        "truePeak": -3.11,
+        "monoLossDb": -0.44,
+        "sub100Percent": 47.19,
+        "endPeak": 0.0,
+        "gain": 0.7647156884388348
+      }
+    ]
+  },
+  {
+    "template": "extruded-3d",
+    "style": "Experimental",
+    "versions": [
+      {
+        "file": "extruded-3d-Experimental-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "reverse_swell/short",
+              "riser/rush",
+              "reverse_swell/ring"
+            ],
+            "anchors": [
+              1,
+              21,
+              115
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swish/blade",
+              "swipe/paper"
+            ],
+            "anchors": [
+              1,
+              21
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -26.01,
+        "truePeak": -4.75,
+        "monoLossDb": -1.04,
+        "sub100Percent": 1.82,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "extruded-3d-Experimental-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "reverse_swell/short",
+              "riser/rush",
+              "reverse_swell/ring"
+            ],
+            "anchors": [
+              1,
+              21,
+              115
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "swish/blade",
+              "swipe/paper"
+            ],
+            "anchors": [
+              1,
+              21
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "orbit",
+          "concept": "Masa en vuelo y cambio de perspectiva",
+          "intent": "unstable",
+          "spectrum": "fracture",
+          "space": "diffuse",
+          "synthesis": "carrier",
+          "envelope": "swell",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.58,
+          "complexity": 0.88,
+          "depth": 0.49,
+          "response": 0.95
+        },
+        "method": "Reglas locales",
+        "lufs": -25.22,
+        "truePeak": -5.68,
+        "monoLossDb": -1.63,
+        "sub100Percent": 0.9,
+        "endPeak": 0.0,
+        "gain": 0.9130614352931755
+      }
+    ]
+  },
+  {
+    "template": "extruded-3d",
+    "style": "Minimal",
+    "versions": [
+      {
+        "file": "extruded-3d-Minimal-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/rush",
+              "reverse_swell/breath"
+            ],
+            "anchors": [
+              1,
+              21,
+              115
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -28.31,
+        "truePeak": -9.5,
+        "monoLossDb": -0.22,
+        "sub100Percent": 6.96,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "extruded-3d-Minimal-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "riser/snatch",
+              "riser/rush",
+              "reverse_swell/breath"
+            ],
+            "anchors": [
+              1,
+              21,
+              115
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "orbit",
+          "concept": "Masa en vuelo y cambio de perspectiva",
+          "intent": "precise",
+          "spectrum": "focus",
+          "space": "center",
+          "synthesis": "filtered",
+          "envelope": "swell",
+          "relation": "follow",
+          "ending": "dry",
+          "intensity": 0.32,
+          "complexity": 0.2,
+          "depth": 0.18,
+          "response": 0.62
+        },
+        "method": "Reglas locales",
+        "lufs": -25.38,
+        "truePeak": -7.75,
+        "monoLossDb": -0.24,
+        "sub100Percent": 5.31,
+        "endPeak": 0.0,
+        "gain": 0.7136742051224743
+      }
+    ]
+  },
+  {
+    "template": "glitch",
+    "style": "Cinematic",
+    "versions": [
+      {
+        "file": "glitch-Cinematic-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "glitch/scramble",
+              "glitch/burst",
+              "glitch/chirp",
+              "glitch/stutter",
+              "glitch/mid"
+            ],
+            "anchors": [
+              0,
+              12,
+              40,
+              52,
+              84,
+              96,
+              124,
+              136
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -27.32,
+        "truePeak": -6.8,
+        "monoLossDb": -1.04,
+        "sub100Percent": 1.92,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "glitch-Cinematic-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "glitch/scramble",
+              "glitch/burst",
+              "glitch/chirp",
+              "glitch/stutter",
+              "glitch/mid"
+            ],
+            "anchors": [
+              0,
+              12,
+              40,
+              52,
+              84,
+              96,
+              124,
+              136
+            ]
+          },
+          {
+            "role": "Textura de cierre",
+            "recipes": [
+              "glitch/hit"
+            ],
+            "anchors": [
+              136
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "fracture",
+          "concept": "Interferencia y recuperación",
+          "intent": "expansive",
+          "spectrum": "bloom",
+          "space": "travel",
+          "synthesis": "carrier",
+          "envelope": "flutter",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.76,
+          "complexity": 0.57,
+          "depth": 0.76,
+          "response": 0.84
+        },
+        "method": "Reglas locales",
+        "lufs": -24.44,
+        "truePeak": -4.93,
+        "monoLossDb": -1.52,
+        "sub100Percent": 2.47,
+        "endPeak": 0.0,
+        "gain": 0.7177942912713617
+      }
+    ]
+  },
+  {
+    "template": "glitch",
+    "style": "Experimental",
+    "versions": [
+      {
+        "file": "glitch-Experimental-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "glitch/chirp",
+              "glitch/mid",
+              "glitch/dropout"
+            ],
+            "anchors": [
+              0,
+              8,
+              16,
+              44,
+              52,
+              84,
+              92,
+              120,
+              128,
+              136
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "glitch/dropout",
+              "glitch/hit"
+            ],
+            "anchors": [
+              0,
+              84
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -26.33,
+        "truePeak": -5.06,
+        "monoLossDb": -0.61,
+        "sub100Percent": 2.51,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "glitch-Experimental-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "glitch/chirp",
+              "glitch/mid",
+              "glitch/dropout"
+            ],
+            "anchors": [
+              0,
+              8,
+              16,
+              44,
+              52,
+              84,
+              92,
+              120,
+              128,
+              136
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "glitch/dropout",
+              "glitch/hit"
+            ],
+            "anchors": [
+              0,
+              84
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "fracture",
+          "concept": "Interferencia y recuperación",
+          "intent": "unstable",
+          "spectrum": "fracture",
+          "space": "diffuse",
+          "synthesis": "carrier",
+          "envelope": "flutter",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.58,
+          "complexity": 0.88,
+          "depth": 0.49,
+          "response": 0.95
+        },
+        "method": "Reglas locales",
+        "lufs": -25.51,
+        "truePeak": -5.85,
+        "monoLossDb": -0.85,
+        "sub100Percent": 2.35,
+        "endPeak": 0.0,
+        "gain": 0.909913272632252
+      }
+    ]
+  },
+  {
+    "template": "glitch",
+    "style": "Minimal",
+    "versions": [
+      {
+        "file": "glitch-Minimal-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "glitch/dropout",
+              "glitch/scramble",
+              "glitch/stutter",
+              "glitch/hit"
+            ],
+            "anchors": [
+              0,
+              44,
+              92,
+              136
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -26.96,
+        "truePeak": -9.2,
+        "monoLossDb": -2.08,
+        "sub100Percent": 4.39,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "glitch-Minimal-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "glitch/dropout",
+              "glitch/scramble",
+              "glitch/stutter",
+              "glitch/hit"
+            ],
+            "anchors": [
+              0,
+              44,
+              92,
+              136
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "fracture",
+          "concept": "Interferencia y recuperación",
+          "intent": "precise",
+          "spectrum": "focus",
+          "space": "center",
+          "synthesis": "carrier",
+          "envelope": "flutter",
+          "relation": "follow",
+          "ending": "dry",
+          "intensity": 0.32,
+          "complexity": 0.2,
+          "depth": 0.18,
+          "response": 0.62
+        },
+        "method": "Reglas locales",
+        "lufs": -24.56,
+        "truePeak": -7.86,
+        "monoLossDb": -2.3,
+        "sub100Percent": 3.83,
+        "endPeak": 0.0,
+        "gain": 0.7585775750291835
+      }
+    ]
+  },
+  {
+    "template": "ink-stamp-print",
+    "style": "Cinematic",
+    "versions": [
+      {
+        "file": "ink-stamp-print-Cinematic-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "cut_hit/air"
+            ],
+            "anchors": [
+              6
+            ]
+          },
+          {
+            "role": "Asentamiento",
+            "recipes": [
+              "toggle/rocker"
+            ],
+            "anchors": [
+              6
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -22.99,
+        "truePeak": -3.95,
+        "monoLossDb": -0.78,
+        "sub100Percent": 45.94,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "ink-stamp-print-Cinematic-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "cut_hit/air"
+            ],
+            "anchors": [
+              6
+            ]
+          },
+          {
+            "role": "Asentamiento",
+            "recipes": [
+              "toggle/rocker"
+            ],
+            "anchors": [
+              6
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "contact",
+          "concept": "Contacto, presión y resonancia del soporte",
+          "intent": "expansive",
+          "spectrum": "bloom",
+          "space": "travel",
+          "synthesis": "modal",
+          "envelope": "snap",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.76,
+          "complexity": 0.57,
+          "depth": 0.76,
+          "response": 0.84
+        },
+        "method": "Reglas locales",
+        "lufs": -22.97,
+        "truePeak": -4.3,
+        "monoLossDb": -0.98,
+        "sub100Percent": 49.01,
+        "endPeak": 0.0,
+        "gain": 0.9977000638225534
+      }
+    ]
+  },
+  {
+    "template": "ink-stamp-print",
+    "style": "Experimental",
+    "versions": [
+      {
+        "file": "ink-stamp-print-Experimental-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "cut_hit/air"
+            ],
+            "anchors": [
+              6
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -25.65,
+        "truePeak": -6.49,
+        "monoLossDb": -0.93,
+        "sub100Percent": 58.77,
+        "endPeak": 0.0,
+        "gain": 0.982878873000032
+      },
+      {
+        "file": "ink-stamp-print-Experimental-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "cut_hit/air"
+            ],
+            "anchors": [
+              6
+            ]
+          },
+          {
+            "role": "Textura de cierre",
+            "recipes": [
+              "cut_hit/air"
+            ],
+            "anchors": [
+              6
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "contact",
+          "concept": "Contacto, presión y resonancia del soporte",
+          "intent": "unstable",
+          "spectrum": "fracture",
+          "space": "diffuse",
+          "synthesis": "carrier",
+          "envelope": "snap",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.58,
+          "complexity": 0.88,
+          "depth": 0.49,
+          "response": 0.95
+        },
+        "method": "Reglas locales",
+        "lufs": -25.8,
+        "truePeak": -5.88,
+        "monoLossDb": -1.24,
+        "sub100Percent": 58.89,
+        "endPeak": 0.0,
+        "gain": 1.0
+      }
+    ]
+  },
+  {
+    "template": "ink-stamp-print",
+    "style": "Minimal",
+    "versions": [
+      {
+        "file": "ink-stamp-print-Minimal-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "cut_hit/kick"
+            ],
+            "anchors": [
+              6
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -26.11,
+        "truePeak": -10.76,
+        "monoLossDb": -0.0,
+        "sub100Percent": 7.49,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "ink-stamp-print-Minimal-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "cut_hit/kick"
+            ],
+            "anchors": [
+              6
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "contact",
+          "concept": "Contacto, presión y resonancia del soporte",
+          "intent": "precise",
+          "spectrum": "focus",
+          "space": "center",
+          "synthesis": "modal",
+          "envelope": "snap",
+          "relation": "follow",
+          "ending": "dry",
+          "intensity": 0.32,
+          "complexity": 0.2,
+          "depth": 0.18,
+          "response": 0.62
+        },
+        "method": "Reglas locales",
+        "lufs": -24.54,
+        "truePeak": -9.4,
+        "monoLossDb": -0.0,
+        "sub100Percent": 5.34,
+        "endPeak": 0.0,
+        "gain": 0.8346415482773241
+      }
+    ]
+  },
+  {
+    "template": "slide-in",
+    "style": "Cinematic",
+    "versions": [
+      {
+        "file": "slide-in-Cinematic-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "whoosh_fast/tight",
+              "swish/blade"
+            ],
+            "anchors": [
+              3,
+              7,
+              11,
+              15,
+              19
+            ]
+          },
+          {
+            "role": "Asentamiento",
+            "recipes": [
+              "ui_pop/boop"
+            ],
+            "anchors": [
+              27
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -20.09,
+        "truePeak": -7.32,
+        "monoLossDb": -0.07,
+        "sub100Percent": 0.27,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "slide-in-Cinematic-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "whoosh_fast/tight",
+              "swish/blade"
+            ],
+            "anchors": [
+              3,
+              7,
+              11,
+              15,
+              19
+            ]
+          },
+          {
+            "role": "Asentamiento",
+            "recipes": [
+              "ui_pop/boop"
+            ],
+            "anchors": [
+              27
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "travel",
+          "concept": "Arrastre y asentamiento",
+          "intent": "expansive",
+          "spectrum": "bloom",
+          "space": "travel",
+          "synthesis": "filtered",
+          "envelope": "swell",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.76,
+          "complexity": 0.57,
+          "depth": 0.76,
+          "response": 0.84
+        },
+        "method": "Reglas locales",
+        "lufs": -15.16,
+        "truePeak": -5.9,
+        "monoLossDb": -0.17,
+        "sub100Percent": 0.32,
+        "endPeak": 0.0,
+        "gain": 0.5668915715231897
+      }
+    ]
+  },
+  {
+    "template": "slide-in",
+    "style": "Experimental",
+    "versions": [
+      {
+        "file": "slide-in-Experimental-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "swish/bright",
+              "swish/flick"
+            ],
+            "anchors": [
+              3,
+              7,
+              11,
+              15,
+              19
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "toggle/latch",
+              "click/double"
+            ],
+            "anchors": [
+              1,
+              9
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -19.33,
+        "truePeak": -8.31,
+        "monoLossDb": -0.64,
+        "sub100Percent": 0.03,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "slide-in-Experimental-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "swish/bright",
+              "swish/flick"
+            ],
+            "anchors": [
+              3,
+              7,
+              11,
+              15,
+              19
+            ]
+          },
+          {
+            "role": "Resonancia",
+            "recipes": [
+              "toggle/latch",
+              "click/double"
+            ],
+            "anchors": [
+              1,
+              9
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "travel",
+          "concept": "Arrastre y asentamiento",
+          "intent": "unstable",
+          "spectrum": "fracture",
+          "space": "diffuse",
+          "synthesis": "carrier",
+          "envelope": "swell",
+          "relation": "answer",
+          "ending": "decay",
+          "intensity": 0.58,
+          "complexity": 0.88,
+          "depth": 0.49,
+          "response": 0.95
+        },
+        "method": "Reglas locales",
+        "lufs": -18.8,
+        "truePeak": -6.45,
+        "monoLossDb": -0.76,
+        "sub100Percent": 0.05,
+        "endPeak": 0.0,
+        "gain": 0.9408058300365895
+      }
+    ]
+  },
+  {
+    "template": "slide-in",
+    "style": "Minimal",
+    "versions": [
+      {
+        "file": "slide-in-Minimal-antes.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "swish/bright",
+              "swish/blade"
+            ],
+            "anchors": [
+              3,
+              7,
+              11,
+              15,
+              19
+            ]
+          }
+        ],
+        "composition": null,
+        "method": "Reglas locales",
+        "lufs": -20.84,
+        "truePeak": -10.34,
+        "monoLossDb": -0.42,
+        "sub100Percent": 0.01,
+        "endPeak": 0.0,
+        "gain": 1.0
+      },
+      {
+        "file": "slide-in-Minimal-despues.wav",
+        "frames": 150,
+        "layers": [
+          {
+            "role": "Movimiento",
+            "recipes": [
+              "swish/bright",
+              "swish/blade"
+            ],
+            "anchors": [
+              3,
+              7,
+              11,
+              15,
+              19
+            ]
+          }
+        ],
+        "composition": {
+          "version": 1,
+          "gesture": "travel",
+          "concept": "Arrastre y asentamiento",
+          "intent": "precise",
+          "spectrum": "focus",
+          "space": "center",
+          "synthesis": "filtered",
+          "envelope": "swell",
+          "relation": "follow",
+          "ending": "dry",
+          "intensity": 0.32,
+          "complexity": 0.2,
+          "depth": 0.18,
+          "response": 0.62
+        },
+        "method": "Reglas locales",
+        "lufs": -17.58,
+        "truePeak": -8.72,
+        "monoLossDb": -0.37,
+        "sub100Percent": 0.01,
+        "endPeak": 0.0,
+        "gain": 0.6870684400142321
+      }
+    ]
+  }
+]

@@ -44,12 +44,13 @@ export function SoundDesign(input:Props){
     previousSaved.current=saved;
   },[saved]);
   React.useEffect(()=>{
+    const mixing=new AbortController();
     let current=true,object='';
     setUrl('');
-    if(plan && bound===signature && !legacy)mixDesign(plan).then(blob=>{
+    if(plan && bound===signature && !legacy)mixDesign(plan,mixing.signal).then(blob=>{
       if(current){object=URL.createObjectURL(blob);setUrl(object)}
     }).catch(e=>{if(current)setStatus(e.message)});
-    return ()=>{current=false;if(object)URL.revokeObjectURL(object)};
+    return ()=>{current=false;mixing.abort();if(object)URL.revokeObjectURL(object)};
   },[plan,bound,signature,legacy]);
   React.useEffect(()=>{
     if(legacy)return;
@@ -69,7 +70,7 @@ export function SoundDesign(input:Props){
       let director;
       if(provider){
         try{
-          const result=await fetch('/api/sound-director',{method:'POST',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,heads:analysis.heads,motion:analysis,port:provider})}).then(r=>r.json());
+          const result=await fetch('/api/sound-director',{method:'POST',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({template:props.animationStyle,text:props.text,words:analysis.words,frames:analysis.events,heads:analysis.heads,motion:analysis,port:provider,styles:names})}).then(r=>r.json());
           if(result.events)director=result;else setStatus('Proveedor sin respuesta · reglas locales');
         }catch{if(controller.signal.aborted)return;setStatus('Proveedor sin respuesta · reglas locales')}
       }
@@ -115,9 +116,11 @@ export function SoundDesign(input:Props){
     {busy && <span role="status">{styles.includes(busy)?'Generando '+busy+'…':busy}</span>}
     {plan && <div><p>{active} · {plan.method} · {plan.layers.reduce((n,l)=>n+l.takes.length,0)} acentos · {(plan.frames/30).toFixed(2)} s</p>
     {plan.composition && <fieldset className="my-2 border border-neutral-600 p-2"><legend>Composición procedural</legend>
+      <a href="/escuchas" target="_blank" rel="noreferrer" className="text-emerald-300 underline">Comparar las mezclas del piloto</a>
       <p>{plan.composition.concept} · {plan.composition.intent} · {plan.composition.spectrum} · {plan.composition.space} · {plan.composition.ending}</p>
       <p>Síntesis: {plan.composition.synthesis} · Envolvente: {plan.composition.envelope} · Relación: {plan.composition.relation}</p>
       <p>Director aplicado: {plan.method} · {plan.layers.map(l=>l.role).join(' + ')}</p>
+      <p>El motor ajusta el tono y el filtro al recorrido de cada toma. {plan.layers[0]?.takes.length??0} acentos principales · fotogramas {plan.layers[0]?.takes.map(t=>t.frame).join(', ')}.</p>
       <div className="flex flex-wrap gap-3">{([['Intensidad','intensity'],['Complejidad','complexity'],['Profundidad','depth'],['Respuesta al movimiento','response']] as const).map(([label,key])=>
         <label key={key}>{label} {Math.round(plan.composition![key]*100)}% <input aria-label={label} type="range" min="0" max="1" step=".01" value={plan.composition![key]}
           onChange={e=>{const value=Number(e.target.value);setPlans(old=>({...old,[active]:{...old[active],composition:{...old[active].composition!,[key]:value}}}))}}/></label>)}</div>
