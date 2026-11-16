@@ -18,6 +18,8 @@ VERSION='earshot-4ac3-phase5-1'
 ROOT=Path('public/audio-lab/synthesis')
 CATALOG=Path('src/lib/sound/earshot-bank.json')
 FAMILIES=json.loads(Path('src/lib/sound/procedural-roles.json').read_text())
+PILOTS=json.loads(Path('src/lib/sound/composition-pilots.json').read_text(encoding='utf-8-sig'))
+OPTIONS=json.loads(Path('src/lib/sound/composition-options.json').read_text(encoding='utf-8-sig'))
 STYLES=['Minimal','Cinematic','Experimental']
 
 def identity(value):
@@ -147,7 +149,33 @@ def generate(q,rows):
     if not typing and not band_reveal and director.get('extraLayer')!='none' and index==2 and len(events)>1:
         secondary='pulse' if voice in ('digital','glitch','pulse') else 'swish' if voice in ('riser','texture') else 'click'
         add('Acento' if director.get('extraLayer')=='accent' else 'Resonancia',secondary,selected[::max(1,len(selected)//2)][:2],.24)
-    return dict(syncVersion=2,style=style,variant=variant,layers=layers,frames=frames,method=director.get('model','Reglas locales'),strategy=strategy,preferredRecipe=director.get('preferredRecipe'),extraLayer=director.get('extraLayer'))
+    composition={}
+    if q['template'] in PILOTS:
+        profile=PILOTS[q['template']]
+        proposal=director.get('composition') or {}
+        choices=dict(intent=['precise','expansive','unstable'][index],
+                     spectrum=['focus','bloom','fracture'][index],
+                     space=['center','travel','diffuse'][index],
+                     synthesis='carrier' if index==2 or profile['gesture']=='fracture' else 'modal' if profile['gesture'] in ('elastic','contact') else 'filtered',
+                     envelope='flutter' if profile['gesture']=='fracture' else 'snap' if profile['gesture'] in ('elastic','contact') else 'swell',
+                     relation='answer' if index else 'follow',ending=['dry','decay','decay'][index])
+        choices.update({k:v for k,v in proposal.items() if k in OPTIONS and v in OPTIONS[k]})
+        # Bind modulation spans to individual visual events. Arrival, contact and
+        # interrupted motion have different physical envelopes even at equal speed.
+        for layer in layers:
+            for t in layer['takes']:
+                frame=t['frame'];visual=t['visualEvent']
+                following=next((f for f in events if f>visual),frames)
+                stop=next((f for f in a.get('stops',[]) if f>frame),following)
+                t['gestureFrames']=max(1,min(48,stop-frame,following-visual))
+                t['travelFrames']=max(0,frame-visual)
+                t['position']=frame/max(1,frames-1)
+        if index and len(layers)==1 and director.get('extraLayer')!='none':
+            add('Textura de cierre',profile['support'],[selected[-1]],.14 if index==1 else .19)
+        composition=dict(speed=q.get('speed',1),composition=dict(version=1,gesture=profile['gesture'],concept=profile['concept'],
+            **choices,intensity=[.32,.76,.58][index],complexity=[.2,.57,.88][index],
+            depth=[.18,.76,.49][index],response=[.62,.84,.95][index]))
+    return dict(**composition,syncVersion=2,style=style,variant=variant,layers=layers,frames=frames,method=director.get('model','Reglas locales'),strategy=strategy,preferredRecipe=director.get('preferredRecipe'),extraLayer=director.get('extraLayer'))
 
 def canonical_params(params):
     # JSON round-trips through JavaScript turn integral floats into integers.

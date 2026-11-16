@@ -114,6 +114,14 @@ export function SoundDesign(input:Props){
     })}
     {busy && <span role="status">{styles.includes(busy)?'Generando '+busy+'…':busy}</span>}
     {plan && <div><p>{active} · {plan.method} · {plan.layers.reduce((n,l)=>n+l.takes.length,0)} acentos · {(plan.frames/30).toFixed(2)} s</p>
+    {plan.composition && <fieldset className="my-2 border border-neutral-600 p-2"><legend>Composición procedural</legend>
+      <p>{plan.composition.concept} · {plan.composition.intent} · {plan.composition.spectrum} · {plan.composition.space} · {plan.composition.ending}</p>
+      <p>Síntesis: {plan.composition.synthesis} · Envolvente: {plan.composition.envelope} · Relación: {plan.composition.relation}</p>
+      <p>Director aplicado: {plan.method} · {plan.layers.map(l=>l.role).join(' + ')}</p>
+      <div className="flex flex-wrap gap-3">{([['Intensidad','intensity'],['Complejidad','complexity'],['Profundidad','depth'],['Respuesta al movimiento','response']] as const).map(([label,key])=>
+        <label key={key}>{label} {Math.round(plan.composition![key]*100)}% <input aria-label={label} type="range" min="0" max="1" step=".01" value={plan.composition![key]}
+          onChange={e=>{const value=Number(e.target.value);setPlans(old=>({...old,[active]:{...old[active],composition:{...old[active].composition!,[key]:value}}}))}}/></label>)}</div>
+    </fieldset>}
     {plan.syncVersion!==2 && plan.layers.some(layer=>layer.takes.some(take=>take.visualEvent!==undefined)) &&
       <button className={button} disabled={!!busy || bound!==signature} onClick={()=>setPlans(old=>({...old,[active]:{...old[active],syncVersion:2}}))}>Ajustar sincronización de esta mezcla</button>}
     {plan.layers.map((layer,i)=><div className="my-2 flex flex-wrap items-center gap-3" key={i}>

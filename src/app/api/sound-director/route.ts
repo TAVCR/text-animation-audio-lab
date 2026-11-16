@@ -1,3 +1,5 @@
+import compositionOptions from '@/lib/sound/composition-options.json';
+import pilots from '@/lib/sound/composition-pilots.json';
 import bank from '@/lib/sound/earshot-bank.json';
 import roles from '@/lib/sound/procedural-roles.json';
 import {NextResponse} from 'next/server';
@@ -27,7 +29,10 @@ export async function POST(req:Request){
     const recipes=bank.filter(r=>categories.includes(r.category)).map(r=>r.id);
     const extra={preferredRecipe:{type:'string',enum:recipes},extraLayer:{type:'string',enum:['none','accent','resonance']}};
     const prompt='Select a compatible Earshot voice from the supplied list. Describe travel only when present. Choose landing last only for a measured settling motion meriting an extra impact. Direct sound for a 30fps animation. Choose a qualitative strategy. Evaluate overlap, pace and discontinuities. Decide deliberately whether the closing deserves silence. Vary density with event count and pace. '+JSON.stringify({voices:allowed,recipes,family,text:String(inputText??'').slice(0,1000),words,groups,motion,observation});
-    const schema={...strategySchema,required:[...strategySchema.required,...Object.keys(extra)],properties:{...strategySchema.properties,...extra,voice:{type:"string",enum:allowed}}};    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,seed:33,max_tokens:350,messages:[{role:'user',content:prompt}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
+    const pilot=Object.prototype.hasOwnProperty.call(pilots,template);
+    const compositionSchema={type:'object',additionalProperties:false,required:Object.keys(compositionOptions),properties:Object.fromEntries(Object.entries(compositionOptions).map(([k,v])=>[k,{type:'string',enum:v}]))};
+    const compositionField=pilot?{composition:compositionSchema}:{};
+    const schema={...strategySchema,required:[...strategySchema.required,...Object.keys(extra),...Object.keys(compositionField)],properties:{...strategySchema.properties,...compositionField,...extra,voice:{type:"string",enum:allowed}}};    const answer=await fetch(base+'/chat/completions',{method:'POST',redirect:'error',signal:AbortSignal.any([req.signal,AbortSignal.timeout(90000)]),headers:{'Content-Type':'application/json'},body:JSON.stringify({model:selected,temperature:.35,seed:33,max_tokens:350,messages:[{role:'user',content:prompt+(pilot?' Direct the spectral envelope, spatial path, transient intent and ending of one integrated gesture. Use only the composition schema.':'')}],response_format:{type:'json_schema',json_schema:{name:'sound_plan',strict:true,schema}}})}).then(r=>r.json());
     const raw=answer.choices?.[0]?.message?.content;
     let value:unknown;try{value=JSON.parse(raw)}catch{}
     let preferredRecipe:string|undefined,extraLayer:string|undefined;
@@ -35,12 +40,18 @@ export async function POST(req:Request){
       preferredRecipe=String(value.preferredRecipe);extraLayer=String(value.extraLayer);
       delete (value as Record<string,unknown>).preferredRecipe;delete (value as Record<string,unknown>).extraLayer;
     }
-    const accepted=recipes.includes(preferredRecipe??'') && extra.extraLayer.enum.includes(extraLayer??'') && valid(value) && allowed.includes(value.voice);
+    let composition;
+    if(pilot && value && typeof value==='object' && 'composition' in value){
+      const spec=value.composition;
+      if(spec && typeof spec==='object' && Object.entries(compositionOptions).every(([k,v])=>v.includes((spec as Record<string,string>)[k])))composition=Object.fromEntries(Object.keys(compositionOptions).map(k=>[k,(spec as Record<string,string>)[k]]));
+      delete (value as Record<string,unknown>).composition;
+    }
+    const accepted=(!pilot || !!composition) && recipes.includes(preferredRecipe??'') && extra.extraLayer.enum.includes(extraLayer??'') && valid(value) && allowed.includes(value.voice);
     const strategy:Strategy=accepted && valid(value)?value:{voice:allowed[0],intensity:'medium',attack:'natural',landing:'silent',density:'moderate',grouping:template==='glitch'?'pulse':template==='slide-in'?'gesture':'phrase',closing:'accent',character:'soft',space:'short'};
     const events=distribute(frames,template,strategy,heads);
     const variant={soft:0,bright:1,rough:3}[strategy.character];
     const reason=(accepted?'':'Respuesta incompatible. Se aplicaron reglas de '+allowed[0]+'. ')+frames.length+' eventos · '+events.length+' acentos · fotogramas '+events.map(i=>frames[i]).join(', ')+' · '+(events.includes(frames.length-1)?'cierre acentuado':'cierre libre');
-    return NextResponse.json({events,variant,preferredRecipe:accepted?preferredRecipe:undefined,extraLayer:accepted?extraLayer:undefined,gain:({subtle:.35,medium:.55,strong:.75})[strategy.intensity],tail:strategy.voice==='texture'?(strategy.space==='short'?240:480):strategy.space==='short'?65:180,offset:template==='slide-in'?-1:0,model:accepted?selected:'Reglas de respaldo',strategy,raw,correction:accepted?null:'Respuesta incompatible',reason});  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
+    return NextResponse.json({events,variant,composition:accepted?composition:undefined,preferredRecipe:accepted?preferredRecipe:undefined,extraLayer:accepted?extraLayer:undefined,gain:({subtle:.35,medium:.55,strong:.75})[strategy.intensity],tail:strategy.voice==='texture'?(strategy.space==='short'?240:480):strategy.space==='short'?65:180,offset:template==='slide-in'?-1:0,model:accepted?selected:'Reglas de respaldo',strategy,raw,correction:accepted?null:'Respuesta incompatible',reason});  }catch(e){return NextResponse.json({available:false,error:e instanceof Error?e.message:'Proveedor no disponible'})}
 }
 
 

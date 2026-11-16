@@ -1,0 +1,8 @@
+{
+  "slide-in": {"gesture":"travel","concept":"Arrastre y asentamiento","support":"swish"},
+  "glitch": {"gesture":"fracture","concept":"Interferencia y recuperación","support":"digital"},
+  "cinematic": {"gesture":"flight","concept":"Apertura y cambio de distancia","support":"texture"},
+  "bubble-pop": {"gesture":"elastic","concept":"Tensión y liberación elástica","support":"pop"},
+  "ink-stamp-print": {"gesture":"contact","concept":"Contacto, presión y resonancia del soporte","support":"impact"},
+  "extruded-3d": {"gesture":"orbit","concept":"Masa en vuelo y cambio de perspectiva","support":"sweep"}
+}

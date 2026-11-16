@@ -1,7 +1,9 @@
+import {componentPCM} from './componentPCM';
+import type {Composition} from './composition';
 import {wave} from './pcm';
-export type Take={recipe:string;url:string;frame:number;visualEvent?:number;peak:number;samples:number;onset:number;end:number;gain:number;params:{dur?:number;seed:number;pitch?:number;apex?:number}};
+export type Take={gestureFrames?:number;travelFrames?:number;position?:number;recipe:string;url:string;frame:number;visualEvent?:number;peak:number;samples:number;onset:number;end:number;gain:number;params:{dur?:number;seed:number;pitch?:number;apex?:number}};
 export type Layer={resonator?:'bubble'|'stamp';body?:number;air?:number;room?:number;rate?:number;role:string;gain:number;offset:number;mute:boolean;fadeIn:number;fadeOut:number;takes:Take[]};
-export type Design={syncVersion?:number;style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
+export type Design={composition?:Composition;speed?:number;syncVersion?:number;style:string;variant:number;frames:number;method:string;strategy:unknown;layers:Layer[]};
 export type SavedDesign={signature:string;design:Design};
 const cache=new Map<string,Promise<AudioBuffer>>();
 function buffer(take:Take){
@@ -99,6 +101,10 @@ export async function mixDesign(plan:Design){
     const track=layer.room ? new Float32Array(mix.length) : mix;
     for(const take of layer.takes){
       const src=await buffer(take);
+      const composed=plan.composition ? await componentPCM(take.url,{
+        plan:plan.composition,peak:take.peak,seed:take.params.seed,role:layer.role,
+        span:take.gestureFrames??6,travel:take.travelFrames??0,position:take.position??take.frame/plan.frames,speed:plan.speed??1
+      },src):undefined;
       const target=Math.max(48,Math.round(take.frame*1600+layer.offset*48));
       if(layer.body && layer.resonator)addBody(track,target,take,layer,rate);
       if(layer.air)airSweep(track,target,take,layer,rate);
@@ -109,11 +115,11 @@ export async function mixDesign(plan:Design){
       const cue=plan.syncVersion===2 && take.visualEvent!==undefined
         ? Math.round(Math.min(take.visualEvent,take.frame)*1600+layer.offset*48)-192
         : 0;
-      const first=Math.max(0,Math.max(0,cue)-start),last=Math.min(Math.ceil(src.length/rate),length-start);
+      const first=Math.max(0,Math.max(0,cue)-start),last=Math.min(Math.ceil((composed?.[0].length??src.length)/rate),length-start);
       const attack=Math.max(1,Math.min(layer.fadeIn*48,peak-first));
       const release=Math.max(1,Math.min(layer.fadeOut*48,last-peak));
       for(let c=0;c<2;c++){
-        const samples=src.getChannelData(Math.min(c,src.numberOfChannels-1));
+        const samples=composed?.[c]??src.getChannelData(Math.min(c,src.numberOfChannels-1));
         for(let i=first;i<last;i++){
           const fade=Math.min(1,peak===first?1:(i-first)/attack,(last-i-1)/release);
           const position=Math.min(samples.length-1,Math.max(0,take.peak+(i-peak)*rate));
